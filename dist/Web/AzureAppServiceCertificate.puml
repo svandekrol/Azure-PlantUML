@@ -1,10 +1,16 @@
 sprite $AzureAppServiceCertificate [70x70/16z] {
-xTH7egGm34LH6ojOp_lVRrSkGXE4-9apykY2O_frCd4OFI91nDzCoG657rB8SHMvI27oyESgPwMpxNIsKinXVaQvsooVEprsLhBe7Fv_fN2jbIdr5T_PpO8d
-oVqCpUcc5K8VxLiNmKLLOT6A2zbJ8G36TCS6WFqL1Q3qfW2Aks90fRuAc7Ud5G0D6K3EdJP0Q4W0TUuq01e3aBQQhvYtee3HM0Mwuohn6Rah75tT-PtUQFxK
-0Q2ZRe3_DlOp2iSEfKuUwkHbKDgAHVePL1KHlGzb5qEVFrBaIbl3Ksl-IChbWbjVSShfhhI-j9CC_-NGobcn3wX8h697L2Xfl4ANWKOgZyY5nYhq6DRz5MtK
-crr9fty
+xPG7ZiGm24NN1N2JSl_RBjQG7aicqyjJc_hq-SGUFWveyiEPAt0W_5t52rhmIWko0l3AB5WTp9KMfiFoizZO3pKjBYfeJsHiD-QtwIq_Yq5g0OSMum29m9cb
+nUgUNODfX9OUvrkOlSMd9VvSBv2OGE21GcBWZAKcYI198KeQfOLg43zJtpkr9N8IloImLRLfYG9-2KWOpQOv2leroFjMRhgMkONDobwabQt5g2ma2zhsQxMM
+UAsbtOjHMs1huNozaddJj97mbAYmj9ywhxHWEZW1yTHfH3-3gjDeKGYxcu5yBu0JONDB1TGZcXd2avQS9qVEg6R0IinBI2svKFAICkZPMfWNi5mxKNwTNhPP
+Ni5IRj9BATTlkd2cSbqM-MyfL_OYlkicMWb__0C
 }
 
 AzureEntityColoring(AzureAppServiceCertificate)
 !define AzureAppServiceCertificate(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureAppServiceCertificate, AzureAppServiceCertificate)
 !define AzureAppServiceCertificate(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureAppServiceCertificate, AzureAppServiceCertificate)
+!procedure AzureAppServiceCertificate($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureAppServiceCertificate, $stereo=AzureAppServiceCertificate, $tags, $link)
+ !endprocedure
+!procedure AzureAppServiceCertificate($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureAppServiceCertificate, $tags, $link, AzureAppServiceCertificate)
+!endprocedure

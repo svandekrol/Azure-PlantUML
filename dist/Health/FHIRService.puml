@@ -1,10 +1,16 @@
 sprite $FHIRService [70x70/16z] {
-xSy5bcmn28JX0aAHpFxtszuyoHN6hR-ZL_AV2ieUrBQWnhbDKA3SqL1Wt5EjO9NzyigZ8lzf92LLlW8MRy0ORu3n2HvujlAYgAbVCHlveinWVf77F9Kx59Wd
-PcGZqoUN2faY-A_e1QH2kQKG2T80vuOeLLmWRghchwdGSQFjXLVYcPq3fW8ePwrO4RHhJI0-LQnMSGYlN83sWafSAiOxdJAkzSfwffMtADSpqle-dWZu5_id
-qy1U6sEmjOgBz6A542R7tqs1zycOz3WnQ2IrkAD2HiKbGu77Z0A9KHCd3SAbY6QabD4vqmIMaVATr4KZkG0j-dXc1YSQGOMI9e0obzGpxN8k15VgCIqfPJGY
-71V6c2B5J6IbHKPUbX6SC2B6oyG5JTKpyg8vgO-NwuL8HItoj6Fqa_7qMYCZtze3toG2yrTJB7iu0W
+xT876fim44JXhJDAl_zjey-oS943czxuRJeywgUo4_PzG-HRC_Z3AljR-VzMpWgVeUDKszeZ_xKJBfOr_1fXEG2paGDOvkAP3uVbLEz09N8p8WUPjloOAfu0
+hWCvfjl0jluMW8bXJpj6m4KIErYgG4NJpJo_kO8kvCfUTh9MWVT0XAc8OHN5YehFcWQUUQsIeXXIfGUVMFMvE2PVCbceyAc2UCw4rohvy51T9737eXr3fuB7
+J68JKlnuuH9VkfWKRHNeHB79Xwz69KiL4dHnOlxiVbwqhTwiUePGIIuk4RwfOHUYM2CgDYBLZ8cHZw5GYNfatfEbEZUfeZaZvKnAfsIQQ29CnB55wfde4P0g
+WuCpKaSo3IH6my0bKi5XL88ZyiqPbGuZykqPk5cIxSstQfnwvDkrGgIUUNFWxVwlTnfRdnxyZlJCtEbq-lH38g-TFWC
 }
 
 AzureEntityColoring(FHIRService)
 !define FHIRService(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, FHIRService, FHIRService)
 !define FHIRService(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, FHIRService, FHIRService)
+!procedure FHIRService($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=FHIRService, $stereo=FHIRService, $tags, $link)
+ !endprocedure
+!procedure FHIRService($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, FHIRService, $tags, $link, FHIRService)
+!endprocedure

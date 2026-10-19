@@ -1,12 +1,17 @@
 sprite $AzureMaps [70x70/16z] {
-rTDPOYqX20HGA0Pv-z_mwupQeI6QVENyPRWbXLxw8nWYQXSLWEadeEOtfg0pOlx8v3JZTpamRnbsCtwPexv5JqFEOyot6HMu2SdhCZwUn5Wsfr6lCS4JFGmH
-8jvQCRphK_G5tR4tKCxA-tUizR16A_46DzCABRoXNOfjZcA2xX9bRxK2S7VKrbCnNBgte3iN9BXmCx5j55AyfzI7yRUxDRpfYaikbFlCOT1LuhRFk-uVxqTa
-0DPXkg-PZ8BBbnGTZsJvMsQOklEKBjQEiWw37wGeReY8YvdfubsVYSi3dIvjdudh5TOfYg_gnPID70bNY_4oHP2L9rPtP7Z0p5RUaNQhdSmTqFAzw4OVyN41
-f4p1Ttt4vk_70n1THjmDIMEy0poIGQyyxdGTmoEMsM6HEBsIk9bFHVrjpEKLQIH2h_YnZzXikgmz4gOt8_KHzPXcZcFajRopc0Q06P5YydgDA5UIjKcECSs5
-yZ33OvLp98qonPQd55heTenxh9HMiHrZQPH9ebSi3dIdsp6fpyhZc5Cs_XqQz83ZB2I8VXyJJ8LnKgTcko567TaB4Uhns6Z3z2s9FYE4jcWNehJDefZ3w0Wi
-SWJe7AlvY2iiOhWfqz_m7m
+rT07RYmX48HXg0w3bRZ_QHqGKdiNfjHebFP_qUbJDVr3yfUU20ya9-KDNjPuwfYdklYGT0p9PmnvpZW9val7Y5N9hN5MBV1DPugKKecIlQUKOWd6MIY_gU_A
+8rh-mdxcmTF-LNrRUWfLFAUOe8oKAtoA07KeGiTmHV7RKC0LvLD-g-nXD3bbdcHa35KC697dJIW2n1WmXTypOm_ZN77CvXYcN9VlVxcyANhpdKEvIp6Aa-JQ
+HfKv1J46LE5JOamzLmoOnHYxLOpV4mfz67uFelk7iRkB756CgOVl8i1kZ1yfXasrLZjHV9qYwWxeYR8WEau1X2dy7h7uF5NQ-3N_VPqY7jyEU7pV_7SglRsb
+BpDQ2qLXRQtl5F__6kstO1oQL2w96RDW1BUAhlU8Uel2SLmBedqTSm48Oc7WwvID8d79ZZ5TbPMvV4k48mkoAZoY73Bk2n9Adh5L2IRj-0uvPmYIPoZIlqRj
+w-JVlc5EYobFcBxl67dET5BQuEKHNjhWvH4UDKvYn2EeVqO_
 }
 
 AzureEntityColoring(AzureMaps)
 !define AzureMaps(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureMaps, AzureMaps)
 !define AzureMaps(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureMaps, AzureMaps)
+!procedure AzureMaps($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureMaps, $stereo=AzureMaps, $tags, $link)
+ !endprocedure
+!procedure AzureMaps($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureMaps, $tags, $link, AzureMaps)
+!endprocedure

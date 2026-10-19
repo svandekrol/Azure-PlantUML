@@ -1,14 +1,18 @@
 sprite $AzureDeviceProvisioningService [70x70/16z] {
-lPQ7Tjqm34EvGCR__y4TZj-3gb9ozZsZJI9303IEvDin3o2h4WYt3oa4QYBZdKgUrP8kRqMZo4TrecumkSMoRe7SW1f0cAg8g9fZL4-JBPfFYNcaEYYp5l1m
-VTG2tVKUpz4pUVmbHB8gLHOeNaLmZePCl1olGBJy-iAqh_-SygIcLey7obaNDQhuyI1avBYWowlcDbiTHsT6Z_dtsAt6GHQ_BrevaOQNlGeJrGFT9zgsk_V2
-Tdsrqg_u9HAD25SwPI1K19Dsx0umTzqG-DmNwZ0PC2HoUMBKS9wN51dSXxPZRww16DhFTGDUvRB0C7wckmR0sMQCYyWUfIVxJCnWsq2SCROtDFQ1E3Qhif7I
-8OJnrEsCL-ek4dtrU5rWSTSx_nkNITLcmWllY_59CAXtIRf7FOdUPWpXk07W3g38CfBnrroYg0RKEf5oONWPeIu0XFlL4JONLgVYhN5be8qAUrdilrnQKQfJ
-HIoR1ufN1H1LiL29QQLtnz4RCqQLu7yNnuXg4qu3lZq1-hHf_pU6iOoJPPxaD_EWFD7X_zQbGLRPP8leE3_E_uUGsV15J6Py_D0NaRJcnghWWsUC8PIHsejb
-kWdIva2Z9ZOgxPic66Y8vFj4b4KV8VjcWjTjypB2_55alqpcuQFgwCKOO3AZiiN6cpDPvjGCRcJ0GD7D2qhtC1FM7MXIPelIUxCUbbI_WI8cC_5s6TyCZMJ5
-MsAR7ddXia5nOnfFTAaHk8YrLpm8UvwTuoYdngq8PIYKV1sh1xOYn32WVDX310CcMqRJ43sUw1XNvHQZQwEAYpT6TbpZNK0LFDHTtep5ENxqSgguohjGy_Yt
-5m-JZp6kqSVXVlamtBiXFy9l
+lTG7bjim38JXbn0OF2a5zp-jg-f8GsER_sIR37uctVAd2-eBn1Uaw5Gt-XMDhpDHwkE8kDYhCrfZXbjZPcziOmptaXk7gLmDwIpJeq26d95cjywT79RuE2kJ
+zmmHWLCcXuBog24UMHvJod2uxl4CKfdgNGPYgXKKjKUBEUih_UkO4BIo4ZdoPQEj24OyUMDE-SIyK6B_GlhFhqLpE37iPCPE4TDQETuU7sTuMU5Tt5T2AipK
+bTxHcq4pH4e64V3VIecAeb_5TbHIrMBAVoKbb7QBjuAOQpN5416sFmjYoKgAJJiFaPSKZtxsIILtLzj751VFaML9iTFf02dLvuX7_LP459Mqu-jbErPGA5Rm
+Ia4Wq4N4PfuhyVpraKQcjSEHmReKK4npR5UIGYkLqh1xWedXXNWMukC3MmLchQj0A8StkUNflVSL61qnx7GPfeJ25y9FL-6SWTE1V5901-fl1kPkbaU5r_1c
+P7mYNb9d374FJMmVDQRvX1YD2qOwrepsNcVKSF6MEiARyOAXb8G3qrVFcMRalVcQO4epyEFGyEZ4GAfy7t9OuXkp4sXqLGGY8aGm-QgAaeLUALcif-H7OcLC
+8khjd-cKrPMlz7y-ppkw0W
 }
 
 AzureEntityColoring(AzureDeviceProvisioningService)
 !define AzureDeviceProvisioningService(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDeviceProvisioningService, AzureDeviceProvisioningService)
 !define AzureDeviceProvisioningService(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDeviceProvisioningService, AzureDeviceProvisioningService)
+!procedure AzureDeviceProvisioningService($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDeviceProvisioningService, $stereo=AzureDeviceProvisioningService, $tags, $link)
+ !endprocedure
+!procedure AzureDeviceProvisioningService($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDeviceProvisioningService, $tags, $link, AzureDeviceProvisioningService)
+!endprocedure

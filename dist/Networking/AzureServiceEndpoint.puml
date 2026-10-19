@@ -1,12 +1,17 @@
 sprite $AzureServiceEndpoint [70x70/16z] {
-jTO7hgKm38LXTyB-DpnKMOnpU7ZAhqPk-PJGwN_5OmY1T2py5Hb1eDY-v6_8wrmA0n4bc7zXD97-R322cJw26OmqcJw2Vuc_wZCOQJ08QJ08QJB--4Y4AHEX
-Cae68RvkELtPU8pMBIjCHM8zMfBSYiTtyM1cYAvN-iCecTnqogcSnUiecUis4lVMqLYlnZtA1IuvkXjRHbkoRqL_BdctAKlAjLiTMOwUI6KY5rH6Iowe8CSm
-6Jz-o7Lqer6G6SDcabzPddHROYO8IQQcUNfa1G4CK0226AnW98yKK0226QnW13DOyTQZ91LJOO3ypB3wgNXiAK3U6JRtIuapwp_krJsLEmK8U7zXzvaII-Cr
-Q147IYm5WOmxLCBfOmAK7cElIcXZAbY9Jue3fRKcHKh6XEEznrxnc2k6234_ImGh0QPXNW8ANfBEYGYaADKC45ZnYYX6_5JiPqMW4Nuy3eCgKzS3aRWUpOFA
-cbI57-l1YDrlP4uQaomLWqW8ZVkTGMAQt8fZXMcz8evv2lPjP9flbHeWpjq2b20-boJaIF6fyjjyULdN8IG1Kw0yVy9Cn84pg6GkH6BnrcplHgDKwDyezayK
-xYde9c4D1P-z_7VAz0RJdye_O1my0bg8WNjlYv5w-rLhCQwvItu1
+pTNfaeGW30JWgAGXltp_fzr3SQSo1JtJU_SlO_0hBs3_gRItiDwp25VQimXNce2mle2m4Hh2n_010aFQAiERdA4jXU4DdU68m114OFAf5X6tLgIgHRGnaq-K
+E7ArpwgUHJshCc1o6H_9vNaZFMt0f28fjCfNzaDDISn_K_fXLPNnwprR9OqiJCb8Pbh-cFvUerS46NtiMy-sY6BvJvuWUxa_bPJDjEb857rfu8g-J7L5NZA9
+8YxVND6tagwu0nHXZBjt1KVKBRORbu8hwdOF7oaO88Hn7oir8vpncOAQ4ChKiTApFnVuDoZkNC7tA12G7rV0ByUT0b7n546X1bSW882YJ0GGHKBI-aALiT4H
+GmJC2bKuWWE9g6O0m2I25FCuuhQ1EtC4grrxlwq0SvmfI_GS2c48Wirm8fWhUAYuBUrGLlEfuYC5I3Upr8XMoAq03nMiPijYjk1B2igRinR8YXv1qMu6El9z
+olwVbCn0Hxw1AVkGaM_b5b26tydOWNuZhm
 }
 
 AzureEntityColoring(AzureServiceEndpoint)
 !define AzureServiceEndpoint(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureServiceEndpoint, AzureServiceEndpoint)
 !define AzureServiceEndpoint(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureServiceEndpoint, AzureServiceEndpoint)
+!procedure AzureServiceEndpoint($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureServiceEndpoint, $stereo=AzureServiceEndpoint, $tags, $link)
+ !endprocedure
+!procedure AzureServiceEndpoint($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureServiceEndpoint, $tags, $link, AzureServiceEndpoint)
+!endprocedure

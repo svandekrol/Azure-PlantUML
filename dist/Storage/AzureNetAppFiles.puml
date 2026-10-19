@@ -1,9 +1,15 @@
 sprite $AzureNetAppFiles [70x70/16z] {
-xTO5hiGm34NHnbJO_tu_38FrPAlSvee3Pw3OvAhLMCSaV46i7vdzA_tegbALgjZeZgse95DFQT8vYkOLXOeeI89A6M0bfX1MQ7x5yWeyNmmh1i-NHorMMdiq
-cwBt32il2ns5xidh1ykbxcL8w1Q75RuFEGffLA6zA3QRmbc5m-UBC_HO6By2d25mxevLy3Nj3E5hccSuqXjH62iSKqZitkDpzMK8A-7m5P2CFSKqsMRVWjhH
-_Iiw5j5_fV38IfEgLli5
+xTC5ZiGm38NXdJXsfdp_qov79UirLXb-OUahEOsjfwTiPYqogyMKF9lVUPL7UPJcFRjlX6L-1rNO6sDD-J2dA6nN62h484fLSbYYyiBAQtr5x0gS5yOAmtbf
+mugqhQPmR4hXcAQu6ELjmV_spjl8_KV9YdU_iQOuJbBQI_oK8jTL22lu7mcS5z5snJIbRJoe0SpkaWfSq_yx1QpfcL_NQOexYK9snNc9-NPCsrrOCTOgGVb7
+oP6c21iJHR6tlDA4sJL7KamzFNq1
 }
 
 AzureEntityColoring(AzureNetAppFiles)
 !define AzureNetAppFiles(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureNetAppFiles, AzureNetAppFiles)
 !define AzureNetAppFiles(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureNetAppFiles, AzureNetAppFiles)
+!procedure AzureNetAppFiles($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureNetAppFiles, $stereo=AzureNetAppFiles, $tags, $link)
+ !endprocedure
+!procedure AzureNetAppFiles($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureNetAppFiles, $tags, $link, AzureNetAppFiles)
+!endprocedure

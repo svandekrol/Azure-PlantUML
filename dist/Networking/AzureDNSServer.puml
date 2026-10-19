@@ -1,10 +1,16 @@
 sprite $AzureDNSServer [70x70/16z] {
-xP5BibiX44CbclP__-jD2L4aURp9BVzjDBe-Y0Dki2qhAx6xAW7bSBaoUrakr-PioxNvpt8wRihfLykPs1IUVxESi377LxUSiJ7dExpH5NbDo_xgoBAxEilY
-BCkoL20QCI0OG3LX9yKaWUA5yjEYiXj85tkv3XBfaq9LdpjPsBuAsbfe9y5EQYVUJdiBa9D5DGEsnY0ekXC7JjYhucHfrqtjWNWPXA6wllKdgkI1ujN9ejFQ
-BO5CjUqA594wXhEZ27tJoI93sqT4QvYmZQEMyNI9Hf8YiqK7-SOas5-_0h8LwJsyC0cHoU8VOthH2TMjVPvU4ub19ajf3SDiXExcg4rajbICST0a-Z87AJ_8
-R4dIuo1Z48-3h8F489FbgYpBiYpB_kh8ajTAKXR6bI4sPMNb3m
+xP5dbgiX34Cb6wUN_U_s1U5KllU3Ctq6fL_4nJcSnp8pStXZtYvHtisoFxmzZvRTTYYxHSkU60htIvOT1hFzxfOz1hF_i3iQptUrd7TlpaKIgxTdMfHfcPO2
+UFq4K3y8Eb0QOH9h901h2_PgKLaoH2jc-KuyJ_9RjNGMQWY3cfg3O98Y4daIczU0w2mk202cnfsm4Yc50_9AsLa2y3gbcb9fv08w-4YyTgn-zywYqpGb46gt
+dGwx4vr4M04rwTsINpIkzX6kHYD4kT1YjwiBY0GhwImQiKri19C4K6sMj-g0D-8YlMM56ktDlnm0OKbA4krsaKMBgT5i8SBMZMKYq5bATktMyFp6swtQ2-aj
+GPfif3yJ9pN-VKsaixmXVySoBUl_MQRbl7vppj_9CfIPcNy
 }
 
 AzureEntityColoring(AzureDNSServer)
 !define AzureDNSServer(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDNSServer, AzureDNSServer)
 !define AzureDNSServer(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDNSServer, AzureDNSServer)
+!procedure AzureDNSServer($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDNSServer, $stereo=AzureDNSServer, $tags, $link)
+ !endprocedure
+!procedure AzureDNSServer($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDNSServer, $tags, $link, AzureDNSServer)
+!endprocedure

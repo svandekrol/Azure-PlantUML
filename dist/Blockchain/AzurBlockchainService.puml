@@ -1,13 +1,18 @@
 sprite $AzurBlockchainService [70x70/16z] {
-fTYBSYiX20RWe0YA-_xFUq8FgUE0nkx-lHVdMo_foFJrFHbUZvDAAVZGWF8_-GcIos_IGyE2S7T3BBUN1LY2f5kByO47Yt7BUeYSltWouTfWELMOLmw9d2ll
-X4YJlodHTAh87nNlaCWTPLwMo5rbE4qUABOi5dcaQ8fO-dNrsmeDH9bJ1GD5aSgj7ojOlA98qn_QeL9uewXpO01nh5nNjv_nkq8SABQrlHqoXPUAHke9Wpz8
-UD9spEqx0pg202WywQwVZO7jL6n09gTO6E1dlXj5wzd0K6dfyz9EswdGkA6zWkC8QAdGl6-9PcKyO3iPBVe_IrDgSeyBau9TAwOqd4RIUdypax_wW5Gfxlub
-NYY8uOsU2qDmTMBQtwi8Pyr4sXNtDthUzKNvh559kmOYdJKgiEkBuB33m5rVX6SDJowhO52CvvlsmmXtvVfHodPOOzuKPIXCIuT5-9rbKOOo3NCDYTteKN5M
-D1ZDrnHpND4fVbWLCSNYYbxH59pdQye8kg9JDDDylMBp5TahJ6Y6KonMt2ZciCXQuK-rz-wLAgqQ8zyLkzkTeXrPFLVwc-XEgPUcdYY6w7TEwQApELKkQvkQ
-trsh7IZT50tCYgvAZfLUn-5Zna8ybEjOiTcur1uhj52wr42HArxHArDqHgAfv2SZKfrItAjRvYBad4lE05DVFoaLHe_hbA1rAu7IqgYFPOrYa4Ipufe9d1Hq
-mFmuKoYuFarnHVSuK-fwlgxe0gJARhxCpHLz4j5-ldbJs_p3wny
+fTO9pgim30HWBU297VIu_sqVuNUaPXg3bOwMBcDztHkVhzdt_Vmr-ntv6VdPaVqZswf1MNqnd5M3isQiCzjEMN8WJmWigK12HzJI2Y1pevZbbS11C_BAr16p
+5GKYmnkoeBX3BsPDSKVCrXLdH6r5ePYd7aVzIN7aZrb2u4Wjq9fLC5VgORYYEGMXehYZTGLnvJWCFIi8-bjRDSVWIMbEwSoQOlunwxk21wLUiPPNfW-mqfDI
+FlfG6SPYPHj8LbgpeKKUbRDdeWnDX7192XMnmjs7ecTQ4JxwjguCvw_i4ZAGsQ9oAvFpL-JjS1uR_HSi0jlRbf1S9hZaIB1TSRZa9BSQeJ9oCcCITFIo7iUe
+ZPYtCKXgRNeS4mCGbsRqlOwsAmmzbOC2nDiLxiYqP0KIRLVm29Uaq1XjHXXwAacXEIdM0-gzd2ZCm8mKZr39YaTeko85ucMeU7YxehgtjTPlfPWLdxE4ubiJ
+AzKF_AHoJTTlfHmj9QjSmdsLbNhxIQKUlZRfgBIOTscbHPMKSXmrhTG2oe9onGjEwv1NgfK9egt9VqPtf-3qBruXvJn96Ke4AMIq1Cf92HJjlP3Y1aSdoh28
+iwBdD61bFg1SSWOb6j2XZ1nNmbwfcyMLXm7LCn4KClu3
 }
 
 AzureEntityColoring(AzurBlockchainService)
 !define AzurBlockchainService(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzurBlockchainService, AzurBlockchainService)
 !define AzurBlockchainService(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzurBlockchainService, AzurBlockchainService)
+!procedure AzurBlockchainService($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzurBlockchainService, $stereo=AzurBlockchainService, $tags, $link)
+ !endprocedure
+!procedure AzurBlockchainService($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzurBlockchainService, $tags, $link, AzurBlockchainService)
+!endprocedure

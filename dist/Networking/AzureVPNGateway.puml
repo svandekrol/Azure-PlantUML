@@ -1,11 +1,17 @@
 sprite $AzureVPNGateway [70x70/16z] {
-xT87agD038NXLeIz_uMNLFLaBEIMA-xE_1DD-13Geuf5rTrLXSUNiNfCluBKxnbr3V4iwI9vraPofe_KJ1_fFnloEfvIp5-pRrwu94kDNpTEAFbLoHnHPydQ
-Y5bdc0G1CpiC5m_Hfj-s5aVAzDApwa0CCxlYfBnTgfLwXKu-6AvdjZb5QaMRYZPs_og_YZLs_-SACRFQbNBIRNU6g4gxzqdCkemg9SeJmxcn9PcIEsFm0wAS
-AwO9aZ2gbG87IC9egO010WP6eQ3mO8cEdKGHgPLqd9r91YaLCBcYKmgSLD6M0YOggaq53XHjAifWTWM6S4CP7CS9o7XHv8DoOt3MbCAqDxROuCIJwAXM25la
-Oj8hFog-VmL5porRUZMX-55O8twsR5bW-AXKhZGYUtunUBfJoeNiW9bZd8vYWZbesnV6aNabtWoFmTiVZ5Cf_6wiHxko7YtULWu3okLOGu41vSeR2X0e6ATI
-KiEOpvKcOLkj047NSRIau-HAD293jurMAq30045UAJ0Y0oHakR9ihOqyK-YZyIT-RQscDEvfF2X-FRPYbBy
+xTA7ZeGm38JX9DW9gyRxl-qHa3MMcBNmzVPVNSgdsR95TRJb0-5xfV5MH_kJqaDukILlPtfO5k6b4LuQuUKLTYoB18VlAy7nD99dWajVfuJdmYIwKZjAJq7V
+G45fPViovL_vL_uLLH5LIrZgJokZL9PaejUnccP4BcjKdpAD6tlA5EwKmXW951M244OaKk008Oo42XWWO6042d8lRAtJgDKf4YjypcJ8a501mnM9bQuNXoYI
+KC10WP5Gu42Hf28Dp5HWBEs-ifJcvpYar8m21iP4xYcjpihUed20xCnHh4nWPanN5N68zKmvSufqovZRYhsxGCQUEgOTXOfP7fdP7FBg1eeX4r3jc9DI13jQ
+AStDQVSKDBo2EIbbhEVNeQopqHEA8MU7OlyFpIXcGB5wh0oAGC6SKA66jdP-qXPtB5Q0-2L7TVWviG83DI18OmK8622N5xapnHkUOOULAxELnWztzenM6BJ7
+yUE_LeK2Pdra6vlr0W
 }
 
 AzureEntityColoring(AzureVPNGateway)
 !define AzureVPNGateway(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureVPNGateway, AzureVPNGateway)
 !define AzureVPNGateway(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureVPNGateway, AzureVPNGateway)
+!procedure AzureVPNGateway($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureVPNGateway, $stereo=AzureVPNGateway, $tags, $link)
+ !endprocedure
+!procedure AzureVPNGateway($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureVPNGateway, $tags, $link, AzureVPNGateway)
+!endprocedure

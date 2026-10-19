@@ -1,12 +1,18 @@
 sprite $AzureDataExplorerCluster [70x70/16z] {
-rTG73Xin34HHKeMoxt_XGE2a41-WWfvyLBTdUtSW-zVo7RTps4V5KcWlAHUHWe2WWF96sFPKHlTRY5395XGWlI962WFIA9UXGcJwx1IRgQ2233CJGqNCNo5Y
-gAZvGgPbZG86o7BB1XGoHDw_1GmGC8iAcOgGMPsYLa78ZFLKn12PanuKCDp9M3KtcqKXGoIPWeYHmXOGCHKH8uMjaYaEnw60mMG93oWDmwUcVWgK5yFv-OBI
-C-vSyLXGEgQFofjn6o-5314Jyr3sBWmGCiU9H91Hmx9PaQyR4J0yCIjo5I9nTZi_hmYK7QaSRnWWLo4IPvW20qGAaVW30JE1I6aGCXM1ie200GA5YC_A486o
-Df281OQ8526RI1mmHAG8sK38494Y91KWvqmmHAuYP0EvJBY10N8L8Rj3510gH28HCET3nJoLDo8cBWB5l28Ro1_QHJuVA68wP9NvNGHAvYqIOA1a3OBv2O7I
-8mq3fKTIKGjAZynGGi10UI9agFYMidj431KXkq78G16oEuGCb4HsHL8bGiR_H7Q3j8mBoIgI314oBaGrICTuWrnc6WAJ2f41f6TqU5Va5qo4pSztfbUGcnDv
-juGKXiYRmN45vB_f1m
+pTL9RiCm44HHQcYsjEhxtpQXGrHiVx3WfVykqxCabf3wjZBxA9DTitwkYfnAxqi52EjG410MTprAfn2X8iOeGA28MIf4g8XPAQ_8iHrEgPNoYhJM3gVKK1YG
+rgnIL8Y8WQ8MYDgcibkb3EAl1GoGpv-B0aB6dBHQ869skpf5X54XG-JWrlRMe83XJWuUkbMAo6ZdSgnI3qIr6TosMQM2asqRuHsAORZOGouKps1-0w7Y6SnF
+21GmDgTuPc-xLnYPJGVZbVxR4qE4JDv43BEtluutP2X4CibG4I85_w_T_BPNH8eGAcI8t416GiW0aI94bG9p0942n310f001On4fFO3qdcI8Z8G44Sy8aHA_
+0S5kW2WXGMGeGOR8BII8zCJyW4Y9a697N454IaenY1WWK1Pl0fYyg5JCXAY1aEb2y7GTSlR-nFJh4eEJNhy98N2KGhWwZxmmrsIeb45mMhSGzG62uoBpCJ8K
+CKu98elf62K2o78wL8I4HyXG2Ib20iYA4J8o2ADI8KM8L21adf6m2CDx98NNHeJCCn92pX0IXSWy42NaBo182f42iexNKb9cH9WUYn05134X_1RpZFkMycNK
+D_G3
 }
 
 AzureEntityColoring(AzureDataExplorerCluster)
 !define AzureDataExplorerCluster(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDataExplorerCluster, AzureDataExplorerCluster)
 !define AzureDataExplorerCluster(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDataExplorerCluster, AzureDataExplorerCluster)
+!procedure AzureDataExplorerCluster($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDataExplorerCluster, $stereo=AzureDataExplorerCluster, $tags, $link)
+ !endprocedure
+!procedure AzureDataExplorerCluster($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDataExplorerCluster, $tags, $link, AzureDataExplorerCluster)
+!endprocedure

@@ -1,12 +1,17 @@
 sprite $AzureBackup [70x70/16z] {
-xPDPeYCX24K5PR3slzyUZEKZxQt1L7_c_6Nm21TCJ_X2EOkQIE473h4V2dtaOB5tyYSIcv37aeOkIhBPSmqPO3aRiIFeKIZh2PFQCJTp5GEi9SDg5yY3L5U6
-hNwDhKem9gVH5B_DiOTy0JbCrbVGXF4r2jusNuHE1cIgeggstjEmg9GTqO-ACRVc09w5SVSw8kBr33JjboGp4n7dEngR9Iz76j2rnh0alS5DKu_HQLbcIIz7
-ZorJkbs2DCSzeLBGt38g1ZV4ekvcb01doSG3MhTE5LoCRv1Gky1VtfEnAybqZGAB0aSDizYRSRNTPoYOIQBqRoNEFMH7rVGD3YAt4dDzLIeX991DwN32K3j3
-AS3jAsWf6LiC34LYTOsVzrsWfVMunwmXgWhN1bTJHl5kkctYEdfg6O3tJRYX6kTjeq9KE-EUV1oqpRFiSNWB1W07DVxEjLsk_R2EbG5Rd0yjv6rI6WvZ3YtM
-jwyM0Mc0bgxJrGKBchJQcFIgXUBze12SxeI71MDAYSuj6KswhsaDLX0ls3hu7Elm-zcK23waC1mTbcCDZqSDUsgu2JFxTg0XBWqOND_-TxH0XWHZjpNf3FOj
-KgL0-7gTpF_I92K3-B0Pk8MU7kD0ieu3oJgQ_XTVVWC
+xTD1jeCW38LX0GX9ti3zh_Qr5Niz72MbPjf_h9-9okhfLpro6iXd82U2V0Zo8SYF-1NaGf0BGJu2kGmqW_YLoXDzOZ9FPoZyHJu4LPU2V0ZoASXGAb4fH7L2
+oGE5IaPqQnXXodrqGs7CWGgBsHd93KanXX1YogtwdPAR4PPt8M_nj09aCz0sJ_bI0TAFGuPY8YXYfsabzGAMeYb4LKIOwwxqvMSoI5SaeeZ2vJ2iry7uQmOg
+Ls-6FY1wYYu-4za81c4Y7Z1FfTYJD8NZFZnVBRKVou61KVA2saDJhw3rikPtdoNeCpaf5YDuy576T813n04V8NLf2IqjnZ1TQQGmzk5AAeNBTdc_9OfWBcR1
+yp4NrfnZ13TMvLJUhqFQnputKjhbWRU7qtupjJ_lN9XMp6OsCX1h9S4t5PoWEmg-KQrFWyjoOwFkw66GSS7uOTxdEJmlivLaA7BSQwyKpPEa2OfcSnyWVTgg
+KCPCob16Z0gb6AFeW0an0x6O8yhZrb4g1cCYjbCCmtPQ5h9EjochDo2kWBW2ukxN0m
 }
 
 AzureEntityColoring(AzureBackup)
 !define AzureBackup(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureBackup, AzureBackup)
 !define AzureBackup(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureBackup, AzureBackup)
+!procedure AzureBackup($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureBackup, $stereo=AzureBackup, $tags, $link)
+ !endprocedure
+!procedure AzureBackup($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureBackup, $tags, $link, AzureBackup)
+!endprocedure

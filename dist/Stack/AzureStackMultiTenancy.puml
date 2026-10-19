@@ -1,13 +1,17 @@
 sprite $AzureStackMultiTenancy [70x70/16z] {
-jPRXqgiW34GD9DdW-p_mhQMTQ0aWtlcElzhMCxjnXhZz9KJqduOaUAESdZiKZZvC9BZ2JoIAN-Iv9DQirtbUAY665ll4o7AKUPX9CaQFx7yf-xxRA1oSk1BP
-_g6a1OiTrmkjZVSJlJZajpLi1_k5JffaJcJ1rLAs6Ei2x-FegkMuGNuj5blKUeWNEX5Rs7eSaooxCvel3OThZOMs4B4OVlVjD-g7ASTLGUqxcQwJ_LR7QdBw
-jV3MGqfBtYeoY-9mawHAslccRO14TIhfh75v0md0MXmHPVTaFndoq04e4SCEm4HumHJDXST7NI8duq2pFsZ7KX14yK784LJ49QFP41oN97onFOBx4cJwmfXe
-KdyJANrHJ3GssAp9PtkYH1fnISOLzjcUsIC6A-GqsradwPznTRxDzzzEY5O16elGWTeldv6AjOyfMqiw2fc5OOg8bMQXm5gOYCGi32CiPcwn_faD8hBO0cQn
-isQmFp9b2oXxuRS5hadzNIQa5h7Bnu9oiLXCiX3bhmLdIx8OM0JOBLObyEFw9YOd2rHUfDxkw2FibijB8nOauAj5VSaiz66t_BoLh_HfB4ZBMPHRYrArw4AV
-rW9P32EX1NbRIQCSMq3RVPXx5hqlINqB-BP51XPDYtrYoyrEUMAHEnAIYKNpdT7EB3SdGonTYp9jjyaIMdfbve7S8cd9u87Sehmky43LqiHO3YJmYJvdGR74
-Fm
+nTHPZjmm38HXs4sogDbq_zi6NeWcx9gE2AMHt-yVIfoblp5iJGcAimb844quk2MJI5H7CAyqyCfJvXcyHU7CnqURLJwYeTythdoa2bCSVXH8wfCh3i2FxrOW
+EQx0Vmz4uOo_Y25SGLcX_H-5CxNZriTqghGHfNax0rU8S3ADrMjAvyWHGtXWI4GLdXFaR1G1044YJ07qiyyX1Nksh8fjaKEM1NlZrqMqBiyU2EQ3n918ac8u
+-w0n97eYAo8VOP1xB96WmW0vMoAWmY2Lxlj0hb658_c-YcZWmhYLRflobuhVEkuhVYdU1ABuFTqLysiVUwv-PvoqRWzofsEQghSXPRklkjCnAkf-LPortTUv
+0jcKnFo4mfuaJceVJNO5YVbTqSMSzQ6dWfOLTzxgD9DGCAB0MP2dukb1pIkV9kLa-gvKKiaAqACA0haeg2lDvLyeUbTGLao8WgBYGfLMKvGevJ4cH0bcj428
+WYB25Hj5eAyKrAPm1MOrX6ynQyNtSCL6flnr2_f8C6LAr4SJqudVEZOeAzBBgIdxNrVFJ4FnFX5CDwLFP_qz_G4
 }
 
 AzureEntityColoring(AzureStackMultiTenancy)
 !define AzureStackMultiTenancy(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureStackMultiTenancy, AzureStackMultiTenancy)
 !define AzureStackMultiTenancy(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureStackMultiTenancy, AzureStackMultiTenancy)
+!procedure AzureStackMultiTenancy($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureStackMultiTenancy, $stereo=AzureStackMultiTenancy, $tags, $link)
+ !endprocedure
+!procedure AzureStackMultiTenancy($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureStackMultiTenancy, $tags, $link, AzureStackMultiTenancy)
+!endprocedure

@@ -1,11 +1,16 @@
 sprite $AzureStack [70x70/16z] {
-xTK74kCW38NX9-b9uDp_mCimAIw8aEtjc-RwknlyAHZbhL3CILaHcBEovD-iX7VZoLYjA3fca_yh_ojtLXj3v-baNQdCVLlbVuNQHJAvM55qJ2P_V4L4HRwj
-edo8hwuOTpmMAbd4L4NLUkThAcmKTnPivEEAaRP_HeMaVLfHqavFcdUbJVjbCaOLaZXL2kbrxlg4xTk-8p6omJTLX9qUArjJQobHIgbR1WzwITmhDLvAKidk
-o9tLE701ccXx4btiAoG5LumJLpJUzZHqlgiOgRZIk71DAq8ILn83Bbb5nzVZCSAiOkJQzNIQL3YiU8mnhHYEn3nIidWkZ1bTkYyQSsLhQkcsx1bfB5GEq0bf
-auYYKSz3htTNiaT3G1k0QGPt99DJSGWxEVNh-9iMz2dRePc0Tq0S9FyNa-aWPs1oay__EbCxunCaEPd1GNEGSb1lTpXGMwvqmqedPxiALolY9wAy4vJL2g8S
-EVGHOJcgUONrn256qy6QBQ-Wdjs_ewYVLAnUHTI1swG2rZMtQGM-69bNO7LxwxQ31Ejgeob8ARqqTQ24xnb-Cry
+xTG7SeD038NXGBJIhgVe_gTrMUODBE8nIgz_OflwqV6VagLA89-cs9zKjFJ8O5QPdtf21fFAj2u__MBbNy7oPHnynY0KNitrUkLVaRcdP32fu2Qv3yvnyECL
+MKegbH18BQuQbKODL58AHy1abOZWxAhSMqvCoIimeDHQmBnKyLNfp99XU1XKA0I1OYAbdjV8uK39rGRZrGf3eBJxdvcfcTN6_jeEyR5s9tJj3Xr7JYkKgaDb
+kNMqjOQtDnIEkEckCcDLt2yxnMCQAnDHwAwe4eOh4H4zJ4uKZobfVecYB4ahUjQKK_IyUQEKGP4iWbkuMgyoHLCA2Wf7mbGB2XYgICzrY2Z2aIKttLPNvE8R
+9YhM4MGw51KNEA5LSNfk70cBAXhs9SMuxReWt_Hs1RsFOg4JfJ55Wk8KgNHVt6hu0xAVthXIZpgU7XNEy2vSuGn7cX-KHv0VrH8599P5eB1I0f1lrWq
 }
 
 AzureEntityColoring(AzureStack)
 !define AzureStack(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureStack, AzureStack)
 !define AzureStack(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureStack, AzureStack)
+!procedure AzureStack($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureStack, $stereo=AzureStack, $tags, $link)
+ !endprocedure
+!procedure AzureStack($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureStack, $tags, $link, AzureStack)
+!endprocedure

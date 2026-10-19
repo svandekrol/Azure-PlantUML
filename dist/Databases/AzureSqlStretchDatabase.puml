@@ -1,10 +1,15 @@
 sprite $AzureSqlStretchDatabase [70x70/16z] {
-xTC7jkCm28LXmmMaMFlVxxYIdc19y_ftMkf_hjlmFP1mXuQgjdQWAw7w1kiP6Wxc4jT4lE64gav8OuVr6LIVaAhJ0trDgAdX97128X0u8H4SF9YgqyDw59eY
-3b-wGZBHcRpZl-8NLodsjFkxtrNXtVKxEbGXsQt_s_6tgzZaVSNCsYi0CzEYia8Btj3gK0Ky1m2vXBKLhl2Sa4VcJh0oHyIzo7Zb4RgewEQoGg4AvWnKpT85
-CzKreg5A0SqWQyOZQuD7YrNA2RHXneJPtwTI7bLev-_AB0lJBLYPMUWQ5PTJKiL4BHKNhhZHFQtGWKg9LBx_5kcoHVfiIPFgBH61BG5VPSlVbhyjVrjERxOW
-LE7NMz8Gb9vl6J74QNwqPKmy7CHgEU-Hd9E2Xg_e7m
+xT854i9038NXMKcstlkV5djrpPBY_8oWtuHCwi-8BgaDv0ymLEDuGYg7PgaDf3RY7QQDr8CWhpQGta222r4w55DG6qXl89doLv3iD7U-zCsAxwj7ByKAVvN2
+JBohC37pXiANTXNZdRFMjDsXD3-sgADY56UlWFEZN4D95JiYPf140U9N0ZDJ5Z83XPg6YXCfZAKGSnZ4J8HzvI8bPtDpQAmG_exB2vcIPzuWQzsbmTMu98Uo
+kztyMihEcb7MqON8OnIKfKbW8Wv9ckKeLe7JTOYIl-Si-J6plAKI0byUCyNAzY99C8iWoRsyVfRNxmNzm5x-z_A_5xGr2un8HuC0cizIlsDd
 }
 
 AzureEntityColoring(AzureSqlStretchDatabase)
 !define AzureSqlStretchDatabase(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureSqlStretchDatabase, AzureSqlStretchDatabase)
 !define AzureSqlStretchDatabase(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureSqlStretchDatabase, AzureSqlStretchDatabase)
+!procedure AzureSqlStretchDatabase($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureSqlStretchDatabase, $stereo=AzureSqlStretchDatabase, $tags, $link)
+ !endprocedure
+!procedure AzureSqlStretchDatabase($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureSqlStretchDatabase, $tags, $link, AzureSqlStretchDatabase)
+!endprocedure

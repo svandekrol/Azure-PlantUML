@@ -1,13 +1,19 @@
 sprite $HealthDataServices [70x70/16z] {
-lPO7TkKm24L1jFslU1fstXamup3jfaSwrpo8b4__13xVuFqwO3M_CA4E2zQL9ud_HDt7MjOV7QHU428WNh533tZ3y0pp1tG8L326v5t3ABbh8EaS0gTOQYZp
-4ORbnnFFyBJY7rkdVj2NYfM5Yg2jWXarLFsNV9JYcb_te9XRoBu6dJaf_FrYCX24zkESYOojc8TjICSczVo-amE6iN3iy-qzQDBQ0ulKatL4vJ0bih4WavJB
-WtLV2tx2fIaR2rfTRnUsrqd3KlxkCF_wwmhbZF33TDd9niBUiFEcKUBHKbCTdpZ4H1mbqLQJjtO4Mcr3pT2Crqj46VjAmscnI8sYCGqTMsmPY3Gk3I5InNYm
-15sM4p_02H_BjkO8lIqK2Vw13HtKBd7wmE92fiwS9qbyWxEKZ7Gpjx1AuWU7OA6uaIcJYJL7Ie16SbKOuPLgm3C9zttS618EXYhHqbyiQRo0E2SjA0QPoECL
-Jab-RSKuVKPZT4cK273TaCOOa8-fG55Q8RUMKzum7EFK0IzzuxpQe-7dAXy709m0ZDzEOTBFLB6cGOKcH_rsOBTInxl6CmFZDIGAgNam9y2GzF2EFHqfckVD
-tCzY6pUmk2YlQE92QSAYOoKBVZtYqV0I6PALPZXjEmqQm4Moqnoib3ZxQdZeoQR5DZPsC_0NoLQZz7balhCtiCS3JbjiIBD4tjFiKndJRoBjplwZSep-31aA
-sI92_ucl
+jTJHikeW38NX092LVSNxl-sP3cj0QK2nS_vBrQy1qFe_KdR-_lmHTlW-2q6dN6Fl1Cawvnjh9WQHtUVKRnv49AgNZ_XC596aRYxYBtglwAw1A5Vaza4fGxbc
+2VfRHBGfeZ_MbNmf-OcYL_9WITAL-62Os9KYVMToIZcVAsEOe2b8A-GZHPdSYaM_AibGYZZETqeOYcPffP9pNrWwLJIydbD9t9zoffJvsNJYaH9ltoZXgt42
+bRuWVduUPy_8g-B-87bo-KG9UYz-EgjyAS1UqVHXZwF4hSBodf5BCSFONNKhEoQBX4g66v0F6JxyKio0XYx7BgkJGccZL9YrSNOt8_W71GiYiIba4eTP8U8W
+MQWKQw4iXydk3OQPYd155SRYwh0ZaSamX8vKCuRLPIyp0lJ7IfmKIrpzdKbl1Fh7hseBRyD40Ef7Wd6twgnO-wUwFDmiO0W3oLOhCyQL5kk1sHoNawmw2kHA
+xLE8HAmw36y0R9y61wdJSice-I49zuIAmoGo2CGMWuWI6VtPA3Ocj97dD3OZueQCq-QzPibV35TZg5ynuEyqnOnN8wYFL7KOVTs70XeSn41bCGmP8f2f26jL
+jcOYf-PcZv9QYvDi6UiVVZTWQuIPayu6gqSAn3ttlxeEi5lIAuEskilkPM414tB2853HQLCEcSJhEXc7Z47VRdRz9eCv7HWC3n66vyYQWOCSRmvAFGuF1s70
+GuHjBydvxi3gapAuc8VXm7ZOFm
 }
 
 AzureEntityColoring(HealthDataServices)
 !define HealthDataServices(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, HealthDataServices, HealthDataServices)
 !define HealthDataServices(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, HealthDataServices, HealthDataServices)
+!procedure HealthDataServices($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=HealthDataServices, $stereo=HealthDataServices, $tags, $link)
+ !endprocedure
+!procedure HealthDataServices($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, HealthDataServices, $tags, $link, HealthDataServices)
+!endprocedure

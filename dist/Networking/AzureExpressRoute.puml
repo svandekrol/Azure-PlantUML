@@ -1,10 +1,15 @@
 sprite $AzureExpressRoute [70x70/16z] {
-xTO5SWGX48NXrrWF5FU_RcIaQphAlec7hsJzHrPO_1RJD4a8WekIhX8k43LoAMB0odgIwQauScLd8n1jXza5PNUDhKG0YAx2pgMm5TkN9B9V0IMe4q1fLKzg
-uoAzBsgMtXiNMJCMOJAjhxGyDehsLICZ04G0M8QA6Ckm4PyX8cJ6HyYCZv0P7o4pFa9cV8JC-0YPyH4k8-8YWnaHmCJjArSjCfIfswiYLb9qLoqoaAcwAm9_
-TYrxP22p-FEkw4bL3D6g9mL17HcaJiZxCIhRbTQ7D7sK1N6xOaSDYctmssnhotPecM17uJ9MMUom36ekpoKVaqctxqiwffAZEd6GEj5_NX869VzvWRYRmuh_
-x2Au2949RdeHDucs2VpVT7lLZp9Dqpq
+xTQ53a8n58DXl9EJdFT_MjoARXtE_WZMV3XS_v9wlHxMDHlRsf1s1fIEF5x1-nKwz-qAfIe1L9GGCsA2cOHOFaQo2Oojoe6GQiQsHQoBjar2pB5gShX2Giwl
+KX2HuRt8y5faU2iol1GPteaChrI6DkA45nA3PIK8CrX6nAf4o5qcOHiXG63aDXFefnHWnWjY172wX6HUb4MG0YvPKH6SfYI0uzSdLZsM2uSuzOelU_XZQNzT
+k6n5PTnCEnA8_WZbx5LM6BvYqdP0JHVgeE2VLA_NMm
 }
 
 AzureEntityColoring(AzureExpressRoute)
 !define AzureExpressRoute(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureExpressRoute, AzureExpressRoute)
 !define AzureExpressRoute(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureExpressRoute, AzureExpressRoute)
+!procedure AzureExpressRoute($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureExpressRoute, $stereo=AzureExpressRoute, $tags, $link)
+ !endprocedure
+!procedure AzureExpressRoute($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureExpressRoute, $tags, $link, AzureExpressRoute)
+!endprocedure

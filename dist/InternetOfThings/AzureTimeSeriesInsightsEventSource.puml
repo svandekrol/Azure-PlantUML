@@ -1,9 +1,15 @@
 sprite $AzureTimeSeriesInsightsEventSource [70x70/16z] {
-xTY5iSGm38HXhOpRVy6FKKTsfBa9_GLyuHWaAaskz0EfpLbzLvgxDmH-1QjKogAi8elYH-jGJkLKjDJxfH6br4UDAFNfIbwYPAi8-hm2BKOHgQHCAa2sYgZE
-AqXlYcrUWHQ_yj60qcw7xs8Ku962iM8Kn2X0Z88O1LYFifwx-uIthj_E85v5940Hlw93_phU3c-bJhzII1fWMacDLYdiaqhjj4edEQcGHabaWCARIWzHyYEa
-Fb06MuDoAgVYNmdt_g6uMvaYRgI6xEAaY1qbI5Il
+xT853eKm381XEcrZlVzfd-0-nVcHHR_CE5CskMoApP13UHNYY2oLuIcKLtaLuyn3qSRTei9j0OhAeZ36x8iQAumOFXSGUgIKqx612WWrLXYHmrO4l-HV6HMk
+WD3fIkc0Mx5cyO4sjx8ST1KEHO1VUHGeKfMwF0haKU14ocbsjzZ-rk5oeuaaAyp9YW1ELeH1zb5euIaLXKWU2YttdyX_7024dS9UYaGQAqWKE1TJZmF3MndN
+GuOAnoYAACDSC4LXX-BNEPHNUPMayDzVIU-M2fz6oTGN
 }
 
 AzureEntityColoring(AzureTimeSeriesInsightsEventSource)
 !define AzureTimeSeriesInsightsEventSource(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureTimeSeriesInsightsEventSource, AzureTimeSeriesInsightsEventSource)
 !define AzureTimeSeriesInsightsEventSource(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureTimeSeriesInsightsEventSource, AzureTimeSeriesInsightsEventSource)
+!procedure AzureTimeSeriesInsightsEventSource($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureTimeSeriesInsightsEventSource, $stereo=AzureTimeSeriesInsightsEventSource, $tags, $link)
+ !endprocedure
+!procedure AzureTimeSeriesInsightsEventSource($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureTimeSeriesInsightsEventSource, $tags, $link, AzureTimeSeriesInsightsEventSource)
+!endprocedure

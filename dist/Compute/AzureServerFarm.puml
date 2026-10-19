@@ -1,11 +1,17 @@
 sprite $AzureServerFarm [70x70/16z] {
-xTG7hgKm38LXGdASll_j3iN2NCa1PthxLLwzdmvr-Qro0PRyi-9XQtrK0cpvRr3-AvIhLgOP9VLHoQvGxmKXg5OqAxMtiAKoTK8fXuAkP5PQp-58KwQFY1Ia
-cPNKUzmGL4N9PWMbzvPBKq-kNK7MX9t-_qn_3uMY5aqfLBjUfGcbzPvJLYaoAxbtXAsiAEMxFDFj-ppJF_dzKXxEIvrvxxOOOtwwHcvrBmgeTRqMSIfhs793
-XOjPAu8BPtwaM0hIgYcWrzW0OUZ0QiGz_i7DAR9ZDyJnRa81RWP7scd6gn74-71Mcw8RudYBWe4XfySP5GqGnYkAWb0QvsNCYnBJLQbR9QShaZ4FokUKt8vA
-akvd1eOfejGanTiOcAQ8ee-1QOee-XWCfo3fYeHh34nJT4Kk4qnJ-4hN_AbSzmn6Kv1VeuN7Z1MoA5uK9O0CIbmMB-T5owPmFrEfjyhNAgNKrhYIorSg-qTF
-eswWgiHHefoVRktKlbxPd5oPgbDAkUA3aMyuKLQoA7n6gg9mRj27iWcdf2lZHE6FC_QrIcM33snAIJUcNLL12Ys_Nry
+xTC5Rcmn38LXGUmOOit-Lrj8ftw5arpdCVs3ea_dqkstYghz9Sf_XTLHoYUAn2gjAnpXlB1wMV4Or9xgG1bbPOIrvoX01ugssJSf7ZuH_gOZaWX-LWmeMbR8
+8bnj0CIfhf1ue5p-FzFVHUceGyK2PtoWZ1ZQ1L9SLZHYFjEArfGLtppJu-S-q_ijF_cyS5nVe_RKNg4-0ZSwlTHcEsKwYkhy1baxL2YDfLCtgFFIORfufV4S
+BHpUbWRtUmIPlK5fP8oSmf2xaUNfAIdGc55TeJofIwUez6MC58omh9jhIagNpFmvbQoNbFTJTCniCQOq9HKNF6OpXGGeUCnk2bBmcDqKfE0njIbO4QZWAVXA
+fzAs2gjSllOAjKQirztsMuZuKC7LbDdFLVnDTgHqpSnyt7DJ-qh5JUqLCKTAvyNhhJByPSxKeBBihJAPf4uKo-PPyTS_zgLZPPwHv5B9IigpC2MehBCipyZ4
+_AkLj_VBssudp4IGS_lzUWG
 }
 
 AzureEntityColoring(AzureServerFarm)
 !define AzureServerFarm(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureServerFarm, AzureServerFarm)
 !define AzureServerFarm(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureServerFarm, AzureServerFarm)
+!procedure AzureServerFarm($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureServerFarm, $stereo=AzureServerFarm, $tags, $link)
+ !endprocedure
+!procedure AzureServerFarm($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureServerFarm, $tags, $link, AzureServerFarm)
+!endprocedure

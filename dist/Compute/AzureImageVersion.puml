@@ -1,11 +1,17 @@
 sprite $AzureImageVersion [70x70/16z] {
-xT274fqW54LHkUTIzF__DnNVxE5144rFzbJRcYFRRvN5wsc4-B5I6YXbITdlAF-L4lrw6Yd9LxA14fSK_LXbgU-Y_5VyEoXkmVoUGkDpUgGerEpTyRd28TNn
-DOK6qmr51E1CbGG3Gv3vYWAZIGkAr3TCFbVEefbwS-JkwUoAqd7CVLM10-EEOX8Ev9x2ETLOLkYO-rF59FyEIZ0zLqAGcMufCBueS1OK65KnwKqnJPHgGAbp
-gCJ3fqgWKfrM0TDHO50nKwE0wIXXe5YZWA5IyxwYc1gbCbIOgF1tg821mg8r2esSIuxb84E5kK7H2oZxqUGT1UbK52i1WGoKdDwppueSnf2XqkOcmHWoKBf5
-6CCIb77vc21Nb393e3n1vagU8bIk8difEQSGWSoLdK8vtufR10AbNy46tAvAHQRAoyWrA42sD5DeK26oXV8DPOVHA40mQJYbv9xYGEOAXr11CwK0UQ00MLNO
-ek9BYcs3JDSBss_SHm
+xTG7RiCm38LXYAHcr_rlsyZZ9HKb3tQt-O74-_Fsou-gdEd1WkY-JxahoSkP1agGZr3yJr8gS_ZdHygPxefyW2BaICmAZ1g_Is6tH6nMcDmr4fCYgm77eB1J
+4PzHS3BQaNqbO0KOAZwXyEXOM0ufyu-8kMk8O9sX4doOVfukCRM8rDPrmb1PcnHYE32gWWufamE3nQpWj2R3fi0X46Q5cCMg31YpuXmJiL61CId4R59WJCha
+AAMK8ug3CiLQAJiA32ZLKKhPKc10WTCeHIi8IAkGKefMa51NOH-KKZeAOgN0W096ASWJ55mI55FA1OqKE53u2kJIDbPmUVZcP2A4be4IWuwhmW9ZL5z1Vj-O
+KefA6LObbXtaY9Bs4IXsH2bM1Ch1Qv9pYfSQP4_9jqAAEszZh2leNtf3OFxeon13Z9qVZ6R-lDcpKhgbrMZ35_E8ac5qbFoYwYiLIR6lQ6EivDXD0sCbASIa
+f6XHT3zVUVd1lG8
 }
 
 AzureEntityColoring(AzureImageVersion)
 !define AzureImageVersion(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureImageVersion, AzureImageVersion)
 !define AzureImageVersion(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureImageVersion, AzureImageVersion)
+!procedure AzureImageVersion($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureImageVersion, $stereo=AzureImageVersion, $tags, $link)
+ !endprocedure
+!procedure AzureImageVersion($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureImageVersion, $tags, $link, AzureImageVersion)
+!endprocedure

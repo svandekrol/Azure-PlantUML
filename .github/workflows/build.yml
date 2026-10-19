@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-24.04
     env:
       # Icon pack documented in scripts/README.md
-      ICON_PACK_URL: https://arch-center.azureedge.net/icons/Azure_Public_Service_Icons_V4.zip
+      ICON_PACK_URL: https://arch-center.azureedge.net/icons/Azure_Public_Service_Icons_V24.zip
       PLANTUML_VERSION: 1.2025.7
     defaults:
       run:

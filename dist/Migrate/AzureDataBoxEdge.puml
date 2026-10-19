@@ -1,10 +1,16 @@
 sprite $AzureDataBoxEdge [70x70/16z] {
-xTG7RiKm30DGRQdtFt27WnZEGiryh3yULYT1CMdfHNryY7f4PeQRCjt2bXkXXBCyGdCaJpbOv480ytXU2gG940DiWc-J_s1Wb6k1t7DDWIhtox1wJM2wnfOr
-n-YIrxIu7hNc9PtJWj0fAup9HHEKxuEuZl2DiosMaPa5aUqzuRPmXuAKkWmRUTw9KRUT06AO6hOZHrz0jZCEtcITZ9y4L4Qj8o8nCxKcWSVDQu1ecqcLIS2R
-dFej8yNA1FLZHjRurwGKMp0Dn1OrcL8wTc5LVY15kONqXTIQdBreF4TR83LGIXnIx4QADNBe8b3Ake3s0ci6a1AacoVDtDE052O-l7Lm5oSw_mj0KgfD-c1A
-ZIE8cEboZ32mI_4wGjUhJQSuhNJplmv9AJckq00feRIXTaxb4jEHs2aX3Ej52aeKI7aH7ny_
+xTG7RWCW38LXXi7GvVlVjaJ44ix4htlyRNRowMNAx-o__zW46kV1XWr7R1Y2Cvrl1I-neOWDHcplen2As3v5QIFU-Bj5x2VNukR8CSIlD6SEnEaqA88Hsvd2
+N6jbnfb1r4B7IiKORfNM2YFCtB5M_GnTg3YKRX2OiKWA0MAwv4M98QHnShoA7MDeTdXy2gCyhEGT8xh2b9rZQ9QjegzCt_jJnOv9D6jzCrN2ePXpN1NsAVF1
+aKP96Q-YJoSlhn2WcDTqELzTIZhRaW157qiZDJoAdBpJKJLC2HgmHLH9mUHL15Gi8ZecpPVuS1B9evpzNkeAXoBQ-M-Tnlk8qDLuqxZDb8ThzGSbDXpnvL3y
+Zlpo_lll5G
 }
 
 AzureEntityColoring(AzureDataBoxEdge)
 !define AzureDataBoxEdge(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDataBoxEdge, AzureDataBoxEdge)
 !define AzureDataBoxEdge(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDataBoxEdge, AzureDataBoxEdge)
+!procedure AzureDataBoxEdge($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDataBoxEdge, $stereo=AzureDataBoxEdge, $tags, $link)
+ !endprocedure
+!procedure AzureDataBoxEdge($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDataBoxEdge, $tags, $link, AzureDataBoxEdge)
+!endprocedure

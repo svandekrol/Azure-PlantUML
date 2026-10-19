@@ -1,11 +1,17 @@
 sprite $AzureUserPrivacy [70x70/16z] {
-rTLNkdCh281X4051vp_UirDNUIJ1vFpjtRtaMvOBu9-0fRA8S2NylC6ouG8VgNB4-Cr2DWKM5PcXxrUolXgM048UIOGX3ILMLkuu1bdo2YxSSemMpZR6AySI
-WnoMY8ggVbRHozicNr7H6EHKVKKWX_GLXXpKLmYIz1M4fBfoB36D5GYaphTfkn1O8C-N7IaiqJQ5i0IdAo5O9S5ArfHpHWWMOHLXt7UqL672jSO58XAB_f2A
-Y79HSNK44ExHuxUBmvLnP_jrNHm01JT5DcfZ31DCHQJYfig3ZMxMpFgGt2Z2ZTortjlpMwFCWAR3sQeswyDL7jI72H6zcI6ytz0OtTtqoDpxi3VZhEpETcYW
-ZV1GZkTRynMPm1j9LqWd22-A_iXLH2SOBpXTAJg55vgki4vLHAHyHUS44ILT8GqKB9gki0OO-Lvf0Tig6a9DLug6v56njnLgR_MeuWPttDvoZ_xG9ZCiOZrQ
-P0tdSdvBrk6X9NYVnoMiv1VZ3ciLcsHi43n9o_1kPrrXWosb-pbYi5TQXfqoRd1IQWAx7rPIu3FMW-siqVkkF8WayJNZG-4hvDrx9_YM3aFu7iAlyHy
+xTG7qkCW38RXmGPz0Z7B_M-xyLWEAJ10z6_V9xsz4QIKFm9LveOoDnIC4MMDA6-CA6j4hLNi6VfzAg2loD0_Ky5v-B225sMAlcTFcGFrl_9Y7B5NB1bMPHu3
+uEDGBLKKzvGbreWoHbGWucSWAcle9cp45JPFDsjp73Rdza00YBnpBdps9xMxHpkfjGW5zoZK-wSZkgHgepj8Far5oBlAqoNc59avfcw6dhcA58lm_MgxGo_s
+vxq5Hv44kY1AFlGYAZpkhMIH56j3kqadwbVg_X8XCzeuzoBArmKXeoTt8whkRR_2euhkxpPT2MW9xX00p5NGvWuOL6HKEPQqZofv404TUtjMU3mBUZQtwNFv
+yrdWdRyg36wTQWLz3bUbOweIS1BkYBaenf14RakrCfRILrIYS9kiL5XYPvHl2n5EOXj5IMgESgzudX4RQueQMHWcINmbkQnMMEGrebkxb8cINYAvF8cHumIH
+JcH9pcABg2kJB94Zaqo3r5Nf82RvHefTBZ_6Tm
 }
 
 AzureEntityColoring(AzureUserPrivacy)
 !define AzureUserPrivacy(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureUserPrivacy, AzureUserPrivacy)
 !define AzureUserPrivacy(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureUserPrivacy, AzureUserPrivacy)
+!procedure AzureUserPrivacy($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureUserPrivacy, $stereo=AzureUserPrivacy, $tags, $link)
+ !endprocedure
+!procedure AzureUserPrivacy($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureUserPrivacy, $tags, $link, AzureUserPrivacy)
+!endprocedure

@@ -1,11 +1,16 @@
 sprite $AzureDisk [70x70/16z] {
-xTPNegCm38LXoKtdwCx-rpjSqi1sC6Pw-TAUyYTKMUI__pI443yjdwhptqwv56kKd6Cu6IXsh0nJcWo07G9Gub4Z0-F8ofBqXKACAtZgTXARo765KAcL9ZAi
-aEbxHCXORqw_WWMnw4P8bGtq8d3_ykAEDi8iBqgYgIo9YhSLavVO-oiVJUMZYJZb9NGY1gywphhYRYfFsaPMe2y-V47YXVqAcqgh5o6t5RyMSVYkuZQeeAcu
-4rvLVFwlWDvKt34L8Tpt5Q6lC57n5MKZ-nrFHK2_Yx85Vm9m607z2RAZz1sW7_4TI4NXqugqiizXbCPq9yjRcNuAaXmAXSD4LXa8gHZujaJ2IZokw6P8Wtp6
-k0BixYYaoSuhiT_8rfZlP9kMfAB5BiYoL-oIQi8ExolMfxBHBt0FWstIVgHXZJ9VmNIbxS0wifuxpiTJismhB7P9vgu2kw9mNo7AbKXT8MqQznKXvpjSoOPn
-jjDP7KhW0oOI9BHPy9uhWHkncI4L308B1Ab5S9AfTEIf3fAyaJ3Rw8l6CUGW8x601wn97CxPNY06cQKQOleKmqBb5_dlAm
+xTK7ZYiW40JH7vUkSU3-fzqSSED1U6Hbrm6UoFH7ZvhLRqjjaNQ0zzeolNO7PCsmZUGEc98YkVClGN85S0H3zXJ-cL92O6ye4W3IZ1YJ3eKu7Byw16gQb734
+5Gv7Amp9b3PqE7g76Oc12KFUamtc4BWIrvJcIKGS3eS8q13NbIXiCeGfxqm1SIMs4Os8Aw7IK5nPEzbGeayCsqWCY2a6vKX4eWoX9HBXY3CZ9KSWl4CtfbAV
+Ao9U5V5AHXtQ-U45aGJoZz-Z3Gc-CTwJsb0wZXkh6buDyN2arfCXnVOKVRN190ANgQA8gRieMcyJsQAuiLRKyYIrD4Q5LaiNIfN156eZSGKL1cBAxOw-46Vs
+7GaIPHiIu8epWBGSX276EAKVJQynrpqAzRcguLKHhqnuTS8h26abuFuzUW4
 }
 
 AzureEntityColoring(AzureDisk)
 !define AzureDisk(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDisk, AzureDisk)
 !define AzureDisk(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDisk, AzureDisk)
+!procedure AzureDisk($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDisk, $stereo=AzureDisk, $tags, $link)
+ !endprocedure
+!procedure AzureDisk($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDisk, $tags, $link, AzureDisk)
+!endprocedure

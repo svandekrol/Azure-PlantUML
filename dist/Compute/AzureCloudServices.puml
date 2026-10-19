@@ -1,12 +1,17 @@
 sprite $AzureCloudServices [70x70/16z] {
-xTHdOkCu30NWXmxi_G-y4IMFQL99A4qltp-tPnHI-CtzGs8URzoLSGzhlB0RGUGnyQiv6gSCLtYymmchA3v0oo7vWTMOAIJSk_SSApn70aW-AJudEG50sQ6B
-Gr7BJ7jKQBRQamsja0aQCVhoAUCJsGbCbefX6yOwqCydev43Fx9524qCyIEoFD4-yNoCc8VuaUOPttTiQfx-ChKBPzwehLZuZQNsSwFL446JmKrwVnHujHB6
-XjEFbEnxDy8WyXGFjKINCWVfT8FtsDZN6yaRtJiIFtz8S0wwjtJ_N4KiaqxALXno4ED2vRaLof7F3mA3Pd1xqvbQueRKJO4-POo9ToyVdnnqpubjwTKXzBG2
-8wuP0r8Tsw-rQulBQhFG8ri4WDGi0HjJh3BsLgegMVC8pweKgJEAgASWW4kPsPC0pThbqFaeaVNWhN8FtfJsK-2XvX5dLzScZXJ3fdQXclK1crBwMgZMU7Rj
-6Lxcmb6BmgkZZnsLjAsiocdJ40kZriuwUV_iHgrAzEtXXTIgWFU5WLrRWEkLMWnIdJX6tCgiPJp_PNIzB3gxxAPHQ_hLUdqbD5bVHV4DOW87olzkIppvxH12
-H--515xHZN9ACI7BQncESwJciKZmw_dddt_-1m
+xTDf4jiW38PX2OJqgHltlsrjcKnndGNZxisJoTztX33rB_TclQk9-OxTTJdIp3NcCx0Va3630O__OvCScAgX6Sm83ZAHe3Cr2cY1tic8501A2mKiorH5YBXa
+2bc8g8nbi4C78vKxQzqJD6VMgXGu9zhOYmhkYePYKMYHS3FUQBC0HQJ0ThF8UAHmN77cXK3MOGgQqOXGWF8gGIcqpkWaJ2jk5JPGoDZCLM3zPOTd4MiFM7Ex
+tCIB38r93BsxaT1TQ2mKbbEIRRRME6JytkrsnTiYBCNnZWwZA8jfYharCT1MmKLBeZ1GCThXE-z8xsVWtu1sn47VItv7hTxRtahHmZ6znq8pjq2AyZt7Id4O
+aAFYI09teOMvMyh-kcAyZbmI9qMik3if-nFTMZGcL-D5Sjdswo6j8uwH_ksXqAfLJ0J3bSCi2NwQoRgCRI--hiXyYhGxSiz4v9EsLzk-5_P9J3trAJRmjGzy
+TfcIIfnACv5DLjpQYjqTvkDglNEkxEV8iU95pC-f2x_gGrryy8jgk5u9_k63p_zgYCmqhvtfIjsPd-HofzurqVYZlBszVGK
 }
 
 AzureEntityColoring(AzureCloudServices)
 !define AzureCloudServices(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureCloudServices, AzureCloudServices)
 !define AzureCloudServices(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureCloudServices, AzureCloudServices)
+!procedure AzureCloudServices($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureCloudServices, $stereo=AzureCloudServices, $tags, $link)
+ !endprocedure
+!procedure AzureCloudServices($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureCloudServices, $tags, $link, AzureCloudServices)
+!endprocedure

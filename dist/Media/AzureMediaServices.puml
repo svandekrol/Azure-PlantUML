@@ -1,12 +1,19 @@
 sprite $AzureMediaServices [70x70/16z] {
-fPS7jWCX24LZ0KTq_-lzF_qP62FcdJhj7hXCy_8jiTPu-JMb_wVyniYjtzBoFYD9VqNI7YCSVSWHDY3SLNXF2CQl9zP-aXftXMpfeTQdQUIOxYIIt4ByUafV
-Jd48SUlHGlnwWYb4cD8rN9gjPvmwMwVamRiDOZYZ6GmzJROuBRwKw6DfTOQIJYaI7xOI4JDJZiyngZFFASTZDqCetFUr4N9EgNTP_16wxyQ-vPmYjtsPTSBj
-040i2aedjX87nJAX441iZ234fWXufMGsbH5YK_9rm2-VWIp50X2J8jWFmRYnfmmGar9mndGn75rtTPbJ4bv6UFTXCMLEQRUd3YcgdEjLUKwfq11GXdAkfzWK
-r98KvHeQnCmfV4B1tM69GaZ1v3UbUYW14yb3IJR5qT5nHeaUkpXffAX9U-uwACHpr_NREHyK_GImU9v6A4HfMNypG25OIbAKwLigHFCjTGXaxus9fUo_lR6K
-_Iy93cZpgwRwSNzXysrta25xN_jO5SN_vv559fJ5PGEBJdB-aL4LdHg__Hq6G0IRmQu_rIfMIl3zDOkH8pd_u9lHJ7Ql9WmX_fLDKyt4ZLLMCuJuby22gRIv
--fnCTrrFGo7Rg_B9T1rw9jDrw74AiQVU9jDTN-Stfn3xeV0AiQU-8EGF
+dT49iYiX28NXwYaWu7F_ktrjaUbSb2JzB-0hZhOFLQkrMcrNCxDEl7M5w5N8LFLd8p8gelQZ4ITLaUySmofcqjCB2AJEw2SaPqoyX968sE2O_9mYdceooIHd
+bEaP5r54y9ZfN-tqjw8ZnYHZQ5GPC9emD8brVeneYc0oLSI-H6xhikmM9WKcLRQbjv859MxYYN6ioxsrmAGHK-PZNctwP0HAJxdrCT1XOL8lG_ObjX8eoF3q
+GQ8ZKoLvaDYkOwN4tqqxp2Go7CVahJnG4E60H6KNB0mgiguVZ6tl2eI3-gdhMMu4XK5XSGKT7BD7XK5XSSMR6L4XQWqHLxmuPgZqCneWhg23HbJeJ03f2eHZ
+ekAdS25FekA14PL2NM572YWGZ0aAlIaie60eeCBlYhpQjX-Kuai0SSNB5KIej4v5nLktNA5x_xeYe8Ic2ZrgZOalAWIAN500uLFXIqeXL0JRzhEF2XCgBIYF
+vaeXg4NbjcC3vK241uhP_Y6Ye0H6QvNCkD7Vsb0vema1O-2KzYygrOvi3DOyWQgd-HWy9IfMxvN4m5Cy3Of7-20vWeowWCz3EUBP-1Yh9Z0cLvgE9zaPHoCY
+aT7tMtfQ4YGoSTAZCaMmgl4OSsPwK8lPYuctU2g5cLrWxaXCDPaKKcjOlEOBHDiqnMDioe0HCWLcPiWK04UpMxHzpaoVn-H6NbLrnkhlMt2NmYs9aOUJ-ddj
+QcRLHAnzw3y
 }
 
 AzureEntityColoring(AzureMediaServices)
 !define AzureMediaServices(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureMediaServices, AzureMediaServices)
 !define AzureMediaServices(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureMediaServices, AzureMediaServices)
+!procedure AzureMediaServices($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureMediaServices, $stereo=AzureMediaServices, $tags, $link)
+ !endprocedure
+!procedure AzureMediaServices($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureMediaServices, $tags, $link, AzureMediaServices)
+!endprocedure

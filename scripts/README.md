@@ -25,7 +25,7 @@ pwsh bin/Debug/net10.0/playwright.ps1 install --with-deps chromium
 
 ### Add Icon files
 
-Download the [Microsoft Azure architecture icons](https://learn.microsoft.com/azure/architecture/icons/) and copy all folders from `Azure_Public_Service_Icons_V4\Azure_Public_Service_Icons\Icons` to [source/official](../source/official)
+Download the [Microsoft Azure architecture icons](https://learn.microsoft.com/azure/architecture/icons/) and copy all folders from `Azure_Public_Service_Icons_V24\Azure_Public_Service_Icons\Icons` to [source/official](../source/official)
 
 Place any icons that are not part of the Microsoft Azure Architecture bundle into [source/manual](../source/manual). For additional icons not in the official set, we suggest using the [Amazing Icon Downloader](https://chrome.google.com/webstore/detail/amazing-icon-downloader/kllljifcjfleikiipbkdcgllbllahaob/)
 

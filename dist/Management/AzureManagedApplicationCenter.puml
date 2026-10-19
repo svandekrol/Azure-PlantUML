@@ -1,13 +1,17 @@
 sprite $AzureManagedApplicationCenter [70x70/16z] {
-xTFhWjmW20LW0H7Jzt_W3i5PieV4Nd_EQVSUlw18-v_vv1FkdV_Le7w6_jduHuUaNqF_QaHaEIogEbMLV-jKCKkHuySxi-_guEf4fvZIYVJDNcADWE6kO3sZ
-rQobuCYrOt4SQiSpmt0E96y32lF8F1bvDjAXBAeuvehX9SD8wf0M6Sxmlhk2Vhs3TrkIUirOgBpWylBvEcHj6NJ2o7QL2fTo75U51b-QaHSFd31ahdgEL_fL
-CLDQfn0UReBaNQ4THoZa2dzNp3fq3DiU3-PIzMyRAEd8Kzjf76VuwrW6AfuXoTJ6z32M8lwTe1AHkxQtt44gNifiZmhCZWI1IeSEeMAhxMau00hF2QMWacqN
-YWjo5CNcAxnLt6cHk2156OwCjbCYFPkB2kdqj99U51iSxKH5Mv-ndnhIL5BKegYVaqTW_Pf66hPNmcYndVuTOVcQHXvxnGss4r4ys52YBSBF2iTXpxls31EO
-nYSbBgoPLKJD1APHnetImvXs1X2EXs4QEofwFlj6Ie_jHd58hygWHjsLXHoWQ2emZQHlnTY_s5bX8A2SYyV3DF9mPQw2B95Ge1IgIZWUMXDzs3hoDOrOIjzC
-Oqxqp49UeJA1j9r6NSOL6GGNpaptqsXN90tS4CDKevA6yd4s3CBb5l8eocd4wpWCY4IRCtKQsLQcjKPfWAAj91MrF5KO7Qm5ajEOyGFc9uMZqPXiUxPN6WRl
-VmthTqCRfBuI-i_zGWmnl20rDEBPpaIDYAIF5686OCix1XCqnJHYzWmIVnGjWWgrFmxraKBV2tk8c3pjEPzyyXC
+xTE7gYin34NHLmPipIld_x_s5d4WThmTcp3qsRHRueM2aDpTtN5SO6GN6Da5HdO1ahrdC7CslQsOMKE_yW4Xbe31AS3vrZDWq037_q473N0cQoScHoR61ZW1
+oW7jBUmwPUv8ydh8o29wfPGdvvT4w_AImiftdLAYTQJVl7P9V_nK1PHcdEdQ-m4253jasFcLBnTAzdej4OEYGSdcoXcT4Wj5uaaw9LuhuppvXXND5JkjCIYr
+reLYHZR-nwX4pJHNd5p4g1H0GCbiW59H4IZ912bpHFkA42avIkmffo8GAV9srygfAMB5mbonL0YnugIvah_LKijKsTfH8j_LyeICYWJAAUc1n83GB6eLBqPw
+84l5Wbf5P-G15YDyX7oDLaAH5LU3bTar7j-A_aUdH8R8-XgRRyFAuXfj0D8gSgnqI6F0A8wKD1mOe4YWf9791YdgYbIWwcjSAmuD2_lACI0H2uKOeJ5Nc1cD
+FwBcpFQNuISga1Hn2aA6osiKjC-8uouWqD6xRGXtTvy
 }
 
 AzureEntityColoring(AzureManagedApplicationCenter)
 !define AzureManagedApplicationCenter(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureManagedApplicationCenter, AzureManagedApplicationCenter)
 !define AzureManagedApplicationCenter(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureManagedApplicationCenter, AzureManagedApplicationCenter)
+!procedure AzureManagedApplicationCenter($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureManagedApplicationCenter, $stereo=AzureManagedApplicationCenter, $tags, $link)
+ !endprocedure
+!procedure AzureManagedApplicationCenter($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureManagedApplicationCenter, $tags, $link, AzureManagedApplicationCenter)
+!endprocedure

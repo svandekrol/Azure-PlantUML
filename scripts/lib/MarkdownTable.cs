@@ -14,12 +14,18 @@ public static class MarkdownTable
 
         var currentCategory = "";
 
-        foreach (var filePath in Directory.GetFiles(distFolder, "*.puml", SearchOption.AllDirectories))
+        // Sort by category, then name, so the table is stable between runs
+        var filePaths = Directory.GetFiles(distFolder, "*.puml", SearchOption.AllDirectories)
+            .Where(p => Directory.GetParent(p)!.FullName != Path.GetFullPath(distFolder))
+            .OrderBy(p => Directory.GetParent(p)!.Name, StringComparer.Ordinal)
+            .ThenBy(p => Path.GetFileNameWithoutExtension(p), StringComparer.Ordinal);
+
+        foreach (var filePath in filePaths)
         {
             var entityName = Path.GetFileNameWithoutExtension(filePath);
             var category = Directory.GetParent(filePath)!.Name;
 
-            if("dist" == category)
+            if (entityName == "all")
             {
                 continue;
             }
@@ -27,7 +33,6 @@ public static class MarkdownTable
             {
                 sbTable.AppendLine($"**{category}** | | | | **{category}/all.puml**");
                 currentCategory = category;
-                continue;
             }
 
             sbTable.Append($"{category} | ");

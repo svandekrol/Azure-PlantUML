@@ -1,11 +1,17 @@
 sprite $AzureDatabaseForMariaDB [70x70/16z] {
-xTO7akCW48NXrqtJYVlVTrKMensjXGrMXKtV0VvwXIB-47I2LVJ2SeAPIyVC2w4ZK8eysM9JeJv1NkYZtZMAlD4NlOp8X9uPLsJAk4Ah5HfNYfneLyydCwwK
-KqRDFSxSj7wF55o8urQfvZ5YUjmqYGijw8ke3ngrq9TebvNM2lqaLSszrznTTIzqfRLHfGNJ58ushcoYq5jbQumhNLIc8QuzyRBIfTToQZ4NKS_MJLMwF6lT
-MYKNAd_wbhIxMyAj2kvjKSA6ovqjoM1dCFJ6bcH0dG3E6ri4kv8thf5XfxVk5yA3tBfVAdPvvzvrxCgTUpVeE9NFjpYXiy-tA0xvwHOlE4ZxR8i9lh6sliMj
-CavokLBnHDfQ9PNmBDOgGRWWRQ4oYb1ELCOHFkxRYSeeKihU2bce9EE471infydJJLSLR4YqRXuhp01GD0DqecAC7UaZkOl7DilMGcSgiU-0v1xf381CVnlx
-iPAtNNOCr5oekAfw_XAfB96dol__b_zRSdLBueAkRb5SoRKjYKkKArk2CA3pMoh6sEUsAE4rYNTReXBU8x4SRGajc4TSf9f7xiBThHR27-07
+xTQ5SiCm381XaILRwbtU_sb7Ji6TtJWTmpyiVPSek7p_0Bl1l80RxII8YDU8Q1uw0ypoAcQQSLQ1M8OnqMq6QomRCTPk82GJqSeC5PbgGo6PYePAToef9TMK
+KcSoVKKQ9cdEfIbdqtI9I4y9h14_2MMKAHFMegSSd8vEiW6JbN6DlAj4XE0f4ZNBkLaTndCfuZ1GmXcdOe-dkciKpxaGRaJoR8oLcYlZCDPAZ9Iup8i9FOLh
+H2ngnUEYmt1PshmjhlePoZpozcKf-bQbvAG4_YP54PuYUijS2W4R0SDRriW9G3C2ahz14QYnn_sAGKtVihyuLYIzQNyHgFbR58EQn1kKWirKxfjBHbYp-vV5
+JWZwlKfcECLnds8C5rdidqknHD3akvM4S9t4Z38sQcMVKX0wIKmhOmHzbr88cjQ7kalnAuIv_icyHs5emWnFYMQSdAxdh7KNeVISC02QFbCb325DAETTNVsq
+x-RYj3xZgZEA9dYEItCSAG38_1MsZXKjQXUdbkGxbAogvYtYYQGChjF_zoz_TYxna-ToM7hjLPP-kv1bt3opt6nEMRRRKfRf1iZo0te4
 }
 
 AzureEntityColoring(AzureDatabaseForMariaDB)
 !define AzureDatabaseForMariaDB(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDatabaseForMariaDB, AzureDatabaseForMariaDB)
 !define AzureDatabaseForMariaDB(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDatabaseForMariaDB, AzureDatabaseForMariaDB)
+!procedure AzureDatabaseForMariaDB($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDatabaseForMariaDB, $stereo=AzureDatabaseForMariaDB, $tags, $link)
+ !endprocedure
+!procedure AzureDatabaseForMariaDB($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDatabaseForMariaDB, $tags, $link, AzureDatabaseForMariaDB)
+!endprocedure

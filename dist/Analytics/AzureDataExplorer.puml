@@ -1,11 +1,18 @@
 sprite $AzureDataExplorer [70x70/16z] {
-dT89aXqX40DHqLJP5Rx_VRt-DKSUJP07UDs0-iSN-_xjavIPZBGoav5MPZBIoan6Mfd9I0jCGjeXBJ01AQa-8Yqm4NbZ6efXBFB6D1GmH6xf5f6MPJpIxqf3
-0GFasVLweeO21WWOXxJ0425ZaHOO8gmSqa9jaUwFYzq51OpRoIPoIHiA6BzO8Y-CBECNI-J9oDH-iVr4jcuv1GktIbibCuN5-XDb1eY_tSm0iI-TcMuWN5rY
-kDZT9aM6Oxk2mYnY6Q4gC40iCo82vXKftIeW8oAUwJU5o13nJFVhy3UHSKXTO9uRySWuPEEb-jcso2I4jr1ba8a86OUCHLX2nYCi8FDVP5K5Pg1u9303nIE1
-6IWU2Sn0ySYj1SOZ4n7B34g8PORjW83no6X7XCmOHJiYrnipLj4EoAxIi_AAj182nYi9oSnNaCn418fd3X337226EKF8d25apX0oPmYPCuJC6KBc325pXf0v
-GyWOP179p28YYKXcj8X80f8PQH6H12Go-iCiiGqaCBy
+pTL9RiCm44HHQcYsjEhxtpQXGrHiVx3WfVykqxCabf3wjZBxA9DTitwkYfnAxqi52EjG410MTprAfn2X8iOeGA28MIf4g8XPAQ_8iHrEgPNoYhJM3gVKK1YG
+rgnIL8Y8WQ8MYDgcibkb3EAl1GoGpv-B0aB6dBHQ869skpf5X54XG-JWrlRMe83XJWuUkbMAo6ZdSgnI3qIr6TosMQM2asqRuHsAORZOGouKps1-0w7Y6SnF
+21GmDgTuPc-xLnYPJGVZbVxR4qE4JDv43BEtluutP2X4CibG4I85_w_T_BPNH8eGAcI8t416GiW0aI94bG9p0942n310f001On4fFO3qdcI8Z8G44Sy8aHA_
+0S5kW2WXGMGeGOR8BII8zCJyW4Y9a697N454IaenY1WWK1Pl0fYyg5JCXAY1aEb2y7GTSlR-nFJh4eEJNhy98N2KGhWwZxmmrsIeb45mMhSGzG62uoBpCJ8K
+CKu98elf62K2o78wL8I4HyXG2Ib20iYA4J8o2ADI8KM8L21adf6m2CDx98NNHeJCCn92pX0IXSWy42NaBo182f42iexNKb9cH9WUYn05134X_1RpZFkMycNK
+D_G3
 }
 
 AzureEntityColoring(AzureDataExplorer)
 !define AzureDataExplorer(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDataExplorer, AzureDataExplorer)
 !define AzureDataExplorer(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDataExplorer, AzureDataExplorer)
+!procedure AzureDataExplorer($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDataExplorer, $stereo=AzureDataExplorer, $tags, $link)
+ !endprocedure
+!procedure AzureDataExplorer($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDataExplorer, $tags, $link, AzureDataExplorer)
+!endprocedure

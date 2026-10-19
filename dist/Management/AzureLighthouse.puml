@@ -1,10 +1,15 @@
 sprite $AzureLighthouse [70x70/16z] {
-xTP76Y8n34JXTb2y_ts9Og8bgl7CZhSY_X-kZJdUDjknNLTtsZGQ-psREmZvA-sV6iFybxXzEiYlVJGF-z_PE6TCNtHodcwUng3HnDFmUTJVDF-9Gj2oHERE
-j4ZTbQWTMEhUZqM4hlAVb46pxofTxj6UqkGPRoaiqTXHv1LjA6rRYMqZ_YfV9MkmoBn7-YgUtxZPG4IJXEunfd1cH1r1sjfW-X6YpCB0bSA89hPjRg3xScL4
-xUIs2mDPXWe3Fn9Yg0vqszounT2sjN6h0TjARaIpt1OpRfNRMc7Oh_LYMy28kDWMCQ8KwP0HZKp1Z4X09OoijaOcQ4I4R1j6dcRRvWQyBs00-nO6lkyi37nV
-Fci8SR8jRYWJqLYl8WOMltobg3cM95VA91BKKCvkIOODa_HAQOuMnl9V23cMSNLB6dwON1dOglIprRvoyZ3hVGqyJAqmT9XSYIOXvRDS0G
+xTLLWiDG34FHGSikxd-rWnfiv2fbklqgdRoWb-kQJYRBhPjyjAt1fjiQR6k4RMsmxOtnp68YsteXR5k3RQkmSrC86PyVMi5xsofWModuxkWApakvAJS5LPL3
+LIK27f8gFByNdY8DXiqH10rpCOt1qa6quUzIP_Yxr1eC8n4QOnVJ6opIHxIHdj8Rjg8DPY3GXgCO1djga6gD-ltIIZL6_QrHF8DfH1k-4jhm5RW6KuesV2Mq
+uJDe35y9RVWAfA7JYczKwXtoZOY5M8fjrFjMCQpO1WPdGNqQ4w-CuIc9DzWrAjHW2j-074mJvkyCIw6OEyEm0J9mrzTO9UNWzvLQE_YzdV4LVsV67zw4YiWh
 }
 
 AzureEntityColoring(AzureLighthouse)
 !define AzureLighthouse(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureLighthouse, AzureLighthouse)
 !define AzureLighthouse(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureLighthouse, AzureLighthouse)
+!procedure AzureLighthouse($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureLighthouse, $stereo=AzureLighthouse, $tags, $link)
+ !endprocedure
+!procedure AzureLighthouse($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureLighthouse, $tags, $link, AzureLighthouse)
+!endprocedure

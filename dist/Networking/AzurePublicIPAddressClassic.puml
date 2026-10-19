@@ -1,9 +1,15 @@
 sprite $AzurePublicIPAddressClassic [70x70/16z] {
-xTC3jiG044JHQaNxt-z7R3lz3cjmPo9yA8ytXJHBDcO046zLOW18DdU0eh8exLKYB2pgK-9tATlFxeRUh0IRUvNYYYjcKtDQ4GB0rZ-D0P1CAemqihvfX3IU
-K0IeVr2BINKJa765KAJTgQZGCSNGLAef3GKsKv7kb9bAW7b7X9bdbrhJqaiqx-nM7zHiDwVMp7wbVb-1j7zggh9DFm6cegrfrKpNZPzfLrnn9TnS-b-s8kb_
-aM0Z8hWWp_i5
+xT45iW8n48JXiSvJuFwdnL9PzmcUdx86zbixV4wbNsSHSPTD-SrGViLqLJQeVDFAleUKdxTI_4_NqJih2FxUIIbAKO0LSqHH9c95cdQPaYRYhxEAq3N6q0J7
+AJEA4ZN_Q6boCcCwhJ2bq9vsNgWMJogWAcih6gyiXOuI9XHCAldlA4mzNMqSraHrMW6tBpbDQxqonhGI8DU_sV2qgoe84qhCL0sDQSs9owyXz1L_zrUAKfIl
+jrI-_9_3uV3bxf19kN-bqWa
 }
 
 AzureEntityColoring(AzurePublicIPAddressClassic)
 !define AzurePublicIPAddressClassic(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzurePublicIPAddressClassic, AzurePublicIPAddressClassic)
 !define AzurePublicIPAddressClassic(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzurePublicIPAddressClassic, AzurePublicIPAddressClassic)
+!procedure AzurePublicIPAddressClassic($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzurePublicIPAddressClassic, $stereo=AzurePublicIPAddressClassic, $tags, $link)
+ !endprocedure
+!procedure AzurePublicIPAddressClassic($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzurePublicIPAddressClassic, $tags, $link, AzurePublicIPAddressClassic)
+!endprocedure

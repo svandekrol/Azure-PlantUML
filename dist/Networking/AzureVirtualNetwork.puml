@@ -1,10 +1,15 @@
 sprite $AzureVirtualNetwork [70x70/16z] {
-xTH7iYGX40DGFEJzBpm3ASheEwqxqAep1A_BXq_FoSb97V7dCewg8MOlXX2pgY74438P0LdCz-r4m0Y8zU_hRc1qH6TqX1a5qHWTqHb6H4P7T8OHdT4HdM54
-PmH4OHH4PneXiUGOhiIKKxYpfvjfc5v8R7sCKG9IvjJY9clxdnHu8oDX8MPWyfo6bq1wxypGwM3R_O5nn2olgJZI6vqK8w7wBhCufmJ4gfUEZ168yOpoKEoj
-s4C1SYa5Yyj2QjbC7d1z1BBF24ZRIAbZ8Q4uSZ4TEjRHfL_8Y1jnfipVZcmczetSJ-Hzfzj4qaQSALuL97ZI-wdBvVNKNLD1i9OO8OG8Z808Z80eZ8umeoCo
-eoFCw8ZEw0WpEg8pEiACZkWC8n8J_oWb9dzVPW41GmWnG0Gc_Lmc89-SavEJVm
+xT8zqiGW38FXXiHMnVrF-_sAC9vbcRVUGPqYyrJfdvwJanD9sr4GaRQZ829jHq54iHuPipyJOyeLO03268vmfYAKuGXdAaAP00XX008OCOGpROLW1Y20QKia
+8ZBd-M-RzRhk-rumBHT8khYbZFmQTqHbyYqobHnr8g-CaVhCVI93CPAzCg6AT2D3CU9v82apDTcQbGUHMsegHXwbNLx3o60UHCMqOYID_2J_a1v6p4naKGSY
+8sRYTp9YfYgrzOgO2TTNflwa-RHVGujNzGDCVGCOW0068801264mKYUEW14WO2R8_e0Wu8HS00RiX04hOE2uP-2uP-2uPy3umJavEVa6
 }
 
 AzureEntityColoring(AzureVirtualNetwork)
 !define AzureVirtualNetwork(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureVirtualNetwork, AzureVirtualNetwork)
 !define AzureVirtualNetwork(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureVirtualNetwork, AzureVirtualNetwork)
+!procedure AzureVirtualNetwork($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureVirtualNetwork, $stereo=AzureVirtualNetwork, $tags, $link)
+ !endprocedure
+!procedure AzureVirtualNetwork($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureVirtualNetwork, $tags, $link, AzureVirtualNetwork)
+!endprocedure

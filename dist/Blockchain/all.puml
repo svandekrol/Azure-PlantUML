@@ -1,63 +1,88 @@
 sprite $AzurBlockchainMember [70x70/16z] {
-rT67SS0m34DHTTbazbytlHbd9X2S-WTu9mhfFvLRovUHsk-hrupIdojNZkcljImVSwXgnq32MRcVbhKFmLhMFWIhueTWHJX6EGkCq16FmOfgeAD-27uFl-x2
-whcBvSEN30tPsq6PKt0sCrJcN3I6sOcowEmMANCi77EgFCSU4ocyO_QvCWTnJAXmpvbch18x1e62ZHQiIoZuFNWCes2uhgRC0SVG2ZgmBgjW9yUuEw50EnWt
-3_cgWiXJBYY8k0iAdkEgWeYk-BDnMN6_h02YAVxSNrFixoYcAu282XYYWWOgUJ2AeM5Mqg76ADX8MEwhobRIIMMiA7jDGPLNUlgWpYapHq2u5lKXM4K7FwGb
-9bmTrsNBFLAsp1guEgnBXgl3kekrepB2OwZLYNM9xu5rnRF43y7LS_fFtG4
+rT09JaGn38DXBQ_fr4Nq_gTb1sicUZADMVy3V8gp_bFjATU8zb8unj4-Egmnp3DOwI6vi0vXdi4AHjavckoeV3KNtXXctQ7lQPjv1XD6pUbHLCQLKcC2k5OA
+JWmaPTU92v2KNQO3PmeTFUPKeQF724Kp7H2ATW8GYdPYG2jaGe_9IYx46A7GIMEa8fqBK5JudWuK53eSKr7enEsO-PHGShV6tNEpgX1vhguGcNCQodmp38M8
+fz0mb4d3K19IKKZyBGL_Hu6Xq70K8hu2Jm69f4W6gOneHnZ2eQ8DpGX4E5IqeHrjv8PMnlf4Ibbimyb6nTasM50f88nACYeEZLg3olqoUbFcCdjMrd_g4G
 }
 
 AzureEntityColoring(AzurBlockchainMember)
 !define AzurBlockchainMember(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzurBlockchainMember, AzurBlockchainMember)
 !define AzurBlockchainMember(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzurBlockchainMember, AzurBlockchainMember)
+!procedure AzurBlockchainMember($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzurBlockchainMember, $stereo=AzurBlockchainMember, $tags, $link)
+ !endprocedure
+!procedure AzurBlockchainMember($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzurBlockchainMember, $tags, $link, AzurBlockchainMember)
+!endprocedure
 
 sprite $AzurBlockchainService [70x70/16z] {
-fTYBSYiX20RWe0YA-_xFUq8FgUE0nkx-lHVdMo_foFJrFHbUZvDAAVZGWF8_-GcIos_IGyE2S7T3BBUN1LY2f5kByO47Yt7BUeYSltWouTfWELMOLmw9d2ll
-X4YJlodHTAh87nNlaCWTPLwMo5rbE4qUABOi5dcaQ8fO-dNrsmeDH9bJ1GD5aSgj7ojOlA98qn_QeL9uewXpO01nh5nNjv_nkq8SABQrlHqoXPUAHke9Wpz8
-UD9spEqx0pg202WywQwVZO7jL6n09gTO6E1dlXj5wzd0K6dfyz9EswdGkA6zWkC8QAdGl6-9PcKyO3iPBVe_IrDgSeyBau9TAwOqd4RIUdypax_wW5Gfxlub
-NYY8uOsU2qDmTMBQtwi8Pyr4sXNtDthUzKNvh559kmOYdJKgiEkBuB33m5rVX6SDJowhO52CvvlsmmXtvVfHodPOOzuKPIXCIuT5-9rbKOOo3NCDYTteKN5M
-D1ZDrnHpND4fVbWLCSNYYbxH59pdQye8kg9JDDDylMBp5TahJ6Y6KonMt2ZciCXQuK-rz-wLAgqQ8zyLkzkTeXrPFLVwc-XEgPUcdYY6w7TEwQApELKkQvkQ
-trsh7IZT50tCYgvAZfLUn-5Zna8ybEjOiTcur1uhj52wr42HArxHArDqHgAfv2SZKfrItAjRvYBad4lE05DVFoaLHe_hbA1rAu7IqgYFPOrYa4Ipufe9d1Hq
-mFmuKoYuFarnHVSuK-fwlgxe0gJARhxCpHLz4j5-ldbJs_p3wny
+fTO9pgim30HWBU297VIu_sqVuNUaPXg3bOwMBcDztHkVhzdt_Vmr-ntv6VdPaVqZswf1MNqnd5M3isQiCzjEMN8WJmWigK12HzJI2Y1pevZbbS11C_BAr16p
+5GKYmnkoeBX3BsPDSKVCrXLdH6r5ePYd7aVzIN7aZrb2u4Wjq9fLC5VgORYYEGMXehYZTGLnvJWCFIi8-bjRDSVWIMbEwSoQOlunwxk21wLUiPPNfW-mqfDI
+FlfG6SPYPHj8LbgpeKKUbRDdeWnDX7192XMnmjs7ecTQ4JxwjguCvw_i4ZAGsQ9oAvFpL-JjS1uR_HSi0jlRbf1S9hZaIB1TSRZa9BSQeJ9oCcCITFIo7iUe
+ZPYtCKXgRNeS4mCGbsRqlOwsAmmzbOC2nDiLxiYqP0KIRLVm29Uaq1XjHXXwAacXEIdM0-gzd2ZCm8mKZr39YaTeko85ucMeU7YxehgtjTPlfPWLdxE4ubiJ
+AzKF_AHoJTTlfHmj9QjSmdsLbNhxIQKUlZRfgBIOTscbHPMKSXmrhTG2oe9onGjEwv1NgfK9egt9VqPtf-3qBruXvJn96Ke4AMIq1Cf92HJjlP3Y1aSdoh28
+iwBdD61bFg1SSWOb6j2XZ1nNmbwfcyMLXm7LCn4KClu3
 }
 
 AzureEntityColoring(AzurBlockchainService)
 !define AzurBlockchainService(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzurBlockchainService, AzurBlockchainService)
 !define AzurBlockchainService(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzurBlockchainService, AzurBlockchainService)
+!procedure AzurBlockchainService($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzurBlockchainService, $stereo=AzurBlockchainService, $tags, $link)
+ !endprocedure
+!procedure AzurBlockchainService($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzurBlockchainService, $tags, $link, AzurBlockchainService)
+!endprocedure
 
 sprite $AzurBlockchainTokenService [70x70/16z] {
-xTC9ifmm48FXjjsImFU_RxQtKMZC64zjITvtWB-GgOwnqk9r2Q36QnhUb5XNyMbvLaaSrSKnPsLbZCkoCiQrfJ6kBenPdLLWxizApAXB3-BAr8Eipy8zWug4
-QUeSLaJCwVsg8c72tYyhKvsjzucAc1XZxtCLYHTZvYlIrPZvYWYZtkzMlDFxIaMo1vcgE1kpL15jp4p5sPYfYkl_JEMxybtP9IApjLgNAnloe9QLYlAinL7E
-L9ZfIXmKFAqeZMMYKcxVH6hRzzxtT3xAPn7vYTkM0t5WivYJmbJQTtp0kEAQ_aZ3gug39AJX8ADuh53fAAPhKeoqT9I4Tcf05vMI3lRge2JnTkKDVzE775Su
-cEHOnXLXDeDwKH5R6bY7cIs698bv33LOXszF7KCytH8avXlm3P1lOgZAJ5o0IHdShqIZpYRko2LrHB6ba-A9cj0VH8lsw8ueAUueijzFwMubg0y4P7SqgUeH
-naqvSOmJ2dIIiQ8azGajbfNQ_YXnz1C
+xTH7bXqX44HHcJ0K4_Q_slO-JwZ8-YD9_HPmyQmSoNLhVEn6Htn9rmtmOvSNypbTCcfN5dEpmvXQHWwjqytr9f9h6tr7t4wTYVIdOwjXw4YAfMrZpgZiJcVC
+cPLDntEUAlRfOhOKYp6DEJULx7ZEXc8hBAQdMC7eADNnd4sbEfhpicALnUmgrHcLo4f8izPNZdz7-LQ-bSCIyTn5vJ3ngIkAKGjCLWXqcQe8fSB0heqnBDdZ
+WJiGElt2yHR7GEZtoew5pn4XveiZO5VnAidFeQI0qF4U4oK5nexl0JLPgD59MHPgSfqYvQmieSPw-d947ZDHysjwogzb9Kwcfgo4dQc9Y4euRAeWm9-Kuf35
+aGYSCvP8WfHilN5wYiHppafD26K5hZ6-evYt6GSbEaplgEU8rN1MiacMszDHFjyKlxTQERHw1QHRGDe5erqWxW4
 }
 
 AzureEntityColoring(AzurBlockchainTokenService)
 !define AzurBlockchainTokenService(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzurBlockchainTokenService, AzurBlockchainTokenService)
 !define AzurBlockchainTokenService(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzurBlockchainTokenService, AzurBlockchainTokenService)
+!procedure AzurBlockchainTokenService($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzurBlockchainTokenService, $stereo=AzurBlockchainTokenService, $tags, $link)
+ !endprocedure
+!procedure AzurBlockchainTokenService($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzurBlockchainTokenService, $tags, $link, AzurBlockchainTokenService)
+!endprocedure
 
 sprite $AzureBlockchainConnection [70x70/16z] {
-vP9BekKW24HHGPJzxxS_xrlcOXkCetvd74weGlg1v4AFIImYcPvHv0rEJyB85sKxZ0paxK96qcOXIBoUB1DAE8nFZeVPZfLb2OUkEoT72ubxM6vJQOgetCJi
-NnQzvUcsicYL1MgsjApMgMPhoyhJxQvb7gkPHIogVfY8nVUOHIn-h6OX2uBNZLeGA2HeQQqDiRfjMBgPTLYdMT02G-sPvNF_JKjAzMse_m4q4GkB0cyRjQYb
-w0jc5hCaKTVI8fPK5O05UiJYIu8MqJUa918OYrcoli4Wr1wmO9wCQxqDtcmNLn5wWzttqisX4_8sM2VdcblOwLRSzpUtLFVCXG1UMLgcAz0jnffR-bUOVB4K
-6YbrPi4mocClJ5SOBPCmC8Vj8abUBNtS6NvV8D98hXUBE9Ko5bF9Wz7IadiOnayb4SrYTGY3A6fK8PGNgqCOH56JzGFXuY3Qb8k73XhMVSvhSjL7L7Zpsq3t
-kKWGbEnpH49797H4GaSaT4H2HoHqH492_p6_0G
+vT45RWGn34PXmGGBllzfYwdUq1zvOs7t2HRzASxO4vPIZXi_RL5Zj6xaj2zq4CeXWrQMYJfRqeMMeIrYKFPSYAVGGIY73D9AoLuZrwwLudHAxnF5n-JUvuh3
+oQqx51orZ4E14Siu51onZ5VHJeLmAoNZS25-1KSiurHmM6PHmIcTt4gjTS_arXUKxw5Mg9DV6LTGOyhV-PSKRgLzjMVyIYwd6ZkvbRABMR-2SLMgKz58vN4B
+nOKyfYZYkyULFDx3B9o5zp3LhUmHAp1j80iA30cbsJuGoOY324KvmX2ASjGoPQfOcohxKQ6Cj6B488fsEhtRhjraKSnsLLxabHR9s5aHlmk6K3240YCSWJ39
+XqcrbdcOiM2YYiKLc9WIXsoz248WaK0YWSGL2mOILInUiN_S9m
 }
 
 AzureEntityColoring(AzureBlockchainConnection)
 !define AzureBlockchainConnection(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureBlockchainConnection, AzureBlockchainConnection)
 !define AzureBlockchainConnection(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureBlockchainConnection, AzureBlockchainConnection)
+!procedure AzureBlockchainConnection($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureBlockchainConnection, $stereo=AzureBlockchainConnection, $tags, $link)
+ !endprocedure
+!procedure AzureBlockchainConnection($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureBlockchainConnection, $tags, $link, AzureBlockchainConnection)
+!endprocedure
 
 sprite $AzureBlockchainConsortium [70x70/16z] {
-xTI7Zjim3CPn3GwHoVi_Rqyo2OUG3S4AHjU_c6tlT_a4X6bPJj-N0V5hfs8FlZMiiZy6Fykx3nA3xJ6nic_iEnbluaSAqoMY-apX2wVfKwKN3LRTKQAZkgkS
-iqHt5NDipARIfDai0rwlvqfJrOCXGzxlvugeCsJ8pv_7IWTKJUb86_B6wpPjxCgBU_94AQw8A-z3OLXUumpsdSt48_bGtieZJBrSQottrm3oYR08dujUdJIc
-r56UHw050x5CyGx6ZE3Cvn4w0pGfKX8mrL39zwSDkAHKAIgOV4jqmfZ8Z5y17mhveyxbC6Q--1bDQILyaCa9I2Zr2dK5qWZfqW0fcV7AWQR-PaJ9GcQSaIPT
-OOR9uEdhQmfpZP68AKpH8TLxXIcCaLFXC4lqNXcX6qs2Siw2fdglU3vcKfZ07cIXs2mKYOg7QC1QOP9PyVnElswL9jAMYY7tYiXWbifBcFLUQKrahHp7w5RX
-8QsLnhrJoL2Zmcsbz7ZaIeMVIbHaKkZYNKRZ4nGu6aUad1ybAEYto9MHCPI7uSvvrJaeN8xX61Ldi4AeNYcj9gzGKBZl93D2Z3cJApxc34v5Xkv6xFWdSeLo
-YcKy5DCDcVEpJZR62hFKTQ1BXyIVadpCLAMIB232sH7fogZaj0xe9uWr6Sg3W4RrSuniAkSi5DbJB1kphrWsvai5vOzN_Yjh9YeDqhCApWgcvzMWs9dU24on
-CRjbD2MCsPg5OSncWAscxyjfsIy
+xTPPRkim38NXYrZY80Nm_dTx8VN0n44aE6PV-xzq_aAoKywxQfNprzLH-PqX5VtMG98qIkNo1-7I1YTf8p-EggndiVP4MJFQsZDbuKXh2OKTyPPKmX5hBQ-e
+20wIL-28jxnY1gVzrFjpPHp2VZGWxtTFASr3wQFdobm5ofZ4L3rrNMjsALr7_eNoggneSuNoxehEsR_Zs23u2nk8XzBVtNGcupEEsSf0WQYxnaPzaBDfp5uV
+oro9SaD1fgC981w4sYfZp7fmQmFZd0jbVEhn6It3nP4jZ6DJ3B9r30ODGXMJ7I8DZ4raf59MI7LNbQNX-Cgfn0zZBP-3-51M3Xv_vloBKTXG7-cC3UK_IApG
+Mk8EPIPaR1Lsgdaev8Yt6sLKSH1IOYqOTueA3eAKQkrUGRvLC4dlVQkOkzqgGFQAEvWRfJVLjbV6DD_CWjSkfRn2cRdTAwPu5SQ85VFlPea_zmKzLJeOzM5S
+lQ00OULaPNRHXLBAetF4IZ1IkBfHJXGA2eEIXN96hCmdxsLPZS-5GK41SWR2LRi-5mPNw6TDriDedDBTpbNu6O4Yyc68n-Ehd_V9YCUfnfVuKc57tHCAYcLo
+2gfO9g_0KVUq4lcVygSySDZ8CcIa7KBI3XbfXeoqGqWslJV-0m
 }
 
 AzureEntityColoring(AzureBlockchainConsortium)
 !define AzureBlockchainConsortium(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureBlockchainConsortium, AzureBlockchainConsortium)
 !define AzureBlockchainConsortium(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureBlockchainConsortium, AzureBlockchainConsortium)
+!procedure AzureBlockchainConsortium($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureBlockchainConsortium, $stereo=AzureBlockchainConsortium, $tags, $link)
+ !endprocedure
+!procedure AzureBlockchainConsortium($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureBlockchainConsortium, $tags, $link, AzureBlockchainConsortium)
+!endprocedure
 
