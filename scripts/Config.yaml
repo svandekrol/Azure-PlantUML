@@ -14,11 +14,13 @@ Categories:
     Target: AzureBotService
   - Source: Cognitive Services
     Target: AzureCognitiveServices
-  - Source: Azure Machine Learning Service
+  - Source: Azure Machine Learning
     Target: AzureMachineLearningService
   - Source: Azure Machine Learning Studio
     Target: AzureMachineLearningStudio
-  - Source: Microsoft Genomics
+  - Source: Batch AI
+    Target: AzureBatchAI
+  - Source: Genomics
     Target: MicrosoftGenomics
   - Source: Machine Learning Studio (Classic) Web Services
     Target: AzureMachineLearningStudioClassic
@@ -39,7 +41,7 @@ Categories:
     Target: AzureEventHub
   - Source: Azure Data Catalog
     Target: AzureDataCatalog
-  - Source: Azure Data Explorer
+  - Source: Azure Data Explorer Clusters
     Target: AzureDataExplorer
   - Source: Event Hub Clusters
     Target: AzureEventHubCluster
@@ -83,7 +85,7 @@ Categories:
     Target: AzureAppService
   - Source: Function Apps
     Target: AzureFunction
-  - Source: Azure Batch
+  - Source: Batch Accounts
     Target: AzureBatch
   - Source: Service Fabric Clusters
     Target: AzureServiceFabric
@@ -125,17 +127,19 @@ Categories:
     Target: AzureContainerService
   - Source: Server Farm
     Target: AzureServerFarm
-  - Source: Azure Spring Cloud
+  - Source: Azure Spring Apps
     Target: AzureSpringCloud
+  - Source: Azure Spring Apps
+    Target: AzureSpringApps
   - Source: Web Slots
     Target: AzureWebSlot
   - Source: Web Test
     Target: AzureWebTest
   - Source: Azure Virtual Desktop
     Target: AzureVirtualDesktop
-  - Source: Azure Virtual Desktop Application Group
+  - Source: Application Group
     Target: AzureVirtualDesktopApplicationGroup
-  - Source: Azure Virtual Desktop Host Pool
+  - Source: Host Pools
     Target: AzureVirtualDesktopHostPool
   - Source: Azure Virtual Desktop Workspace
     Target: AzureVirtualDesktopWorkspace
@@ -161,7 +165,7 @@ Categories:
     Target: AzureCosmosDb
   - Source: SQL Data Warehouses
     Target: AzureSqlDataWarehouse
-  - Source: Data Factory
+  - Source: Data Factories
     Target: AzureDataFactory
   - Source: Cache Redis
     Target: AzureRedisCache
@@ -240,16 +244,24 @@ Categories:
   Services:
   - Source: Azure Active Directory
     Target: AzureActiveDirectory
-  - Source: Azure AD Domain Services
+  - Source: Azure Active Directory
+    Target: EntraID
+  - Source: Entra Domain Services
     Target: AzureActiveDirectoryDomainServices
+  - Source: Entra Domain Services
+    Target: EntraDomainServices
   - Source: Azure AD B2C
     Target: AzureActiveDirectoryB2C
   - Source: Active Directory Connect Health
     Target: AzureActiveDirectoryConnectHealth
-  - Source: Azure AD Identity Protection
+  - Source: Entra ID Protection
     Target: AzureActiveDirectoryIdentityProtection
-  - Source: Azure AD Roles and Administrators
+  - Source: Entra ID Protection
+    Target: EntraIDProtection
+  - Source: Entra Identity Roles and Administrators
     Target: AzureActiveDirectoryRolesAndAdministrators
+  - Source: Entra Identity Roles and Administrators
+    Target: EntraRolesAndAdministrators
   - Source: Groups
     Target: AzureActiveDirectoryGroup
   - Source: Users
@@ -269,7 +281,7 @@ Categories:
     Target: AzureEventGrid
   - Source: Logic Apps
     Target: AzureLogicApps
-  - Source: Service Bus
+  - Source: Azure Service Bus
     Target: AzureServiceBus
   - Source: Event Grid Domains
     Target: AzureEventGridDomain
@@ -298,7 +310,7 @@ Categories:
     Target: AzureIoTHub
   - Source: IoT Edge
     Target: AzureIoTEdge
-  - Source: IoT Central 50
+  - Source: IoT Central Applications
     Target: AzureIoTCentral
   - Source: Azure Time Series Insights
     Target: AzureTimeSeriesInsights
@@ -332,13 +344,13 @@ Categories:
 
 - Name: Management
   Services:
-  - Source: Azure App Configuration
+  - Source: App Configuration
     Target: AppConfiguration
   - Source: Azure Backup Center
     Target: AzureBackup
   - Source: Azure Site Recovery
     Target: AzureSiteRecovery
-  - Source: Azure Scheduler
+  - Source: Scheduler
     Target: AzureScheduler
   - Source: Automation Accounts
     Target: AzureAutomation
@@ -408,7 +420,7 @@ Categories:
 
 - Name: Media
   Services:
-  - Source: Azure Media Services
+  - Source: Azure Media Service
     Target: AzureMediaServices
   - Source: Media
     Target: AzureMedia
@@ -448,7 +460,7 @@ Categories:
     Target: AzureAzureDDoSProtection
   - Source: Virtual WANs
     Target: AzureVirtualWAN
-  - Source: Front Doors
+  - Source: Front Door and CDN Profiles
     Target: AzureFrontDoorService
   - Source: Bastions
     Target: AzureBastion
@@ -462,7 +474,7 @@ Categories:
     Target: AzureFirewall
   - Source: Azure Firewall Manager
     Target: AzureFirewallManager
-  - Source: Front Doors
+  - Source: Front Door and CDN Profiles
     Target: AzureFrontDoor
   - Source: DNS Servers
     Target: AzureDNSServer
@@ -474,9 +486,9 @@ Categories:
     Target: AzureRouteFilter
   - Source: Route Tables
     Target: AzureRouteTable
-  - Source: VNET Peerings
+  - Source: Peerings
     Target: AzureVirtualNetworkPeering
-  - Source: VNet Subnets
+  - Source: Subnet
     Target: AzureSubnet
   - Source: IP Groups
     Target: AzureIPGroups
@@ -511,14 +523,16 @@ Categories:
     Target: AzureKeyVault
   - Source: Azure Sentinel
     Target: AzureSentinel
-  - Source: Azure Defender
+  - Source: Microsoft Defender for Cloud
     Target: AzureDefender
   - Source: Conditional Access
     Target: AzureConditionalAccess
   - Source: Application Security Groups
     Target: AzureApplicationSecurityGroup
-  - Source: Security Center
+  - Source: Microsoft Defender for Cloud
     Target: AzureSecurityCenter
+  - Source: Microsoft Defender for Cloud
+    Target: MicrosoftDefenderForCloud
   - Source: Access Control (IAM)
     Target: AzureAccessControl
 
@@ -576,11 +590,13 @@ Categories:
     Target: AzureCDN
   - Source: API Management Services
     Target: AzureAPIManagement
-  - Source: Search Services
+  - Source: Cognitive Search
     Target: AzureSearch
+  - Source: Cognitive Search
+    Target: AzureAISearch
   - Source: App Services
     Target: AzureWebApp
-  - Source: Azure SignalR Service
+  - Source: SignalR
     Target: AzureSignalRService
   - Source: App Service Certificates
     Target: AzureAppServiceCertificate
@@ -591,7 +607,7 @@ Categories:
     Fit:    true
   - Source: Log Streaming
     Target: AzureLogStream
-  - Source: Quotas
+  - Source: Azure Quotas
     Target: AzureQuota
     Fit:    true
   - Source: Deployment Credentials

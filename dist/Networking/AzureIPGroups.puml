@@ -1,9 +1,15 @@
 sprite $AzureIPGroups [70x70/16z] {
-xT05WeH034JHjAOwtF--E-xP52kZFDm-qF80YqL5h4faOd0L3DUCYlZkNidYoMGbSCzAPqYaCHvIKPj2bgCA9aAZAkWky9Kkhdxl2eeBP2LmdmelFwRIRwdv
-L5mnmeWh3AvIV3CguhjxHPj7wKfCLchxnhW9vsGjdIhjJ6V8bNp_ob9HGFiQWEE9cHMrbR7QiRNLTjYApgmCMzlL3BlQ-6L5Wqggl_WMp-cuO9SRgoriHVdA
-Zkf-gySJT2NmBfMbeWo9v1RByW2BnHS
+xT454i8m48NXMjQm-v-sYiDENfZW-KRgVoExDoYA5I9FPGr5L3mA3MQ9r9LBu8fLFeChgyQDrDYC0A-gT8m8aKg0lAN2AqIi8lagIYx3Aw5oXLTNf7K9Lddp
+7gLxJuNkORiGhPWdVyMWIjTwEhoYbG-lM9uA1G-1bIoRfFSbLWYok_Q6Igcmgj14LFXmJAs8ZPI8R494EXqbiQBxhta-ohwcYHMRCSd-QxRPWsEXVOtiTaO-
+Ej3bOvBzH7Wv9bQ8cHR2nnjm1L0g7dv9XVDK8BiOiF9wHJ4
 }
 
 AzureEntityColoring(AzureIPGroups)
 !define AzureIPGroups(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureIPGroups, AzureIPGroups)
 !define AzureIPGroups(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureIPGroups, AzureIPGroups)
+!procedure AzureIPGroups($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureIPGroups, $stereo=AzureIPGroups, $tags, $link)
+ !endprocedure
+!procedure AzureIPGroups($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureIPGroups, $tags, $link, AzureIPGroups)
+!endprocedure

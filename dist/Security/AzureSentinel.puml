@@ -1,12 +1,17 @@
 sprite $AzureSentinel [70x70/16z] {
-rTH9jjmW38LX2VNxNt0Qd3Y-Fk32P5JVA7dDZn1r7dsBPf7rIuOrsgHP5wbRZVwh6LrkTgAgml_f8QTN9AlIRx8gsuk6duE0g2fVwx1cmI3tQuNGN1DLyxyl
-wnFdzqr5UBZDGqPlp3izr3aXxi-Q0OMPYCZiCK8DrhacXvNNlh5YglABgcrNJFX2R53XJnLhVDFiRSKR3pH_LJ6Ui4-LZ9FobAvMC3BFv6D5-P4kLOm_i9KA
-lew8gWY-r495XfyGkxRbgT8v_7IUeExPpIl29qjWb_o7Il19-_zLMXFhGocVuhbYU9upTUmufprN18upEXaCAiyL-BcWYxYUqSOLFYe1CpSu1-uRmmeT5OSV
-8m27-56XOIMk3-G4_7gb75VoJyOEsNSBZgyTueW4tNYlWC4ieCheHk-LqLxk5Q4R7bGOVc1GOHej1Wm-Bm3MydGbfPCEHb6YEoxCu89z42aQi5wvqyRSD16-
-qFCmQ3uAyXUPWb5sXwbAcj1wGMacQbdG5DUgP9gJMjJeYTKIesUnkHJ4kRqKp6n7CBCTmSns13FR4SpiHb0iFF5knkajtuqWpG8fj8CX4qoR76wpJU4lspRs
-FWZJVsgPGj_a9m
+rT1LWkD038HXkqNb9z__j0D1LTQZSMlv3zCNjVR_fItL9bxh8a1SGidKHlYpYC8f4FXBA9Xo46vYdEqI_AZlzxEb44wHaoeGH7XH84472818Gb44SCL-KC8d
+mw7oaK_T3fNP_h1YglAHghKLapKbrb5ih2yDcrLSreF49nGUXCUPK7JzCZsjw5gajG92JZ2e55k_oSueW_SfgiBAEA48JUznoUcKKYcNdBwDHvvrnsU5ecaG
+KFH9hQIj23up7KCDdqdQJAtOyvlNyosNBcT8AxDQaNpsaEMHHDwPrCh8eyII2lgqL89cNhCowBnHAPw_vWlb-K_yKD6hWdnmOyNosl3P1Q5kIjYr0A2iA7ty
+bRA1EZeHjvrIm0gQYcH42gLcJerIAxnVwocyO4Ujr4p8M9OXKI2rKhUHqcKOOMMR6gLaJjmOuRPdA1y9gPWwLlhCNjL5E9n3OgzhZyAr4QwDS6s4QoDS6-7Q
+28TZ0_jS_Kcuji6r4GwCj2EZ7oFzoFWVUWS
 }
 
 AzureEntityColoring(AzureSentinel)
 !define AzureSentinel(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureSentinel, AzureSentinel)
 !define AzureSentinel(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureSentinel, AzureSentinel)
+!procedure AzureSentinel($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureSentinel, $stereo=AzureSentinel, $tags, $link)
+ !endprocedure
+!procedure AzureSentinel($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureSentinel, $tags, $link, AzureSentinel)
+!endprocedure

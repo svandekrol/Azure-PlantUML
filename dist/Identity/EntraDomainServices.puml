@@ -1,0 +1,18 @@
+sprite $EntraDomainServices [70x70/16z] {
+xTD9pgD038RX1NoU5Uv_snOeWodZg9fi_pTYcQVcxKv_cOg8gls4g3pxXJ6HtnaL-PqnoQdTdWaVtvFHMmW_asVwkA7mg8ZUGAeYTWEfYjWDf2fYTn6MUuno
+LTJSmztKPX4fYaLg2d7XKV78-Omo8dmWkJi8UunD8CHy-bRyDwDCGrXMYj9_8ykwSiFC8hJioYeDCuyiMB5gmqmZ2_Piaf46MT0mZqkb86jMu8MPHR92bPb0
+i9mLK9GcaQo06wP7QAaAv2kZ3J8gq2-C467uhIcaBDok6MOCqTefC58_A_vKAj8h12sJQP1U8K3DAoCe3Ggbi2kL4RHJwHMB8QuAzGeEfJAuYD0eU2jUbHfz
+LIf33KCN2f9YpRwqoqf8KZmhGcYTJYcCROAUmKTXng3O-ThnsaPuAgeeYYLaTz0oe5qHTrme_ZIUFUZRTDWYA2kPUMmfxXs92C6bOhuDCIuDc4SO6iKU9wFR
+PN7t26eLoqAposI-AumBfMUCimFn8qMZTCncGeFXXaabvsug8kglg2XJJ7XEK9GfPikCuQwocQU49fLQPaAvA1tHEn7XCla2-js98wMYR5Dv92KsffEopMOV
+vVZJuMX7zBsKxTc3IQUDl_u1
+}
+
+AzureEntityColoring(EntraDomainServices)
+!define EntraDomainServices(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, EntraDomainServices, EntraDomainServices)
+!define EntraDomainServices(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, EntraDomainServices, EntraDomainServices)
+!procedure EntraDomainServices($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=EntraDomainServices, $stereo=EntraDomainServices, $tags, $link)
+ !endprocedure
+!procedure EntraDomainServices($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, EntraDomainServices, $tags, $link, EntraDomainServices)
+!endprocedure

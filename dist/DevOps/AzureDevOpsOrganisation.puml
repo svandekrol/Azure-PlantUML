@@ -1,14 +1,19 @@
 sprite $AzureDevOpsOrganisation [70x70/16z] {
-xPXNsk8m34MjUcNO_tu7nV6V7bDUvz31Ff-kH2zVyHyYJkW70-kAxqoi1pxsaDe97th4pb7-GA9sYVmkIUHtISA_z6I1oXYs4Lh6s1Z-hIcTaOJCVY-6pVlX
-3hjJgByBNG_OtqT-TYHwtbF_a7A4_MD-boIc_BiaCIaBvD-pr6F-2TWUT9S7nyE2UyJZKMiWLwwnkHICSDH7KcVW1mqD7T4LWUu9tsa40oO7-bn9_52FZ09v
-pJAiR93ObKF5Xn8h1pHU-2hJhUJb22vdOAEvjQIaN61hZU2IdA-NItIbSSSLqIkvhWQ8YRJ4wI4dIkKEZ_2OWCOLjKgvXN9_J72SuxMYhvQBhsG6U4oKwrAu
-9E9HLSpqM1a1hJDMBCv0ByLUkhISVf5IODekXQyiEdMmrd0b4kaVYQpszox7SwHSU168PeaiN_Gqxvdm5hSbqdpuN1BjTGSk7L6Yb03HvJeLqz9TjiKpLsSE
-w4B4UKafJWlFZvrPB6TGVV-Uu7ywRHQpCeCbIJkqvcfKsvVI-zfy1AnMe6xnPZa60lKTG5hSPVFu1jGuiw2Yp33pqPAHLo32qh9BjFI9vY5sIuTiQ_4UVa6M
-FldpYMRXmxUnfPw8DkcGic1viqiUkLqllbLn0n6KaTR5Q5HF5L2VpwTFDlToWqPeQxhp8ibIufaq2Rlhu1t8ymArXZ4L4eyQDlNgbGRQnDcMEn2H2nXJiv4N
-ON-Pyt8KA948jD6XVpRB8NRE-Hu4fBybEDoEwsbOIcO1gDnXMSe80-x7w6vb382RPU9cLCOGRggHjt_wSMheFCuY6K8EG4yBMIHZo8339DWIAX-WdXZJh6Nr
-qO_g-vyhPdbs_YavXjGxhGugtq6YceghVs7-0G
+xTBPbhDA28PXYe8FY0VU_ztkK1fNEvKnhhMF_gVdwGtG6N_oZtmyBJm9oG6z6z4JjmPHVPxHdkUHviOwZpDwwNaaFOyq_qz5lu9k0s-AQvsAueRE64yhkEjv
+97KYZpBuqIxok8CdVepO-kNJsVtu263nUaL4VhQHaR1BMKWn0tQPwuQ_vePRp1ntAorXmeLI4UpdkQnuJY6qKdCcMsMi1tbIfPtgR_YoWlSWNkW8t5tjsXGn
+Eg7VPjxhW4v9M-gIvoGTsYgUB_cklL-z9OlmGZrmL-_AI5JgAkw6ouhHh38VJgLcwdqHJ8dX8LLLU3-C6SpJU36AUaIhPETmc7v5w0qHZbeAjqvcgW8gXH8l
+bPDCHFwYHbYTny-jYE2HJ2YPeKLEAjD2rSAOFgfGGKIuBncTCkFRyKAOzX7w2n7WlFZqSvAsqjWSLfIeU60LgH78HPT-DTCOTvMONgRZrcpzfSipaJqmdtVy
+Y2sqYkmNia8JcEN90HbFCnO-LUggOc4qO-Pytofd7NFNjf5iAg1b8rygPnbtH_jLfSNgQnk67AjcPMsTiVROpaV7BVOQNlcf07KyP-wb7GQqg9vdKJVpOHg5
+072d0dUPdsNb4x4SfVZGU5iHqB53tJ4zV9XoeL8HxTPiyHg6bqtXjb1_9Pu727UBf7__oGbG7g-7oQ4z9c3Q4436BZStfiHg1fLAMmMvK9-Q6NLfZd85Pg0E
+kRnA4ZDJEbMXcliyobHTH_ePbEDrLf4-WHagxR0UHVePy453UVmU54dhl5XXGJQ4nrj4CTFyL9FKyJOHB7vjD5NQI5auJFm7
 }
 
 AzureEntityColoring(AzureDevOpsOrganisation)
 !define AzureDevOpsOrganisation(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDevOpsOrganisation, AzureDevOpsOrganisation)
 !define AzureDevOpsOrganisation(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDevOpsOrganisation, AzureDevOpsOrganisation)
+!procedure AzureDevOpsOrganisation($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDevOpsOrganisation, $stereo=AzureDevOpsOrganisation, $tags, $link)
+ !endprocedure
+!procedure AzureDevOpsOrganisation($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDevOpsOrganisation, $tags, $link, AzureDevOpsOrganisation)
+!endprocedure

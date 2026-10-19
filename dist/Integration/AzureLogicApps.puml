@@ -1,10 +1,14 @@
 sprite $AzureLogicApps [70x70/16z] {
-xTNLei8m383XQBknlV_hubIo8kdnGxyR_1-p57xCC22B4ZYGCjk6nYC61un7Wb08iQyI0sHyUSVi4Mj9q5GkMnP8uWdPZUrg0Q3LCRi81fdA19R48wmgtAX4
-kj5MXRSLR5GqlsXLq5k1fvLH6PM9RgI_KkghjEzfVmL8JvPbcVH8m5EnrdLD_-9XXJvIeMhQG6T5oiaN7bGYt77-8QQdvGxfNDgjHtE5M-k07V_B-iHi1tYg
-82IheqAfOlV8x8AHAcQFpD4r9yMQKoKTNREkk2lLEaPT5NlLONUbVHzfl6c5EAHFwL4bPWWR6XFzrWhrLwQiKGbJ4dwgCYfprghCoSCAoGt35ag23oeUxGg3
-6syh0Zvs7Ki3t8dC196OEfw6EH1f7N3WxJ13wQi86CpgsoDbWfyp30S
+xTK74eCm34JH35hJGVS_RNetorWcFVhf0HuTT38fM9hUYX0sHZWYDcNviXGpVUcoY1JaPL9u1iKLLs1HS2Z-D2YW_PRYYfeGNi2fkcbgd0gQMRjDxtEbtVSH
+IdjigM5tkZOzPR7HAPECDBfjR2VgqfMKOVd7r-yhSgxUDdyd1HlNSbkNZ42Mn1XP55imA004WedFI044R7nQhF1-Jt75bM1H0dj5Ik3ZycA5zjMAAwhfp0O
 }
 
 AzureEntityColoring(AzureLogicApps)
 !define AzureLogicApps(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureLogicApps, AzureLogicApps)
 !define AzureLogicApps(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureLogicApps, AzureLogicApps)
+!procedure AzureLogicApps($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureLogicApps, $stereo=AzureLogicApps, $tags, $link)
+ !endprocedure
+!procedure AzureLogicApps($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureLogicApps, $tags, $link, AzureLogicApps)
+!endprocedure

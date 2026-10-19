@@ -1,11 +1,16 @@
 sprite $AzurePrivateLink [70x70/16z] {
-xTQ7akCW30PWr2M__mFVu8s69RB3pPBhzq-DCP-HbDR-e00oRXiMFRo5aCT7R4VnoCZN4OaHs3tAPclYK-GNAnOZz8xkEcnEUljz1xxNbOncK_RYNoZdl_9V
--Q-OlK6n27kfY7mNCZ55aGXP8prohyXONo95gNUiaQ8ic0LIb0LJbwkoPkeYd75FPSdK9HORaPjx5mYfJL5QClKoMucic7gIlWiXr-14wV9NKsuHC3ESjwYP
-mKkcDhQU7-QQAbDhrFcvALjxoJoPC6z04ZD4CmF4EwRMX-u-TyICmDsHpFYAqN6IaLEPHuwT1Z8plMAifJOfC4PkGW2DEerwnwXtYs7-uyFP8LF8tkc3fIkc
-UHZpPmRopvEOMS8HcF35FqXlJPcJ6NkKpjBEhUIZQ7MV3iCiZoVGnEJi6_HUi7dqUEvovmbX5k_81QF7SVIHM_FZZBQXw8nmgfKXZOOH3yLeB4HeHIepSfQ5
-24_Dv8AyP3ntpDUm8fMPXmXrhWLPC5U_ha45MJ0OFSOVKUklf21hne-dN27hecmo70goO3B8yWX1QUoQgId81fF8cjb2ae4T91bOdRLjXnBP2xRVEzy
+xTE7Rkim34RXEvH8lplq_czRYuRXSH260BlRavsGNtR_GccKD_ACjj98NiapvLKKVIAbVoQbfH4BI8xfoO3yAh_Ahn9RIoko72MYwfuYi4n1HIuILXH5V4K1
+X0gdVAHrAa66I5rghKazmX2ffp1hLHSfbKKOlf8uuoEbMw4tHOGx7YCY5ZO0Wo52XVUHkGBPDl11ts9gsqIhpG5fezK1S-axX4gbGaPgPRam14mzABtUPfga
+MihfaHso-qiAoihKDf0zevNP4DwrLYxD7hiQ0aQzZRQdmwTcI36csZKBRtQkQcs2OeWnCzB9JADbOLgIyD5Z4SppK3ItAlpekKQczqdMHcmAbiXm0_TXnML4
+HYCik8pEpEGW3eE819Y9oK7230RlCdIU7SHbuaESo23RpFy4iarb4CkV-HT0hC1Rxkc0VBPU
 }
 
 AzureEntityColoring(AzurePrivateLink)
 !define AzurePrivateLink(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzurePrivateLink, AzurePrivateLink)
 !define AzurePrivateLink(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzurePrivateLink, AzurePrivateLink)
+!procedure AzurePrivateLink($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzurePrivateLink, $stereo=AzurePrivateLink, $tags, $link)
+ !endprocedure
+!procedure AzurePrivateLink($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzurePrivateLink, $tags, $link, AzurePrivateLink)
+!endprocedure

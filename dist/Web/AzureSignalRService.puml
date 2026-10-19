@@ -1,10 +1,17 @@
 sprite $AzureSignalRService [70x70/16z] {
-nPX5OiKm44Cz8Dt_ngLDoPOrnRVyy9B1m3eJMGs-WAwCDIURd-Zyfc8kIaeiJ_1AN2LDWnu7Cm-hQ5D72JW0Ik83LpBNW6EW93umgeCSLYgt1ufXtsmbZeMw
-xR4yIwi1n38jZ7CysDbrJEcrPKIrIB0XaSNSVu7XyeXTWR0kO5UcdKJJdqDA8J7F9Z-AiIm-XJIJxFjqXP3OgOda6p848gOi-jGfmTKSWCDQQt12xKC2PyJ6
-CgSiYx_QyEyMFw9vTl4pbSPFT1r-PWAIchAcCQYnjjsjOkrjgTLKfBanamfpU-kGof7mThVjNzLobjiwJ0MFXE4WBZV_-FJefihedKjU3XMkHl-aNOqk0B-i
-4L_xcXGL51hTst0rs_hCDK8oqGZ9H2Ca4usGp2fLwqowcboILXgVa1gVb1gVR4Fpys-KpBTRA6bu1
+rTP7ZiCm44HHPYLWTF_JJYQQrdU1QdZbx_r3aKuwtwFzePS8Kdw2EGsT2z7v39t3sFPjZCmSCG7GnA71femm57DeX8PcDW_2iCQ3qFc0GcHfqpKta9XNIpXp
+99W2I2b4HeKE6I9h31S53fYdIqA8QIYNqZe31LCCOR60qSfg21qm2ad1GccL2X5TN70pK8YGMOs10aIMeDYr0D7LnoD1MG9ZyJA6rzA6wb394MEqqbjOjfjn
+AAY4tWgb8r1Ox4eR5NvoWM0CBmO7cYYjAqLiyIdPjlZlfQejfsFBcXqA61mej1UK93uldZUfni3BrSh8bDJ3bneAZzIPEFk1uQyKcHgUrGoHoiWaEOM_kvfH
+lxjKJgqKZL2HJ2IIWLmKC9L3-iL2qKow4BckH4mHJ1o9sbmFCEOi8vCqmZ7MzKoPY2baB38QuPaiC4Ieq253H3DMlZ8x53S3X0mTCa1kCucC8MG8aIb0w10Y
+0qGnHls-zf69xMHasCZaEY7Wa4amL9A9kHpd_OwdJCKE_wJZV8k-
 }
 
 AzureEntityColoring(AzureSignalRService)
 !define AzureSignalRService(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureSignalRService, AzureSignalRService)
 !define AzureSignalRService(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureSignalRService, AzureSignalRService)
+!procedure AzureSignalRService($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureSignalRService, $stereo=AzureSignalRService, $tags, $link)
+ !endprocedure
+!procedure AzureSignalRService($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureSignalRService, $tags, $link, AzureSignalRService)
+!endprocedure

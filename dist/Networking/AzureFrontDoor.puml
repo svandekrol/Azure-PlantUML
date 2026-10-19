@@ -1,10 +1,15 @@
 sprite $AzureFrontDoor [70x70/16z] {
-xTLN4jmW48JXdZpo_U_hY0Cby286Pt_FNV-kCdRynwBsdYhl9oo-OO8D6ZUFEn9DfMCnOLX67bDEjKZZMDCYCrwCDBfxTNg4LoXUyurhl7FRn0fVVtGQKtzq
-PiHZm5Hj-J9HD-qhzuvZI28dJ3_oRX0OyPmoRReDxYXoeQBspOoM8tsbxxWAUf6hbVwmZF6LvOEATci36iwXq37hL_Jzut4qCgxqfrboBDOgBHErIXjcjP8A
-IBsI13jGSVWrCQqCjiWJ5JbIiICLznELj5gbaHELn8bAm0zK3FAmueCj0rcl0E1n9TSh1W3-PcHMkQylV9IrYk8ZkYgLGCFNVYNn1ULkfV_K-bubq6FVg2Xk
-oF9HvNACaRf7VkJSZBwm4QwC9qGxWjwVNw435G7g5KAzma2v8a2zGgXN62XN16KiX3t_lGC
+xSy5LaGn50HH98xq_bUBU-KX7M2qlalkIUHqhBxc2iWpc8Kmps0MmYo46OZ9v5zHAc8Mmlv5gKjAR9HKAllfD79AELHenCh4cHijt79wgDHtR-T8t9EIScbl
+4se8oeDJeH295Jg4sjVAQrYMeO1fNo0rpSjjnlH0AITFdLCXqmm5JAZKM27JjaRfwh-ZH8LA3zepvQYKFadRf5pyWd8jZNL5TuqnEeyMAVptGUbZKgmCf8T-
+Hz6QekTM5BtcAtgNfmWPYgQzLSwVIk_B91XB7zAieo8l6CkAx61OmR02uYjQpJUEtG8
 }
 
 AzureEntityColoring(AzureFrontDoor)
 !define AzureFrontDoor(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureFrontDoor, AzureFrontDoor)
 !define AzureFrontDoor(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureFrontDoor, AzureFrontDoor)
+!procedure AzureFrontDoor($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureFrontDoor, $stereo=AzureFrontDoor, $tags, $link)
+ !endprocedure
+!procedure AzureFrontDoor($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureFrontDoor, $tags, $link, AzureFrontDoor)
+!endprocedure

@@ -1,13 +1,19 @@
 sprite $AzureTranslatorText [70x70/16z] {
-xTE5qkiu38RXJwpq_YzuLvvgKZ0iutb-AFfDh4pOudUpYln-lpJoWx36xmT8_6x-XrGCi3-audLAhihqMtfQ6632aqRp4ajvmpjYjNmA6zGYJwXM0X1LzyXs
-LrIrEmSC7ijoMYd-ooiAh2fglwGYcUxyNacl0Jypudb2w2iabf_2AY8IkHMALzyT6nND7IC0O3K6101aaf73oHXAJNVyjsbcL6mVSGQDPrRxeyccGiekGf4A
-P38GOmNgoOVzbgXMLCKTa2x3yuDLnNDECSxU0MFqsW0qFxY8i2rFXR80rAVIOtuNkqelPG2KxLUUYmFQExjduHzpSLEj2BEAwBeI1D37n6-XKdYm_DGJK9G-
-FdzjAEw8vWG3n9KGmB8e0JIRoZfIModawP5fodqtV6UMaMBCsdl1u3bX7JbJqFAMi-_8DPVNXkdr_-DsROGfCwlb8SAypXYXxO_5lCuGNiWwaXKHYMiA0B5Q
-65Sc3f5L1j3U6W3UHLZAT7gSzrC0UOg8dYx2Salw4b7RLmA0huzH3R-E4e2kFprMmbKO-3qL4xHZnTOZRRokb1hjucC501BrkZZxYbOb5WFjwtAikEZYCWk0
-F5sZfiNdzo9VBGwtjLN59djwMwVlbSUdQrJClpu18FqyKPN7HgXQyNm_307KhtXVAVwi3Fbe0e36ooJGlbBYhiHTIHGnPG1vg9JBAzALva3pnx5IyXaPbPQC
-WUBHbPChCtvsVSHhwez_eH_o3ub8_W4H_Wa
+xP87OjWW34M5Dhd_WPjFQkpOeExTvptqG1Bnv_4VOOrlXqY-YqNZcp4YYsz6YJmYt5GQ-LS8131HemED0pDptqjpRa4t6jlyPWCrZyZLTe90p8D5yNjU20CA
+8Zy39XvXaHkBUdwQzcPHQh6ng7sEHJBT6r5UyGW_D6AVjimUyRC4FYGYaJL6LpHlX0sBPeMtjqaO4mbk9UyOB1AVd4ZBp76sfMPOh9Gqvu_n-2yQhZTSG2d9
+L3Jdw50GKImdapiGCLnXCnDRLDYgmkZRx9t8sfn1mBTAoRSBfILut-ADXJUM-J_3SdchIulbaZZQeNHfZD-QvAOA2VDgxPt_HqEh3jgjHo431ilvZE1G0aSa
+FyeIfqHp0UhHeD0Z2vlJkcds4imUj4YBJ5V14-S3BoH0XI4O46YU2_nQanebLiyrzfJqpOOlkytiyUxlnwtACao5HJq_8M7MliCQ7LWjUMNtHwCBKamO4X7l
+In3SnDm4Tr5BNecDHRCFb8Yuah1iDHBlaijI0ZHxYMrJibCYQhKbYCZtFO9Y66goR7R0ubNuM7UZv_gLbfH6ayAILKPAarPQEYghbOJL8tklBGfBxDfoLhIs
+kAYksopN9PAr9HMiwilNHU-51HWi5lrabOFTrilBRSjXCRz_WKNcKuFb_FeaL0ruZa4c23mUXM1vgN0R-23nPaRoq7IXLbj0B2r1G5InW6DOQj8FIUHbZZJn
+VbeACXm4B9Da6d2yd9QQdW7w-vTXXYI_XV_yvmC
 }
 
 AzureEntityColoring(AzureTranslatorText)
 !define AzureTranslatorText(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureTranslatorText, AzureTranslatorText)
 !define AzureTranslatorText(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureTranslatorText, AzureTranslatorText)
+!procedure AzureTranslatorText($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureTranslatorText, $stereo=AzureTranslatorText, $tags, $link)
+ !endprocedure
+!procedure AzureTranslatorText($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureTranslatorText, $tags, $link, AzureTranslatorText)
+!endprocedure

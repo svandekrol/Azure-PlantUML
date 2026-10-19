@@ -1,9 +1,16 @@
 sprite $AzureWorkspace [70x70/16z] {
-xTS7SiGW38LX8Qjvxt_WB1wObnu6aSutdV9lTQFVO3iavQ3AF4dlaU9fwogHzaChHi1jZ0ciZRagFAdiogxiYZDe6rC6ZyQWZVtDyykPjhmI1j777Xkg607t
-COLQSLzHKL6y9IYe-515n695HTJp5NHobKeZNwaiKm7rJ0KqCXMmL0LiecBoWZegbK2qeN0uKNbAKHdmLiKML2pEgt8RzwAYKOTp5VKwcAsSjnKLGuKItqjS
-eoVToNn5hr6Xgl2e_YmZtN4VB5DFKaTz_ztayzXHUkx2KvMhaNmpm7ZUIrZqPeeqlEJ9jr0AlfVqPsBAAipqQsmF
+rTE5Te0m38LXf9fmwFi_xIIC2jBItUcVeyY7DloJg0WMOYWH0urOXm4vdYJCeSVXY8GZ4ev8E2BXYFHD2dqg795mH7geM5rct4bf8se-TMAQYflFcMk5-XHD
+HGyLvIbcRfMreLZAKYTb3H8r55TNwCyfj_-PQIk9OIfJmvxgKEZG59MnwrxA6JE5HSdsYd8yGvH3cS8VIfOeXwwKwNiKmocQhnNVL9JrUqwBScQuePmwAxxr
+H7u-Pvwy5nCLmypwX2ZVKYHoMzlHtfOvuee2z7sA6_UNQvbvZakpJvc7lOdP3J5VLKBjIvkas0honvGLKzQmXIdXIvLmhzYak0PIAchOcvafATHGIeRKj2MB
+rnijcJOIi3KKmn49HoGSmPKOZaWu8k68128nt91098ORqiBLbY1XJkY9-Kmj7FhZvNtUiKKc_8zU0G
 }
 
 AzureEntityColoring(AzureWorkspace)
 !define AzureWorkspace(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureWorkspace, AzureWorkspace)
 !define AzureWorkspace(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureWorkspace, AzureWorkspace)
+!procedure AzureWorkspace($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureWorkspace, $stereo=AzureWorkspace, $tags, $link)
+ !endprocedure
+!procedure AzureWorkspace($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureWorkspace, $tags, $link, AzureWorkspace)
+!endprocedure

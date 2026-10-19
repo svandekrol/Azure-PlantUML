@@ -1,5 +1,11 @@
-sprite $AzureManagementPortal [70x70/16z] xSor0S0m3011cUtz1mwgKXN6lm5ENWo8jMrMWwYsYoPkt-BUlR2mI33IAgAyaV8QLouiB2miB2mikQpXBbXOWbdAAg9ysB54UJ6W1m
+sprite $AzureManagementPortal [70x70/16z] xSu53G0n0C30COJcN-qpXvvfhO1BquSZYeSQaACC2WgAqOkStvBj5BN8kYqTLr1GKDndNfvNK51GdD_K1nJ_TSNgWqgRqKUKzE68IW
 
 AzureEntityColoring(AzureManagementPortal)
 !define AzureManagementPortal(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureManagementPortal, AzureManagementPortal)
 !define AzureManagementPortal(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureManagementPortal, AzureManagementPortal)
+!procedure AzureManagementPortal($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureManagementPortal, $stereo=AzureManagementPortal, $tags, $link)
+ !endprocedure
+!procedure AzureManagementPortal($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureManagementPortal, $tags, $link, AzureManagementPortal)
+!endprocedure

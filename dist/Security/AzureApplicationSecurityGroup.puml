@@ -1,11 +1,16 @@
 sprite $AzureApplicationSecurityGroup [70x70/16z] {
-vT5N0gCm38JXSPCqvFxdtQ8K9s23mTltUwJyBiBV8XOraZGj4HTb8olBbnh-gwcpYnqbgL9vI71ACj9anKYB9nhY6zbGaZBM2TdOs4WzbYRqnPHpaUTafQs-
-BpcbqBZD9rDlz3l69y6dGD9yhd9CLSqyXa-HL3d9cfNJ_giAZzdhqz2lwBwHYb6nJtz1nNvc9PNKgTXm9PRlubGbv7ANm_LAAbMwND7ob6KPhRYFYZuxN3ug
-3yCLbLooBSjCnSdY_izAQ5L2ULKiZbImgRWeNc52fVLJuhZYaWWBC5WnSbjnEQ1T8HKhqgcuNgLW9L-f9A0p95hSPxKIqBiO3cXUYylZ5NDanaOWQMkytIss
-GH8DvMob09tD35T8eab8DYgk4Id0u6QMViNGaRbsU-96He_oqtBhPXHTuIFXZMeXAmleIvjzT3eHUmg75EnJ3b0S2CP35Z2VySXnPZxYcVc8P-OZdfcEEEsF
-U3eZE4kc8ouRFrZ25U4Zem4NoSnfgio7Z1b1V2C1aw9Pmj_aAm
+xTO5pYCn68FXeIJ-iZ3tFssvjT9DFTwVwItJ8okYhf-b2FPCWZqL0SefI4OR9RDIX2CGvBkW6Js4SOv5S4ZRzlb4C718ns42GQ7HTT1XY00e5AHKSEXVXiVf
+XwvoAF_NhQlyRvz5YUss5KHiBe2Xf46NBAKCkln-ofpc_r7GKwPqREegC9LnIUUMyUdAdDZyP2KJoTLLJZLAAUbShOropbTAJcb1VQvoS6fjb1zbp3S5ytyh
+RCud9TB0XBAq2biEIXw71yfwrvt2ncKQcdA4K8AAYagyle99XuSAcN0Yya21YMYbBNwTgsYYeXYj47cs4bG4OoZYJsvR_NN9dKA6j_XrhNbV8cimnB7wwrRp
+FX79t0nMQp0gcg71gaPOcAqoX5LPTVOKdOteR4Hd8peRqKd4Jo9-Y6vO_o-zn4yQVXBnWqJyfE6d4JyQdwGz
 }
 
 AzureEntityColoring(AzureApplicationSecurityGroup)
 !define AzureApplicationSecurityGroup(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureApplicationSecurityGroup, AzureApplicationSecurityGroup)
 !define AzureApplicationSecurityGroup(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureApplicationSecurityGroup, AzureApplicationSecurityGroup)
+!procedure AzureApplicationSecurityGroup($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureApplicationSecurityGroup, $stereo=AzureApplicationSecurityGroup, $tags, $link)
+ !endprocedure
+!procedure AzureApplicationSecurityGroup($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureApplicationSecurityGroup, $tags, $link, AzureApplicationSecurityGroup)
+!endprocedure

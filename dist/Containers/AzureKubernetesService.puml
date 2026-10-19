@@ -1,11 +1,17 @@
 sprite $AzureKubernetesService [70x70/16z] {
-xPO55jrG24JxBFZ-jziSFj5NVjt3ySjaeapuy1NrLFtEuyi0LbCSTMwG2lJFNi22ekQbH8IZHADvO-DBU-k2Bw4mkTgDglEjuVmpHcXCg8o8cvgPgQzSc7OU
-3MYf2m3SNHWp_jqkvFpFkPRdMfvhqUkynBZCyqLCexoVwMDsGngSZrbVlVDgm4U-7DAwKE0zTpvR0qLD9sdtC-WSBNcLdgNfPo-Zr-JGdjn_lPyQMSmORhVH
-5n9T-NGR7LxwlkaN58lYywD3qJFVZGQoddWOlO0myKgzi9VWwYXu66rwlkXD2SaGSLSpCwvS42PEDT4RmwpcLVrL_0ztULmU5yfSVBAkrEFMJ4Mk77mQzLDw
-7tDl1Oq8SEvP7doKu84t3YsoEHA6BybS1XuyaZpN7-dFSp9N8B7vtrFwfDzRMJ87J_HvrU_TlPlVTkpOq-xDO_BFVuqcbzMu--uT74VmfEHuwRBdjVDeYFFF
-_6D5cT08aJONPeQwkWZJZLDg90e0TnSU6V_NN1wNnyM4yQQ6zfeloEReypEDBWqkJ9TPJohoUiwNvZXux7sVZIhILHtIU_BBr-pUOoHdMCBxtw-F
+xPQ7ifqm34JJBUtAkV__jq5mDK6JTVhhdEc7PMcsXjllS-4s_kry1nX1t-X7oFHDIv2vkHD-i7k2RFwdHJo212eDmClFuDd_f0Lk0JFBTCMnUSA5NxMCCLeQ
+YV9_rEAjvRdUotKlrxte_RBUNmgzTzjUz--Uga3FaRi78-QlveiOQNjQwFIwGrTzqfg_glX4A6q6zrLUtIwyvnqetm_WX_mk3k093b-wV9s1bYzz2C9H5i3T
+HohCjaPqVeQRJpCxs_IqiVlMiifFZA5Rrlu9M_mPtClhUY_NUva1b6sxBiZUSlYWoCTCIB0iljusQW0pfalFocVtCDJ8HflCeFHVT3vnC7PhjqPG-yn7pRgE
+dhjhZ-RrYVy4DsAAc_ra0DaUJg87StfaTVThZc0GfwNWfuyRx5uJuMRJpRmluvY42xzg6KEsf7_zBLVBrJBXkiML_uCzVV9mxru3Ki-NrCAlcVgdjQw0F_hr
+XY_z6-4R
 }
 
 AzureEntityColoring(AzureKubernetesService)
 !define AzureKubernetesService(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureKubernetesService, AzureKubernetesService)
 !define AzureKubernetesService(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureKubernetesService, AzureKubernetesService)
+!procedure AzureKubernetesService($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureKubernetesService, $stereo=AzureKubernetesService, $tags, $link)
+ !endprocedure
+!procedure AzureKubernetesService($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureKubernetesService, $tags, $link, AzureKubernetesService)
+!endprocedure

@@ -1,12 +1,18 @@
 sprite $AzureSpringCloud [70x70/16z] {
-rTY7SkKg381X5IJ0ulrVznQy1DOWu_Jatv9cVmDdF8nEu4SLZtLMY_KICplSwYK-KeF_ChjbVCKcnLwls4AndP9brJ4gXwpAeoAmIaR5kUJtAGSoS_OlsIkQ
-K-m5Uej26g_nQnMIk4ZFzT139KGdhLkbHuf4FmGEya11ZNTnWFX0yO6sAQ6jeXi50IZibB1707IZq6Ox5G55NzdlfrqO-5RXEqEfFvIpObs9VaBZmp0frXLo
-16r4Qr9iKEHoSs0c8eIfwuviLAOTU37v2Wq6UW1wIfOpZQq0Bb8Lr7f3DcjABpU4mEtqCLjjfQJjIW3v_93i9KTHy1DSAcbKzli9KCFORuBr6USZ5Dl619oQ
-8ZS8mndVA5mL1YVihnY7jofKZwWpkLoKnz7axiKD0mAnZpbf6d6IknRK4Q5K3MTGoiupXo6E24Yw3csjlgN9a7xYrZ3cnT2MfJM_CCWwRLEZdENrY4D_BuQ2
-jgD_A4JQ34hoSXEnz5DxZAF0Hi5O6uyQd1vmsYbrJwhkiScn8QxITnrMGnYIj2TXgu1WNP5AAp0Fnwa-74EnhiKfF1vcILs4OQVi6QNN3TQqMSX6SSS7vJSE
--JcbM4j9yNrl5OY-z6sBVg-YJIbF5BETKbp5NgCKL-bZXQ-KyaSfhcBlLtJ_C6WfNJbKzGtlobMjApLpgefNAHUbl44fir9UhPH1oJup_XR7HpBygFu5
+pTO7SeCm58HXTGca6Uv_sqXc8_82ZqsF_scktwmhR4_LgbJtjbxjhNeKWNBFBAfIJqhzl58lb4eK1U5RqAkoNIKL_QDPlg-C_ah9lVw0BojvNKh9h_LBvVDA
+leme7qEm1nfJyar4uGYO73-YP58qLE58CYPcfcIMDSOn9J34cHvJ-99HohSAVMFtmfLIFwOaPv2xKEfKojsEOI1xLkgXw3Ey4PsKUgF44BntrfoAErEX36Cg
+HGZE6hKWbNKgSafIYSST7agTMuwMYGIZ8W_5BSVXfMgADshTXu9EMmgGg2FMxqhXYj73-sLBFPXDCeM-7X_DITdUHQUuF2ziQknTiNEcfuhNaMHGe8fJaMmD
+IbAH9qftIdYxCY_Yf0sNu1HTIM_ly1a8c0ibd0aRf9uA4Ad0MOQIJaPyz_DqUG4Y53d62i8dV71YojMMurEIOrou-fy8yq1zhO29kv34F-xC0o5ARmWesDCd
+JXGmaqZ16PbBG7G5J30c3aAkmDi4X2dR-8pyG28AmViGCH08LO8RMzIuWeX15KGGhY1cS0LE8GPHq7gSV9UomFYyCjgwiL_ube8BzNcKIfIcAlM3IXjAKvKA
+fHjSQVf3FgCq_I4hBkXAQrrfZrIb4gKrA8-g4XIj9fL651s1WeYY8r3GfvKs5S908SXJzG8
 }
 
 AzureEntityColoring(AzureSpringCloud)
 !define AzureSpringCloud(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureSpringCloud, AzureSpringCloud)
 !define AzureSpringCloud(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureSpringCloud, AzureSpringCloud)
+!procedure AzureSpringCloud($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureSpringCloud, $stereo=AzureSpringCloud, $tags, $link)
+ !endprocedure
+!procedure AzureSpringCloud($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureSpringCloud, $tags, $link, AzureSpringCloud)
+!endprocedure

@@ -1,11 +1,18 @@
 sprite $AzureStorSimple [70x70/16z] {
-xTS73gGm38LXjpZEu_xdtM8o6aKB8jxUVlLH-EIXG-N-nymoOsOgno9gNwJ25S8kgacizj26mxRH8wEsaT93jXKz9BRaixOxYowCzuYn5drYCbVIHOCfO_6-
-0gkahtNZKW7JJFs6wKrfnhXM3WYzq-OUCRM8S6z2x-muRfJZwB9vTe_ZLldSK7uqsf7TAjbemdS0IyjrZqg6Q2gyRAxcSyckCiFQaLKLN2Y_uIp_PudM-hVF
-maJqpRC44L6VI5r1JyRoDf1AHrc143lWb3aGGeAgalSqfjcyoMfLQNHHgogWYr1KvZ3QcYoZL9MU2f2QfnLrHVCtn6V5pjF6gWeyHu3JESKvKaT5wKePG3C4
-PThtbMNRB5wU_385YrTKmYXpDCfyNb3MQqSwJnV6oRHpAAwVkvBp0uW0e3dHLvwxUNS0EiyLPSLe9bAwZfwNeAeONMHLHN8hNV-Mr--x904CFbydyxxht_OC
-S7nkVEFpQAHoVDkpKRxzEJqYnaH-Y_UNdpvBhyuIT95LPp6wAif_wDkPeBlQFc9q7pTiCKuFQNz2ej5ErWTkcE5AXLXR3xmwluA5wG_e8m
+xTQ7hkCW48NXS-WCAU__jai6BAMOsAHi_rHsR_irfiWv__u04229Xks_KmKI8-IUr7M1Pj57wRZPmFBtrZsmXbXiDdXL69UUHsZT1jiwJoDk1uvNXxYmRWUB
+OGRAxG8rdiMu6zxx4BptksVnkCw4c5A-aL8CJXaejrOfXABrCUM1MhA4uc6jSj2CCgDEz1OTfQpEKef1qqTgJzMV9WPlYGLzAOT1fIH3x40hfHfKAd6R7HEB
+6bQK13igqTYWOsnNL8xNLvWqrlaevTfWZnx8hNBd8vN35oipaV_h4hsFxwyB0RwzBWbLUls9abOSAgUHAFCL1nD58fGNYGQKsOhjh_Q5GMLdryLZXP-THR12
+9Yjz6EkzkHvbkX9HkRv9WQZY_7cng4JofM8bQtDsbknHHV5W-q_GaV9C9Hae4JHS_cV2_WewIUZIqhFJ5NwaWYpe9CzNacE_FW4gY6-D95Fd9VPXlDRQACpJ
+fyxqlSafYOZHYLuyks2GAh9DDbznw6XUlqVv8tVQOOMRhHXKpg8pH1LcAq8mYcIsBTOLzlEhAq6Ao79UBjBhRxNS3fzwxzretdzFvvJoHp-__6cLyljyhfiV
+vlo9ok4yC1CP9EOov-TsHSxRjZBd_TOYee7VtGy
 }
 
 AzureEntityColoring(AzureStorSimple)
 !define AzureStorSimple(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureStorSimple, AzureStorSimple)
 !define AzureStorSimple(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureStorSimple, AzureStorSimple)
+!procedure AzureStorSimple($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureStorSimple, $stereo=AzureStorSimple, $tags, $link)
+ !endprocedure
+!procedure AzureStorSimple($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureStorSimple, $tags, $link, AzureStorSimple)
+!endprocedure

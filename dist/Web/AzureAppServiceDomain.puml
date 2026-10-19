@@ -1,10 +1,16 @@
 sprite $AzureAppServiceDomain [70x70/16z] {
-xP47hXmn34D9oTf-__C6b0md-VueW-sx9jhCC_tSi2qhAxwxAWxbSBaoUrakr-PylKNvpt8wRihfLykPs1IUVxESi377LxUSiJ7dExpH5NbDo_xgoBAxEijI
-MPPbQO0dAK3GWLQ4dLYH0Am6xAT5vMeWgjZBRH2FMibLhNKd2_FBa6EkcGGxQPtKT9RNW9WigXLWDWQ1QKySE51U5ITBRZSq1-8s21qKyJn4aznXDJfPj5hk
-4eXGkrmE4sb0T2z5M3kTB3BaFCApKOHv7St6qmMI14LcYnQg7PDWV_q6o6RIr-Lv4HUPBFKpRiyxeRgjtsUDYVWWayMoKJ2IiBenQXEPBGtZEbZ4-p07iHza
-jWHfQIFzV-9a6yG7cInNPLcMPLdsLqUMk5OIij2l3B4fAoj_
+xP5dbgiX34Cb6wUN_U_s1U5KllU3Ctq6fL_4nJcSnp8pStXZtYvHtisoFxmzZvRTTYYxHSkU60htIvOT1hFzxfOz1hF_i3iQptUrd7TlpaKIgxTdMfHfcPO2
+UFq4K3y8Eb0QOH9h901h2_PgKLaoH2jc-KuyJ_9RjNGMQWY3cfg3O98Y4daIczU0w2mk202cnfsm4Yc50_9AsLa2y3gbcb9fv08w-4YyTgn-zywYqpGb46gt
+dGwx4vr4M04rwTsINpIkzX6kHYD4kT1YjwiBY0GhwImQiKri19C4K6sMj-g0D-8YlMM56ktDlnm0OKbA4krsaKMBgT5i8SBMZMKYq5bATktMyFp6swtQ2-aj
+GPfif3yJ9pN-VKsaixmXVySoBUl_MQRbl7vppj_9CfIPcNy
 }
 
 AzureEntityColoring(AzureAppServiceDomain)
 !define AzureAppServiceDomain(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureAppServiceDomain, AzureAppServiceDomain)
 !define AzureAppServiceDomain(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureAppServiceDomain, AzureAppServiceDomain)
+!procedure AzureAppServiceDomain($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureAppServiceDomain, $stereo=AzureAppServiceDomain, $tags, $link)
+ !endprocedure
+!procedure AzureAppServiceDomain($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureAppServiceDomain, $tags, $link, AzureAppServiceDomain)
+!endprocedure

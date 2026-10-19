@@ -1,0 +1,16 @@
+sprite $AzureAISearch [70x70/16z] {
+xT07hYen38NXasB7uKcQ_U_soT9084VaplZsyjFRXvtjY_NNN-skA47532w4S3632o5S2E42I92fRwAq0uKGLNsb8YN1oqBCOQHYbFMWOjCc6G_90QPHlWjo
+4P6Q1xDIpDfyoMx8DN-LRfyzCJW1K5Hk5KTjhnr4B0DfHyOqQdi74GKWZoMWaB94h01fKdodHinIyJ-MAH_FHYjaA7L2rD-p-nXXHVReO8ZfzYGSKgmjHsa0
+R-JlsTIay4PfSRgZ5MALLye0cb6JGYjbMYWRruV2bUbaT1-5MoWAh-W3KkrSZdX9r0cjoVS98bukUHVF8WdKOfBkMVV6uvYabe5K_bvVTKEaTvDQFB5-hfO6
+4YYCM03XDc89YIWrWFHjPae0QQIqquYFGem2q1vLHgsVHGOJxhAz1RDTUml4UmCaplpRvYwnS-NwnUj-UU7HsxvzV_tr7m
+}
+
+AzureEntityColoring(AzureAISearch)
+!define AzureAISearch(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureAISearch, AzureAISearch)
+!define AzureAISearch(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureAISearch, AzureAISearch)
+!procedure AzureAISearch($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureAISearch, $stereo=AzureAISearch, $tags, $link)
+ !endprocedure
+!procedure AzureAISearch($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureAISearch, $tags, $link, AzureAISearch)
+!endprocedure

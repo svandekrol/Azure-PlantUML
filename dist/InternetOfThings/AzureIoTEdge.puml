@@ -1,10 +1,15 @@
 sprite $AzureIoTEdge [70x70/16z] {
-xTPNGiCm48JXsIxV_y3qjaIIbRNfV8-G_1ah5NCaedT465MixgzKK23-dbtT8VCEu-gGJB1EVKYnodn2gqioAPn9CKE-Yug7acdXUYfZFAcD8VKb61FpLLny
-bMHMFTJiogVNL6snuYCyMahhhrOZF67pJ7drScp-I9P26drvDSSbe_JlBa5YqQ5uuZ70I2HwR6TA81dTqETJ71b5ZDT4OKicWCGG8P4O0JI618d6YC9YSGp7
-63p65A-cD-He4wyPikdjeiquuG7ltCpRLBWmgxUviBR3pQBjaJCgWJCg3Z-XOj0JAWASK04WXok6Ex7Dk5biSuGxr8vL30_uK2NmH0vK6Y5bQXN6AufQfH4I
-QOMAuuB4eD96GnXTugrjMVGhpPMmJimOH_rNvh-YZL13_fQXHlg_JVyhaVo2YhQ4Vtv5jeHGaoA18ZAF9wwOkGK
+xTC5OW0X34HHB1EepVrFMxSLiXBg_GTuQ6WdU4buBYno61u7y3C5tGht1hFzY9-H8GessuVu6NoUWY48_8RDu4Y6uLLmj7884Ib5iD8H98N7igtOYCJmNCAM
+0pMGbo8s7Es45DwLTILi8fh39D7L-5ZJNd6g93KOxOMmJz53IZGKzUz5fufzBrcxMKgQAkMSWcXSo_xAUmHgLAtocoBrVAyphTKLIaf5gpU8QFr92h-JqWOe
+ZHoWa2pDx45f6_4-jyB7nYZqANp9e_2jymeddLGuhwjKsvXtqPPfN-7-v3vs-bSSOP83SJ3_YfdE-lbAdVNpbJPhY48EO2veT0S
 }
 
 AzureEntityColoring(AzureIoTEdge)
 !define AzureIoTEdge(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureIoTEdge, AzureIoTEdge)
 !define AzureIoTEdge(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureIoTEdge, AzureIoTEdge)
+!procedure AzureIoTEdge($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureIoTEdge, $stereo=AzureIoTEdge, $tags, $link)
+ !endprocedure
+!procedure AzureIoTEdge($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureIoTEdge, $tags, $link, AzureIoTEdge)
+!endprocedure

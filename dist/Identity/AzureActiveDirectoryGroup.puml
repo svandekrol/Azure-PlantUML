@@ -1,12 +1,17 @@
 sprite $AzureActiveDirectoryGroup [70x70/16z] {
-xTM7ik8m30LGTGdz_mSlJbWSa98PixsSD-srYtIT0d-g_uW7X6_0OW_wSH2f7J5yGkoDuYSX5Qs7T12MiBKKLg2T45YWLgplH5Qqm-1YjTFyfCZCkDZHYdBQ
-cby5hdKxBs6CF92bb5bCv0lgKnfklj7HMxwADgNywpHICDzfb-8NT3OxtLPJ6C2pW8RvEGAuPK5GYPy3WAm4Al9JsgSGDFHg8OZpNgxxZV5rfm3z6RNa-Syl
-70OgAGOzYuOZREnwbEiO9tYuDTtsj9-asKdX3BAQnv49mHF6N8TFCyJkK6QE4Plf8uSYmt8Nba5NJqn6H1Op5KBSWnMtZ3iYKbKY6XqPdh-V5OzinvGRfHtt
-1RCz4KxpnuywQ6VjEObDWfFQMmpJfZrkiIDy8Zl8mMcGxh79DZGhYHru3ZH4SnkG3TrAziAV_UO1dhtEg7Ix6ySRHAHvO5qf0yzkwp1CTCio35fLkzsDFeou
-UK28LuI3UB5TCbwV4EWDnS6y6CD8y_WLRnZUiNi_JFCgyDReLxrnoyg0l6M8vAsi0iHxX7AMKe5vJsgtvokXds7lHHPElggc14eiGoWibZ4K7ilqkwGO5F61
-7vMYtsKZ_2udlHx3q29PmF1d-kyB
+xTJNRkj038HXR1jID73u_czxJ1UepI9Q8Jt-T9qVrCIs_r0lUF3p1BFJ8Mmq7rUnvwCQcF59tY63dlEHzw_WPAHVCREp5So9kt_ErRSh5riOEsMksDhxLEnm
+HU89968Jhyn_kXEH7LOHOhWYunLxfyfWnkqTAdxu5ds72Zz6ur7rAnxfPtHjkAASEyrSdEj6meMSmjLU91oD06YYIxZYcMuZj5Jd3dAPCsQciBi9dKx3NKaf
+bThGQaufLTn48-HSQcibP-Npugcb9JpO7V9TuQ-5MKwpWdLcodTWws2ff5d39bFppSH6HY2lb85DHdAex6SJWRrInO9Oo45irecWhhTTPrfKR8b5mhpjMgoX
+rqZhLUY-3UIO4jkky0WQsVP6Rn-POfqAtRTYv_QHaNr5c9e2P2UEgRRLgI0YHOWuPbyHBlPjGaJYSAMbb8KQgKXEzHqgbMpRVINfGHPEHoe2wQ0L7NtKrynT
+J_2Ddr1vLVmT8a6d0QgJ_qWl_m4
 }
 
 AzureEntityColoring(AzureActiveDirectoryGroup)
 !define AzureActiveDirectoryGroup(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureActiveDirectoryGroup, AzureActiveDirectoryGroup)
 !define AzureActiveDirectoryGroup(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureActiveDirectoryGroup, AzureActiveDirectoryGroup)
+!procedure AzureActiveDirectoryGroup($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureActiveDirectoryGroup, $stereo=AzureActiveDirectoryGroup, $tags, $link)
+ !endprocedure
+!procedure AzureActiveDirectoryGroup($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureActiveDirectoryGroup, $tags, $link, AzureActiveDirectoryGroup)
+!endprocedure

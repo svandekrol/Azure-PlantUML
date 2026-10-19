@@ -1,13 +1,17 @@
 sprite $AzureContainerApp [70x70/16z] {
-xPY7SkCW48RP3lBxl-y5ybyirbZuUlscUGZwl6qcAvSV3ecQMRYPYj3vl9-yP52BX78PI0oSTmxnM69Iojr-7Ou6S3CHPX4pQArmtA5j7Axf3lSWk407vnF8
-tnNBfDaAnGbVAb0vlqYOuqnPOeZpMopaBpJmEYD8j6pOL1UI7NmToXC9BQO9yBgmcWIY7j6SrWErc3cT94HY7k-quwXAiqUj3nJpOxQuIImM09OtRbKNN-mF
-HU6H0GJ9qZMtMqgO7fea4VrqIOEa4vBcd5D_UbAPKPfZS0F7IUHpizLDayKxiDmbrOtdd1O5nkFPCgWcZFwRLnSqrazILYjSQ-3PywVQ5OPhWlxtG-zICVwO
-hCwmW8zFi4Hktr0VhOi60IujLg2OBH1bIyMTrooWAdsh1Q9lj80_olBVqjfdIsi1Mcj_XUN-wTTP6jBuRudlO74gtsgfYeLZR_6YlhGuJrjAjnn7guE-Qu1Z
-qFezLfyjJVkfJ0lF4ml00anY3alq0_NJ_YtKhVZUjhBq__FLf7HOBOnG3fjs28C5jBC5civnjNhug4kYlJ5B3aVyQVC0FAHiqOu5q3HzN0KfRvYAjoklAycn
-t5IIbqxHBO926CidijccMuAWqDICBzTcoG5Yqb3HrP8jotCRWwooUco_gGFzsF5ruo18rbW0tx_XskxTDTt9w6Mu52VuCf3Wvu52S5KQ7WwdJQHNAP7wllWs
-MrWuZGx-GkKAcIqIWPyxpCm36B_qNWa4eKsulZYGzu7Hf37byXAUViqW4RKtH2G5iPjiTFAR43CtAR-6Jm
+xTTNSiCm30JGDA7f0_U_RMHInb0xOhBfTTrOdo5tvqT7Zy49vOaJwG5WZa07KCv01Sn9fcie1H6goASD-d1fX5Vurm69I2RF49KG2ekeBEHBONXTdont5MLV
+38TXro4HuRgSbQqwGqmnSSbQ46p1aQeKbSwigydol891PKiC43BpKWIK3XsK1r00Q2cb31MP5TEQMjjHQV4DMAxBR7FtDfZZNbHi0yPYhHTOJ4sacQbAEuqj
+ko23K4gBvvdIKwrTqPdIAdgZKdaV9GwAlQTYlrhvLzpzghZh7dV_AELViJSerNgTub-gvDkLDVFD2lpAo8XIefJmsE9BdYifgbdfIhYPgQb7j5khrT6_6461
+hzZMZ1RVfARqrC6lQtYJV5VwFYX5CyOuAFLr3pyrKD70-9QZ4Yep18l1bEBr4mWL79bHKCOvabfZfrAL0JiafmnIK0QidnK8b2v98gLCPba4_oRm28Pbb5Py
+RX18XJ1OXKTuHNIF9Aq01NV0AnWqU8KtU2M9u7e0s31xU4RoI_88
 }
 
 AzureEntityColoring(AzureContainerApp)
 !define AzureContainerApp(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureContainerApp, AzureContainerApp)
 !define AzureContainerApp(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureContainerApp, AzureContainerApp)
+!procedure AzureContainerApp($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureContainerApp, $stereo=AzureContainerApp, $tags, $link)
+ !endprocedure
+!procedure AzureContainerApp($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureContainerApp, $tags, $link, AzureContainerApp)
+!endprocedure

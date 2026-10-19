@@ -1,10 +1,16 @@
 sprite $AzureDataFactory [70x70/16z] {
-xTK5aWCn34JHp1Xbw_xN3LX9LxJeNWRtGlZL3nz-wBQxlKVOhtiJDO0Guls2MPG1mUtY44fyPW7C1BB7vtRf9EzGogMKMklvVqvecLFIDcfA5RzQmdXyovJI
-qsPEhlT6ZjjOrZcbomWtAumd6QTZwtrEkImRv1TAFs-snTPIm8jstsDktKQqWBeE1Da21CeVQrajgwKcVtflRsWHpHxfohU8tXGWIhU8GW52juX20KAtY481
-GhU8GW52juX20KAtY481GhU8GW52juXY6GZR8keK85IBg5E0K2sYJW52jOXw1GZJ8kfNWJ0j-ioubXUtMbPBicMZj6IRw9XaMtsv1P-hnN_k1XqBjzClj-0R
-D5aBhJIlV6pBQl7Fj6-9L4khDhcTAJQrTR7rN_QUNYtjlItjeaHvNqkBXn-r4m
+xTG5piCm38RXDfpuatR_q_uG9zNgKJocLrXwv58spzWqooOjCVSCjsnh3MEjsyhQPcbkXGMHDUFC2f4ECsEZ67UeKOMMMNo8CQPQZC6hPg78J4nvNOgkFfSq
+ee02loCN66f4O6FE65EekBbdBB-RNY0QLFvB3AqoBXDf59Q2TzRmG3vaweqejAhqQ0bgfGYbfbUkFiipFXUyt7FvVY-0t3xZkG2Gsr3V4OI2SnG81JNbSu5G
+mEcU2pYnhPm5BR6jUouG2g2VXR0a4CLp8GW5KCq2YO0HlK8G2hGAIGICA9-BHC28TXP0fbTmCZgY76NqpqMjbATHdl-vq1iyb-1hWIcam1NKSk3IyLd2r8gy
+hszQr4pVfgEAdrhXeGfTRvPmiV8yip0JfrQYMjzqgDcsEH-VfIGkKmqbSuGQzSrx_KVVzGNNcEKGeqGs0Zb7UQf-0G
 }
 
 AzureEntityColoring(AzureDataFactory)
 !define AzureDataFactory(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDataFactory, AzureDataFactory)
 !define AzureDataFactory(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDataFactory, AzureDataFactory)
+!procedure AzureDataFactory($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDataFactory, $stereo=AzureDataFactory, $tags, $link)
+ !endprocedure
+!procedure AzureDataFactory($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDataFactory, $tags, $link, AzureDataFactory)
+!endprocedure

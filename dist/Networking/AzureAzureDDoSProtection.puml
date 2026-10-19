@@ -1,11 +1,16 @@
 sprite $AzureAzureDDoSProtection [70x70/16z] {
-vTVPUkqW28PXH1JukzRzt-xkN19jelHmlyTvlimETAMguvrhfHnM72ZJlev1fqtiUELc-ixCySeBxMXuvNhmtX5Q9XuRnuvLMb4wtfXE65vvAzS15dKCDpFS
-5hmBprBD7D_Sz5V7unf5Sfk8dH2IyyVXxcQwoCpVO_rKqOIXufhWTvNUPD3wRgMMYRfRuJB1kvKobQYmlJo_FOnp5JLfpn-Qgw2BF7ugo5NKc_xzMbWHA2Sg
-kNU4J0Kh5T50afN-elxyqLOgTZI-QI-bsD5AnLJa-SDo5Nb1k9I7f2gl92WbMud-oqhBLXe5agq81JLRgHG1lbznW0uyL_5XBRXV6TQB5V3TYWELZd8LEb70
-epBbqMG1p9aAqva1UnL0QL3tAqmZ0tOgWD940R1U0L1efiKAbmcEbKPp7Z9I9YH4Z7x129dU1dsudwaMCbTkjZW6O2cYTA4ui19nkiG0xYCeTAtYrLs4wOuC
-cI5IYJOoYKZCN69QKpSYgOmphMFCUQ4Tx9YmGdkAOQ2qh-54A8CzVpUHubkZFBbvmLiFkTDVoSgFymy
+xTO5RiGm58HXDN7om5lb_gSjmqJZNSTJXj-2ugV9ydQXnEecbPHaS5L2mjqUSezyQ1nns_NeZEumZ9s-WKCmpyUw_yz3U0vI3B31EJXWqGotJX4Nb8XmjuEv
+HqH3CI5IGb6Ygoo5MeQL-QfH6LMcbZ9zcJBdwVgrd3N5eYp0cARaKag5CUgMPNtxbiaIiabIg2zLYa55LDQJ9zowwm4bpV7SAxcM0e-xk5FSTeSLttUdk9K2
+M_nUsPS7bBacJAcpfDnLeFllDGNxBSg_4kDAt2kOgj17Zt4b6qgCAa5ArPJO-982Jbk1ly0fg0HsHe5GGQQlT11TOQQlCC9A7bSI5MnGOOJ7b9PI4AbRd_5r
+eLRlN0yo_H3XAYW2WcC4HM00aHb4T2O1wJ4f8SnaD0uXFUPysz4aX9CGJa8u2U4qWoD4Ymon5g8pLGR0sNhT0W
 }
 
 AzureEntityColoring(AzureAzureDDoSProtection)
 !define AzureAzureDDoSProtection(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureAzureDDoSProtection, AzureAzureDDoSProtection)
 !define AzureAzureDDoSProtection(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureAzureDDoSProtection, AzureAzureDDoSProtection)
+!procedure AzureAzureDDoSProtection($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureAzureDDoSProtection, $stereo=AzureAzureDDoSProtection, $tags, $link)
+ !endprocedure
+!procedure AzureAzureDDoSProtection($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureAzureDDoSProtection, $tags, $link, AzureAzureDDoSProtection)
+!endprocedure

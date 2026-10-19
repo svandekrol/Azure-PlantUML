@@ -1,11 +1,16 @@
 sprite $AzureActiveDirectoryIdentityProtection [70x70/16z] {
-vTO7SlKm20HW2rXq_nF_nOrdhKSFuqmDKzA_x6XnMNxXo8yWiFT8Sq1VAt00yXfnl6RCDmNj1Q9-A2yOyL1Gh-TJiJeIIhLlX59dp4S5KgY754Shr7DLrazR
-wMH3sJ-l8Xx6GmQ3uZ5MGnn-6KrtJCfpHdskkAGwdYkzUqlMmqeWlVjNnLaPa0I3gTAFGROULlh7MAuULlfbD5CFAtqOITSJIkTfQGHnAIOPt0cXCEI9wnYa
-a0Jkc0HIIAA-bG1IYAA-XGLMU8Q-1IWeV9UmYcAyBi-LjlvTssFOzea-K-pezlnZZJXPfSML5mTBSUQAVcugulzJd8c2sB6rRzFnbO3ZtDVR4Ek7fKN7Ut5p
-9KxrG3PLnZX22jKRnd4nNU8qti5va7Px1IZ5uNev25y1Onogbu9aub2zExAhIouErxiY883YsBw3Xs8KPFBcSBk3Pxq8mvRPD72SiLwdKyt4YNgJxtQyW_lG
-qdmVfTBvjIuR9qh_Nc-YzEoBuMm7-SMx5eU2bE9GlQKuithJfLEzXMcWKosDol8Bvoy
+vT454Xmn34JHW6t97T3zRvk53hdawl6eCFdBCCyK_rkTLH5MG-fC-rDfHOHzAgw7LH5MHLWLOLM4LH5MHLXDiLU3p2racF_gDaA3tKHygJeJTWDfvgTCJvIX
+6OsqeHcDj94n5hi-fKWRPqo6K7am3-Ylnn52PTYQ7o1KCiOE42gQ8NAks2M4YcOqGaKpBKVOK8n6gEoP9eudKSZuVEPlHY9K5iO1p4V0sn58hanCU-Ty9v5L
+CSTqC-Rp_Od89MK291YXHprfey0jpz6p3XL3pwighBmYLbNOWH9TELJCu6wUFX3HbKFaeUn2F1BCsr2Acix3q8foXZ5CfOH6REwKYVYLCBJ2TWPp28Lj4BKn
+G33MHsQmkGaHQpRUMH9o955YsBQ95FaUMROjLo9lsERck8Om6sa626GfCoA-Wmw3K2917c7fIom99zvznr-5Rfa80zXonje9HeR5zKWaJ9JYKSM_t0y
 }
 
 AzureEntityColoring(AzureActiveDirectoryIdentityProtection)
 !define AzureActiveDirectoryIdentityProtection(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureActiveDirectoryIdentityProtection, AzureActiveDirectoryIdentityProtection)
 !define AzureActiveDirectoryIdentityProtection(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureActiveDirectoryIdentityProtection, AzureActiveDirectoryIdentityProtection)
+!procedure AzureActiveDirectoryIdentityProtection($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureActiveDirectoryIdentityProtection, $stereo=AzureActiveDirectoryIdentityProtection, $tags, $link)
+ !endprocedure
+!procedure AzureActiveDirectoryIdentityProtection($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureActiveDirectoryIdentityProtection, $tags, $link, AzureActiveDirectoryIdentityProtection)
+!endprocedure

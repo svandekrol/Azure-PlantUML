@@ -1,11 +1,17 @@
 sprite $AzureResourceGroups [70x70/16z] {
-xTY7RYmn243HCTZm_t_yh6tt9M4nKrHIhchQqSAasDb-U7B19xPXlOPq6-tjXsObfDbiR45gniSM3RkbN-QqPv83V38E2w6rOZHO3mOynSFZnE-hBORkpzMD
-MhG52PyI-KtnR9WcivQCvNvNPgcHEeuo2nSYGk5w_1PAIrx8lUWpbWe6JbN12DkdoDlgIfEaLb8mSYTNfD1AaMAf8jKqKxIh5EhUSwMl7NLVAhFSCAye-SiP
-xXKbTRfxKS69XwahuNem2Wffi92Y4ZiAK5U8XHnHY67EA3hijA8YlTjH1MGgVTWH1UEkuDGL39Jf755K1UMUxLRk1WfZ5HKC59ooWe62KrDK9LB82Wh6LuMn
-SWKZKd1IPSiLQgcojSf4ilvhBxfGj7Roo9N2oICQArX8giHEi92L4gmdM4XPuQcpa419JisCXIBPgJa_mOi-55sVuBDhsbt9BcmF9RfvKLEURdoxy_EtB5RH
-pzpuUc0VkNrIEtOJbcjlvTIvVwvY8K7r_rQKNlDV_m
+tTX7kY8n40DWiEpIpAhlVzj7y8T8igl32kr8lmEfvUN7mmEUo8X88X76YLkOH2wf3Z6JoJut7c4MaQExbPIYQ9LR5CNTjvuXOxWfvPAnGruLJeo9mwvqv__o
+dbDvv6G-DAGKykj480LVfqE-Almq5BSipfJoDIkLOh96AODabO8oJ4Ovpn2KqrGfYQ1OHKRIyKf5KecXKZCE6ZbMvWugcL363889HOupSeftqCYaufrA9XNF
+89XMZ2CZhoZGXknGAg0DsQB82HwWjFqAW5hRLaMxWdf9x50kHbTgYxMA32aNPui252dtn6gb6rAqh9mYGugSj293YfoS0XIZz4H2aU6KscAiTCCgSaOAiagp
+Yd5W3ATq1bRHShmYnocQY5UC0sCOnJWmnaWH0ob2qeeSAThKiHAn60UQn-IgsRIHCz2LLaqJa39eDRX4Y_5jGeXpMfisc_VAL3UrhFsDZmUsp_LDc6_6pbR-
+PTl_hJqXYBsd5UDdaac5ou_d3m
 }
 
 AzureEntityColoring(AzureResourceGroups)
 !define AzureResourceGroups(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureResourceGroups, AzureResourceGroups)
 !define AzureResourceGroups(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureResourceGroups, AzureResourceGroups)
+!procedure AzureResourceGroups($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureResourceGroups, $stereo=AzureResourceGroups, $tags, $link)
+ !endprocedure
+!procedure AzureResourceGroups($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureResourceGroups, $tags, $link, AzureResourceGroups)
+!endprocedure

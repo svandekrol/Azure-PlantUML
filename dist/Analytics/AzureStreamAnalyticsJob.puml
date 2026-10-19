@@ -1,12 +1,16 @@
 sprite $AzureStreamAnalyticsJob [70x70/16z] {
-xPM94gCm34Cjomx__ySxD2q6KTPqzZvUxqoYIB6XzelvZ-U3i6yYSkBs3I0dtsQ6-U9R0qred-3dG6SppcxpS0sav-kH6Ls2qa5a4Pj6SzorocjwGTyFndLP
-YyYEQCfw4s-ytAFfZljMljrCqweDVJFd90XCTs3qLXHMqnM8pegIWNjDO3S1i5ECSI2i1nulw5i1nnxhy12UGWSPjXfdS9B9hsRPWc35NveyXK9dXD2nfnqV
-Ey9D8ET7QPnr89b4QAvsU1sbCENLZ9uozHmDJWP9tyrOFyS9EyjGwbG1VNxcKCxHlUgqWrR4UnNV9a4QXax6f5JuLWNFlJIS7t_sAhMcZ6WVeaaqPKW7y8f0
-BNCDv11IwYF5Zbn6kWcY4LXjL0gf29T9Mg5TD_SOsoIdT4SkBweV953WwMwT19i0ZktxGoGZrXbNLcfibQ4f7Ai8fnmlJgNAYCVquH9zAO-5vAb5bJy9p7-V
-b4CLaKBT2vMI1p-GDZd2HU5spyzDnxNTO8B7A1lXnwqpIAg4cgawawnQMomTi0wEfKNCN0HiSRi0O4bqZ0kDfQSt4n-gXBqbTtObcOogYCfKytfgLRn6I-HI
-XdMr5dKFoHAvbWderQ5x8rH48Qp0LQ_2Fc4qtN4FtmNw1dQ1le6iGD-0Lw1l8IUmNy5_lW
+xTC7RWGn34DH55l2eF7-fqrF284owBJjFzLU-MqTdBb7yxFpA_Dl57PwfKxFNkbGEHPSTanmQPw08hgvHXWNors3x7P12lhEeGJ-Wi6UWh0FfQyRS0-bLw0P
+HUAD62y1TABym3U-8XMlJVuuGYF3lA4fCmpI9mmymYrbc1u63one8BGwnw3jCOBqwts5Iza3W9LIxhoOyYHxXVTH_z6CKeQu8QHJAhFwlFXdfEc7oIXO8FaU
+NYEIWdnDDKWoiFOIu53tGBm2SBPv4REqG19r6BNWjY8C84D7zgHKHHywwagAKe8TkUZzb20CfKWjUCfysfWWtUVBAfNYCimNJ1dfez8rqkIO_5u6sUsFbBzW
+0cqp6IARS3X4B_EirHciuu0oTUe0qpYj2alOUcR0vnMSMm6HiojaS8uUFGC
 }
 
 AzureEntityColoring(AzureStreamAnalyticsJob)
 !define AzureStreamAnalyticsJob(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureStreamAnalyticsJob, AzureStreamAnalyticsJob)
 !define AzureStreamAnalyticsJob(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureStreamAnalyticsJob, AzureStreamAnalyticsJob)
+!procedure AzureStreamAnalyticsJob($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureStreamAnalyticsJob, $stereo=AzureStreamAnalyticsJob, $tags, $link)
+ !endprocedure
+!procedure AzureStreamAnalyticsJob($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureStreamAnalyticsJob, $tags, $link, AzureStreamAnalyticsJob)
+!endprocedure

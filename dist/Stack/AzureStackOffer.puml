@@ -1,12 +1,18 @@
 sprite $AzureStackOffer [70x70/16z] {
-rTI7Rgum38PXPn3RIU__UWycgaME5Rv_QFNjqEI1JFgpfLavo_H-jV7_rVSHjX23aU-PnZ4HPZw-GdJyd7NXzZaYPbX3fNsAyBY4w_-EmKYtfqlARPoMR1Y4
-o8amMSKuPm0IbK4pjHbs1Y1XG9rc1iePH6AwKH3IqghuYFe9ke8G8cVaRFpERfspA_mQuenOQWyVfV9SQP664Kva5KViOtuREXM469FjTngplY1oGCIJUzh7
-pnXTPXKWBI8nhG2XV2DQPecfQeQhKnov5ZmYfY0aEIAS0gEpZ16vScP5Pj58XipoVFNAb8XeHFXMTSIPj1gpHqGUqbkyGrf6I5GYOkFVLrQbR14gl4KI9NaH
-sHes06C0mkK1qRF3tW8G6tTvC5IkpGSGk3AI4I8CYAiAa4O58729vmLQdmokho7bmR15BXk43YEie4I4yWP95-BCyO1ibtYTYKOb45uz4TqWw-jvXrWb81i6
-hQuZc3bAC5W20fZZMgaLeHGGmB0j-8hiJZ5cLYJfh3k2cEknweWugjqHnCotPr6l10GnEXEzrwRX269qMtS4C-lIP6qD891XeaJKVWtD5CCCarNC00XWTWYk
-tPcY7I6OaOuHp604CnqYcEaOmSptY35V8yvW13EEVCjW15UFH7-mVm
+rTG7SiCW48LXjCBUGihzRnkqTjR4Y8Tcc9O_PVgdyh2__sFyteAnmcG-BIyZdYu-3Oiuiu9e-VZuA2RLkeZSEaEguHKLm624Yml-_ohJ8tOGzksFLGGmm62f
+js3VHrOPHGnMIldsh7fpvSudQLM-GoboX961OWC5Firz6znBgU1b9AM64VduPUmvjLn3Wf4ZUvmMip9z88xsT9G3aJYw5L6eS1CHR_jXHDOWGE4-QLChDPDd
+rv5XgZfxiNj3t8dF4PskamFnmJl3co4KY73g67qsHyGBvWnHz68fKHZ1x2U8m7Lo8C5i7COhY4W_2NCOJIFaHimoJlysGb8YWD0RCqAWGccJLKGVWyyGfZ6Y
+H_TZy0aYmWGHsU9U058Pk8pG5E4hwsQC26yxG2A4YFXN0KAO9eWy44BtmIaHEh8I2aOI0QJvwEUHuSW6FiZoh7-xsfH7vyJByeg7Y3CDWXY0H85WvauTmT8X
+aF6fw1r9MuzWnWVNDjzEdzd8m8mZr24pHWyc1o8ln2oG6QDQ6T9NUuVC67t4sfP_ZK0meyCia2cZVs9IlWqGsDk-b98p1X38kFBOoZ226P_uDaVcp4qD8PY9
+326uTSHRHxmW439l7V7M4MyTyTOHRntn7Fb__G
 }
 
 AzureEntityColoring(AzureStackOffer)
 !define AzureStackOffer(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureStackOffer, AzureStackOffer)
 !define AzureStackOffer(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureStackOffer, AzureStackOffer)
+!procedure AzureStackOffer($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureStackOffer, $stereo=AzureStackOffer, $tags, $link)
+ !endprocedure
+!procedure AzureStackOffer($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureStackOffer, $tags, $link, AzureStackOffer)
+!endprocedure

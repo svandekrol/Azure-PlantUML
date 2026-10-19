@@ -1,11 +1,16 @@
 sprite $MedTechService [70x70/16z] {
-xTO54gGm48NX5sjBt_-yosY5MGWDw_8XvJzEWb_blvHBRJSbuQf2FAXNGgaIVsYdEvKtKCOfZRTLd42yfrwANCyqdYa8AJn52G69UAuXeFAHX6DygE90BiJ7
-vedACHcxKkEeUlccqc2tqcGkOI8Q8OXlQ1XLEQoeRo0CYinmhRK4AZoD9AI5s0PAYz3rD3GEVEH9fYf2NsS9L6JNgqB75V5Tygp8YKeNCNTJiOzA3bJK7wmj
-xBvNVr1cJa3MkGeHzGTg2thiNnKHQq0zKMa3MrLolD9fSBdYDEYh2avKXDx4NnMzLoHUwUEfh2ijNd4RxigwaeALCQF-MG6VgBZnS2PZ9UjCMrUy2tVVg83c
-5LNrNQgl2jJsVLtHdKhM4nM3VbGo7lAyOZuWbE4556MyPOrKAY-x3AWRdbWP0pwkA9Ax8Q5u1UcJD0mo7rKAe4xWWeRY3wPg5QDCEgle_ImokWBGeTBm8UNQ
-rlAxac0PYk9UKVrTiQ4oeIfbaT6S0R2xeO-LYW0pnbrtV-m7Pf8HgzZwPLbN6ASh1luE5UT-lT9zHuzNPi8L_IwLmZ916M6pUTq_NI7TKF4J_FS5
+xT45ZiCm48NX2NbGylrlks4en1blkVqjFM6-K7nMlt3f1aGsX9UwXT7cH6x0u4uEv0OCuoqOJ9MFt5x1co3eDVnCZNFv2Zho87w5Rl5xALMqYwKGlqBPYWF1
+BhaOjXrJ8YOwzYWEPVzPw6eEXTIkrJ8pab9iJ9brsY7sAzAqIRyyAoJIAfmuaMXIGjCMXfqKwXLEjIZQhD9y9NGdz2lPIbYbReLjY1Q4RAD4XwABehF2NcLX
+nFwXc2p8LeaUnHH3GBLpHJoAAP7Q1IMc56PRftPH4PQT8fyeib5uKg9u50LPauiIFGf2rMqO8kOuTqofiPqAW4rWRAD4Fg0mbDPVNxPKmrCYSMb7aPQOdY80
+jWIKklqkImc5e83AIb26ZhkcjEqeMe2Km2raDTGsAp8hkp5JrLP2OmW0Q2Q5-XL1wDFkUM06V8g8s5I0oZRDXaTHm1ieXfglg5r97SfERwVCsSKSm4-vSR_-
 }
 
 AzureEntityColoring(MedTechService)
 !define MedTechService(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, MedTechService, MedTechService)
 !define MedTechService(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, MedTechService, MedTechService)
+!procedure MedTechService($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=MedTechService, $stereo=MedTechService, $tags, $link)
+ !endprocedure
+!procedure MedTechService($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, MedTechService, $tags, $link, MedTechService)
+!endprocedure

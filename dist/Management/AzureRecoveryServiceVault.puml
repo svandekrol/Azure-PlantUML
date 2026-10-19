@@ -1,11 +1,16 @@
 sprite $AzureRecoveryServiceVault [70x70/16z] {
-xTPNekCm20LGG8Wo-z_lrDWUFLH9Fj_vI_7r5Qxmdcz8fHH2U4CHVH6cR8OsQgOGQK2P8b79X-HZM0SeCvC8zeaErJUgCEe5OG-AVSNFbmmRgAf5302l68Kb
-4kjYU68G5geD43mn17DYWN0XRF_0fqqOU_kH0cCSXn7fgo927rbB2SOffeCOjOQk_bHsgi0DYQYt9reV7uGNrdj4gCksvl-hLyRhQmO0D6_5wQF_OwOggkLV
-b_fi44CydiNqzskL1oE8Foba7eGonTrLMjLlnjuXCSKaCf_IC1SJEOy9NQJFPoo4Z1oaa4WcHg1HPSnyg8GgOpz6sk5YbHaVfJ3SY6N11Y4MZisC3jQ3OIdd
-Wt6wGaJIAOQ78Q8UYd0uINQesgLzKMGvKg27v525ZYeVY4494eigUaumlaGcr30MpK1eYMOGj3I5Fz955dF9fHJzo46o38xlAmaKtvqI8AYP1KLgXnI2H0n2
-b_g90WFLjnd14AdlKOGPgkOh9WNMa6OG3dtx1G
+xTK5TeKm48NX1C98BVjVRIqzzyaG61Zgxp-2VpZKMBUu5HLGq40n1CKG54DG344n17snmgQICIfUH4nZofZh8QHbb1FZDwpYPwJRaDvYZy9YepBcXCYX689B
+Gc00EP6IR3XU9q8vzPG-KwwHD1V9ASUXS3gLXy4SoLlh2eI9SOaoa1x3Ub59hIBwtlI6Y5vb56s9C3CnVJmaf0h58fPf1jEfajyGA8EeHu619aKygheK8Pie
+yYb0BEDNg9DiK0frsw3GGcw5QI7nAhJONIzLFqBQPHm2aXvoNriJEUALGo5V8GI54CJQCO3iWyn3xw_EH9lZa88imdG4mxiwHYaX1NsbSbDaL_MgRrIu7i5K
+auOK54EGRgpE5qHG444nmo_Xn-7jrWi
 }
 
 AzureEntityColoring(AzureRecoveryServiceVault)
 !define AzureRecoveryServiceVault(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureRecoveryServiceVault, AzureRecoveryServiceVault)
 !define AzureRecoveryServiceVault(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureRecoveryServiceVault, AzureRecoveryServiceVault)
+!procedure AzureRecoveryServiceVault($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureRecoveryServiceVault, $stereo=AzureRecoveryServiceVault, $tags, $link)
+ !endprocedure
+!procedure AzureRecoveryServiceVault($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureRecoveryServiceVault, $tags, $link, AzureRecoveryServiceVault)
+!endprocedure

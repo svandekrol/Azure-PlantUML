@@ -1,13 +1,17 @@
 sprite $AzureGeoRecovery [70x70/16z] {
-rPO7WgKm34D_WYKRxd_WNPXu0WJzklLDRsya0qbk_m5bCe1EmARodg8Q0E_GwctFz4mCVE5xq3sLP7dACMeS-PSWYVkI2L0QRqMC9E-MCa1Rl2NWIjKIElRG
-Jx3aO4WfGSH1umFidKpLYJXgV0IzanXiRBWerB3i9C94d3H-oJOQg32O8sb9mbrrgk9g5v-xnd-IdmpKEs60I4qYBCmmuprJ0PylDA72N5QopV9S6iYd2S2y
-4Tf30Y3Tj_lYOZ05ZFaBQK6opQDS3CQQesa8-Cb3T4mC1lEEm8eVBTZH1ZDOkBSuDWwjC5XiV0XyR-5euLEM61jHMr2kBVC1dgC41ilLfOxbe0aoth8qJKTR
-z7GNeT4MZ1OkzpN40N7NsN9VuzUMUhIKHMl6C5C-H-Ls91vfi6DufXCiIZDsqkjBNPxNsBWm9FwqfXSgWwKizpI-lh7FLXu_g3KEC0BOD68_QfHPQG890OZj
-A9cMRvG5pAdeGmEKXkZeCqFYGXDTyyoPB1vfIlOPegXIuGJfaPgKrE5SfqSSIDWqhKvX7wsaS0j2x8XLWxgJG9tQWT8ylYp40P-zDQXQSbwwAixKBCoDeg9m
-1UMxc26nFaXBYGBKepy6WPJq_yD9fnrc8dvDNSKoOVYXe82DRHP9gSO4GsFPFB4LDaHRuG45mY6eu83keYdLFbHqqpJPXdigFg16_0ABHKoVMnZ1ZoLJnETX
-gg-M3-ThqR2t8jWA3jXAUSL2oGkIGiahOOm2k_tp_
+rTQ53jX038DXGUtaHdd_fnr4Los5o8NXBonzSeKN_q6qqaE206WTHFAYSM2i8gGsrcpNTIMDZbcc8fY5Q9Ki5S6u6sfymWoVJ5LwffsoO-oa8SQuJwQVeiVu
+s3DczvcHIaRa4lVRYbbXtCpS_Jv3U3AbbcaL0sm8HYjCHJ15YKuPGp0a0B8VOw0FmM2DdJAcCHa0jcE8dp4YSARK73WogCNtb6B8l3AuhL0gVBQ5LvJnuSXu
+3Kh9FcmPf_aZ9PdQ4wLX6YKQHJ2yfWZ63WhF5CMm8cmKpLnJ56CLMPLe5C4qKvumffMUCOeV4em1T0UOIYAjqZAEMJ8iYc0Q1MmHpR0mJ4GeYh4wvId3AqUo
+BvLn8qZpmbY3j7CSQrmPBWLXQ6OG9K-6eP7vP3f4BGy2SH4XOpgsK-WXaFF7Pfn71DAQjtg5aJrzXrd_4hY6oBGZdsbcrjsMWQgub4Akfent429xAfb9GkVV
+Y_Wd5FibYcUlaTVCai1pXstlaUoFAPg9Vxvl
 }
 
 AzureEntityColoring(AzureGeoRecovery)
 !define AzureGeoRecovery(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureGeoRecovery, AzureGeoRecovery)
 !define AzureGeoRecovery(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureGeoRecovery, AzureGeoRecovery)
+!procedure AzureGeoRecovery($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureGeoRecovery, $stereo=AzureGeoRecovery, $tags, $link)
+ !endprocedure
+!procedure AzureGeoRecovery($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureGeoRecovery, $tags, $link, AzureGeoRecovery)
+!endprocedure

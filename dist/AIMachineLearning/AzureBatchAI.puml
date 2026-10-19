@@ -1,12 +1,19 @@
 sprite $AzureBatchAI [70x70/16z] {
-xTO7Tjj0303HGLtc_WTEaqceOhrIUZol96x_2GGRJQBc3f3XfZoHUkJt37pxteWrIJoF77mxIbatIbbsoYZbec1Uv4pPaaaIELSCUVsp69CKY8bYG7H3MShE
-XCcb4fQ5R9lpACayCM42-8KYWEMER9kqEvOQxqBXADf5IMOnM5mTbx0TEINjwUOKKSe1oUJaorCA_d172cDxgnieoxkZ1DZMZMJ7Nsbplb0ZENUA6gXHQgJx
-MxeTg9Ix8ur6STq7Yajbl8rakOkDKWbMYgFRqO8I07PI722VKXG01GN0nhKYSwMSCfQLSiguhh_91MB7_mNaC4mPlUAbWDq_NnooVnRegcAqIx9EyNOWy5A8
--qg2jmC1QmeFiWDf5FmOxl67SGL0xYi2W6LTq7TIOq_YLXbIhnLAmm1O141SAmDW30DGkaHzFsE9IoNPp-9GfQzkBkYbedNB7VJLOLMvdaYq3l8icR-_AFEq
-LmhfirvntbTqIl3UzXjTb39itAwdJuzbnqaP1jQiv_5D8ewBmWs0vg1qCza5tCxJtoJAw9SylsDH5pMBMJ6rQMErU-SBoyMj4YndjugndDugmd9og_14jQDN
-bBX-PqZ-yaIl4fx8Frtb7yeVrokBhkBYg6p2wqm2BpC1hpD6tnS
+rTQ7ZhCw48RXAPuIjRt_kptCu9DFw4SoPjNstLxoo2s1dp_IvoYPYBE-UqjqIgIVsJiZZqevlhnmSX9GgXFU6qXU5JYF4HXGuBn0e83PHEAebFgQO6o93BiO
+KC2ew4eHrWG21SuWMYaVOPQiVFX5CRLsHf_bnQ9aCH53cBaLQQM_ijg9B5RuqymP53d7D9DOAED0SZ9ICtBtKhmcvuCdib0-hGncjQZygxGJ9drucbafKdEP
+21IVy-EfB91WLY1GcXb4jZZ1fsBCriYTufZIUaAtYcDAQuLPWK31bFo94jYVCQRItyspRBbIy0GgHG_0P7xI_vbyCAEhSiJztaf0sHZBFArjzOpUZ0LE6vjA
+5d6xqsx3doj6x7UA4Ot7IX-AksU07yf4rahgdJBFFvGLeyJ_FAUZWbB8Gf5IAYZHCGc6ic2SIMBMIdIjiC-XB9JpY7ZC3aM_9DDXsahvIQKpDboF54Z76ejB
+O_-JCHWezLirwREykAofM6RMFCYkYj7S8HDzUhLN8iw0aduW0_kpLfePP7dKIbRA1kGn4zcrqdaZhMmmjtTaGDPC1sKJWT91QGBA5fEuQquWcugJnAc4a4FP
+OWeW5IBfRu3iAI7qJGBAzfna6fZFjj8E4t4RBvGvVkmHa9t-fB9cyfF1H1pr7P2j_9hj2rV5XWhhMwM14bXqs4l5Jg240jyfSmZVMRrJ09nZUgS0-CswZ1OQ
+-DMwO5dUAme1odw_Gj02sMT-_ap_0G
 }
 
 AzureEntityColoring(AzureBatchAI)
 !define AzureBatchAI(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureBatchAI, AzureBatchAI)
 !define AzureBatchAI(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureBatchAI, AzureBatchAI)
+!procedure AzureBatchAI($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureBatchAI, $stereo=AzureBatchAI, $tags, $link)
+ !endprocedure
+!procedure AzureBatchAI($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureBatchAI, $tags, $link, AzureBatchAI)
+!endprocedure

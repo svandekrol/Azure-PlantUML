@@ -1,9 +1,15 @@
 sprite $AzurePublicIPPrefix [70x70/16z] {
-xSy5haCn34JHiMDusV-2FqDTiAQCHnIyIl0iNfG1z79I1At9KQ8IOpUZAmED2rUE_n7XKXNd25h1kKfbsIuhwIlBf3XHMRBnTIA9YgEHbwt4yHN2XIgvGrJM
-L5hNh-HsOOL6RrAMQENaC1N5RaPNq1WNhdWZgGediZYm8gFmE0WgkzlAgp84CbO7he3OVXNxsVmVA3w8xrKP-3GYz7SWvJWgoo9-A3xfoW1THRogRzbubFzN
-6XhVN06e_muYmkMxHbP-c5aTk9a7Mw7SV-LLIGvQaXH7JoXu5Y_l
+xTO54i8m48NXzMt6kFzj6Lopyu9BFwoI_3XqyITc3GDNQY-hkFOPN54glBWIm3FwclSeCL5N0lEModHTErDNfWO0Arc0AqO5Hoj1XNXjfVQoIdPCfxAguDvH
+wJt1TYfg3HEbV625gS_W2XKKVomFgOJt9LJ1vAaRAr5KS5_qjQhD5MKMtIxmQi5NMsoiOhHYHmkokcKVgYYjQ8Ji5dYNkrRfV264LkHeWSOgfuz5Jn-B3ntT
+-6eI-z62hHOamCgEcPqkk9a7M85yVsMkP6G4SAah2LhKqCgVc2q1
 }
 
 AzureEntityColoring(AzurePublicIPPrefix)
 !define AzurePublicIPPrefix(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzurePublicIPPrefix, AzurePublicIPPrefix)
 !define AzurePublicIPPrefix(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzurePublicIPPrefix, AzurePublicIPPrefix)
+!procedure AzurePublicIPPrefix($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzurePublicIPPrefix, $stereo=AzurePublicIPPrefix, $tags, $link)
+ !endprocedure
+!procedure AzurePublicIPPrefix($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzurePublicIPPrefix, $tags, $link, AzurePublicIPPrefix)
+!endprocedure

@@ -1,12 +1,18 @@
 sprite $AzureSqlDatabase [70x70/16z] {
-xTO5ijqm38NX20oIzx_VLh8AcSQ9LNhu3poytvmBWUED1AVo3xyfJI0YHOYOW2128lub8jo2OWBV5AEU3EA7Oj4jmXlTCM3nLci5iWgi5U9JDIhdLsQjq8cf
-hNSvrvjXFn2wKWHcIALrMTKg8SpqIXdEU5mNJ2i44CcuLCOW-14NUrAXzTvhdK94OwoK8GXReOobOWd1OsJ6dM99mPiLnOWDnT9Uw6GX4jUkmzfL8ZqthBIY
-2-LrRldSyhb5_M14deWKGg0YK-a0q7UKZZ3pBHMYabBK429NLDa0T9SpIWM0PYSPZXzGL9sk2OLjHQI6g6Th4ag9BLQpxzKhDcPVaVbI3ejimCmUJlkAZN7d
-hFXJIYYZVZ_F8m3cbKZTmVCpIYgMah-OR8zHhoLV5qzTyPTKFGI0jg-qDYnN_B7544v-NYfGQOrS6H9tUc2rKCYJ1oMYCLG5h42c4jqh3GEHOOmMy5Wqemnj
-zMlYttgz-Q7eYlQPIFvSPmp_-Nct6FFdvrq60FgpBPQ_69_NniyjFzBi5hrIQdPBFQxIt1OzBWFDR14u5jNzBULOXtrlIuNZFfQdBLBWU0wuwMgBL3hs0oGk
-hOlEfFVU2i7n1le2
+xTQ5TkqW48NXZc2pprfv_xUzOU1uQE2w_NN9rmoDRRz_7tJOnxn09oqIp2mzPfw7xe28lhLZCquNM7IOS9V6XYTwab3h4uHr8YPlhEXK9mhhL3nK3bSbX13Z
+_kvWPOuLVM92pBaybNEAuH7H8mNKOjc5CYf5OMhXIBaONvsG1aoEGZssGmM0qYtMc5BEJ-C8tGl0PQ30XAOI0t0y4TnHffDOtHWhdaMXOHAT62fup4fItgCU
+isXCnV3GPRWlpzbpUEcFKiuHL_wlo_zriS1-mMj8zgyqDoGHKPbHClMiCaezTMPMiNRfvQPm-uhsP4M9H9G053KW-DPxrOaBIXq1FVEBj4Txyuh_-GpSzyky
+-ccSLtnnOxdjbxLAdMrUWL8j603nWUuZBIY8pd01-1iKc3e3oFD4FAzukMwVVBXiNbnSbrPT6jz6pEEr_r5ALoN2nDTvJnQFbqGISceJeVJ7AwgbheXd9qgF
+3R1CNaEQqYjdHvsdnQyl9Lo_j1K55lTIyK-zKZUDZi1ogvJrQrrbmhTVCUjO-isA7ytoxVSZNup_z-d_z-bx-9FNvR9zZv6suvQGRTmyittQdBATTwPiqmsG
+xG_e2m
 }
 
 AzureEntityColoring(AzureSqlDatabase)
 !define AzureSqlDatabase(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureSqlDatabase, AzureSqlDatabase)
 !define AzureSqlDatabase(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureSqlDatabase, AzureSqlDatabase)
+!procedure AzureSqlDatabase($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureSqlDatabase, $stereo=AzureSqlDatabase, $tags, $link)
+ !endprocedure
+!procedure AzureSqlDatabase($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureSqlDatabase, $tags, $link, AzureSqlDatabase)
+!endprocedure

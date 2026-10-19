@@ -1,12 +1,17 @@
 sprite $AzureCognitiveServices [70x70/16z] {
-xTA7bgCm38LX-Qhw_LzuAGQKnJ64dB9b_fbqvpl83lsJ_VHJ0OjEYJ0zJJnd_AtH-jY1UIzyXf1vDw7R5N-hk9NRo41nkuj4W2pUTO_n62iXT9t4bHBbUfv8
-okEPx8OIJECGTnGR6-A_AswgvlTtXYrQIN765FlDOqeBio9GTmNV6gbOH5TXNYtpkTZomPvs54XCATOijkWSntk5srnpaDWg0wI_Bs7WzYAsJFWLAf7gdn5i
-LrA6fFX8YJ0HyKXAzwWaXafEq5cu5WyK5OXcHgAN4DjQJn5W_a-d5TsyKAluIJ7eyiBs7o3YJRR6n2T5bmU7jF5U1Z9XyHD6o4f-s9GeQHCDO41lABhCOhjY
-vBNbaAWkyFgI4-gUe2rbTMLORPMeBKEibatvKAd6cBAwnMd5h0JMDaP199wKjL18r3rBrsBBlRgxGjhNsc5dfUbMZs9_4RmEs-PQtvk14CAk77bMj1uC0FQQ
-52DTB3efOZKLdA_BB6fMb9R5E9JQBQYUsnKdNjRWGd6oWL91uiPa5ueIZnG7JKczK43aVQNbQbwl52B2I6cD5QKf-r89MehJ-nyfGalbAyMfXI-KeBqIJvKe
-bD9dYjDhi0UAqAcYyPcYrA-8chkRYFSwtZOLqD_VJp_z0W
+xT85Tkim48LXUUYEUa3xt-qprNDU1L5IXhyD9vz5vKVsrrz0z4eYUfKH-Nr64aEpUn1mEfLNE3YLLp4OApw7kFkgU3TC8cF59nGFvN76trXv1UElL_mg5AY8
+Ofg1Hw60QSic5VUc8gI04KyfxXs5-R0CQpSKxoealgQqnnWnFb3EiUWMoK3nWI8aW1B7zA81CjeZkPJAyPvo5kSbb6XIYKAf6Nz4KIRMO7gA9BOzj1GX5Y89
+HhmPbdH6g1GZtIcx6EzbHvAaKfHy3IGjnOG5rQ0ILOfG7CYj78ehiJ3RXABxN2nESidFWTIpAtd-hrN9LyBdLqcXHCXdyPlZzo0nDVEXalS3pPQhJiLfZv6F
+T4aBuwMINKWyDpAo_Lu1AEdvixIr89IpynjLpgnGvcD4SavdCOTSanAAa3iC4Mr8A9PqUxKibSAMUq5jGqBHj7-PGl4yNuo5zx7mBQMCbBmiOah9NgU0jYtI
+V5D1HucrolcM8gKCb6YibBLxbFn-IjbxfO9oz2hbgJpt6gL4JmyeWKIFAQLgHXaWDIJQL5Ggudltrr__
 }
 
 AzureEntityColoring(AzureCognitiveServices)
 !define AzureCognitiveServices(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureCognitiveServices, AzureCognitiveServices)
 !define AzureCognitiveServices(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureCognitiveServices, AzureCognitiveServices)
+!procedure AzureCognitiveServices($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureCognitiveServices, $stereo=AzureCognitiveServices, $tags, $link)
+ !endprocedure
+!procedure AzureCognitiveServices($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureCognitiveServices, $tags, $link, AzureCognitiveServices)
+!endprocedure

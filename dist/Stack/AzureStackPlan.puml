@@ -1,10 +1,16 @@
 sprite $AzureStackPlan [70x70/16z] {
-xTHNWYCn28HXb03L_G-ypXcvscoU-T_xQsNv6wjzBAeaOkkSKhgjcnGpp7H4wKw1SygGgB9N28PG28PIu7c5O4W5dbK8XbRWEOLXU0MUKGY6K0A6L-fU8HX2
-2PYC0aye0KElheDXr4mbp4X6tHTAyrTfsQR8UCcqZOeqUw5egCJL-tIXyFr3IkzvHG7FA_2qig-Ub3QY6g-K4LTeHHQAy8gKA64Kr__ZxCvvdb4bbJbZnG7K
-j3AQmcLNZLihnpfiZuou6YasfvqHL4RPVn4g0rPaN-jHJTugs2Vh2CLtfHIYVr2f07fUKGM85tEfx1bCviLSAm3QcnUJ6mk85_Er0fZiwqF1dJeWLXoODQr8
-BI8f9IglV2lJDZLVA8eFqaUbuOEQF37g6zCcVsC_
+tTHLWeH034NHyYHlRF-h7QEzg91kd8lz7JnV6uo8YXAnKT4JM9H2UW1iIicjohy2av9Sgz0fc4R1D0gcKJ2DWcaKJADW6WNJAD2KR5OmZO9f54oZO1e5hoYY
+C4R54p4KngOu8XOBGwgIY8YhY2k5EJk5uIwwEvAkr8N2LOgYGFSLHR6NTwFu7CSh1D1u1PCeFfsKc5l5OSMT59_RURFYsaXoTiNvLiwWHCwx-tPBZy8ivVph
+MXMf5Jaf322Q556K4WdSNLChFwoSNtN8xS99uRQIW31QIU3kYcDg5TsW8W3Wz2oAC8zIb7Qi1077qKga0XWcfgwuKC2MYQah088-CRFXMcA134nCHK6df7nI
+b4uAQWKdXG499WMAeiuwkwAdA_AA8iTIg5yHUYhfLPwlLl1IFOeysKdPMZy
 }
 
 AzureEntityColoring(AzureStackPlan)
 !define AzureStackPlan(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureStackPlan, AzureStackPlan)
 !define AzureStackPlan(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureStackPlan, AzureStackPlan)
+!procedure AzureStackPlan($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureStackPlan, $stereo=AzureStackPlan, $tags, $link)
+ !endprocedure
+!procedure AzureStackPlan($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureStackPlan, $tags, $link, AzureStackPlan)
+!endprocedure
