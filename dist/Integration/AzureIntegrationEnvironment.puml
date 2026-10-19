@@ -1,0 +1,17 @@
+sprite $AzureIntegrationEnvironment [70x70/16z] {
+xTG7hkCm38JXZKNIQxIv_sct620yokCelUT7JM9_6ALXKEl2UUrwvHVEgkrrDjBtCAKLFKXfPLT1skugIdiTnJdD59TIuLqZnRj2Jj5ZYaibeiU8IvKIn4mJ
+8I6KHCIPfhL4rANf5wybaaoDUEGKDMQYsl1IU5sbUDr0CG2i0B1J5MkLqkmafVshP_8pErwXRoeXiBRYjGA1T6CIgUQWKl9g7eCya5QW50D5JvS8uYeABb6m
+TRu2fH1ICLe1AuIKZ0b4zMtUydmFiLUuhStBba9c5vzqcAL2QINp2j7AN2kc58wGSxPaLrNclkWEHF-igVnU-aYXZAQuhPxJ65_sIgHaZ7w1jes9vKUaS64v
+9K-NOpoF8nNEcwttfM818FYDrGgtoodR6Ak8iP88CqgH3F90V2He126KzMrEOtrgf41CsRx9diz188AX9oFeoG42ZMIQWMIW5TC8HbF6Oo0PZ1GKY6eMGVGf
+2XHo1GRtLZI3UokQmJKKmpKO3FeB
+}
+
+AzureEntityColoring(AzureIntegrationEnvironment)
+!define AzureIntegrationEnvironment(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureIntegrationEnvironment, AzureIntegrationEnvironment)
+!define AzureIntegrationEnvironment(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureIntegrationEnvironment, AzureIntegrationEnvironment)
+!procedure AzureIntegrationEnvironment($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureIntegrationEnvironment, $stereo=AzureIntegrationEnvironment, $tags, $link)
+ !endprocedure
+!procedure AzureIntegrationEnvironment($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureIntegrationEnvironment, $tags, $link, AzureIntegrationEnvironment)
+!endprocedure

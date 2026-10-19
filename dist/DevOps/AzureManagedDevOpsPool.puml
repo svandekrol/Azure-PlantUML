@@ -1,0 +1,17 @@
+sprite $AzureManagedDevOpsPool [70x70/16z] {
+pTX9iiCW30JGM628yOBxt_Q7YZ9qKltbpjmxXdg0TgA_FANKxLiBMo1BmkRYYG6-EnTLyImuAJ2mlyASfa1WHbJWFiJGdAt8kdPCnTlKBSOXhLEdZaH66qPh
+z5d3SAV-Vn5Gu3hraiWOyU6D0ucCeVXGLTPhf3cfAc2qviD0OOR7Xu9235TyELGQ860CnLS3XHXG7w8mWxoDAsZmYqJAIXu3Owv8Z-4AVmmEOoKkIAp0DbgG
+M0aU8oZCa1Ns65tXXgwWKSoghg1HqtH8silADJ9FdY8fYBIKRHWspyyePYbFbdD-KZ7ByokKb7z3AScLUa5qfIrvA6LfkWAfUTw3eIkOfRz0wLrLkF6uie31
+bTwviipM0wMlVbkgb6IHuk5AJNR8JbGwA4ksOpIbWx9FTiusvMYWOgw0GnI8Asw2OgBYngrYgkA3AQN7xxAUHvOI6A34tSIjixll9h2pYHqpqja8xHxjiWf4
+DZolwJxlKCdmmEL4XNVtklAAtuhysf-JntznNlAZzFBy0G
+}
+
+AzureEntityColoring(AzureManagedDevOpsPool)
+!define AzureManagedDevOpsPool(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureManagedDevOpsPool, AzureManagedDevOpsPool)
+!define AzureManagedDevOpsPool(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureManagedDevOpsPool, AzureManagedDevOpsPool)
+!procedure AzureManagedDevOpsPool($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureManagedDevOpsPool, $stereo=AzureManagedDevOpsPool, $tags, $link)
+ !endprocedure
+!procedure AzureManagedDevOpsPool($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureManagedDevOpsPool, $tags, $link, AzureManagedDevOpsPool)
+!endprocedure

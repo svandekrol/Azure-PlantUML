@@ -1,0 +1,15 @@
+sprite $AzureTenantProperty [70x70/16z] {
+xSm5aeCn28RXAgI1sU_-fwsN_Ir6NTu8Z3ruttxz4gq901r28gqBT2g5o6fMQ5bIL7KvAnPKwT8qifwLuxmIBQPKyvieYuCIQS3GeLObK8-nrQzqku-Ix5qK
+L2lB6okOHX0bnjChA1jScbJEbHI5THi5kB52FiKOgw-45WNKxJOAlP8YLWY13sSycvH4RwR0gNG9u6e5S2jTnA-GMv4EubS2TGs_qYcjR3mAtKQXEoc9qwOa
+oodSg33POO3vlBKfaIqSixL5KKC8vuZHfeIEWl_QbBdSG9b7LU2Ca5DPY-gVAN0gKHM7SegUJreHHI6nOZB1f_Rhrmu
+}
+
+AzureEntityColoring(AzureTenantProperty)
+!define AzureTenantProperty(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureTenantProperty, AzureTenantProperty)
+!define AzureTenantProperty(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureTenantProperty, AzureTenantProperty)
+!procedure AzureTenantProperty($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureTenantProperty, $stereo=AzureTenantProperty, $tags, $link)
+ !endprocedure
+!procedure AzureTenantProperty($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureTenantProperty, $tags, $link, AzureTenantProperty)
+!endprocedure

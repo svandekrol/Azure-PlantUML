@@ -1,0 +1,17 @@
+sprite $AzureWorkerContainerApp [70x70/16z] {
+xTO7ReGm48NXD3m5INF_syOOx-poD2HFIYz_6iN-iXt7HoV70a_mH24z0SmHw01A6TZnB6F02KP1XBgHBnlqtQKHNk5V1oJI8dY6k2M4mYBI5lQbS7rT5yDD
+ch0lXiDnavlStMGfc40dqb31V6iTK3qbctIPxyowQbjULJ1KjZoXd4JSb0RA3iLid3LG01YbaaO_SNPZnkPrEYeZwy1o6QRTdTjWvjn2qGsGQphWDPay4QhQ
+9u-lsotTa1oMoioYK6QvDHKfb6nzevAzJSaEYhwdehzQ-LVCxAAOoSpCFahvL_GDohRr1iM-L8ctAsl4cnLOPOHxAfwARuZR4hKIJIIoNN5JLT6k-FYhETht
+2oCeS8aTQq8VMPU6CafbkqRRa6mgnNMwDvJCGCdBVSwg5N7CUaV5fPqXU6EmL2oNGAZWaJCARaQDH2wxQmbk1ioeLwf8uM0SZwlcW8Qn18VayV8iY-IPZ46U
+eenbSCYvOkS6WMI4mIeymYjDPYre1IZu1xo2eS4hlC4hGOJZ0M1Zvl1CYo_f6G
+}
+
+AzureEntityColoring(AzureWorkerContainerApp)
+!define AzureWorkerContainerApp(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureWorkerContainerApp, AzureWorkerContainerApp)
+!define AzureWorkerContainerApp(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureWorkerContainerApp, AzureWorkerContainerApp)
+!procedure AzureWorkerContainerApp($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureWorkerContainerApp, $stereo=AzureWorkerContainerApp, $tags, $link)
+ !endprocedure
+!procedure AzureWorkerContainerApp($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureWorkerContainerApp, $tags, $link, AzureWorkerContainerApp)
+!endprocedure

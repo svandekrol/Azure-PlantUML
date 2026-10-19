@@ -1,0 +1,17 @@
+sprite $AzureDataTransfer [70x70/16z] {
+xTC7hjmW58LX9-OMF4xE_dSRq1NIO74iOjBp_gbgdwduRNrafNMXjMX4xhvicDVM46-j8K-PCUBv6U9TEPH5fFH0kHWrh0_4tLBQztt1S9KK5ISzH2o4K6et
+1biHbm1c669KHD8iGrSrIwbJECEtrsIUOKQT3s66I1WelIDPXJ5fe3J4p83SSbEX3Aurmwq6X6DQ6obfg8G1QrN6DHB2Z1G0Rcy1QaOOVXFicgEaQYKwfvqG
+0mdWJ7FCpOtdCJaofyROH0wJUyPj8fZUCVFA7PFkb2HloYq3eydMAyetYez5ju726AfiLyKSfcHEFiu-5ILv54e6O6GmHFcylGTNDU3yGXYYx5iNB9GJa6X6
+iQqFMgeAOJ0tbkXa3DYwCELiYameNlT8F3fRX05Lh2WQV_CvPXg2gkJnIuiI_uZI6DGoIpQDFqUFl49f34AXxQ7aLwy0AgqmGg6D57JDAsWHX35SmLC5Kmg-
+Gm7lDOaW45O-ZYCVqVKNynsqZ6Kca7K6M6Vm88AiCLyHBJbOwRLkH0V-h3xw1W
+}
+
+AzureEntityColoring(AzureDataTransfer)
+!define AzureDataTransfer(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDataTransfer, AzureDataTransfer)
+!define AzureDataTransfer(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDataTransfer, AzureDataTransfer)
+!procedure AzureDataTransfer($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDataTransfer, $stereo=AzureDataTransfer, $tags, $link)
+ !endprocedure
+!procedure AzureDataTransfer($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDataTransfer, $tags, $link, AzureDataTransfer)
+!endprocedure

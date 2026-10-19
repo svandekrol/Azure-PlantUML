@@ -1,0 +1,16 @@
+sprite $AzureNetworkSecurityPerimeter [70x70/16z] {
+pTQ5TiCm38NXmRMqudt_jzqfIpcHRBSQ_6N85mOE1XO4e02fK52Xe491XT8gb7QB4ss-jYQ3sDZfgEgKjfxcYC0fBKZ0985JMfZaY5LQaZ880gUmfKo268Ni
+CCSr170AJqcMOQpIJWyrI8_Xic2JCWplRUyDAPRXImfh5DOeh55Oer1K2nHMABR_hqXGAr64ULx1B89RkorDKmXij4qXEJEFv4oEz9bv18mOzXIUwZ3iAUbb
+ZSuXv9gotUefzfJFI3srsvuPTfNi2svFAIkKROsoBL4i0pohM0R0yyhM_gT6GO5Y__EPrLNmej9mlhK11Q7Ixaqeb1OseHmJPbpX9c6wYc4qOOOLGYiKGY9a
+Hg7A2qlNCYjngG08b9ZXGi6bKB4Pn2kuDQFGAx0DA_GAV8CAlO9bGmgTWhNw2fs2zL95LMaLn7qoJ1Gq8OirVGC
+}
+
+AzureEntityColoring(AzureNetworkSecurityPerimeter)
+!define AzureNetworkSecurityPerimeter(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureNetworkSecurityPerimeter, AzureNetworkSecurityPerimeter)
+!define AzureNetworkSecurityPerimeter(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureNetworkSecurityPerimeter, AzureNetworkSecurityPerimeter)
+!procedure AzureNetworkSecurityPerimeter($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureNetworkSecurityPerimeter, $stereo=AzureNetworkSecurityPerimeter, $tags, $link)
+ !endprocedure
+!procedure AzureNetworkSecurityPerimeter($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureNetworkSecurityPerimeter, $tags, $link, AzureNetworkSecurityPerimeter)
+!endprocedure

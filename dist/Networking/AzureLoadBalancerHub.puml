@@ -1,0 +1,17 @@
+sprite $AzureLoadBalancerHub [70x70/16z] {
+xTK7jXiX38LXIO0kh-z_jvbpZtYDYGEZzEHtftpkzikxxhTxcIAIPOYuhLTxA1CYEocL2O7iTKVb4z8bgy3TMrrFJnLlc_r01N-VufjjAJMh417BArL4BASG
+8PDHY939A4IO9XGzeg5QV_shw_yLd4O5fzrMcaKEe0sbn62vhVHNHKL5H1keA1Mu2iTjMM7jzOQ1Z75uJp5yKb0lA6gVbAgix2bguqO9P5Tf9PXG1j9iGt5W
+C5G2uVYguWuC9XGYnl6sgB31K1a8srE2YLCW-mgglGjOKphwfrDvX_Hf_boPUiTudrfMkWTIUqRfnHXoYjlXbDfJ2ahyfoqhTttE96e9fOWKTFxuuRfo8Bo4
+IBsik8YFPsQNbIg2yTJqijBoZ-Nzom6LignyFdGJRSSbJ0HzcZzNvg0YQYeYzMvgMI5pfEqkezprMjGAxhwYwFsax4MbvnKYQKNlY2GL8WzP9Hv9Ndd9Au6S
+CZx2Dv2NMxN8yP9e6CWhZgJYHqJIoiltK8xplCABkgjy0G
+}
+
+AzureEntityColoring(AzureLoadBalancerHub)
+!define AzureLoadBalancerHub(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureLoadBalancerHub, AzureLoadBalancerHub)
+!define AzureLoadBalancerHub(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureLoadBalancerHub, AzureLoadBalancerHub)
+!procedure AzureLoadBalancerHub($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureLoadBalancerHub, $stereo=AzureLoadBalancerHub, $tags, $link)
+ !endprocedure
+!procedure AzureLoadBalancerHub($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureLoadBalancerHub, $tags, $link, AzureLoadBalancerHub)
+!endprocedure

@@ -1,0 +1,17 @@
+sprite $AzureCommunityImage [70x70/16z] {
+xT47cjj0243X3wR3IDp_jd6PnCZWiRBQlllKswycdoZQtUiezEsKPO_ogwo_tsKeg-sueXccQq-NIh4CCT6-IIc6OM9cOdg-d2gxwwlVwoZh0wLLTcgDb_qA
+POJOs5HJojLr7AK6E8MPp85yhYqser224HPNoTLZU5D1k1NQLYcbv7AgpvKMO5iYVRICsaoX12OiZbB8Alf1faoh_pBlfFvDH6F4c3s57Yk88MwHc8mowXC5
+COQR4Kw6LgZTuaTAGzGEdeI9qhVTAtZzF35PHJLNXXDEnY5bE8x2_wb0mA0LstC5uAHW23EbFr40hifmNgG0t9IJirMwoLT0ASF95fah05ePAMNvM--yJMrN
+j4eex2bybx0gtt-NnEmfF5MOebPYOzsoNbE8LdGj34MzZ58KOXLTmRCI4h6ZoDezHDYM88J6faMCCLEO2ZlrpdvYb6clef2Vl8QoleeYhw78QoZo6egCZYB7
+5NaDHLwaD1snl88YSbmHEQ0eufWYRhm_6Nq2fS-KldUGBz8V
+}
+
+AzureEntityColoring(AzureCommunityImage)
+!define AzureCommunityImage(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureCommunityImage, AzureCommunityImage)
+!define AzureCommunityImage(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureCommunityImage, AzureCommunityImage)
+!procedure AzureCommunityImage($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureCommunityImage, $stereo=AzureCommunityImage, $tags, $link)
+ !endprocedure
+!procedure AzureCommunityImage($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureCommunityImage, $tags, $link, AzureCommunityImage)
+!endprocedure

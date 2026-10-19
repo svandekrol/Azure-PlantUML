@@ -1,0 +1,18 @@
+sprite $AzureSQLServerRegistry [70x70/16z] {
+xT87akCW48NXUHsXDLMw_sqNgPqNREJDuQymqLyzaDRf_lU1R7qlT4jD7bAV5gurXMzhYZyXYFWQ4Su9Vzp6JV6kGSpoTStgA_VCcP1nJ7t57v0qnb5VyNaa
+woj-ev2yhIJ33rjKrSnRPgRwMaacS6NKIttCJRlt8dxBV7eo95u75Uiyetrr9arPTYOXwssHX_SbaskyASiYkCQYvbwyk9bozztDW8nIsJB2yoYLJaWb2nr3
+xB7CA5bruJkBYBN4qffNieYejPHIevN2KIMPhAlWhgTRnehV9-zjCR-BvxTy_tiXlWlVvrv-sPP-xpyZmq0fJ23nH6p_eQPYPZ6fAB9jIoLalYi0wjo972qc
+O4DmoOuf0b0qGTht341h509G3oa4w99L01Aj_Pl3Mseg3g36bWA8gu9-z70lKXC4nru1KCwAoh1KjWHR4dcuo03uMLdgDj2aqxefcJDQF5QojLSgMQNzKmh8
+zKJrW9850DclA1K1Q3cY-ELvfnKj0s2756Olplk9GW6GAWEWI4MjLLugX8otWmdErLGoUQaeBaywpx959OufIvHMpMzRBW0yTgLajRvMhaLcoImFZPKnOsyh
+SKxpehvfI_RjMrBvMxRytx8SsVAvZXeXO-KuCtEUR7RB-g8nCsraBxQiy_MtnFfMPs7znlxt1G
+}
+
+AzureEntityColoring(AzureSQLServerRegistry)
+!define AzureSQLServerRegistry(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureSQLServerRegistry, AzureSQLServerRegistry)
+!define AzureSQLServerRegistry(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureSQLServerRegistry, AzureSQLServerRegistry)
+!procedure AzureSQLServerRegistry($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureSQLServerRegistry, $stereo=AzureSQLServerRegistry, $tags, $link)
+ !endprocedure
+!procedure AzureSQLServerRegistry($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureSQLServerRegistry, $tags, $link, AzureSQLServerRegistry)
+!endprocedure

@@ -1,0 +1,16 @@
+sprite $MicrosoftDefenderForIoT [70x70/16z] {
+lTL7ZgX040JHpYpstF-qtqp768mAaz846-mJljUcPTFwgkLGRD0xfAhyhwfwmq1uCpLCUnxRE9_Cm07gZ-yG6Ee1Z2k7kjFewvHwt8bIB_ezHP9JnUD_2fKn
+KwHuKAGeKyYXGg520eaK63bII32POYbKO1mf99XCiQGnXZAbD6QPCaXF51zFXUuhskrkZwzyLvd7oFyIVIkwguZzltfrBcFcVnNv-NtHoQaFycsbJlQteEyh
+9QcsIMMLvMlb-dEK-X6sVtcbZTQSIgD8HT8TPQdzLFEkicHvktqvAcVnch1KKYsRK7gcfgA5h27vYFIAnsoxh4vPhyy5r0soNj-NHcaPST16KOEWTA6uKwuP
+JQKQ1AND6wJMXhdTIWqJ8B52AK8fGYb2AK8fGYb2AK8fGYb2AK8fGh51AKAnGIb2CKAtZBy
+}
+
+AzureEntityColoring(MicrosoftDefenderForIoT)
+!define MicrosoftDefenderForIoT(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, MicrosoftDefenderForIoT, MicrosoftDefenderForIoT)
+!define MicrosoftDefenderForIoT(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, MicrosoftDefenderForIoT, MicrosoftDefenderForIoT)
+!procedure MicrosoftDefenderForIoT($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=MicrosoftDefenderForIoT, $stereo=MicrosoftDefenderForIoT, $tags, $link)
+ !endprocedure
+!procedure MicrosoftDefenderForIoT($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, MicrosoftDefenderForIoT, $tags, $link, MicrosoftDefenderForIoT)
+!endprocedure

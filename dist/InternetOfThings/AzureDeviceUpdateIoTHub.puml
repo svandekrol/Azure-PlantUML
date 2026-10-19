@@ -1,0 +1,17 @@
+sprite $AzureDeviceUpdateIoTHub [70x70/16z] {
+rTS7ai8m38NXmPBfeFlVTcFUH3XENiP6KxB_Lee_P3hMt_sJ1RfxKG8528hyVyNiACEWC8CU0IKoZgh664KXHgjy9MUuqGvZYx464Hy6e3Ta-5hx_ey646IE
+K8OZebvUaAWBEKqbCXdgGYWpAs-Ek89qZuafrYW4uJlYm-1meoGo2XjcVjhGPJ8vIGYpUgvnLzSbnlYYLb7KCheTKx9k96oOHwFCQjwiC2AQstnPbwAuhIIc
+v1EIFiKlN1OBv8HIgrC5gx12Io90IaCABlXRH14HdI8xwbHqVUrgdtB6YThU7k8tKOzYvumlnT_va6ZMB99nsB-CALkLzVZJd32agAZ_fKhDR0sI4cPO3tD7
+DwPudvj7cg78A7nBYdlR6PMvT5T1-mfkSARmON27ymFr8Qm2qZECRwXHrjtfZPrhiKIHUfWB3TTBmlzKGHTUJXE2Yp54cVUb8sEzPyQgFJ24TsyPmxy4wMNk
+fK44Uq8FZ0AH8BJ7lHxdlNdJZttuy0D6Z3x6Cq8CEWw464F7OEot21Dq3lL9_2YZsCz52JHC_04
+}
+
+AzureEntityColoring(AzureDeviceUpdateIoTHub)
+!define AzureDeviceUpdateIoTHub(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDeviceUpdateIoTHub, AzureDeviceUpdateIoTHub)
+!define AzureDeviceUpdateIoTHub(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDeviceUpdateIoTHub, AzureDeviceUpdateIoTHub)
+!procedure AzureDeviceUpdateIoTHub($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDeviceUpdateIoTHub, $stereo=AzureDeviceUpdateIoTHub, $tags, $link)
+ !endprocedure
+!procedure AzureDeviceUpdateIoTHub($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDeviceUpdateIoTHub, $tags, $link, AzureDeviceUpdateIoTHub)
+!endprocedure

@@ -1,0 +1,16 @@
+sprite $DefenderIndustrialScaleSystem [70x70/16z] {
+xSy7RWGn28LX5GFFQk_-jyrquIs8ZKdFlpjzvfEXhzt5V9wOWbfOtfXrMYPXdBHSZ6ghSaeYgcO0p7Iu7w-68atMRVifkW_IXb-aN9q6rax7bL9i5unxjakM
+K1o3rJ3wRBkNKjnAZBTjTqSaPZR5W3ibXPoAhWnMQaJKAGbc4M3BHbi3brOqYR2vcVeLOAihJidED9QVnpDshSA0lcOEoIe2mEHC3MwU71F7JrHOWb1B5CP8
+0SDFLrY2K4iK1iWieoKANwy4eQYeghWVtvEwLf2SPgeK5Yd_oh_ohnYUbrRGWv1LUbnEGOpWkoewLG6oLgXeYM8rYkdKxr1c-wKAQnIYT_Wi3cCywhSnh0zz
+hOB72XE8xp72zgA20Na3
+}
+
+AzureEntityColoring(DefenderIndustrialScaleSystem)
+!define DefenderIndustrialScaleSystem(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DefenderIndustrialScaleSystem, DefenderIndustrialScaleSystem)
+!define DefenderIndustrialScaleSystem(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DefenderIndustrialScaleSystem, DefenderIndustrialScaleSystem)
+!procedure DefenderIndustrialScaleSystem($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DefenderIndustrialScaleSystem, $stereo=DefenderIndustrialScaleSystem, $tags, $link)
+ !endprocedure
+!procedure DefenderIndustrialScaleSystem($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DefenderIndustrialScaleSystem, $tags, $link, DefenderIndustrialScaleSystem)
+!endprocedure

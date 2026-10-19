@@ -1,0 +1,16 @@
+sprite $AzureOperator5GCore [70x70/16z] {
+xT7deiCW28RX3X0uY_k_scxIaIygnx--tOCdYJfkDflHhM4X6Z468IPG7e4b4IPuOqz4l566uLff1PT2nfLnXdXOuPxoHfxfDKYYDBByxX8XftR-9IQOvQDU
+v7r6QapJY6gCCCwaNUjKYdJbKGfHqRSMfA1SLGKzFfGucGraiu-VQeg2c5YZBiKHijljv3Q7eDvJeOjI59PGU54SC3qNT3WSi1BrAEK2y8jYgoYl62YhOCQ1
+OajwdLqKiMjvHIwpzA6WtBEAfnGLCGsbD9Gr8tRh2dGhWFaEvOYKhtLtHT0bnRcmn4QfNNAW-3qHAI-tcw9Sp8JYgP3OBO14yfRRPewHw8FvmhTlZ638lpPo
+16ndo33FXXJ_Hz38PyD8r1PcizaP
+}
+
+AzureEntityColoring(AzureOperator5GCore)
+!define AzureOperator5GCore(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureOperator5GCore, AzureOperator5GCore)
+!define AzureOperator5GCore(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureOperator5GCore, AzureOperator5GCore)
+!procedure AzureOperator5GCore($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureOperator5GCore, $stereo=AzureOperator5GCore, $tags, $link)
+ !endprocedure
+!procedure AzureOperator5GCore($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureOperator5GCore, $tags, $link, AzureOperator5GCore)
+!endprocedure

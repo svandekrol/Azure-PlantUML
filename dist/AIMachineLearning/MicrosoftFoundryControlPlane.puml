@@ -1,0 +1,14 @@
+sprite $MicrosoftFoundryControlPlane [70x70/16z] {
+xS_9iKD134BHFtWGelkHVxQchGnaBtLMh6uLickjpR2R-aWwWx1dFvBfZEG8GFKy0MTa0Szc9awbPlKwwaSYZlhM42PcPU18jo8ivdj1grc11BA2tZlLaDkL
+21aNpbR3kH3c7bTuDYiame1aHhT2PiRX2j2io16WfWT2pGg0gENWKpsi7_NjKjSj37ivuyXd6JhZoFUDCSOOOumnnXWl
+}
+
+AzureEntityColoring(MicrosoftFoundryControlPlane)
+!define MicrosoftFoundryControlPlane(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, MicrosoftFoundryControlPlane, MicrosoftFoundryControlPlane)
+!define MicrosoftFoundryControlPlane(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, MicrosoftFoundryControlPlane, MicrosoftFoundryControlPlane)
+!procedure MicrosoftFoundryControlPlane($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=MicrosoftFoundryControlPlane, $stereo=MicrosoftFoundryControlPlane, $tags, $link)
+ !endprocedure
+!procedure MicrosoftFoundryControlPlane($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, MicrosoftFoundryControlPlane, $tags, $link, MicrosoftFoundryControlPlane)
+!endprocedure

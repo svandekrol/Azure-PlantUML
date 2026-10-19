@@ -1,0 +1,18 @@
+sprite $AzureRestorePoint [70x70/16z] {
+vTVdWYCX2C1n2mfky_tVzfYJ14V6c7Elxp-z_GAPJwbVgNJqUO8DFFK9OWzAnjY0r9YtPTYUEYouRedWKoqGmkVQGcnp11HP1pEa8hAJRo7IezFi41ENd8RK
+bzsza8aR46W84XUcIkz7ul1gd_OPxnn8YLg2OP3uBPwE9ljmpZawXT57SIGKvSmeOXM4uBqFQQca1qeAlXMoLRXnb56HPRI8SqL7CGg2FmTe55eekemMqcEb
+mg1aCKOd3meCeqY-AJ1HWBXEeMi5710NuuKJ8a3x9bWeKcGc3aW4ZhHHoLVAC4w8Xv8UA1Mi8euQ4IRAT242WDWkRPaROfIoKAGKUP2vGhrIXXFq1KNI-Cv-
+bZ9qKb9G99MXvvN82P8VAB1KP9Hi55B5p4cfJv1BXOtvIaOHv4a50Qq2PoK3BXJlVE5oqdA7uB6kS-5IoPtYsanP5KMeDCKNYKJHOLGHHnAb3J8eLPegXLIH
+UJSKTU0mg2mKOLJHK1HPPbJglPcYZYupA2-ZabwD8X5IcIZLAFMke4I6QsNdWYeZ8uesZg05WzGiJ7dX4pYD-76vNz1fwNZkfPvAT-RbfQHm2rvE5GYtylTt
+plv3lFn8rIZAR2AMgHk8OVZ-9g9CFkx15gBC-WVIexDcDWPHHTinh9Dt3ClK3KE2dk7Mm7gQxTAKsLV-_2Zro_SD
+}
+
+AzureEntityColoring(AzureRestorePoint)
+!define AzureRestorePoint(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureRestorePoint, AzureRestorePoint)
+!define AzureRestorePoint(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureRestorePoint, AzureRestorePoint)
+!procedure AzureRestorePoint($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureRestorePoint, $stereo=AzureRestorePoint, $tags, $link)
+ !endprocedure
+!procedure AzureRestorePoint($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureRestorePoint, $tags, $link, AzureRestorePoint)
+!endprocedure

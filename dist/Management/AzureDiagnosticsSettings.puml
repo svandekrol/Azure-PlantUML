@@ -1,0 +1,16 @@
+sprite $AzureDiagnosticsSettings [70x70/16z] {
+xTX5mjmm343XPrlWMVN-j-quKJ6e9ltv3OE-u2hVtcYFT5UHQ1MnUZxfeImGChMXB14dLHdA0kbSLUoPoldAggB9v1P5oIjVYfryNLSisMTHlXHx1QNUeY0t
+A08tA1NatnM9MO3WvehkAUxs-uqwlGg0c9j0rE8VwyeV2TXuhOpS7IXJLNrqHZ6W-JnSGRn1yUYqqc8D59e21cXMCPZ7AgXNA50zgpH6rHrmLqQMLIosmNMY
+l03Diqg5vXMaWVgyCfvIJ5M8xIZ4T45IYZ8biHrK7sdnPSTAd7YWFcKvnQKzcsU3YnBA7pMernK3lQvumTDAxzx_V6YTNrSVwqfVIVjsvvN-0PKlvKlf7rAf
+joZzkZAGXVBeSsTV-n8PIh8-8N99YUw-QX9THQAU9kxlEm
+}
+
+AzureEntityColoring(AzureDiagnosticsSettings)
+!define AzureDiagnosticsSettings(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDiagnosticsSettings, AzureDiagnosticsSettings)
+!define AzureDiagnosticsSettings(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDiagnosticsSettings, AzureDiagnosticsSettings)
+!procedure AzureDiagnosticsSettings($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDiagnosticsSettings, $stereo=AzureDiagnosticsSettings, $tags, $link)
+ !endprocedure
+!procedure AzureDiagnosticsSettings($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDiagnosticsSettings, $tags, $link, AzureDiagnosticsSettings)
+!endprocedure

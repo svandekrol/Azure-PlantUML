@@ -1,0 +1,18 @@
+sprite $MicrosoftFoundryAgentService [70x70/16z] {
+lTK7hjqW44RXzC0FlhF_tKPeX3te11xMBSTgRf-xiG-LalUyuJrZFEqazhJXvRl6yqojnr7BVvMywnozGYMtjX6FXlVt1i8RbCzs4LSCI6zRyO0i7KbGF1XJ
+fiYLUcLNALCXOv8h5Ohd28BXIe7I-qh9UQ6i7TrNw2WFgtOKCfB6DHiA70KbUrq9MOoEdb1mzg2Xp2eTcIYFbIATYqKbtl6fyf1SYGwLl5JaY5Uj1SLJKzGd
+3SQeE6DJnNHs6Xd8yYkRAABIMYb6vK6aTQmKAwFIvGBbc2dHiHXEfId7Kh4753EUIbGIb5Q1OXN8nIGeynovhT09oAWaAAkcIeAoAY8rAWdAialHeAI5KgJf
+Q9vs5QahT7GftaIHJeLCJL4v6HfpfJPaGobQAKK9YZCMAwNCbTI2uineN0mDA8491XGYLBpmiSoL59lBjLKyA3bjATKhWIdM-vkXW96_IrvGh9Sp53BrQ5Km
+bm76o9GZCgLt6bHiw5TgQL1gH7xbgOBJEGOc83aK4OPBgZHQGE0S8wDWWB5f6XYxXP0v3IcJeS6SSKCY0sET767t4EzPmuFnf49Ztm5oh-mAZBj5nfwe8_Rs
+_W4
+}
+
+AzureEntityColoring(MicrosoftFoundryAgentService)
+!define MicrosoftFoundryAgentService(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, MicrosoftFoundryAgentService, MicrosoftFoundryAgentService)
+!define MicrosoftFoundryAgentService(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, MicrosoftFoundryAgentService, MicrosoftFoundryAgentService)
+!procedure MicrosoftFoundryAgentService($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=MicrosoftFoundryAgentService, $stereo=MicrosoftFoundryAgentService, $tags, $link)
+ !endprocedure
+!procedure MicrosoftFoundryAgentService($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, MicrosoftFoundryAgentService, $tags, $link, MicrosoftFoundryAgentService)
+!endprocedure

@@ -1,0 +1,21 @@
+sprite $AzureWebJob [70x70/16z] {
+pTK7hkii48PXO2hy9VlVxSKV5Xb3JXpT_fwgzcXc7CcFhskZn_UMMkWx9HNoXhuVQaP4tD3tEgt7dT7s_Kv3rXNiL8zsvXv1qXMfeK5LDyaV8ysffr5nLM5K
+qeT8hOgTdWGJCRfbV1ezxWhN8pi8z0aZUXh8QJ365Bfb20eGPDGJfXYBghdNBnzL5X4WCo4gkT1CrCE3Vwr8hqQaEkNUO5WCn8tYqlDe654v6LRtYcwO9Zrz
+6gxKoqUaZkwPrbHwJqG8OHRrqGUAXPNScSvm5dl9l42QdokfHSICFcTQhoDSqj5yl6pdVS9IDueAfnc64JiQZApAplpJUfPJg12fMM3uTfXs9EaIaCYSntcl
+UBgMBHGO5VMl5KvBQY4-RynOcxhpMichGXOJwfMSHbdsOQ2ajMoNz52UnzyK89QtR6E6dexifUBl5SGf5H81mwsrkYbjGuejEQMYFJ2bLUsjJ5aL-afHxWfL
+HOiYgw8hud8gIZcplbHQkKQsAPQBhgsANnNR5PTxfN94U4TweaiI5IHCvOoOMIscXwFePXOYvl0UrOYCxXc5C5xj8x4ploZ7p2mx1GLpI8qCgnjU1neg2UMT
+mK87u_NAYE6J-cGupUZ5CCP7TUJ6PoMXecVTdCck2FSqlDOOvNHXACMYWXeVUQtM0sDp5CHwb2vnG93mkP0mImNZofpVAcKYaT7MV8o4t6HH-AhaY21YPcjD
+vtbSEpOtol92AIjInWmc30RN5QzqdLsk2gqAlyggvUj7uwg8elSAZZrlWcWzopsZNS4qf2yPdMrAoQdmo2koxZtZ5K5N9OrAK03fCudttXKWaT5MyTKQA7z2
+eY5J6qHXH6d6OBosKDKj6rrkajFiTCKYOwk1JO049OLuf05vR6CyHhUAJQ9t8RvKygQ8GHZPlAQj2kBjkiJe4JkDVemQbTXrcBmOo10k-bRXCX4eQq3GMmLE
+8LwLFHXRlBOpz_5Veg2Vfapi_AyylgUW_6W_H_bUv1i
+}
+
+AzureEntityColoring(AzureWebJob)
+!define AzureWebJob(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureWebJob, AzureWebJob)
+!define AzureWebJob(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureWebJob, AzureWebJob)
+!procedure AzureWebJob($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureWebJob, $stereo=AzureWebJob, $tags, $link)
+ !endprocedure
+!procedure AzureWebJob($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureWebJob, $tags, $link, AzureWebJob)
+!endprocedure

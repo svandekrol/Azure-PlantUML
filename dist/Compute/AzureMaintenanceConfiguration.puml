@@ -1,0 +1,18 @@
+sprite $AzureMaintenanceConfiguration [70x70/16z] {
+pTS7bkGW40DGm0K2Jxh_QITe4cjKRTTclTJnFn6Sdlxxx5D-JH1Ip1W_9EpCH0Vw38MDPYKd9XThCUV3Q2KTKWXfHYEW8PnBpEDgb6r-0pfNYhGqnLxHDAMI
+URob4Adf-AyqnyYS8LiIYc02JOH2XbFiAfoJVAAanZ8-mea4JfG4CkvukCIvuqJ9DvJlDOP9PRR9w2evBT5AxcIaKfElg7K2c5aPeoTF4UbZT30cPkMgKZkM
+AbIsY682eP8ZIXF84tTSG3653AwGIfDAKGW7P0gn_JMhNuK2TtAtjo_stIxC2e2t7nUXOESP6ylddvaHV2oH7Kym_LqP1oGl2l3T9PTIikXoge3nviNUvsNv
+3bE8CEuQON_BUZQ6oDETkr-A6SOuCaqf_jvb6fap1F8uyfag4NbCQyP7nAbECXzb3JBYNAUPmeF2DSIG1CEknKUep6MoPsL9w9C3cjl8-RyeWvul8VtMnR4A
+HAxnayZTrvZYYBu9alTrfX3Dz78iy3dJcqByDbef2j4AcQgKx20-WxcEsTb6qGjrk6yM20BF0P4rrWmXAne9Fn_rLck3G48E9O44d0zA86598F7W3o3Z_waI
+1nY5nAEGU1GIZqBYaKWy6eb78lz_NW
+}
+
+AzureEntityColoring(AzureMaintenanceConfiguration)
+!define AzureMaintenanceConfiguration(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureMaintenanceConfiguration, AzureMaintenanceConfiguration)
+!define AzureMaintenanceConfiguration(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureMaintenanceConfiguration, AzureMaintenanceConfiguration)
+!procedure AzureMaintenanceConfiguration($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureMaintenanceConfiguration, $stereo=AzureMaintenanceConfiguration, $tags, $link)
+ !endprocedure
+!procedure AzureMaintenanceConfiguration($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureMaintenanceConfiguration, $tags, $link, AzureMaintenanceConfiguration)
+!endprocedure

@@ -1,0 +1,14 @@
+sprite $DefenderSlot [70x70/16z] {
+xPW53iDG34FB7mQv_sqtZsUnVoGLyihqf2GMrT8_zkPwXmxy23mFYV6ss1__5dgKmDY3gT4oT61uMGJyBNf5gxFC8vWRB8mf-5lSAzAxkwmjBzaKCdXPCl2n
+I1Njtn8pMe4bPXGp6dqiUaMbv59U5fohblArW5LP50f82qWD5aAjQFyM1S4ICuePhS9I6IUBWhkblQBzMvYOaVH7oLWYMMu
+}
+
+AzureEntityColoring(DefenderSlot)
+!define DefenderSlot(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DefenderSlot, DefenderSlot)
+!define DefenderSlot(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DefenderSlot, DefenderSlot)
+!procedure DefenderSlot($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DefenderSlot, $stereo=DefenderSlot, $tags, $link)
+ !endprocedure
+!procedure DefenderSlot($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DefenderSlot, $tags, $link, DefenderSlot)
+!endprocedure

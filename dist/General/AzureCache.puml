@@ -1,0 +1,18 @@
+sprite $AzureCache [70x70/16z] {
+tPNNigKW402TZCojyl__Ti_WYQnmCMpiTxkQaR3ylS0MvmrFTYeGYPYP0iGzee_lAuXUgW47SPk7QUfAmj67eD0luUz12Bef79oeWSAm1RSjz14ZQfRIl99I
+CfFF5StRblpwHMhp5adbkHxoROlFi8AQvWOc20NqhuR5Cy93n5QRaibhsubxg-M68WJL5gvF0CtUj7nva0Zwe6GFlZgMAgW2MKFHi_WREOQ0xsjZiTaVT5jg
+yWVkXopvYCN_H8l_NtF9oHZk76g9hGGrErkCwoVYiJl7MsO4mERBCDYI080wD_fOIobf49QXbWnFYwYggPcg2XU6MpA7XgI-K4tNmT1OYn64H-n3atIT2jbO
+Y-dpyYQMiXeAyUfM6smf7o9KX3ISmoq54IRyk0R3qR9uqrBWWWGzIpvYyKjQ_8-ruDcvX0RmWXQSw89_1731T672y_i5fuaQbk6vHCfqVk_U971wl-1qimJ8
+nwVBqmCuCHTuMlZuNF0fmQFxvMCzVDn2Y0Zmb9ovw-XceIlsxWNd249oiYKcJBKbs3SNd92tB54ptWB0MvPWtCB03KimQY7gM8BMN7pZ9P6cvM6gIlBopNkq
+ZDApB3jeMPQz_3oNvM_a1m
+}
+
+AzureEntityColoring(AzureCache)
+!define AzureCache(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureCache, AzureCache)
+!define AzureCache(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureCache, AzureCache)
+!procedure AzureCache($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureCache, $stereo=AzureCache, $tags, $link)
+ !endprocedure
+!procedure AzureCache($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureCache, $tags, $link, AzureCache)
+!endprocedure

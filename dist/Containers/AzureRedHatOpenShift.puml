@@ -1,0 +1,16 @@
+sprite $AzureRedHatOpenShift [70x70/16z] {
+vTVNRiKW44NHPxEZyFzVczxm5XuuYf_kIRqko-CsWlvWQNz2941piYgSo72838V0YCwBjfIe4YSgn3aIn24v6-U85LyRIeHsVOZ-172DKDKAC39Bjn8HXL8y
+JmnPGSpGIwL-Cjz_OwCZf8eCbT9NCWWHeiVDodeFIdgzDuvAyRP9ALPkhcMlk_-pukMiCxDs2smgS5A0JGK0zOmz1KuAiAl0MM5NqVRj_S-ECY9_xvICQSPU
+DxuqYyIukHzK4PNYHu_HB8CVO9A1twWyZsQW20sGN6a-eR-952s942_QHvZ9m3BIj7IfKKt6MuSDC_LWIOJUTszgfHlXytDfS3N8cXpBST_vLfe2EpCA6Tby
+egMpYPmvWWdIBPCrRfbzEbaXJbQ7GtrhyeBeIHgQ_Jr8NW4
+}
+
+AzureEntityColoring(AzureRedHatOpenShift)
+!define AzureRedHatOpenShift(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureRedHatOpenShift, AzureRedHatOpenShift)
+!define AzureRedHatOpenShift(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureRedHatOpenShift, AzureRedHatOpenShift)
+!procedure AzureRedHatOpenShift($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureRedHatOpenShift, $stereo=AzureRedHatOpenShift, $tags, $link)
+ !endprocedure
+!procedure AzureRedHatOpenShift($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureRedHatOpenShift, $tags, $link, AzureRedHatOpenShift)
+!endprocedure

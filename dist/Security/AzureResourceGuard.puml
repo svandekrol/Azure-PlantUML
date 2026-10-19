@@ -1,0 +1,17 @@
+sprite $AzureResourceGuard [70x70/16z] {
+xSzNZjum34LXM9HjKbEy_zLEksadFut8J4_cw5Num7iWDj1HI0Qh6woCiBh1hXlXlh_b7d2k63kQT8Q2WGPB0UPxaWz6AWR28Upsv-afuVjf7eDzhSHR3YBB
+FLxBbVrgNbNOdwAyAzjMKbXVblwzojgMbzhwFShsOgYsbHMJe6nEyHrFOpwcMVoHAqXZMDiSVKl16Cowe10XSq5fbZgjzqjAizuIuwfowrWlAA-EmIWeIkTe
+J5NHB1aJocEko37hN-HEHO0wKTGb9N9bMSmiLM9E4RBOwwnPPL2HyPffbiAW2KM653cvSZv91XNDoWVbnmYX8WUdf4fuA9T1HOv7XFv10VCnxwbYguS2aYbg
+jrkbou1opgYjKR4jpX4ggCinZGa5POfnau8nG1953DhRgs9x9CZTCSt4gZ54U4g-YRdF8keE39fHkAcCa9b5wimWalSuL1bHTsEY0rKO8dNccAkCi3B2oWYR
+GChCtO5gp56fZB0omW96FIBrfend
+}
+
+AzureEntityColoring(AzureResourceGuard)
+!define AzureResourceGuard(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureResourceGuard, AzureResourceGuard)
+!define AzureResourceGuard(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureResourceGuard, AzureResourceGuard)
+!procedure AzureResourceGuard($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureResourceGuard, $stereo=AzureResourceGuard, $tags, $link)
+ !endprocedure
+!procedure AzureResourceGuard($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureResourceGuard, $tags, $link, AzureResourceGuard)
+!endprocedure

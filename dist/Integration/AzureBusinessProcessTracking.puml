@@ -1,0 +1,15 @@
+sprite $AzureBusinessProcessTracking [70x70/16z] {
+xT1L4a9134HHT0Jh_QyMjouopGikkRz9dH6ScZg3rTJT9okXX1BApA-OtM5mTn3EbytGhTaTH5sdeHdlMfMwg_L95vkbTPKcfDTOiI63a0et0ZMYeLQuZ7tP
+ccg5E_tx7Oeeb512kPSfQ7N7FRXonoseksw1yNM8barZau8AU3Sr5PuMYqZ7HQbi8BuIcD0A9pUqmYMUEXM6-1r-HHTAAA7Spy0k9OUH8BhZ6bowWw34Etm9
+uXu8jpVg9gm
+}
+
+AzureEntityColoring(AzureBusinessProcessTracking)
+!define AzureBusinessProcessTracking(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureBusinessProcessTracking, AzureBusinessProcessTracking)
+!define AzureBusinessProcessTracking(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureBusinessProcessTracking, AzureBusinessProcessTracking)
+!procedure AzureBusinessProcessTracking($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureBusinessProcessTracking, $stereo=AzureBusinessProcessTracking, $tags, $link)
+ !endprocedure
+!procedure AzureBusinessProcessTracking($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureBusinessProcessTracking, $tags, $link, AzureBusinessProcessTracking)
+!endprocedure

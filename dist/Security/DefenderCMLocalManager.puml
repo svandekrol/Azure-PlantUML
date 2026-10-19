@@ -1,0 +1,18 @@
+sprite $DefenderCMLocalManager [70x70/16z] {
+nTO7Sjqm38JXQOu8ODUu_sbJO5f3Ff02q__qzWLosNd-c7pclv7yOKN-jo93rnzHvFygb_mAy_fN9IlNH_NzU-KQEtklIgfTSx92YjgYTD2XaJjNscE_gMJ8
+P1zDJfadXOJ9K-OLuyu8AkiKvAFY4GaBo1QGyKT-jpP2eJP173H36iQagAWEtzm71JHfw4zs5mOkZ8hhc4-A20YeCZBz4HYzVU5MyLaXLAm_M0H-PjmgFYje
+IXei7aoPgv6unPgIY7V9gU9pZ200eStu6yfza0bp9J8x8jZVyfxUFpi7khj5ftpLTJKnhdllHAMqdZA5V4UqCo81Xs9u3XLfasEJ4PqeXBGfDG3MXch4-xlu
+8IrlARTEZ2oKUUisUtceK9ik3pAGvqhSmSZorfqgelkjUoFfINdFoZqjJVbQQ5v_8iMs46g6tITrjNJz5YssBZEMbPWey63hJCtwj-r6MRLrRdVhO-u7M-Gb
+4m7tzignOek5qGvXOIGbC-Eqf02VixcqKiD1yr3ja6XUgNmGL5flKbBhbLAyl9BHXEGELkfCGR5IPugAhLUAZ6gahsNJtKeTAwAWeUyZB8XxfN2etACWnWX8
+ArKh42FYVxUsMwdCpB-AKpvMId6y3Aye8sq8RRTIivDl0tlzrMgXU1X9CNmwg5OgPsDWiL85annKHZ4uNEP5I2knV6LOCxZpNZgZ3hCoGtvSGjPz0m
+}
+
+AzureEntityColoring(DefenderCMLocalManager)
+!define DefenderCMLocalManager(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DefenderCMLocalManager, DefenderCMLocalManager)
+!define DefenderCMLocalManager(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DefenderCMLocalManager, DefenderCMLocalManager)
+!procedure DefenderCMLocalManager($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DefenderCMLocalManager, $stereo=DefenderCMLocalManager, $tags, $link)
+ !endprocedure
+!procedure DefenderCMLocalManager($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DefenderCMLocalManager, $tags, $link, DefenderCMLocalManager)
+!endprocedure

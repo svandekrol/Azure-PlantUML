@@ -1,0 +1,15 @@
+sprite $AzureTableStorage [70x70/16z] {
+xTQ5peCm58RXklso-x_QuN18KqjnphFej-oT0vyY2BbQsrJSPXMtWVjMi8ALZwtMHlG6dbnH4b3z90KKcDOLIY2LDtaLujzFKXM9bSnFbnE0zPDW00zCM_xg
+ZD6LjxvI3rG40QZk9ia14PWwIuKHIFPX3gd0rCAA35Hi-3jI7121QLqnMYrCYRvIR_EAbf39dNfBHN18-vCAJAcA34mRL_HSSTUhf1zYefMHKO2stMGrd9m_
+MTUpZxmwt21odSgd348D
+}
+
+AzureEntityColoring(AzureTableStorage)
+!define AzureTableStorage(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureTableStorage, AzureTableStorage)
+!define AzureTableStorage(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureTableStorage, AzureTableStorage)
+!procedure AzureTableStorage($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureTableStorage, $stereo=AzureTableStorage, $tags, $link)
+ !endprocedure
+!procedure AzureTableStorage($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureTableStorage, $tags, $link, AzureTableStorage)
+!endprocedure

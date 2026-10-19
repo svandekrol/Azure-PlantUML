@@ -1,0 +1,19 @@
+sprite $AzureManagedInstanceApacheCassandra [70x70/16z] {
+lTO9Rgmm381XPRSJ4kv_svSNR3m58Z1T_cumahvw47LPVp0VllR625Tzq-3yDn7kpvKuHQ92ILCbQPGaqtZdPPAaKzZnrXXZtI2weL9Wz5-oPXIw02EDmdcp
+vO1xerXIxBSKznq5kVqT8PNR2uNVKaAgrDhK2iQ111Ibzr39c3Dz5GJaurxTUiZiBRNMyd76NMwo2NDGohfMhZrQPEMahAFAfQUxWox4GWJL6BbdkEF5P2U7
+rufK5OkCbRj5viD7IQ60C6C52G8Q1I15HdhMRyiGGANm8jl_OECWjCfyUUWLj8Pweo2CZrB3leA0FZGAxubCIaHEfvGwYWFn-4R9PDGb9-zzmgaIUf0nm-c-
+RdKtyDI1EFR8mBd1dOt3rmr2YL7Rci-jJv3uOOocn5n9HOm7nRansreNhwMeCzRBbrFQ7MUjTMAKThnjH3bos-w8SJnAzJmX6U0qGkC3_bcdJq58neLIxnLB
+IY23bICZFmGHnL0s8qoKOw8WnxEuoHziEoFjh8Jf2XBZd2YKuwSWxjQGUL1ApdgGqtnnITR9QtdQQH8vQGBH2TuXRF3X-NoTZTEEi_D12ixwn3E8mj1iUtmQ
+nPcHAuTR-JxvhVBVqOACipwjRer9V8R-qycRqIdyJwqVUME2cgbRTYYn7vN-iogPIXbZKaWBWGip2eK6M6Iih5IQNDooZsNbrjKnORieFJ36gqPXXfvVWEyR
+P4JDfCvOD_PyK2DoYRsX71klc3mSd_cwldKMn4K6UUye35N_
+}
+
+AzureEntityColoring(AzureManagedInstanceApacheCassandra)
+!define AzureManagedInstanceApacheCassandra(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureManagedInstanceApacheCassandra, AzureManagedInstanceApacheCassandra)
+!define AzureManagedInstanceApacheCassandra(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureManagedInstanceApacheCassandra, AzureManagedInstanceApacheCassandra)
+!procedure AzureManagedInstanceApacheCassandra($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureManagedInstanceApacheCassandra, $stereo=AzureManagedInstanceApacheCassandra, $tags, $link)
+ !endprocedure
+!procedure AzureManagedInstanceApacheCassandra($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureManagedInstanceApacheCassandra, $tags, $link, AzureManagedInstanceApacheCassandra)
+!endprocedure

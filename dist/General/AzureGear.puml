@@ -1,0 +1,16 @@
+sprite $AzureGear [70x70/16z] {
+vPO7ahCX34CnO7awzp_jNxrDgsyS9cn_wUqX4zhwCZYIkonuvCCjE6t11rlm7D_vcLzPG1zKRLSM_ASiW1twRItPveW4-0cMTK1opB8EI4vPMEDpp2q9MqQt
+zfT-dwNznt2DbnRCseBQ0lkl0JDyetDxqvR-F5vTKE80AE6uUVodmjXYd4yuACe4EWqORnb6YC0OZHNgBp1I0kfO3kDWbCGf2iUSDracLSybZRijGtqKbvO9
+oJoIPQe6ekXTMP4BI-X_sY2n4-C5AkLAGepGKNHBEPFyCWoL6kirD95CZxbgcGeACvHaRkmaeucHPsacIRbaTf2uexO4M9Dj-oHhdIKPBJ5hoS2s1Mxj1UQu
+nQAdPT8dYAWjYG_xo_2ZnvTQ4v_el1l0vYsk2WfWur5QOkyIM4Bp78G2Bx-r5FHnCFGrB0se2PBG--iA-b1OaanImvQvQchD-ZWBQt34iZxEmfhrTVWD
+}
+
+AzureEntityColoring(AzureGear)
+!define AzureGear(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureGear, AzureGear)
+!define AzureGear(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureGear, AzureGear)
+!procedure AzureGear($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureGear, $stereo=AzureGear, $tags, $link)
+ !endprocedure
+!procedure AzureGear($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureGear, $tags, $link, AzureGear)
+!endprocedure

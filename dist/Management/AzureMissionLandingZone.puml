@@ -1,0 +1,15 @@
+sprite $AzureMissionLandingZone [70x70/16z] {
+xTL5OcH138FXOjb3llzfcweruJnGEFczrhTrV9fmEvLWgi54XAa64n4c8cm38ZB-8WfM92BiJHI3hUavWeB0a90KsvPcC15X6i9aXAa8Kn4cAeo861Mnbr4y
+mas_a_8IlOFoqq_naPH_Bu54kFzIBqxzKgEY8m1SCHmJ0IG4c4WjjXSni9vI7lkGbWQLbauLR3T6IQc3rNIk3Dz2MCyffOfpZdCjfmdr0TXYwAsLT2gtYRXZ
+EYLjhhH1nDscCrhDwuLShmJCcM4sUYrBL2wrzQj0Wja5ejLRQxNMKaeccdEvp0V0Z0QZj2OApsLBbX5ObJte6_s0Y7WHH6U2oGJJYUrKB6R2_0Dq1
+}
+
+AzureEntityColoring(AzureMissionLandingZone)
+!define AzureMissionLandingZone(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureMissionLandingZone, AzureMissionLandingZone)
+!define AzureMissionLandingZone(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureMissionLandingZone, AzureMissionLandingZone)
+!procedure AzureMissionLandingZone($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureMissionLandingZone, $stereo=AzureMissionLandingZone, $tags, $link)
+ !endprocedure
+!procedure AzureMissionLandingZone($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureMissionLandingZone, $tags, $link, AzureMissionLandingZone)
+!endprocedure

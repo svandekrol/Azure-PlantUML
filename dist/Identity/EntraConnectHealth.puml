@@ -1,0 +1,19 @@
+sprite $EntraConnectHealth [70x70/16z] {
+vTE7hkGg381XJy2uW4xU_sql8UZS60ypRAAw-wUfySbf-x-NYkfJGuHhyimHxZrXbFav8ypF6ML-pWWJ4zMZAoBta1xt9DzGQ5HO7Y34jnaXfpXc4V4Aors4
+-1uZv1NHd4lEAhAAi5EqN5f2CjEev78jhoWZGXMntK4ebx459ALaZeX_p0Wb6s68gRYMaLu8CTACMKT2d33B28KQ8aQUCCj8LMgwoF042JXXVjug3ebN1RDZ
+Lf3KaO3hZ4Sm34hop19Y5Kp5vH5Ry0hIHqRU8364VfnpC8l8zVVEMijwdGIF3V7t6YyrGthQ3PNVJeG8XoXQ9Scbt961SKYAWy8oC69RG2AIcBIeKtYEz98C
+PHdoY5T8lgM4Nnd-hk3RZ28kXYKbVLOYHAiad3fpvGN0SaJKmnc3RnJiDmGGf1QWnmcdZbCYf6QrXKthxPMPPnK6sAIs0RnWQrUarl4pOfpLRekrTzm0gLOi
+9W2gHz2pyv-UCfZ-LnYWhSF3UjLn04HRihVeqpZKbNOZ8CTLDK4DzMpl_T2KuPBrY01I0eXI3rMjuAPMcTzMqboArevxQ6iZ09qeE-NzKqR9kIfvsxQwdlgD
+m7c3qI3pSIZdffG4SDw0G2sgQHyZj3TpAhLOfs6jOLN88ZwaP8sk5Eq9mCkDuijPXUKakcAO276AMCTM3CF03bbXYcN48RDACOfX739FYrDgCsJUToNlAutA
+CU9qa7d5A7lB8QlZTAFda4NdD0ppipzFzx-__m
+}
+
+AzureEntityColoring(EntraConnectHealth)
+!define EntraConnectHealth(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, EntraConnectHealth, EntraConnectHealth)
+!define EntraConnectHealth(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, EntraConnectHealth, EntraConnectHealth)
+!procedure EntraConnectHealth($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=EntraConnectHealth, $stereo=EntraConnectHealth, $tags, $link)
+ !endprocedure
+!procedure EntraConnectHealth($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, EntraConnectHealth, $tags, $link, EntraConnectHealth)
+!endprocedure

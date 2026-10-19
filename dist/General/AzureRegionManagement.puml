@@ -1,0 +1,18 @@
+sprite $AzureRegionManagement [70x70/16z] {
+rTM7YjWm48JXP5UhjWAz_zi6smCoWomhPzhzbEiVuthzToHdNuG_8defMfktVi_CzbOWCExU1cH7cmOpS83OZi6CN-qpCYiu6ehj8MfXVE6e4VE697UlIigr
+9bnAt4AEmEXGskiOEf-3oNxhXL4bvIYfId54pElbAKxj7jFq5gdEhSVmBLAzeWcpK9WP4TGUnuWoeymarVGo1iYKIHgAUpmNGW6pE21cxFWqkmeOACGmCcQb
+0oaY9oC2Pa-9O30c4GucaCAd9LMzArMeCAuIANGsmCHJoHFcLSdrOE1TZ3AptX8iPAz7KTLgHKMPMIXuKLTgmYWK2tHs1rCtcFcb7bk7GWmhgokjKDQCpXLN
+GKFXz5qPB-ednk_Cap9UrCnaA7S622dDtOEAPcSbuQbq1qCACOYKWaV1pyeuBKk5cO0R00o-v4UQ5MPCm932KvX1V7tDZnJ8Gg7eRWlZMXEoP51HVfNsBOKP
+ePR_xlsfl7YUDzSSrrgdIEZxpFJzX2dRJ1KqbiGBaVwOEqV8OWf-D5qJ_m_1JvmTWw3Q6PahcDEcZDBllJ7icAZyvTzQCzO1DLYjDPd-ofgnZP_lCBRtmpN3
+ztSmOsJjK356Cp8sYhOiziq-6-izOHkWIT4C9wR_l7ps0O3odIb0FZ01m8-T_5JwgA1VgAoP_Zlw1m
+}
+
+AzureEntityColoring(AzureRegionManagement)
+!define AzureRegionManagement(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureRegionManagement, AzureRegionManagement)
+!define AzureRegionManagement(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureRegionManagement, AzureRegionManagement)
+!procedure AzureRegionManagement($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureRegionManagement, $stereo=AzureRegionManagement, $tags, $link)
+ !endprocedure
+!procedure AzureRegionManagement($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureRegionManagement, $tags, $link, AzureRegionManagement)
+!endprocedure

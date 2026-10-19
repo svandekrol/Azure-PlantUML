@@ -1,0 +1,16 @@
+sprite $AzureSoftwareAsAService [70x70/16z] {
+xT07ZiCm34JHZSMMollVTfdUHe8fssZn3p1emRCalxQsffSc0u-wZScEml86BetWqWWkZU0IoEAApe8efPJ-mwYDo9iPC62fK-GLovGrSACH_SuUqJX46IJu
+C7L56DMyberLjC4OLYXwNRgT1JjRhD1Vn7pUmaFi01H3HyahrgbWPclWLrFGVwyAx4sXXx85jHJOWifsUOKt4SiGIr9YIvToULqvBydbTVEA9XHAAFETPLjL
+zXL5IdHT5egbbk8L1RIyuXDlvDTseDlhoiVhxa1-QvBYZ-PHl5_nrxuLsKGYGomBnHQakBSOXMtRIBJDAtj79HMlzwbSNXSeFYQig8D-KzdCed0atGhCan5M
+VhorVm
+}
+
+AzureEntityColoring(AzureSoftwareAsAService)
+!define AzureSoftwareAsAService(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureSoftwareAsAService, AzureSoftwareAsAService)
+!define AzureSoftwareAsAService(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureSoftwareAsAService, AzureSoftwareAsAService)
+!procedure AzureSoftwareAsAService($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureSoftwareAsAService, $stereo=AzureSoftwareAsAService, $tags, $link)
+ !endprocedure
+!procedure AzureSoftwareAsAService($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureSoftwareAsAService, $tags, $link, AzureSoftwareAsAService)
+!endprocedure

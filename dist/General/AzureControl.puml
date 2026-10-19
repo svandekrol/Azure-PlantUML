@@ -1,0 +1,14 @@
+sprite $AzureControl [70x70/16z] {
+xTK5ae0m343HfYupc_kVThs6k-Pt37iuOCp70kPyQdXcxCEdLYW-DpYpddkgGWeff9122WWTam13wmCe7GEeaQfXfMv0WNu5fYkiNs432bjwHWohZ8pfiRkX
+PSmWtauXHSd_iKw9TIka65AAx9MEvNcAZXsZa09SnWJ0GWNgs3ebTgQ2m2jaeLB_wivGx0uAAUP_h59CR8tYkXHKUVqEHI7s7Onrc3D_ZDAbOlJ_t3pp2m
+}
+
+AzureEntityColoring(AzureControl)
+!define AzureControl(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureControl, AzureControl)
+!define AzureControl(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureControl, AzureControl)
+!procedure AzureControl($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureControl, $stereo=AzureControl, $tags, $link)
+ !endprocedure
+!procedure AzureControl($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureControl, $tags, $link, AzureControl)
+!endprocedure

@@ -1,0 +1,17 @@
+sprite $AzureAPIForFHIR [70x70/16z] {
+xTA9ZgGm30HGoQvAjqx-_szN8JH5H2YnOU-TcZjZNcoIvPVbAzmpzN-LA1S57aBIEZndO0Hi6KSv8-7AU94JagQCYc4GKWPbXNSO6eLgnJEq2a-8Ks9IOQ-0
+Sz41X1l91rBIZUG3xWgUDaFkpO14re3VaPJ2g47imPI2w7D_m6YAc2adkkkTUX9vtq6WL_IKMhkhb5BMh_MP-llsjJcelvklZFfwonOqv91znk8IdL8VANrQ
+Vpq-A46lP57KZcTW5AKnC0CPHO5XsioBVoyg7EoWlPUQmHdTPXZHAxpkctarrBg-s94Kg9dJUZO5XoMOaJ1URuYQYQjceYR7I5AARORgv8mtf6zcV4mvHBAL
+xyfBpLpSF1fas0oAYK74K3FvC5hbK2dGERbWYFHNBuiFiqEkPl8CT7rE2bHZ6OP1TDov5J42LyC4X9XN4tayBY9nDB88iKpBSN_iw-WGosZFKBGenRqRxOdU
+-0ovcBnQLWRjzzxO2eHO1X-azCOMQuXHfF3bEl7CuSIs5NXWn6Yar3GJ32rolnjaW1xnZ396V1uXoYD4UMGe1fbdbkayGXGPZ_9-rO_bSTxlz_8tvHi
+}
+
+AzureEntityColoring(AzureAPIForFHIR)
+!define AzureAPIForFHIR(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureAPIForFHIR, AzureAPIForFHIR)
+!define AzureAPIForFHIR(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureAPIForFHIR, AzureAPIForFHIR)
+!procedure AzureAPIForFHIR($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureAPIForFHIR, $stereo=AzureAPIForFHIR, $tags, $link)
+ !endprocedure
+!procedure AzureAPIForFHIR($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureAPIForFHIR, $tags, $link, AzureAPIForFHIR)
+!endprocedure

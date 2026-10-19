@@ -1,0 +1,19 @@
+sprite $AzureReservation [70x70/16z] {
+rPS7SkCm34NPYOyjllzjboCJbeYnlhBfUUdHv1cDY7Jx8TH14soeliem4Nq0nQiK0rr0VuLZ05qHUQcZ7ImDwf341Je0L34DESKOGeYvj2v73pKOVLF4i5An
+Qygr1RKMKop4PYBWKjCNnqfRicAMjBw-jACq2jTOjDLL0oZXI64QwCIb0A2vya0tG2IDM9n6lKJKYCnYF8zcpa8Vxu5OV3Hu5eg4fhLUML8-qSnVZQkzeN9B
+ahvzEREa-MULMAPaKBq6ovnqv7DBbBvM-DTgGJ0AYsM_cDTWn8_iYSNJdrZ2VrfyWR6CBB5uO1QJQ7o5vTwcGq8INc69bfB5KbvZ2VAm55BRAqjzMEw-rrdY
+Qkcdbiui0JQ-GleyroFYPM4sNIMI0RZbgaMg6BXNyOT0p993o6NWGi-A3JzEiGpoqI9pjJGCakya005yIWd0jeQQY-MianOBpuZNfS-we5mi1s4ziYKD5DuZ
+FY-X2WPUisvDTwJ9_0AP7UfAJoFNPBSPygiqRRVGmd0DhD5kDT0D0QJJzTtTtcMQjWP8_WSGZKj9BI4N3ALAMNzUB1NhkajCbTnSmzszsFLyCkt-OdFtY0c7
+-KsGIAjJN8DSCCL9k0RiDYXF2T7acO-JM9lW18JozCvPJZKnCibAnPcc2f5u-bqZyGMMjaiyCgF9bvP6daGj6ctSacHAgXSi6XTEMQonwntP9OusDThFZbA5
+IHfv2XQTI8t1avhGvpsVbJq-xgQO6zJ0a72Qw0uWqhi8p41BubjES86ypWFS7DI3Pmhlk4P5WAL2Udij2X7fjy_X7m
+}
+
+AzureEntityColoring(AzureReservation)
+!define AzureReservation(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureReservation, AzureReservation)
+!define AzureReservation(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureReservation, AzureReservation)
+!procedure AzureReservation($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureReservation, $stereo=AzureReservation, $tags, $link)
+ !endprocedure
+!procedure AzureReservation($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureReservation, $tags, $link, AzureReservation)
+!endprocedure

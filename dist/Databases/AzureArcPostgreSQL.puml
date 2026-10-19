@@ -1,0 +1,21 @@
+sprite $AzureArcPostgreSQL [70x70/16z] {
+xPI9akie3025JWHK-V__TesnFDIkG-ntrBazLywUZb2otP9ksTwGLhnK829T8E8BJnY8Rw0mmGD9A5QYhnBY9HGrwnBc9vg_RHdtyuM8gkseYWW7c7RmiyNJ
+DHXHyt-HJNx6QvyjDQS1Pxz7XoDn-snfBJI9vByjIkb4wi9IMokKVkZBopldwWRehQrQEZMgxq4fRQSkMuR8wDv4MbhdUqlW9eGN99fhcrYrF6VTikR_bkAb
+TQgRxtONPlLtBKMWWzeqmGvfoVq2-ekMWZ1mWK37ZVbv2yD0CdH2amxnqvO29z4qo8TJdhOO3DXX9bNgDpvjKHXON9YlyziMPybkASgozpPzsk8mgDNDgiTK
+H6h_-xGbfji8YAJXc15Lh5tzU5_IQKc0bXgDGq-OTZqztnSQbdhOnZMgkz81xFdkwcof39qia1nIVTmIuospfOSKuFQu9GRZCUE3JBl5txod-QU5AWmmetDx
+qvAXem80Pd0YhgMzQHbpJOKWDOJ0zULddK17cbab2EJjvsw1ZlTBHMCmrVVAShIMR9rLIyJauz35OS02YQZiZcmNovPM2RsrOzKA3AHexWut4qm0SczXRuF0
+XQIqiEZGPrE40xtHC7DkTuJ5MYTRdrC2k8jX_chn8wzBI2sTBSeyIHvOIhziXi1szB3nOU7BiRBK8KdZzJ2W6HqImMu93Qujv_PY5veb83DbKhF4PiAXuI-M
+MEIOYWse3uR3mXVMRh7nfZei0e0XmHuL6k50Qhj5K-8IOnanYW1wINJRbBzeWbWMIEayw0YmRJEPDDvMk1d202U9T8loXAuyrSOf9rAR9TroQWB9fNsYs8LE
+acwPDN67bnk5cuhEZevQMAww6L7BsRqKzvodVtt0KqXOGlwMNXQMG5ugn2wseOaWULSHah04gh9MYOY6OhQ4PaPtvZbAHtViXcrWlyKM_AuZ-5r7yFkEu3SC
+hrMyFSHV9lm3
+}
+
+AzureEntityColoring(AzureArcPostgreSQL)
+!define AzureArcPostgreSQL(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureArcPostgreSQL, AzureArcPostgreSQL)
+!define AzureArcPostgreSQL(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureArcPostgreSQL, AzureArcPostgreSQL)
+!procedure AzureArcPostgreSQL($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureArcPostgreSQL, $stereo=AzureArcPostgreSQL, $tags, $link)
+ !endprocedure
+!procedure AzureArcPostgreSQL($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureArcPostgreSQL, $tags, $link, AzureArcPostgreSQL)
+!endprocedure

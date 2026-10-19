@@ -1,0 +1,15 @@
+sprite $AzureAzurite [70x70/16z] {
+xSnN5iCW34HH6JGIwVjVRNfF52D3Ec_E_Dv5bSP5VRII79aAaoDOIlGe_0sAU1Gr56U_hsXHhr2QabBIuJzJ2dgVqfIcZ8hwLaN1ZyjHb7lBK515uQ5AKyRz
+rLH2gA04eb2aO1CJKOHLZc8oVWNS6OnB0MncqHying_OZ5-9H5snmaJ41Og1E1G3SIe6ubK4W6272EuyHv5D6mIoZUciA9iSoXwHUAu4boA0x4Dt5hiKkwOq
+vJ8L4JKdeeiwhG
+}
+
+AzureEntityColoring(AzureAzurite)
+!define AzureAzurite(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureAzurite, AzureAzurite)
+!define AzureAzurite(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureAzurite, AzureAzurite)
+!procedure AzureAzurite($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureAzurite, $stereo=AzureAzurite, $tags, $link)
+ !endprocedure
+!procedure AzureAzurite($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureAzurite, $tags, $link, AzureAzurite)
+!endprocedure

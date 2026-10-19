@@ -1,0 +1,17 @@
+sprite $AzureDDoSCustomPolicy [70x70/16z] {
+nT07aYCX341HiYGcwFwttPRTMSWKDZNxgT3n4VZ_5sEQWEISmWHaOVp7o0GcvRNmoS769mFGPMgra9nY40QMikiWIsqaFnbub3g6r4Q4YQMhrBqlZJoPa1zC
+3dr3qeXKIeZb1L9LBGIWn5GCf1ffP65I2ZQ10AYThoiY9Ni1199cD99DGnRoZ8OGLWlHJX_XjY4XzH2j83GY6z4A8O8HKXzvV2Q27PuGQ26W-ajaM2436LAG
+sMjaN74kAcHKeKNnPoHnhLhfRyYvS47UKPmKJuXI48vHqhdyV8h4_icK0r7AKNRNFA34lDsd1IbSNolHtIguHEpsmXCPMmjU5UyTCr57GNKkfmrvvtY9q50w
+YUBzao34DnLYvtVYRGNf80xborPIk1UB_2V6JM5JIKxdyLxjAD4rWb45l4OYDfKlIv7AFS2smahfrLV66MeXynM8tZNp4VVQ22Dj9MUMQSjGU5ZXbmg-sD49
+-JAKVcefka5aXi9c4v0HHX2x0UHpXdjDGAG9Y3G1aIOWqXJ4PkeNZ_Ghlzn79HwjgWnaqE4tcs58fZ4EyP_t3m
+}
+
+AzureEntityColoring(AzureDDoSCustomPolicy)
+!define AzureDDoSCustomPolicy(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDDoSCustomPolicy, AzureDDoSCustomPolicy)
+!define AzureDDoSCustomPolicy(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDDoSCustomPolicy, AzureDDoSCustomPolicy)
+!procedure AzureDDoSCustomPolicy($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDDoSCustomPolicy, $stereo=AzureDDoSCustomPolicy, $tags, $link)
+ !endprocedure
+!procedure AzureDDoSCustomPolicy($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDDoSCustomPolicy, $tags, $link, AzureDDoSCustomPolicy)
+!endprocedure

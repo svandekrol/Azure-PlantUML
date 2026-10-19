@@ -1,0 +1,15 @@
+sprite $AzureIntuneEBook [70x70/16z] {
+xPG72iD030HFqhct__ysRBg8G6xf6hhBC9mNJrz3GCc44cwAy1dIE1QbaQk574i2jaR4Q_4jYMHh2rZSGYmAJc1f2nMQlA2b1OLb4QUbx41_bRJbcdEfUj0j
+jT2Z1K2ojGKnxVQMRkyMQo-qgiNVongBlF5SRAA592ludNl9cl_RI-mb_Y-nbzXBx8KtjP3Q2TYo5ublj6zBjQQbKHRGr0PLoR3agh5e-vl5GPAKNMzpjVWQ
+pbs_tL8rliItD6tdC7q1mG4
+}
+
+AzureEntityColoring(AzureIntuneEBook)
+!define AzureIntuneEBook(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureIntuneEBook, AzureIntuneEBook)
+!define AzureIntuneEBook(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureIntuneEBook, AzureIntuneEBook)
+!procedure AzureIntuneEBook($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureIntuneEBook, $stereo=AzureIntuneEBook, $tags, $link)
+ !endprocedure
+!procedure AzureIntuneEBook($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureIntuneEBook, $tags, $link, AzureIntuneEBook)
+!endprocedure

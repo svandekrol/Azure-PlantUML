@@ -1,0 +1,17 @@
+sprite $AzureGlobeWarning [70x70/16z] {
+rTU7hkGW38LX6soSgF7-JxjjciKHUqZPSd-rgPyCKvBqBr3BtK0W12utq06L6xbr9TflieV268i01iPfX8c8wymUXvZfA0FZMa09Cap4o1GH8yCWCZ8k8dfm
+JG6CYeXKgY2IcIe_Kp_2130gloeDcYe15Nbc5nH_JE4YEbqIL_IXjBp1E0n1J3wA-acbwLFnlC5PyGMbIbR4KEbSURnNtugUKigWm0QlA2QZeYlAFcmjA58E
+pr855V63IfEaMBxpphbIG84DxbGnULThBPBDTKNba-OxvS0leCedQotVTQPqsDhq6S6QWYbbU9T9ojZ_o_P0N7B5gafcOK70R6bhPzK5PNilQ9R1Wf3PWlT6
+YCAO61HWLXn4a0dgxEm4PiTf-2XOS6NbbCpOD1pXUsCFX2Zaa-eS-JmJsypWI7vkGwSl8FZqXWH7EhcAMNqDknpoT1Z1k8FF4IOtUvZcZTMNOiXgpBW6UJyH
+4DTAtzr_hSHzIbn6BZCMgGkVCtO1oVrjnUU8zV-zxm
+}
+
+AzureEntityColoring(AzureGlobeWarning)
+!define AzureGlobeWarning(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureGlobeWarning, AzureGlobeWarning)
+!define AzureGlobeWarning(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureGlobeWarning, AzureGlobeWarning)
+!procedure AzureGlobeWarning($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureGlobeWarning, $stereo=AzureGlobeWarning, $tags, $link)
+ !endprocedure
+!procedure AzureGlobeWarning($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureGlobeWarning, $tags, $link, AzureGlobeWarning)
+!endprocedure

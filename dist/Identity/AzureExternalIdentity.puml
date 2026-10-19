@@ -1,0 +1,15 @@
+sprite $AzureExternalIdentity [70x70/16z] {
+xPO5aiCm40H3MhFt_wyDo3K1bN7MCVTT4c6NMDBL86y-APm388bq05UbqH80Yq4220dY9ej-82nrvNcBgIskJW8CJH7A4ah6jwo1j8uipVfi2GLPMai_YtHP
+qYLO-1x5dWI1MekxUaHk28GMySG897MMwydZv585UbbImhBijgJh7fV4ymxKhrtdmQyRSUqkT4_pusAVesCthil2dxkBkqcE6vPiosejQh6uheUTQhT6_ury
+4QRRB4Y-CPOWcMkBsYsXXBBKIsnj4S8IQcw8y-k5MAcmg7cvemacYQA2IQ9IDyvhuG4
+}
+
+AzureEntityColoring(AzureExternalIdentity)
+!define AzureExternalIdentity(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureExternalIdentity, AzureExternalIdentity)
+!define AzureExternalIdentity(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureExternalIdentity, AzureExternalIdentity)
+!procedure AzureExternalIdentity($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureExternalIdentity, $stereo=AzureExternalIdentity, $tags, $link)
+ !endprocedure
+!procedure AzureExternalIdentity($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureExternalIdentity, $tags, $link, AzureExternalIdentity)
+!endprocedure

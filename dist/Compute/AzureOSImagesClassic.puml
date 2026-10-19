@@ -1,0 +1,16 @@
+sprite $AzureOSImagesClassic [70x70/16z] {
+xTPNWeGW383X1182sNR_qqwp11rq1BRl_c-spwwy_RhaFNeVXUHxnGxRSq6647hoxw9GhhWWSmoRORuQtYb1ic0p9rb-hQ18zR48bnGevWZByoiK96RsdOhd
+8TUXE9uZR5IGEC_lAL5YMV6ypfMLU3LYKN5SYB2e39bIH2oIIaK2yLsg3nGG2Qi7FV2of0i5H6Ybb5yNjYZgDSX3EAIO4tG8rfdYjfNnygYsAqDCITiLIt-K
+ab9CDuNOLoeqVdSlmZLdJrs5WkDJnodD2dw4Wg6en6EAHVTA8gXL07cf90OuhbWkP8eWr2cM3wDYprIbOfV7BaYh0iYsu8WY6pyDX3m_HGK5f67CO8ggtXGI
+Ay1cA5buKtJ83Slz7EpaBOIbqfuf13s9ZaLfB-glx6sdfsLl3Nsmyg_eigzKz4CKxKRw5Ql5w6QIRfKE4m_gGYpjKQmkn9HltHa
+}
+
+AzureEntityColoring(AzureOSImagesClassic)
+!define AzureOSImagesClassic(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureOSImagesClassic, AzureOSImagesClassic)
+!define AzureOSImagesClassic(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureOSImagesClassic, AzureOSImagesClassic)
+!procedure AzureOSImagesClassic($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureOSImagesClassic, $stereo=AzureOSImagesClassic, $tags, $link)
+ !endprocedure
+!procedure AzureOSImagesClassic($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureOSImagesClassic, $tags, $link, AzureOSImagesClassic)
+!endprocedure

@@ -1,0 +1,19 @@
+sprite $AzureSonicDash [70x70/16z] {
+fTM9RkGW40JGOFhWckJ__tO5gachvOKXfdJlyTHLjfEVJw6UdyFGY1mQ8wcT6rfREpMujlPSWP7RoE4Wo84XjJrNO71fbgS61a6U8Tfy3WT13WT1_enWaAMo
+-4ABeixQ049befJ2UDTSllzdoEirLKhcJwyAFgxNL1b9Rk5wCthowpLN4C4yiq6qlJOKrABqFIkpL2o9QUHk510hnQBadT-V59kAduTY_wj8FTA0R2is3_qE
+qdh-gk2fkmzZznOVlVsaSCekKzZAh6zPEqdSL-wLVITvPAqW2sNl5kJm5eHPZc_XaJnHaXhpoU3I6Xod9D4DXOZ68UFrgDahBLs1DXGQYjQ6EALG23jAvg6K
+De9pe5GEOIXQFoZZAsPcSKvNgbnXNob5kSTAjSAQ5CQsKh9q1f-E7R6lP8p9_AwLOEmh8QHkMArKADmHKre8T-EjM2sEteWYglQaQmZU-GfG5ix58g9v8BYb
+vyiT0iMIkYDqmQ1kf0O4oeWXK7nKc8NZDSfqfEARjaR6HA-uMZqSOoyp7hw_1ObT-IslZa2jTr93RWhhK9XHdlBTKR4olX25dalqhJ16lEJEP9Nn1dgc2HwS
+gYdcwDRl0BpKfEeKUpTYcYjWIiHRg52CSVEiRgcCzce865-B5xV8XK4S0iVNkdIYl0TnXymTpECL379DZCKyfc0GAoCtmys3MkmKHPc9iPu72WQ9apBhMZ4D
+fT1ga7Kjp9Fy81xPhiMhGVPhxPVnSI-pAqERmlsZk7oPHmwh6_MfyzH02Ce1OkVO82VEnXt_
+}
+
+AzureEntityColoring(AzureSonicDash)
+!define AzureSonicDash(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureSonicDash, AzureSonicDash)
+!define AzureSonicDash(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureSonicDash, AzureSonicDash)
+!procedure AzureSonicDash($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureSonicDash, $stereo=AzureSonicDash, $tags, $link)
+ !endprocedure
+!procedure AzureSonicDash($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureSonicDash, $tags, $link, AzureSonicDash)
+!endprocedure

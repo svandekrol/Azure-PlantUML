@@ -1,0 +1,18 @@
+sprite $AzureVMImageVersion [70x70/16z] {
+xTE7rgCW48RXZpw02VT_jslA71aXg6pV_T_quaCvcavMXlq4vKlvKl9FKkupohrfMf7DA4CcfrCteRHCFjczsszMP1-Lv4FgV4dfTa49MYb3hR96IyjqbMZK
+CnjRPItTzdMKv1IdlLoM7p9YFAsgT10BVPSF539gbucj4fQXubMda3dYucsNK8njv-9ygr0UAjfOkI_EsfwIHehLUdKsmwvLIjnQnieQBykwWI9h57RCqn1A
+sied56qi6xCAEvoRLfHYPrD49_P5hV5yfXN5YZP6A8jegAXNl3r2aOTzLXHdD3kDKefxnv9KV4-XpAqdwNg04xqE5afEPgSOdtEbR8Pm2YiSwLgnATVAuheL
+Lgg2PiLG5jsBwyUAo3qLuxDiyH-JohOzngOzKloGoMr4-G0nlYu8PP14B9olEwaKgIWOBvc9gJW04qe98Wt0XZf_NV6mW9Bm6IM83881t5KbIGKcU41_d-Bm
+sXgfNDqMfPyKx5M5gZmy4GK0L7LLCPeUMS3DAm7k_GfzJKcqPHMzqa2uf6JQ0g_30-QQKeXp84u15vN8AHiv2xZuYifoGbaelWgWo16W-Nt9LoPZjBoqmniv
+6mylCrULGULyquXi6f6bRkLgSHgHDSPiVUCR
+}
+
+AzureEntityColoring(AzureVMImageVersion)
+!define AzureVMImageVersion(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureVMImageVersion, AzureVMImageVersion)
+!define AzureVMImageVersion(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureVMImageVersion, AzureVMImageVersion)
+!procedure AzureVMImageVersion($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureVMImageVersion, $stereo=AzureVMImageVersion, $tags, $link)
+ !endprocedure
+!procedure AzureVMImageVersion($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureVMImageVersion, $tags, $link, AzureVMImageVersion)
+!endprocedure

@@ -1,0 +1,15 @@
+sprite $AzureAVSVM [70x70/16z] {
+xT85RiH038LXywQYtF-qvVOfBDjJxhSC-JKq_ph-M_txfqJgJSRqYCqxX5v9Pp9mCQrukks-CYsmUnpz_mWc0-AHOxJB8aM4TeWcAyoyQKYbikomL2ko64Yr
+yWYDMWKTbdv5e571K5hhWl5qzWZpwfmNHgPnTlbLlg92x_XTjc8431v9kgrOvBaiAnerpgY81rIcXSbqEfXCdRD4qR_Rc5lUl-dfyNoxC9-uMvWBnbMcXQ-j
+t1OQaNubXcHYvIihlbADz3Fc_OpjApRg8RtGYa0h0eCgtza3
+}
+
+AzureEntityColoring(AzureAVSVM)
+!define AzureAVSVM(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureAVSVM, AzureAVSVM)
+!define AzureAVSVM(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureAVSVM, AzureAVSVM)
+!procedure AzureAVSVM($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureAVSVM, $stereo=AzureAVSVM, $tags, $link)
+ !endprocedure
+!procedure AzureAVSVM($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureAVSVM, $tags, $link, AzureAVSVM)
+!endprocedure

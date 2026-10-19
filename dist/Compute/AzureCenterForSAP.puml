@@ -1,0 +1,17 @@
+sprite $AzureCenterForSAP [70x70/16z] {
+rTQ9Zk9030HGnd7IGXtX___QFOmefJQLDTvxQ-x2_MIGQ4ty7nclnFvCNw14Ee3Q1fZPTSOvGE3qZV7OAREBu5NXz8n06eucjFGM4ZApPag37SqK1YAO6Z6p
+Wb78HlNDhCDSBcB2cHVAK8ejPeXcIkJ3Zbdi9fzKyNom1nnNZ4OGzuMHTOHWvaa9LjmFYEVZWY54AbXdsSQLClKgKE0iAmO4GuXICccyhSI50cI4Pdwz4drb
+7fJHKFGo_uGoIL4JGOeUUMY5GqgeA8LlbdHUoklU-tXViKnUA4_bs6fbG2439tpTJYqfoTnPkHc5PInvKW8AhbeA485Vl2v-GbRLBlvznVc4Zq4jxgnAoHEO
+VYh4v7sZ530E1ZVSjwrd2qGhEE7eqPgPR-DznNCQ2hLA0UENRsJTyfiHo_IL_PSgOFAhgKn28ik-ifyLTtt1RRAzvoginCYvT8pdunbMKdu0EIXW0lCmPAl-
+3N8mkE261u8MyXH8E37XQwxDyMExIuMPEa0eFSK3Y50g1xEqYcPg92OCoTIE66WpdicVDUFj2JtazQELWnHzmHI9Adr4fs_qdMYaOJIb-3_o6G
+}
+
+AzureEntityColoring(AzureCenterForSAP)
+!define AzureCenterForSAP(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureCenterForSAP, AzureCenterForSAP)
+!define AzureCenterForSAP(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureCenterForSAP, AzureCenterForSAP)
+!procedure AzureCenterForSAP($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureCenterForSAP, $stereo=AzureCenterForSAP, $tags, $link)
+ !endprocedure
+!procedure AzureCenterForSAP($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureCenterForSAP, $tags, $link, AzureCenterForSAP)
+!endprocedure

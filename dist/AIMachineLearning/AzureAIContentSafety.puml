@@ -1,0 +1,17 @@
+sprite $AzureAIContentSafety [70x70/16z] {
+tTZNmgCW68JXACeCRE7-hpOzB3ZX2xX_VzFRey0HGL4Q2jANKT9_zW5ApErNOjK-9KhZogzuAP0uns0mXXAl4JcAyqg9OcH78LLYKO0KOf4eIP50G6DeCzkH
+X4oOK9AoGegWaS5Mq5c7uglaTQSobpciSvNVf_WtK1RufGhx5EapbU4H4UTSsGBlgdeKWhMoKXI2BvI-Fav1km5bQRU-YUBx5TyEedprDGeo8gbNMSruBjXA
+75VsJqnyeOIkQaIL2yDj8KVY6WCivgBuRSW8oioJKONPg5iiXGJBMqQaP32I82EC8jgWWcr-ySCdGq7coM6KWIBJOYY_dZ8Dn3ePPTX4a2mcXlBMHhAYZ8HB
+tWaYYZ2YJ8T94IIJKSKT3fCWeXWCCdD1LXYAmV0VKo6MqjuLE454iHZScoVNG3nCfjxcU3nL-dQVa0GHHPoKHXLbqYK34SN8G4GnKiHGZCGm52inH1dlxPMV
+zu_I2G
+}
+
+AzureEntityColoring(AzureAIContentSafety)
+!define AzureAIContentSafety(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureAIContentSafety, AzureAIContentSafety)
+!define AzureAIContentSafety(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureAIContentSafety, AzureAIContentSafety)
+!procedure AzureAIContentSafety($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureAIContentSafety, $stereo=AzureAIContentSafety, $tags, $link)
+ !endprocedure
+!procedure AzureAIContentSafety($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureAIContentSafety, $tags, $link, AzureAIContentSafety)
+!endprocedure

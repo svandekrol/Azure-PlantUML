@@ -1,0 +1,17 @@
+sprite $AzureGuide [70x70/16z] {
+rTZNTiGW38HXl0P9NENzdpRLuyD6-TtIvtw_8yO5im__97wNgqBE9SBS5BUJa8YSuuu1eOcEE8s9SPw-lvZyim-WuuX7NnD-bBap96H832Da2Dfbs1ZZsypG
+Oj_CK7fMLiFxJdnbO3s084D8z0E9n0ZnpKaSfh5HsKLA1UO44gNCgPkq9fNI8LCfj_ukKWwFCfTIfhutZ1H0Mda9t7shKXSagDb5WM7gaL6Yl2KwDoE5Hxaj
+YiEz9sLpb5gMMATXzXTaHMce-A0ubA9KUYgby1MQofgvfqIUXPfLRZqdpqBDAjD5nSjTjXKijqvxYgzAGwNLMeTc0XLNkQ2yP5v6SbJQregiAgyZ6IZOhfGn
+SxjuZUgO5b-X2475uHjXHBpdH5PyKp7Q8_KS6IvfA8NtVUrig2I4QjbyDJHiLhNazwwXuZJAg5IwIgPcOPHn9-5XB9N2eqZ9mpYK0jiz3EEf5DvWURkFL0gC
+GeoKTXZH_PkhGII4-86lG_u4b_BLNwhC74SK8uPF0hPz90as0auJfqysKhxybCKCd_WS473E7pxv54l8TSV1eDCz4Mwd__18XFlF_dEY0F7NymG
+}
+
+AzureEntityColoring(AzureGuide)
+!define AzureGuide(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureGuide, AzureGuide)
+!define AzureGuide(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureGuide, AzureGuide)
+!procedure AzureGuide($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureGuide, $stereo=AzureGuide, $tags, $link)
+ !endprocedure
+!procedure AzureGuide($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureGuide, $tags, $link, AzureGuide)
+!endprocedure

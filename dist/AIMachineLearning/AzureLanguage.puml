@@ -1,0 +1,15 @@
+sprite $AzureLanguage [70x70/16z] {
+xTWteWCX38JXHSo8KlS_hNC0Na0szkP_O_KrgWIpxALODIF5EfjEsHMucfrYj5xbHlGgzb5bLtP5Gf40f5wZNncg1DHxFeK0f4G2dWhfKa0q7ez2pzLIwEdp
+YWz4BCiLejsL2VMyCWNmCb8fV2g48ruKeYnJG4_6N_gumdKgiPfXV4i9GvcyfK3AiC_eCuhoVCLBkFtbWKhLfdBkDgEeAaCTL3-WqAqeBrt0AgfBSRHAnJwY
+DFgCOfzHx0C6-PjeBqLboMZIbDYxgwLJPltAIdVONLdVYT8H
+}
+
+AzureEntityColoring(AzureLanguage)
+!define AzureLanguage(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureLanguage, AzureLanguage)
+!define AzureLanguage(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureLanguage, AzureLanguage)
+!procedure AzureLanguage($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureLanguage, $stereo=AzureLanguage, $tags, $link)
+ !endprocedure
+!procedure AzureLanguage($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureLanguage, $tags, $link, AzureLanguage)
+!endprocedure

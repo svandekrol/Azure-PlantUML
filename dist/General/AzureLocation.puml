@@ -1,0 +1,17 @@
+sprite $AzureLocation [70x70/16z] {
+nTG7Skim30JGxmM-GQRX_gTDarU3Y586O5msrInlLjMFOcjyDZIOAo2JpDd6z6iWzJQsdsbadh7Zt5iPTaqnEticbBPc79fGziRwV9Ku-7Z5gugMkzJFhbtZ
+IZUlAuqZamep3fGPvkgAvzEFSnMb-JKOlxOop_WZ5BsAulF8zHLla_TA32238a0L0Tgs2Y1IHT2t-HgK6ZAUu0kUHUIojZyzzQVrftEgrCHLl_OpNPMJAKI8
+w3aefj_CATU6fVKhGVcl2mF9A024Y0Tb6SaUKqIYmh6CmZNB1hF6Sslc7iga529cFBT69gUm2XQbiqee8mabLc6PPYl3DOK3OXcpM4OWloj2nQaqLeaAaEj2
+nAprpd-d5IOgA2XzH8eAonmgfpygmeVaEBoZ1gLolqHbP3WCAJr7la5GUQZ5znWEye0oPKH_7fG69A-uVYUEwtA1Ja8apz3H9PpElxwXstW1SGW4B5176E32
+H2VC90C9Dpc56a86yc_Ji8B4BOW3N_5YG2Z6wy4sFXU8oD984iO7
+}
+
+AzureEntityColoring(AzureLocation)
+!define AzureLocation(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureLocation, AzureLocation)
+!define AzureLocation(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureLocation, AzureLocation)
+!procedure AzureLocation($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureLocation, $stereo=AzureLocation, $tags, $link)
+ !endprocedure
+!procedure AzureLocation($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureLocation, $tags, $link, AzureLocation)
+!endprocedure

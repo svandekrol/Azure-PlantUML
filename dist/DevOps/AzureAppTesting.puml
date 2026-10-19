@@ -1,0 +1,17 @@
+sprite $AzureAppTesting [70x70/16z] {
+pTL9ceKW34LX5SXDPC3-TriMcjS6C5PxvluVbzTOVgomzK-Ky7rA-1TAs8l_G54a7WpXYAuWbG50jm1u35MI4Yudl20fqMkWCV6Ac8uBYOfuc0xYO7g8_pJz
+Iz5ADmlnAoLQU_nCiH2_OY2U2mvbIqIm8mpu5BtO8hMgGBRWLQPDaJsgHv4QDvtcPwnFRWY9rd3GK6BKHua8SW-dbRWXCTqUKyzWmA8rlcpwCBFO3EGv-ujF
+B6RyH5XEVFe9Wcr6ZGRp_c_0uagL9yG-USvzvWrX4-amUZEaYBr-_KJ6ZE10k8FajQ_SViXz1C_n2wC_GVIGp7Z9KD3QapKvSHP9H4r4xyKmLD59XEOUPSOA
+suXFiSlVeQmEfStaxr1MGw6QhTXCVbUMgVQibEzKR6OTAehqc7nEGJ4OjrAU6mtAOYZbhV6rODfBoXIhhi90E9GPW29zo41eqWB0NFmnW7cwHG3y2A1xTDC5
+9aBtQE42WxfdNfPbVjZ4JeG1VOU6-U8c1f0EvERCkicZx8WwOLb2J03YTKGj0EpQ4wFDC3nV5LEfczYxv_ecHa-XamnZM1c7SVnRPoayw1Fv
+}
+
+AzureEntityColoring(AzureAppTesting)
+!define AzureAppTesting(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureAppTesting, AzureAppTesting)
+!define AzureAppTesting(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureAppTesting, AzureAppTesting)
+!procedure AzureAppTesting($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureAppTesting, $stereo=AzureAppTesting, $tags, $link)
+ !endprocedure
+!procedure AzureAppTesting($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureAppTesting, $tags, $link, AzureAppTesting)
+!endprocedure

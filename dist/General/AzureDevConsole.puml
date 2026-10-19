@@ -1,0 +1,14 @@
+sprite $AzureDevConsole [70x70/16z] {
+xT5LeWCW30LHd2UL_U-sV0_L6-gP1Hn8ihyfp_kp1aLjcVAteFTLN75b_sjk8BNPUvZYIYuBb1nYCIir133QNy082XX10ICgP4I5ZAYG4HKoYa8cnY8eOEAe
+tgQqgHf7nQZKD93K18L8Re82HBYqZb0X8YdSYQeGqPKPAOdLoygqanXOkgnKZZCh-RBI2gwJoSHoGH5QhFHJYYlxRcw_J6bcvBOyxm
+}
+
+AzureEntityColoring(AzureDevConsole)
+!define AzureDevConsole(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDevConsole, AzureDevConsole)
+!define AzureDevConsole(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDevConsole, AzureDevConsole)
+!procedure AzureDevConsole($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDevConsole, $stereo=AzureDevConsole, $tags, $link)
+ !endprocedure
+!procedure AzureDevConsole($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDevConsole, $tags, $link, AzureDevConsole)
+!endprocedure

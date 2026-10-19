@@ -1,0 +1,15 @@
+sprite $AzureLocal [70x70/16z] {
+tTH7ZeGm48LXZoiG9Uv_sn7X2LLFx7eiBFzxV-2uNRabyYrcoPvKaXDI4U6LMafHMlbeID5Qgr4AuXN1ltIpkfLJa8YsS8-YqdbZiWOKLpLUsS-kTwLuhTBA
+7bcjCj3A_afPLtiquEmsTHixRqtMW3Av-q8hKaeP6rEMWEZydZAAwBuki-fjA9GtsnKu-hxY8Zf3KI3lAllxCa3P6OMIMLqeIYeeeypkmt8hPb1IGN4zyYM3
+B1WzA9yDWp-1WA4Gdh41MTxmuSwDDW3H1A0aiMqla9lzBUn4GC14odVjrJEp00GbC3-GOV1N0qmg68X546qWda2S46E1sBy7Vm8
+}
+
+AzureEntityColoring(AzureLocal)
+!define AzureLocal(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureLocal, AzureLocal)
+!define AzureLocal(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureLocal, AzureLocal)
+!procedure AzureLocal($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureLocal, $stereo=AzureLocal, $tags, $link)
+ !endprocedure
+!procedure AzureLocal($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureLocal, $tags, $link, AzureLocal)
+!endprocedure

@@ -1,0 +1,19 @@
+sprite $AzureApplicationGatewayContainer [70x70/16z] {
+rTO7ikCW381XswY0b0dtl-rYnI_O35fCjhu_lNr3ISl_StAZASHl2l6RL1A5W4dQvX1QB9XXdZt4GcbwtXzAMjwbsuDHQOAgW3JfxLLPgx99cuVCAN9NsRmP
+MJSHuQf4kSL8h-1DoDARYWG7SGQZqZ_OqWJlqLPHf_1Id1naKf4vnSj1N6NCoEUAE4EPK_G68hWknh2w3HLQtWLHfn62owdrvypp1Z9-wwbJMlOsB0MxoZxZ
+xp8i9JnQTr2Tn1-Ax0ZGaP797OnwnNr5wTrgKvgEzpbK9UpJ-qm9HESfmMVAMfLjUYnre_6jrAsUMrxRN3xQTaMzdeCF4R1brz4VIdOPNktZ0uYm3Twxli80
+ooK0dluWCPIkYCTazqFD0U3i844fz9X7VjL3Gc5GL6XRrur45GiI0aryPSPWYgYgO2dPbR17Bf9xI3141Kf9AyEkaZtaKE9njSFaKowYAPIYkapkCn6W8bMf
+300xIDtj12L3MiM202KU_6b8Y50ITHJP7qQCVSGOqKIcYBPA3NU5agfq4A02K0aHHMlIAefVpoF21Y5yHILHLx7CUDKmICUX8gwYJEzdNuTII_gkUTVLg3QX
+jFUDbJXMqbYHHi5IcfqHwxM8fVPExYkP-3YavlbeSRDnJCSXN-EZPYHVMngR-_aLvQOUejvoFTZAJi-7iwNfWkH13pqTKbNY-VwgkCofU58UDSrJqQdyUKn7
+dF8ln4UOdMQO_8tw0G
+}
+
+AzureEntityColoring(AzureApplicationGatewayContainer)
+!define AzureApplicationGatewayContainer(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureApplicationGatewayContainer, AzureApplicationGatewayContainer)
+!define AzureApplicationGatewayContainer(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureApplicationGatewayContainer, AzureApplicationGatewayContainer)
+!procedure AzureApplicationGatewayContainer($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureApplicationGatewayContainer, $stereo=AzureApplicationGatewayContainer, $tags, $link)
+ !endprocedure
+!procedure AzureApplicationGatewayContainer($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureApplicationGatewayContainer, $tags, $link, AzureApplicationGatewayContainer)
+!endprocedure

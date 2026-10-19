@@ -1,0 +1,19 @@
+sprite $AzureWebsitePower [70x70/16z] {
+pTL9Skmg58HXbNmQu0sq_zq-X8ZhlwGYRpDopanaVK4dVFp4EA9wYImCH0Y8GE0eWmoDEwXMyd1kFw7qD0Xp0FN5_984Wq4W7vsbCPabGYXWh1agJoT0_BCo
+Y411AD98VP-XA2GDp4evEmhvFYuJohvGS3AIoKox6gOGpHHrHZJeo9FM21cfQ8ICK1IY6Iek4CdaxNCKY61MBmEHBMkR8UChnJyXhNeC0ixxlU6qgH1fBRtK
+aPAHO7PE1OhT4Uz8hNuowIDa5ehVaCrFf1Rpi3CUaUrJlHvaTY0zuNN41v6brjlUiCvXZiuTAGF9KaxmbxAZ_xW7DNjYAiKZF3lYRbw-6UnmVbGuskg-zRmi
+CYS3XVqxWy7_McmZ-vYVUPRCeQ0VHCWSCwszjYjvCRRtYPLJmTO08GvbevBvjVNOju8-a-4zYxbaxcDvKD2dak-ANSZhGihuqmeKz358l2jpCZwLOg_Dt1Dz
+CXmbK_shnoo6CK-w9EfGC5eCJ2lkrzLrEzSrRrq5mZg_JIhfKIzcRC-5DDHdtzuHEzwOc2_BTSRRd0oH-ojfSvICHMk3AMCkO_f5lDZyDh7MqYPZ7V4u0mGt
+cChpTUxATEOR3eJruuQ3cGw2ylAjNVpBMI9iGram396xGeICHhH2HYDae2Y6Y50qGqGfaY4Yb8CXOp20Q8NPEHqQJuOB4giIo86vACOIY5GK4q2aaiUwSnbL
+84hXqU3CbIADy3DAKKpE-CmAGNj5vAYk80wIUHh7sd6Ey2U9K7P27B4334A33a8J4GQoC10XCCBu8VaV
+}
+
+AzureEntityColoring(AzureWebsitePower)
+!define AzureWebsitePower(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureWebsitePower, AzureWebsitePower)
+!define AzureWebsitePower(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureWebsitePower, AzureWebsitePower)
+!procedure AzureWebsitePower($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureWebsitePower, $stereo=AzureWebsitePower, $tags, $link)
+ !endprocedure
+!procedure AzureWebsitePower($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureWebsitePower, $tags, $link, AzureWebsitePower)
+!endprocedure

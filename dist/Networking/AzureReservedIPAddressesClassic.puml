@@ -1,0 +1,14 @@
+sprite $AzureReservedIPAddressesClassic [70x70/16z] {
+xTJL0S9G44HHV0NhlrgSR9x5FJD_5pb8vBwMOTh1IXKe-qtDxNjKe1nmxfOgrC7kzrC7Mv021GeBKoxfrLwMAwoV_Htw9ljPh8Xgdg5_YfU52gdxEicQl2nI
+MBDzsfAzB594dKyZI_6oc-_IlsAlOq_rir0XxtVBhydB0iKOTd-ZaAKXdkADg3YNVsU00WKATR19AMiPzWG
+}
+
+AzureEntityColoring(AzureReservedIPAddressesClassic)
+!define AzureReservedIPAddressesClassic(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureReservedIPAddressesClassic, AzureReservedIPAddressesClassic)
+!define AzureReservedIPAddressesClassic(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureReservedIPAddressesClassic, AzureReservedIPAddressesClassic)
+!procedure AzureReservedIPAddressesClassic($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureReservedIPAddressesClassic, $stereo=AzureReservedIPAddressesClassic, $tags, $link)
+ !endprocedure
+!procedure AzureReservedIPAddressesClassic($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureReservedIPAddressesClassic, $tags, $link, AzureReservedIPAddressesClassic)
+!endprocedure

@@ -1,0 +1,15 @@
+sprite $AzureImportExportJob [70x70/16z] {
+xSm5UiD034HXirIS-vysD5_8e8KfDy-uzEDBCcEoS4uts2GZJ3UOZ30POIh2dbI5oGZxCiKoKWcc6amrM8Jep6WVeLXPBYFdP8Jf2CjHkgw4CNUtutN_xPgc
+jTdy_7l3-5f7vCXud0KAaImc0ybX0eL8pCGAaMncs5BQXkKnL6A4JBdIDOlQOiMwKsU08ojKpWr4Uay6zfCKI0e-Li77A4_r2XYPGtxtd9NZV_0OxfXvurc9
+mtrr2kPLA8vbGwc2ZKeKi5YQXbCM4FcL7zELX_9GdazNxV7djL2QhB00KPWdL2KZR8Rep0k4P8JD48Lv1tG6lwaz
+}
+
+AzureEntityColoring(AzureImportExportJob)
+!define AzureImportExportJob(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureImportExportJob, AzureImportExportJob)
+!define AzureImportExportJob(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureImportExportJob, AzureImportExportJob)
+!procedure AzureImportExportJob($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureImportExportJob, $stereo=AzureImportExportJob, $tags, $link)
+ !endprocedure
+!procedure AzureImportExportJob($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureImportExportJob, $tags, $link, AzureImportExportJob)
+!endprocedure

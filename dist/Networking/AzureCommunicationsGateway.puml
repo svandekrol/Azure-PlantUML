@@ -1,0 +1,16 @@
+sprite $AzureCommunicationsGateway [70x70/16z] {
+rTU7ReKm38NXBYVTVl-tRQG3fvXOsE3ENmEIcAzxN8rwUNv-rb90HcK4bH5KGrWDOJM45P0gyrnMc0MAZFwsyZ1QbN5xqR3Aw8fX5NJEaALFXHlfPCb-TWMT
+HEQlKOw9PxCCaGfZnuHhyPa4WiTNHaumCu9u435sek5PAeO9b3R29EuQmwsP2f7ja-O-K4GyvPWHcHLHtI618guYWOAeYAk0qLH0N8MxzgqlgNbdL7m5kOfT
+sd4aZFiTq_r0aQYXBF76Be54nOfyaV8p7v76YiDuNsbNQTp6UFHTvolhTlnTfsCurPZp5I1Gp5jtFYsjW_4KpIWyLtKLdfBPAcrMb8hfI74G53AgUqMJYcM8
+gAOHEs7U6OE4IjinctT5CuWtrBdkpdd8zE2qniG8wsZ-Zum_Zaa66SNWQGSjocRZJCrNz7IpefSoIlllhu-8e19W-nBbHQzKGrWDOJM4rH16f1QHMYda0m
+}
+
+AzureEntityColoring(AzureCommunicationsGateway)
+!define AzureCommunicationsGateway(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureCommunicationsGateway, AzureCommunicationsGateway)
+!define AzureCommunicationsGateway(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureCommunicationsGateway, AzureCommunicationsGateway)
+!procedure AzureCommunicationsGateway($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureCommunicationsGateway, $stereo=AzureCommunicationsGateway, $tags, $link)
+ !endprocedure
+!procedure AzureCommunicationsGateway($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureCommunicationsGateway, $tags, $link, AzureCommunicationsGateway)
+!endprocedure

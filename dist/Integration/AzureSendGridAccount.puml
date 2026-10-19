@@ -1,0 +1,14 @@
+sprite $AzureSendGridAccount [70x70/16z] {
+xSot4SCm0CNGIX8pzz_M0nYEOkR77TgN9yXHzgJAAETYYXGfKgHSr_Nyhyf5bLG2TM4E0wIeOWWnXHGfr52A54k8xQHGXHGfheo2p4iai-_HpbG7HOeKALAa
+v0BAI3q
+}
+
+AzureEntityColoring(AzureSendGridAccount)
+!define AzureSendGridAccount(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureSendGridAccount, AzureSendGridAccount)
+!define AzureSendGridAccount(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureSendGridAccount, AzureSendGridAccount)
+!procedure AzureSendGridAccount($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureSendGridAccount, $stereo=AzureSendGridAccount, $tags, $link)
+ !endprocedure
+!procedure AzureSendGridAccount($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureSendGridAccount, $tags, $link, AzureSendGridAccount)
+!endprocedure

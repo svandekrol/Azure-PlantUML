@@ -1,0 +1,16 @@
+sprite $AzureDashboardHub [70x70/16z] {
+xT85SeH048LXQ4DAkFzjCu-TIWTd9Cw_YyE7JjazFLbcXSYZC976MQMGvYZSXEAHWddPKRfNnqgB8_bCSQHSEMV8xoXHqUMra5gwmlCj-84mqfK6-GBPcTAZ
+7KKRfE_NPMTA_-f2mRrbATmuGxYK30MNmgej6CnBXkAF4rV3RTFQda8XFb4K1qODoQw22Hqe_fqwm-cABByKHEaABnGkkHP_dWGayxceBKfM48nonHALeHzc
+1Ry2PQwVgwE02P0SPXr-KUcYWZLB1IaT9jtSGkbGDGNzQSNqC7ifng4mZuaSAEdLLz2VKwxhyDiqkPBNX7waWb-PukKgupWk6FmI4IYn8RNfOwDNHK5r541Z
+3GNLKL2gaWTDkJqzlG4
+}
+
+AzureEntityColoring(AzureDashboardHub)
+!define AzureDashboardHub(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDashboardHub, AzureDashboardHub)
+!define AzureDashboardHub(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDashboardHub, AzureDashboardHub)
+!procedure AzureDashboardHub($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDashboardHub, $stereo=AzureDashboardHub, $tags, $link)
+ !endprocedure
+!procedure AzureDashboardHub($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDashboardHub, $tags, $link, AzureDashboardHub)
+!endprocedure

@@ -1,0 +1,15 @@
+sprite $AzureStorageExplorer [70x70/16z] {
+xT050eGm34JHRQQ2z_wdNRVGu2uVjmVKFp9XldFcqCgfd8gNbU4veU7AgPpAgIWn_oq92s7Le2JBAwgxSYdLHw4n528gAqHT5H8Lsfz2QrJy28eSoIaMDIZK
+gXcLyFErOQ5HWJIKrh5iam8WK00tN46e0AXJq5h1IXHtI4LnH06mTQEB8J5aHOgDM0Q0kM_TRp80N9pyJuufMkiqOwNG24v1EFLJjA0qd1gky5FxK_I-bJXZ
+nUrECML0Ooj-C783
+}
+
+AzureEntityColoring(AzureStorageExplorer)
+!define AzureStorageExplorer(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureStorageExplorer, AzureStorageExplorer)
+!define AzureStorageExplorer(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureStorageExplorer, AzureStorageExplorer)
+!procedure AzureStorageExplorer($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureStorageExplorer, $stereo=AzureStorageExplorer, $tags, $link)
+ !endprocedure
+!procedure AzureStorageExplorer($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureStorageExplorer, $tags, $link, AzureStorageExplorer)
+!endprocedure

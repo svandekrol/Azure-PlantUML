@@ -1,0 +1,17 @@
+sprite $AzureVirtualRouter [70x70/16z] {
+rTO7ai8m38LXs-bI1j__j5lItc15uM6s_dJGVBIq_5yIGRM2hPgeXoQvQAhy72Lwgq6wPf0YsW2IacNaUSHdU6JDOMZ4PMYaJObW20JrbY4HWc4Hdh7Ac4pD
+8qMSfhJKYXEdo3EAy8hFQBsYKAHU4VDHgXGr7wL6aMzLkckbErTAFAOh9KKfSfIGV2K5MWbfagrcKRfZXGYyiZ48YAUe5ASO5iOylo8Xbi_hfx8EZ4T3360i
+4kA8bXdPFejg3AOugQhWCftDYEh-MQ0O1asd8xeh2iM-qv74y9jA_JUoY6LyPUYFkW8nJ8VPuL2o5aKWPqpKekmfG2p3Aq2sjH4Chm3H16LbQ0K8532EKZ8D
+42XW6eD0SOA2lbMvlQBW6FeL9N-naYiK8AXMoPGYgz9oYcLEZmuTn5Vqv4XLZK8nFE8ptHqoE0Z1K0ZFZ3x2Cpx2CusFy8oFy4vlaVmuqI8nMnIgMI-QCvsw
+K7wovOtlJhcsMUUFTCx_ftS
+}
+
+AzureEntityColoring(AzureVirtualRouter)
+!define AzureVirtualRouter(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureVirtualRouter, AzureVirtualRouter)
+!define AzureVirtualRouter(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureVirtualRouter, AzureVirtualRouter)
+!procedure AzureVirtualRouter($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureVirtualRouter, $stereo=AzureVirtualRouter, $tags, $link)
+ !endprocedure
+!procedure AzureVirtualRouter($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureVirtualRouter, $tags, $link, AzureVirtualRouter)
+!endprocedure

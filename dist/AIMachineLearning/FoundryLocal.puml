@@ -1,0 +1,16 @@
+sprite $FoundryLocal [70x70/16z] {
+rTJNSlL020FWloOIcCdxFsrw4UCimx59qzKfvbjvBxWPYaayPSk9fymeCQD4p2WneyHtKc92yMsa2sr2SM102I0plbIyK2ZCyHWc66A20IOOPCRVkTfyfIj5
+6K4MIaIb82ksLg9Iq5Qs4IMyKA2ALyg6Gcbt2M922M12OMQG6K5AnG2i5Mzs2GZJKdobOA6qywHWHa5vk_8chLsW27VAsa5Yn7XJF2cDNV26a8ikzIx0jNoZ
+AhbBOnS8KdG95ig_bszaqQMn2mHPTMdi0a6gBh41XI96sIMmsWKFOsAKNOAP4MIl-BAB8J62x9Hb8Xo9UJ4QYiQHc2VZOiLsku07520n10ygof0d5OmeFAyG
+9Cyg9CygVCc_mmerFqMn0SKc53CxhzXnnLw_sL7bQKoGjgAdYsANANAwA7Q9akP4iRwYSpfcjBvYebXIhAjOdZkcMAtCTvd97G
+}
+
+AzureEntityColoring(FoundryLocal)
+!define FoundryLocal(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, FoundryLocal, FoundryLocal)
+!define FoundryLocal(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, FoundryLocal, FoundryLocal)
+!procedure FoundryLocal($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=FoundryLocal, $stereo=FoundryLocal, $tags, $link)
+ !endprocedure
+!procedure FoundryLocal($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, FoundryLocal, $tags, $link, FoundryLocal)
+!endprocedure

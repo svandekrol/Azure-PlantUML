@@ -1,0 +1,17 @@
+sprite $AzureVirtualWANHub [70x70/16z] {
+xTS7ajim38LX4eM4Kkz_sYq8_IHE864rJC_-xZRukRUlS-fzlIeVqT7IYA9yH1OKtNjNuf6Lfr6o4J12vmF4aY7kCBrqhhoK69ZZqmjn5LbNWy4rtBy-OboK
+LNrqvGxXPfSRTpQvnko2d3c_aMaVlhMPsOSWCzl6qGHvQ-_AksA7-gFfbA5pfT_efoZgHGfBHyAHWhKwWeAuLkqZhPM_Lx1M4PGTuV0K50rY9faHweTePeI8
+8uK82f28WKA90YHYSiMwRmPYyyQPnt7XM3cyTkihOgrMjSS-LNL6R3J_VjWHA5JA2s9SA_i-FVRxwoMxSboB8r2ubDBCX8Zd_VPoWK3Prtf-20LCL-csxpT7
+sA1WBPeLKsVc7563SjgssTYyCjsFOTCTmUaB1Gtca2CRIfI80N9J0HCZkO9QAIqwdYipquBZkVBXm_RMpV_qhGR6McjRiBAtre4i_AxxKRyn-OR2yLKoVcJc
+hVxs1aBB_oQ0BDmOLRvIsByJCyDZA06ZNePuA_y-1KfR-YECqecsfA2_GX6CIAeiFDF914edGkCP
+}
+
+AzureEntityColoring(AzureVirtualWANHub)
+!define AzureVirtualWANHub(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureVirtualWANHub, AzureVirtualWANHub)
+!define AzureVirtualWANHub(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureVirtualWANHub, AzureVirtualWANHub)
+!procedure AzureVirtualWANHub($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureVirtualWANHub, $stereo=AzureVirtualWANHub, $tags, $link)
+ !endprocedure
+!procedure AzureVirtualWANHub($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureVirtualWANHub, $tags, $link, AzureVirtualWANHub)
+!endprocedure

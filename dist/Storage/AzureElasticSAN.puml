@@ -1,0 +1,17 @@
+sprite $AzureElasticSAN [70x70/16z] {
+xTA73gim38NX5CTE0vNy_czxQxh3CTXthnzD89-ozDcqHaJJPnhDHaz-5B000CiRU4OxIZpo5Vek3CUPsbobIP0XRZjAQy94HqILrlOLIxXYYgZoAWIKUo9i
+rMjiYTo1k8BxzSf_HTC8xZiOKKZJ1Yvlu9A8p_pw-wA7pUSaWPLvFZJg8r-nEfwGc33aASzwFv-7UN3T1XKtC16NsK6OAsx22aRyeefgvPrYIbVbtKBAW802
+IWT8TZBsbhECzdTYKQlc5UszWtdabFuA67wEqO6HL32ILu0HLXQWvANBCWCawrok6GIGM4_58AZKkdq5cAU2aKA1L_oXoFZKKYZoJjuK6R81XK8lHNSHh1GA
+AxLO4wsThj7QL1235KEy88CLZFZC0fLJEKe-KWNACSE3OYqRXKyPHFIU00QTD4H4NSPNM8AAvIailj9aZB72WXH_CWmK7_4P5b1MaIZoFHZz7eoEDSa_karQ
+DeKb3R-yyGK
+}
+
+AzureEntityColoring(AzureElasticSAN)
+!define AzureElasticSAN(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureElasticSAN, AzureElasticSAN)
+!define AzureElasticSAN(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureElasticSAN, AzureElasticSAN)
+!procedure AzureElasticSAN($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureElasticSAN, $stereo=AzureElasticSAN, $tags, $link)
+ !endprocedure
+!procedure AzureElasticSAN($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureElasticSAN, $tags, $link, AzureElasticSAN)
+!endprocedure

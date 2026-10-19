@@ -1,0 +1,18 @@
+sprite $AzureElasticJobAgent [70x70/16z] {
+rTE9KZGh3CLnbf3JmAtY_T_sYb-6OJmjjBl-tMNwLo6MxVVd_6dkkk0tlPK88LeXZDz5IGhWYX5Y52eQOEbw6Q4Bd15JyleWHd0AIbz1WgmHYTuvvyFDF5VM
+IEg49SPi548qk9uVNy7CwLPIIghfAG39XeWgOnnIuWEZE8vy3u1wKfmIKyVVMM70w00G7IkUbU9lHJLc7iMHSdQdMgluUp5Dbx9HM0bWfPRepn80dfMUij8T
+yLm2u4Pog1ibLWpIICgybb9AkfFdYaaP4cCmHO7xS_gaP5ulAyEoZbcH_WkQvOeotyYZPAJtAN1JNlN6A2cCM1b0E6KyDihCm1OpCxJShNBOC1FZNGzlKUmV
+YKg6xFSoXX528hg-KMO6T2TRBTfbnPZ4aw1TLsmrq3YCe8IizsBXkHHx0XX2oeuvyBBs3gK-E4SXufBIVvEFVqIkjLvJ67diVRFyJQLSGSf6WM3FG8wb0X71
+Je6870i5qiDQWOWnfugT6sD8Vcv2LCIO_zgKY2cGMtamC7SmXyXWvkV5c2Itj0v5NofbUfaXfZn_5KPOcHbxR5Ba7BahXX0Z3meZF0ip5YkfxXHcM96sLwhi
+bDPRxQNrDagRUs9iTkrAcsA5aAdDmLSgSbNPRvTVngSRHQueib0s31sj5Bhw_gYj8kHz4VA-27bVXBmlGjuN8U-BaFSoxK_rFm
+}
+
+AzureEntityColoring(AzureElasticJobAgent)
+!define AzureElasticJobAgent(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureElasticJobAgent, AzureElasticJobAgent)
+!define AzureElasticJobAgent(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureElasticJobAgent, AzureElasticJobAgent)
+!procedure AzureElasticJobAgent($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureElasticJobAgent, $stereo=AzureElasticJobAgent, $tags, $link)
+ !endprocedure
+!procedure AzureElasticJobAgent($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureElasticJobAgent, $tags, $link, AzureElasticJobAgent)
+!endprocedure

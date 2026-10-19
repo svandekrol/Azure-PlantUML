@@ -1,0 +1,15 @@
+sprite $AzureCloudShell [70x70/16z] {
+xTQ50G8n343HdiQG_QV52L993fV-0Tv9TVcbrMfmHuzHuEkLgbIblwF1K9mzGG6UtXWfE9iUVBw2_025GiFtAz8w625404JYfE9YX433b79W0XKGXel6p1X9
+fqm9KIPIR4OWQamhCsb2aBH243Ua5GW17A-YNIeM8ep98A5W1c72N96IGqGDZw88qp5Hn61K4KM2rct71eqkbHuENz1tns1ZefqgfULdPocChYo5N1aAEIig
+yW6AzXY57wB8OnHs8MoSzhxCcyV8Tc8eFiPp2ngmR93pBZL00LfEoH2-j5fj3G
+}
+
+AzureEntityColoring(AzureCloudShell)
+!define AzureCloudShell(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureCloudShell, AzureCloudShell)
+!define AzureCloudShell(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureCloudShell, AzureCloudShell)
+!procedure AzureCloudShell($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureCloudShell, $stereo=AzureCloudShell, $tags, $link)
+ !endprocedure
+!procedure AzureCloudShell($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureCloudShell, $tags, $link, AzureCloudShell)
+!endprocedure

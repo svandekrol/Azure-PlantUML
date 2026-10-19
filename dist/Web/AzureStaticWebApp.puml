@@ -1,0 +1,16 @@
+sprite $AzureStaticWebApp [70x70/16z] {
+xT07ReHG38JXCVXX6v2u_ssptZuI9MyXFN_QqZvbcBv__uq7L8_Kzr_Ne8dy4ASFNNxeLKI7AiIHdPuPaFdfbEQ7KgKKP36EWTl3aX_aynHU9Bb8UD51R_Ul
+DXnIlz9_uQyM-v7ieVYEujsAYXwW2D3jLWo0lwPOznW4jEvUwXMJnuW6-LcWbKeY4Bzs7bG0wAeISmZCBnMWSVSMGAbG6Cb1nMUPTUM2qA15fi-6_8fPX0Oj
+CXSXYpc41Z73IaOAlnCUnCowOW0ZNGvYfbrHQ0uzLjoPwRQK5X3r-K6PDNo2bGSZ8ig3214HsrQy4DC2oaYYsmep06m58ONJCnEP0HAtBaXmhCmp2YWX5glA
+F2E0CLAXN1WQv8IiASmK6kHD8fLAgFAWiDQYMidyCeYgLmgW-nKlZTKgzR7Ixr26Htl-bT_PUCJNE4t3kBVf1_JV6m
+}
+
+AzureEntityColoring(AzureStaticWebApp)
+!define AzureStaticWebApp(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureStaticWebApp, AzureStaticWebApp)
+!define AzureStaticWebApp(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureStaticWebApp, AzureStaticWebApp)
+!procedure AzureStaticWebApp($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureStaticWebApp, $stereo=AzureStaticWebApp, $tags, $link)
+ !endprocedure
+!procedure AzureStaticWebApp($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureStaticWebApp, $tags, $link, AzureStaticWebApp)
+!endprocedure

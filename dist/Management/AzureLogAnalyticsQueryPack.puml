@@ -1,0 +1,15 @@
+sprite $AzureLogAnalyticsQueryPack [70x70/16z] {
+xTFN6i8m28RXBA3ZWFk_Mt4lalP_whQVYwDNBOsw3L0A82WpmFsbiYgohv-khWXILr44p5MAW7MU8d2FKVgdATrZ523PFLm5xLgX-R58HI4e5bTXmkAQmeIy
+s5NGlbjP5SeM7GStudtziNib1IlR44EjF5D9JILzbqB18XjAh9JkhkvmJk1WPLKeRRTWGqdL7Kqh-nDWG-C4p5HIKqadPTWI2vN1IVRbcV-ehN39kHm7jy8j
+1SjNz16ABbBqL0VtT8M2HJRaK8kcbVq9iA5nlpn4IQ_wBILOvSYvbLjblDyHMyV1xsv7-eXDwoCKNQRelezL-Wvy-0hSfoiA8twFG3O
+}
+
+AzureEntityColoring(AzureLogAnalyticsQueryPack)
+!define AzureLogAnalyticsQueryPack(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureLogAnalyticsQueryPack, AzureLogAnalyticsQueryPack)
+!define AzureLogAnalyticsQueryPack(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureLogAnalyticsQueryPack, AzureLogAnalyticsQueryPack)
+!procedure AzureLogAnalyticsQueryPack($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureLogAnalyticsQueryPack, $stereo=AzureLogAnalyticsQueryPack, $tags, $link)
+ !endprocedure
+!procedure AzureLogAnalyticsQueryPack($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureLogAnalyticsQueryPack, $tags, $link, AzureLogAnalyticsQueryPack)
+!endprocedure

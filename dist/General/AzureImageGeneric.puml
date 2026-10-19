@@ -1,0 +1,16 @@
+sprite $AzureImageGeneric [70x70/16z] {
+xTNNTeGm38HXWKOZSiNxlstMXnnlyx2qT7xTVrJRum6TdPrnTuSfFA2Vhi3T4ViKjwa-TYYzrR124KWfDYfXjtNR57Hs5pOeRe_vUgMtfxhLYbkh3gkKC97p
+PLcLtbInGkbCrQzGJDQjUYBP2iLttako34tbpEQKiioaJC54p5PaN6AMRfHqQuOs4bDyL3AwrakHI6MAaZSHVXUO2gcnAZgDrBXGOGG5Kk8Y9VnI2AJ4MqKZ
+9GXacGB_20g97CTXoBc1rp0XGj5DI0rah5SgKeiLYa1AMAtG6s6bGc-6LGfTX1LAk0nIqOXcRfMtHWDyDWX582e8HI2oLqh2bpIlf8lqKmtZ0wCHpN1yL3Bk
+mrnHZyRzdPsTlGC
+}
+
+AzureEntityColoring(AzureImageGeneric)
+!define AzureImageGeneric(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureImageGeneric, AzureImageGeneric)
+!define AzureImageGeneric(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureImageGeneric, AzureImageGeneric)
+!procedure AzureImageGeneric($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureImageGeneric, $stereo=AzureImageGeneric, $tags, $link)
+ !endprocedure
+!procedure AzureImageGeneric($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureImageGeneric, $tags, $link, AzureImageGeneric)
+!endprocedure

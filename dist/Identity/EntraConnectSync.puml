@@ -1,0 +1,18 @@
+sprite $EntraConnectSync [70x70/16z] {
+lTE9aeCW3CPnYoHVy1ZU_srNQgX8fPAz_hkzszy06UEdV5dyLlwz7oEQtVYnG-sy2MbdGjfPaUypz5UAdQ7_KyYAs1McthX9c6eXjWo6KM5x1iIYy3UxG-mE
+U8i-T--mGMao-A62NKdTAlYGKMapE2ce-uOYwtlIeQ1Ki2uWdYi6HcLUuRsdIfbLkKsLPIM_jPoLXRRGbQw56sknA5Xdydwg5FGe8X2Hrupcwnb1HDetJHNY
+KCUaIazChMe5EIc3HK6kXg91GLsbW58ypNKJlnHSbPLuACiwXtf82wk2wnGvbB06xxrKJDWLj58bPcN-rXMm8ricXKRdt4W5emh2KvbMsH2ivwRJ9Us7d4-l
+76ChxkrhuMMTGhWwNSWU7iEH0xPxsSeCjITT8aFguSRHFP-mAb8exKHBAt4iANQ9iIXSA5vou_1C2eQ9kNc3QF0iH-vT-HJaCjYKIy8vztD5HsvNJjiR5N56
+nGrxNitoiz2ZX2qPj4TupwxGDnKS2aALLQct8-D05eL3Aiya8u_2Z3sAgE9VvoBwrAAmAe7szRXypWP55-C65m86hKPKkLyCGehSVinUWbd1T1G4aF9rx5Lu
+QXVxbTX6-XN4U8z4t1KRJBGfgGl3fCHSW_W2
+}
+
+AzureEntityColoring(EntraConnectSync)
+!define EntraConnectSync(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, EntraConnectSync, EntraConnectSync)
+!define EntraConnectSync(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, EntraConnectSync, EntraConnectSync)
+!procedure EntraConnectSync($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=EntraConnectSync, $stereo=EntraConnectSync, $tags, $link)
+ !endprocedure
+!procedure EntraConnectSync($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, EntraConnectSync, $tags, $link, EntraConnectSync)
+!endprocedure

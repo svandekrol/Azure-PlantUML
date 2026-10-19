@@ -1,0 +1,16 @@
+sprite $AzureAgenticWebApp [70x70/16z] {
+xT87Zi9038NXAIasIElxdvOoyWYznOJ9ewZnRo75-KYpuNv9xnK1umsCDp3Au1cLxGY4PUHvj87H2iOYsCeY6ArWFimXg8IGS8mWmYe22i_8UnG1X5Q4LDIV
+DJ2er5pNjh2MNAKrbpB3Z2l0W99JIhaX-L9RcjAb6hzuiL9JFwGqPMxmjJLKEeDAISbF9hSktffQIw00CtGkqe9ZzCOyl2_bseFx4fpCtJFofQdwardy6SMA
+WJ9Qh0YZ24GfQckWwCx4Gdjd5YgsMy7RQ-zHb50CbRvYzdt57YbAA2eYIYlctQtiKQQtA1OfkZDxXs8Roc4mjLYPzYYwUUesXXWWf6BsfwygTkd9m16dBIBC
+Fth_fjMN3Eio70CAVAKDXPET7KHmEDXn659WcaDkOyZusX02ZmiLtnGYCGE5sqOwGk4MmY4CZqQm0OE3Z8uGVfq1
+}
+
+AzureEntityColoring(AzureAgenticWebApp)
+!define AzureAgenticWebApp(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureAgenticWebApp, AzureAgenticWebApp)
+!define AzureAgenticWebApp(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureAgenticWebApp, AzureAgenticWebApp)
+!procedure AzureAgenticWebApp($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureAgenticWebApp, $stereo=AzureAgenticWebApp, $tags, $link)
+ !endprocedure
+!procedure AzureAgenticWebApp($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureAgenticWebApp, $tags, $link, AzureAgenticWebApp)
+!endprocedure

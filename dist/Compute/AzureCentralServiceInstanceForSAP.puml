@@ -1,0 +1,17 @@
+sprite $AzureCentralServiceInstanceForSAP [70x70/16z] {
+xTC7aeCm343HeLYLMTt_jXiZI4IAlBtwfxStiWFsMVLwlPvyG2R_8e9IW9c8tqmmbZKK101ws-ww0KX2LNcHOrSAGvqYpFKIngwLEiQHnIPZLT5mWL9mVoxR
+OsLK7b-ifg4LMHCOHlAdbH5zc5qhN0huCng7KpDl8c03iUCeichpiEL3400_G9wEYe-2lfXBlYm4J96ee8zInY4qLOO194EY0huhypHTHfbdyftX18cAb4Ah
+CewxCv_QbvGXHuLrNT6fQNHZKoWe0ScLsZpdYjXTXO_Ab2gE9FjoNu44YOec2WAcoF6VVg0806L8LCYFEd4c83T7dIMAaB3MUDuL5Bsp8CiKPH7rQAgA3t1p
+DbgkA1Fh5ixb_1m08z9MBepFSRihrbIKDYOcX1oGJ8cC78tuSh5KYKmSX-FBYEIACjMOHTYVIa1o9IPC8TQ8j9Ned0VIYAHANaJUhrX3MTgNnLhfqiw-grwl
+rti6
+}
+
+AzureEntityColoring(AzureCentralServiceInstanceForSAP)
+!define AzureCentralServiceInstanceForSAP(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureCentralServiceInstanceForSAP, AzureCentralServiceInstanceForSAP)
+!define AzureCentralServiceInstanceForSAP(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureCentralServiceInstanceForSAP, AzureCentralServiceInstanceForSAP)
+!procedure AzureCentralServiceInstanceForSAP($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureCentralServiceInstanceForSAP, $stereo=AzureCentralServiceInstanceForSAP, $tags, $link)
+ !endprocedure
+!procedure AzureCentralServiceInstanceForSAP($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureCentralServiceInstanceForSAP, $tags, $link, AzureCentralServiceInstanceForSAP)
+!endprocedure

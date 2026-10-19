@@ -1,0 +1,16 @@
+sprite $AzureNetworkManager [70x70/16z] {
+rTT7MiH030NXZGPB9kZ-foN82vdtDPeYGv4w_fDMf1GHbfKkH-8YbanK7AaMomD3JpjX5B7KGXY6G8OZod24CnnH1Y6GuGXd5E4CHpYpdP2jokpXQToC-upq
+tSNmRSOREIiAAhDKjaj29MzyeOI_86O65RDBtT3tnGinzhxOSnT5ZZDsf9-HZWifHf73RsPE3bA68yfmX3CSKOOZdD7-1BDLdsKsna05CWD2b0GAPVIkBnN2
+wNlHni6sHv0XplYr_f1Y-HLCiZ32bSN2kvbfYIFTnnMmYX5T9qGtR3aogd4te1BuCRGu1tR_fSAHpgBpXI8xv0dn_m4v4nzL0Y6SYGuZhvCvLiPsYin1PP-_
+4B9VxSiKpeYNWY16dfTiC4QVLyWEIvNyLBT00NsTiaQU
+}
+
+AzureEntityColoring(AzureNetworkManager)
+!define AzureNetworkManager(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureNetworkManager, AzureNetworkManager)
+!define AzureNetworkManager(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureNetworkManager, AzureNetworkManager)
+!procedure AzureNetworkManager($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureNetworkManager, $stereo=AzureNetworkManager, $tags, $link)
+ !endprocedure
+!procedure AzureNetworkManager($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureNetworkManager, $tags, $link, AzureNetworkManager)
+!endprocedure

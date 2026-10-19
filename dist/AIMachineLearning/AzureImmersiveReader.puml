@@ -1,0 +1,17 @@
+sprite $AzureImmersiveReader [70x70/16z] {
+xTE7iXiX38LXZf2qlbNl_xP1Eue30SzQlhtyxkqRcktJLLO1nRpQedCuDoaewr3SUAbIy48bea7n3XJm69OAZXGPIoel7yksn-LIV75TzBvrTxfDGQSuytB5
+-qY53fHffvSAtaUfO_Y0TSaf-4eAg0_VuBpGM4BvFI_vV-DNFozpF-YyKAKNAbL0rWBkxbOAU0mBHJVhSYU_qzmCwN8dFHPv2ADtikiYnZB5IQMQhDAKme7C
+9PHAsykLIYPJZ61MEqqBHGQ4GYdnPANKXQAzWi8It-HPYS5ZLdX42lj3RJU8fzUjYzg0x4ej8Xo3kKxPGc4q8nG1-IsXtDbv7A60zi4GhbVO9iM9_I6ZoF-A
+4wKAzuhSeDH9sLJcL0LDuTFTtJmZRZSCCxgSWlc-DIlawoA7IZ1yvyfTAFHFOQdezkY0QOOhAdlCzNnUIjrlBRK3vHIAwD-SuVO8-7DHpwvDUyOLOfL2ESIa
+P-85JKD934O3uGb9CP5m7Z5TjzbhC6OlPzXkQ3MGbphs6Vi3
+}
+
+AzureEntityColoring(AzureImmersiveReader)
+!define AzureImmersiveReader(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureImmersiveReader, AzureImmersiveReader)
+!define AzureImmersiveReader(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureImmersiveReader, AzureImmersiveReader)
+!procedure AzureImmersiveReader($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureImmersiveReader, $stereo=AzureImmersiveReader, $tags, $link)
+ !endprocedure
+!procedure AzureImmersiveReader($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureImmersiveReader, $tags, $link, AzureImmersiveReader)
+!endprocedure

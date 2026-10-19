@@ -1,0 +1,17 @@
+sprite $AzureQuickstartCenter [70x70/16z] {
+pT674jj028HX5NRHEONtVzeqx1iHYvWxf_tJNRvP9FilQdhSsdi4lX7VUyVWSVEEQKBORe_qNSERCpGOKmSX67C7YUZjfzgu0S2P-OC4tvF8w8m1aS2qptD8
+P7J2W7ZiKpY7H4Q73KSYmpaaCZg9H0PL1DxbccDq2BtWKCSG4lksRdjW86FNaB8ktziGrWmX8DR5MqdnyAifvFSYGcxBevruTG_FoKbPkxAvWcmA64EFSE5q
+KeOmGqIUjY1CgI62-5pc406b7mGYGy0SSMQ_Aq9a2dFa7ebjNTODpAVaI0yaGH9bX17nu4PGwaYiD6KUiGcagZX2VKPWUOo8EDAQ1gHFoOjB776cW4GdBFaU
+AaZC4RoFn2MSNf8Zg2D84RAE02d2ullnCeHyZNH64wIey1N22aAcI4LHFheZYZD2bXIoTqU0AuH5v7WWG43654TECLH3jBM30PbHZaD91gIe29yQHupC61jG
+D6FChAoe9ippjJQk-BTrvT8nJsj8krIiLq9CxqNaGf6o4eses2ibCkP51bPJD1dUaPgYrxDzNbsnoqYriYBsp_iA
+}
+
+AzureEntityColoring(AzureQuickstartCenter)
+!define AzureQuickstartCenter(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureQuickstartCenter, AzureQuickstartCenter)
+!define AzureQuickstartCenter(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureQuickstartCenter, AzureQuickstartCenter)
+!procedure AzureQuickstartCenter($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureQuickstartCenter, $stereo=AzureQuickstartCenter, $tags, $link)
+ !endprocedure
+!procedure AzureQuickstartCenter($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureQuickstartCenter, $tags, $link, AzureQuickstartCenter)
+!endprocedure

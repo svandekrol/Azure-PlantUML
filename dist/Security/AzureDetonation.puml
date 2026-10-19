@@ -1,0 +1,16 @@
+sprite $AzureDetonation [70x70/16z] {
+xTC5sYen38NXgKJm_QyMwSEXLzev-Lq_t5uIvFIr4kqzJz11zHbJlDIfEky5ov1nE2BNo3W44GGgp0mC56V61Weo6eqWmOJyJeAHKLxAw0SeIf6NAyPROpf2
+coloAWf7EFFwIXMR9pMWkBcb9LKrT__lf2Kj-NPzNMdFNMvbCVyxgscvbjnzgaXNqj9AHRmd6NSt4SfueLjvGGbEJGkgNP69qhRGz52mbNROXhEWhdZjxuiA
+xX8FA9kMjgMIR1xTTofumggYctkcejwk8HVS4rDuJXGFAVGV45AK_QbVjX0Ks_ACAhgXY6EXbmop0RAYSCQwGdVY-n15oJvG6BFPpNA2jB2pZusjHP3D1a-p
+qJWRZI3uSSEP6Ie4QTCWttR2D8w0wTajxT5raEjg7E4CHz3fn0sEt286Hn0bE88em97UB_ABE45Y4IGOGQ8H91f1eW7v5bq
+}
+
+AzureEntityColoring(AzureDetonation)
+!define AzureDetonation(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDetonation, AzureDetonation)
+!define AzureDetonation(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDetonation, AzureDetonation)
+!procedure AzureDetonation($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDetonation, $stereo=AzureDetonation, $tags, $link)
+ !endprocedure
+!procedure AzureDetonation($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDetonation, $tags, $link, AzureDetonation)
+!endprocedure

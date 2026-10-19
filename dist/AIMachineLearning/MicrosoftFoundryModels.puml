@@ -1,0 +1,17 @@
+sprite $MicrosoftFoundryModels [70x70/16z] {
+pTM7hbmX48FXz303hD__RKD6ucAV40Ia_ghRFfcp3RyvDqkSrmX7FGohlMiaXjmmaoNdZ2Uf_Wx5gtPte5pl61C6k5HQgcYx2Zc0CAMr_S6DEe8oYEX02SS0
+Yp6b5kfCCI0aaB2hP7TMaXdg1UEjWJG6k5F2USNXWYdNZFTBD66m4oCjLVBti1Cf4K38FaC8C_ajRFRomJX0nWdZJWo0d2-KxAqEUIZQaU9TKSRp0HBzg7Wh
+w_EM2Z-7ZM3uMMOJ96T5YA5xXn51A_fqLviPHfwCJlUVdrEHb9vJehLY3f1XIPKy4WHWe_M2EHd2bCKdWuoM0ugeme5ZWvdqLDRVEpPQ01cab8WHJP0KJ9eg
+4IESEo6X98eGPjR_di4ibSA8DWm3y6c2KA9eyebFlK-8Qj6mb-kKMYU8ZtAlZ6hhWIWpjZyKCg8iYZBTM2EH8Ce44gsGo4I9pf7gX2W3Iupu0gavGPLeZR2n
+Lj0L5wNC5GSf54rPBubihc2gaA5XgXJ0vbFMY2e0zf4NAoWy1HTBebJe_lkICNBF92_nUMxHTJbLg7i5_vE2_qd1HC55VqZ1LGy5lqDvuJ9I7FUzAVX7VGC
+}
+
+AzureEntityColoring(MicrosoftFoundryModels)
+!define MicrosoftFoundryModels(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, MicrosoftFoundryModels, MicrosoftFoundryModels)
+!define MicrosoftFoundryModels(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, MicrosoftFoundryModels, MicrosoftFoundryModels)
+!procedure MicrosoftFoundryModels($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=MicrosoftFoundryModels, $stereo=MicrosoftFoundryModels, $tags, $link)
+ !endprocedure
+!procedure MicrosoftFoundryModels($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, MicrosoftFoundryModels, $tags, $link, MicrosoftFoundryModels)
+!endprocedure

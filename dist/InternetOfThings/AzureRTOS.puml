@@ -1,0 +1,17 @@
+sprite $AzureRTOS [70x70/16z] {
+vTY7McCn34HXtPkHP6zz_wUb8tjCbC-ijdFexMTCJVBzQb3LxyMWpw62w5HvIMsGhXMKofv0AeCk3o7hyjm6iLKDYMfAL4EYcXBLbM3g2lGz2XwxpkWx57qe
+OtHNqQVoJy1AFYN696_C5SGKLe2LOMTzA-BT1eFmc04fwp72c5z2EeOLc9hb3xWn1bDsCr0yXjvYdCwkxYemxZXfogx2Oo18fu0GLdYC24_95UJA8QTjRj4t
+YByyG0G-lymHmegFJ4JCfzugO2MM-EWGEPpYGqrJC1GrduE8dFfO0irJGZ6dJ29cGfcdXEBS4SZfr1L5CmKIUQOWKPBp94eWasBUHkCybqQv8Y95uvm3mcFd
+0t8GOGf2-19bt5cRkZmeyoiKT4TJkFbO3mZeC5oEp6DiEO_jAzeYYFYiwBxYy_SfoEH4-PJ-cilPETjLl4SghNDjL-aZM5-pFSNwpPoLv_8JkTC7MsE4bOJn
+CIjUQe6GaZA-VBVYjBegaURvfwTu0IixphDYMqhkj4UaQr6n_f2NbEZZAL4TgIjH5SaTkruOUrrtz8Tkkx35Ajq64lsPsrAYwfJwpKpS3UCU
+}
+
+AzureEntityColoring(AzureRTOS)
+!define AzureRTOS(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureRTOS, AzureRTOS)
+!define AzureRTOS(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureRTOS, AzureRTOS)
+!procedure AzureRTOS($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureRTOS, $stereo=AzureRTOS, $tags, $link)
+ !endprocedure
+!procedure AzureRTOS($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureRTOS, $tags, $link, AzureRTOS)
+!endprocedure

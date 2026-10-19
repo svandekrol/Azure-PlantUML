@@ -1,0 +1,15 @@
+sprite $AzureDataShareInvitation [70x70/16z] {
+xT25SGGn58FXa1zgv_glDio-rHd2yL_0DoCTVaohrQfSJIPtYauoulUAoWnY_g3CCCNzMT7HLUBFoZYZ_auPM5NCAqMb35nIAPshn2kbdr7VLLJQBo5AupdY
+JfH6HfqhTvN6DLnHuOWxKHfNYHEbbL4dIbKXbxGhAkmIhl1LuanfPDIfibiXbxGhAlKQhl1LwZEAkjojyPXHB95w9Gba32k1ko9nLuufbdXJne0IgCfUnN2i
+Z2ubi5EsAmPID2e1MhOeXfF5IINGK7B5q5WG9T5SxYc6hkAeabjdMIk6hRzuf-Gs55uhjWqNpqfk4-51SMnpnU77j5gjRW
+}
+
+AzureEntityColoring(AzureDataShareInvitation)
+!define AzureDataShareInvitation(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDataShareInvitation, AzureDataShareInvitation)
+!define AzureDataShareInvitation(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDataShareInvitation, AzureDataShareInvitation)
+!procedure AzureDataShareInvitation($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDataShareInvitation, $stereo=AzureDataShareInvitation, $tags, $link)
+ !endprocedure
+!procedure AzureDataShareInvitation($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDataShareInvitation, $tags, $link, AzureDataShareInvitation)
+!endprocedure

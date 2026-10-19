@@ -1,0 +1,20 @@
+sprite $AzureWebAppDatabase [70x70/16z] {
+pTE74gGs3CPni3uraudV_stZje80jpcEjB-dRU4t6eqfnpGVAhzK5Y3dbqxEIYJvbPDR8BBSYcnvZ6GZWdzIOG2iJv7iGiHDi2RCVfeH7uWxYDGLrCACVn9X
+cuXRUvfc43NpjcBKolSMPcr8JzAwTe7LQxbNC4i_LfHPfk5ALLa9ugDWedBVxvcPVIH4ZKbc_YcKxqnkYdcBQGOpkp3HlIBCQEi0jTGGpBs2EoGRhqil4K7D
+31sper9ZCACVnesYowSLrkgCd9WMVy9LeIKI6t5bs5oPDPGMmhaeoruoqvP9PT1vyb1QmPmKMmwPzYe6cZFIKA9x1KT5PsOMt_kV5RrXnd8ZsvNuNeOIOMVk
+zxBQH5entrIYMoKj4PljohgCn4EvCg5u8CcwOYDPUc0MBz-PN8kxYmaS6HPcjhzM74Iq9a9DRC_TLTspYvHpLqK1KdT3YyrCkM6N5-2ONXW6u3LZj6GTA_AB
+ydKO0Emj4zJcakY2VCq0c8-KWMLshophtbBs581ddqaeQe5SWIkbu9o3qMK6CBEqIcljfKHxAHqTqNnW9hBoR4SIuHnrgBJwuC5mNDcU1aAuQsToAo1Doq8s
+qQz8CAMtvSZxYKgl_JDXn3NX6aOnIotVLqRRsXaMzKEcmdqnLBunvTDlEJM7-AHWVBsLaN10HoEKRUDrb0Wi8jo0aMwXp5jn9aAfAQtNO5ijb1gNQw7qN40f
+fNdzMFCs2gNrGsNRoz4M_PrACF-Mal-5MOBv_oZoRY_1l9eb67wljFYL4eoys4jDWtapIv5FhvGYqGlbmZpUIp0HVd6MSAB7IgGgf_D4YVJSixr4hCSUpnBX
+hHAzKrwyHzzwEKlqRoZbP_ksb_AaCnF6qqvA47y
+}
+
+AzureEntityColoring(AzureWebAppDatabase)
+!define AzureWebAppDatabase(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureWebAppDatabase, AzureWebAppDatabase)
+!define AzureWebAppDatabase(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureWebAppDatabase, AzureWebAppDatabase)
+!procedure AzureWebAppDatabase($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureWebAppDatabase, $stereo=AzureWebAppDatabase, $tags, $link)
+ !endprocedure
+!procedure AzureWebAppDatabase($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureWebAppDatabase, $tags, $link, AzureWebAppDatabase)
+!endprocedure

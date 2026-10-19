@@ -1,0 +1,15 @@
+sprite $AzureStorageMover [70x70/16z] {
+xTS5SiH044FHGFTe5dN_syPK2gVjLJXv2-PVOEOeHZGeudPI_8XVaQ-kj0U-JoM3z3CwP0GFbHaCdvOnUBLHTp2AsOiDsNeU07u6hrkV0OnCnWmmCzF7h317
+LQMloW3zpGzOYinUOYbXL_fALaEiXXGHhn9TZ4hVpeo85n6l8bv4l8fG-ixuSB6pgEBvhxpY-rNsNkJmVGuxLSv-PMH6bDdFd_ts8H_ONufYLyIBY1aHho4D
+Ep_IHkZxIX-WjTSZ8nQqeXMXLdKY3rUEY9iYKcSoHdhyJqMsP78nDvJXUcD4g355LXeZ8egibIyoNg7DYiZNLA0jOLIeBPcNH0IZ81bequS61Mcv0m
+}
+
+AzureEntityColoring(AzureStorageMover)
+!define AzureStorageMover(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureStorageMover, AzureStorageMover)
+!define AzureStorageMover(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureStorageMover, AzureStorageMover)
+!procedure AzureStorageMover($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureStorageMover, $stereo=AzureStorageMover, $tags, $link)
+ !endprocedure
+!procedure AzureStorageMover($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureStorageMover, $tags, $link, AzureStorageMover)
+!endprocedure

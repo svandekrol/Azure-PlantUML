@@ -1,0 +1,17 @@
+sprite $AzureExpressRouteTrafficCollector [70x70/16z] {
+pT67igGW48NXINGuR7Z_jzsYB6wp7aQnfZVyauEVZVpy3zF3KX0rv2Z8KP2Z84T1Ze8S1PyfZYN6zF3cM6Bik52Geo17GOw270Kv2d8Kv2Z8KN15KLLhWLjM
+jBHacPaQqjFsqVVPHKLirfeYaVvZHLCKIrTisjMT_a1nfL6kArvXgYrWKN7RRXQlgBN2crQh6_zkpWfNM-WlarOKr5QyNb1u56BE5Hubl5M54Nv_hl1w-CEv
+mgFmftM5prw9ELVuv0XrHU63U1WpEr3u67PDfRH4vmeVmkD1IwHsh32oVUbIniHcol6-OaCwjBqdXTP3Z7prAltTJg5BIqbqltUca78yYexAxOkPAghgE1cb
+AS6megKbFXd5Tihj_aQ9ZJIVBQWyUxVMVQPWN3cejZEttxkp0a0Yg_j2YHuJnINIFG9IMeKLaw6bMSh9B4QAYfGTyZgzBjX7ExqXh9Zqr4dndT8HKc21S3eg
+Z8G2LnLHmomVbOwmikLubmrA8AISfKBvTGMcAZe-OfIBp1WPYwKWuT1YKle5
+}
+
+AzureEntityColoring(AzureExpressRouteTrafficCollector)
+!define AzureExpressRouteTrafficCollector(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureExpressRouteTrafficCollector, AzureExpressRouteTrafficCollector)
+!define AzureExpressRouteTrafficCollector(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureExpressRouteTrafficCollector, AzureExpressRouteTrafficCollector)
+!procedure AzureExpressRouteTrafficCollector($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureExpressRouteTrafficCollector, $stereo=AzureExpressRouteTrafficCollector, $tags, $link)
+ !endprocedure
+!procedure AzureExpressRouteTrafficCollector($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureExpressRouteTrafficCollector, $tags, $link, AzureExpressRouteTrafficCollector)
+!endprocedure

@@ -1,0 +1,17 @@
+sprite $AzureAccessPoint [70x70/16z] {
+rTS5jjim44RXm80U_llVRQrZrpTW6QgKRfY-CmfR_q5PwnIepw0kXBeGwaAe2w4kXFwqagMTzbKsSbAhjmqZmmdds20OC4ULzEUw4Dg7a2ztJ8c6OhsZC0oz
+bRLTx5MQbSpmTlkKZFNs82MYMm5fvn8THsX32Thdj4RfPuBsCbsZmBm_bYzJ-fdCoDg-qz0oayVINBurb59KTYjcNcQb98XgPQyon61pfk-8-5QN8iMOT521
+aJ9-bj9XfGn9RoE0KnOJNOT4HL8yzYRjKoXZ8HWIeM0G9Gu8NOOq5-G3xtVEFT9MtZ3iMZES43yqOQBsBDKOioSbR6XLoMannB8qPKs54kFEUHCA2Cezaua2
+aoAxRYblMRCdPAZrte1Xah6uDIp7G1hAXL6cM5Ra5CXyVph3C8ixRnWKxaqCKpl1X8zLenOe5n22uSRqfm9ZIO4X3pE_p-n286t6ecPsPqI4RICu7bE64MDN
+Z2qdvzn69EOmjieQZdcIw0WJ_l9jI1sij8skSTxqQ_KDGXXTOVGw-f_w0G
+}
+
+AzureEntityColoring(AzureAccessPoint)
+!define AzureAccessPoint(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureAccessPoint, AzureAccessPoint)
+!define AzureAccessPoint(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureAccessPoint, AzureAccessPoint)
+!procedure AzureAccessPoint($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureAccessPoint, $stereo=AzureAccessPoint, $tags, $link)
+ !endprocedure
+!procedure AzureAccessPoint($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureAccessPoint, $tags, $link, AzureAccessPoint)
+!endprocedure

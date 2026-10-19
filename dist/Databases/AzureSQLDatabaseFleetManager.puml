@@ -1,0 +1,17 @@
+sprite $AzureSQLDatabaseFleetManager [70x70/16z] {
+rPI9ZkqW28PFtPMclF_Rta0Sqj9bfDvjlgoAVkUNXeFVa0YS9J7_XILrNjzM5jcqloC9YD4QAZtmCorebzWjTerUcj2tfgASTsOazaVTTTBKulHVMlA49MVX
+lZ3AjGL7-2mxyCI--i5hbWj6gjhXdFUXuxrRY9tZjYhmeQ3mVB1BpbKIdHeIpdYni4IZsnF44cDCASRuPN5KTcJfrIXLleGxraGlYhbKeUH8KIgLAuLHrKGl
+Ikl10dbXJyfbxt2DZq5pj0XIBIdGJWPb0IX-KSGA06m1g55NVG4uMe1fjQGO_E8y_oemktB9aRwC3_Iu1epAqcaT8CHoLzOl4lGnWmNkimn4VSw21tILMP_x
+iic02nzinhxq-NE-u_hqZLX4GZdSrVHzO3oBZD_5S8xtHKRyOeZ7iwoE7nHJAVLhS688jBkDzsLj2wMXsHDoe3tBDre1_BB_b_IULu7AmttXPV4NCmoR8Oii
+QaunfbpbcgKlvu4Gx5befJMo-W-opFIb_Rs-m7nVYBTzmGFhoooeUDEN5SzOi-0tF6N1ONIMQyk_oW8_8CjFoGBtMJQSqTYZwE7K5dkO2GbnaMN3TpG17_a5
+}
+
+AzureEntityColoring(AzureSQLDatabaseFleetManager)
+!define AzureSQLDatabaseFleetManager(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureSQLDatabaseFleetManager, AzureSQLDatabaseFleetManager)
+!define AzureSQLDatabaseFleetManager(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureSQLDatabaseFleetManager, AzureSQLDatabaseFleetManager)
+!procedure AzureSQLDatabaseFleetManager($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureSQLDatabaseFleetManager, $stereo=AzureSQLDatabaseFleetManager, $tags, $link)
+ !endprocedure
+!procedure AzureSQLDatabaseFleetManager($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureSQLDatabaseFleetManager, $tags, $link, AzureSQLDatabaseFleetManager)
+!endprocedure

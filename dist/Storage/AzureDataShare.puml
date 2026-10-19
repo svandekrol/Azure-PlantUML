@@ -1,0 +1,17 @@
+sprite $AzureDataShare [70x70/16z] {
+xPRNiiCm20KjL2qye___snkrt6FIUKdTT-yif9Zoblmm7UtJvr4R9Cj33Y9htH5hYGWyTpdWUSJIXS5YZ45821qIEis9avt4NKVMHE3Vucv0UqseqpWYDory
+luKmnIyL4xg62IRo8SQKravACVgnOLD9a1AM3WtBEhSRudmUIT6FUUm6ARGCGhDi74ttkFEMO4sNC5hCjDJLL0jdCWDoTSxKg0lqramYNxIuKhYoMdETmBot
+sFr4tCc1BYfSOXOMkTsD9pbvIpiNaVKnysGhg35T0XOWvrm_vBJc0moWPQqFU-V2yLidoSW5Iv4_WFibQ469lWKK-XPGA5lGecn1YRu5BUeMbEXRqA9kGOc-
+1Itw5f3eMp9yxxKjQ2bFQ57iHV4PFVVxWfhd_uvGy_p_5zGy_tyNpxhdluy0_LxmEbIsoEjGroBl5rMBl0xrBNZNtQ6vnr8Ew5hSVgAotQ_1xU90bGSag35J
+4ie3cWAuVXrwSL0z8f7N8N13Kqv02N99KbHCHVaaVlm1
+}
+
+AzureEntityColoring(AzureDataShare)
+!define AzureDataShare(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDataShare, AzureDataShare)
+!define AzureDataShare(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDataShare, AzureDataShare)
+!procedure AzureDataShare($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDataShare, $stereo=AzureDataShare, $tags, $link)
+ !endprocedure
+!procedure AzureDataShare($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDataShare, $tags, $link, AzureDataShare)
+!endprocedure

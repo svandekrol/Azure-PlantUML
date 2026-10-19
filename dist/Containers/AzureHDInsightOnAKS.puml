@@ -1,0 +1,17 @@
+sprite $AzureHDInsightOnAKS [70x70/16z] {
+jTY7peCm30JWVvDpXz__QVyLOHnnd4oZdaPN_DLXW-jOZyy4tPXpRCYSaTvD66bcE6VS0o7e8ur8vvoX7M7W-ATB5RbKswoFcX-1lzGTlb40nyobsYhMpAn5
+RAcCfmPHPCdmHPfqsxAll8mCGyo84Z-nEX_UIoKpfDA9aXdoMvGIC8ATSZVH35LYhIn_YJLMKsmDsqI0pL7APX05MR4v1KgXY6IqaX7yhvvOqmM5jTAsy6Qu
+mX7ESCLEAaOLWb16AywLvJVjBn_k_f4Krqf6bfxKZ5I2MH64mXczxS9x6bKw9BRTY50Y3oajb0XLDCCHhd268rf9lRSX7_wN09NIWDv0PX8SIqWgM9M5Akla
+0AMWAz4CQQMeWA_LGBg2UGK51OUA1o8LBoc1I0MhWfnGe9NCE5Ky8Lp9JXOZ-MUYU5OoDoR6SCIDCJ0RaOAoSwm7x4g1rN76M2GIDMSK4tyj6JwUErhX1hbv
+FcAADrkQUUOzb1urO-XPNnGoVoUidGc3tX1VpXkv37bJkZp_oObsvepnZkZk4oasyWC
+}
+
+AzureEntityColoring(AzureHDInsightOnAKS)
+!define AzureHDInsightOnAKS(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureHDInsightOnAKS, AzureHDInsightOnAKS)
+!define AzureHDInsightOnAKS(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureHDInsightOnAKS, AzureHDInsightOnAKS)
+!procedure AzureHDInsightOnAKS($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureHDInsightOnAKS, $stereo=AzureHDInsightOnAKS, $tags, $link)
+ !endprocedure
+!procedure AzureHDInsightOnAKS($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureHDInsightOnAKS, $tags, $link, AzureHDInsightOnAKS)
+!endprocedure

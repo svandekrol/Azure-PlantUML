@@ -1,0 +1,16 @@
+sprite $DefenderProgrammableBoard [70x70/16z] {
+xTA7RiGW48HXO1SpfFdztpOYidRmIGXycvxyQLS_CUViZ9LMT_lqyBYnKdYxtAEKV-LVMKD6hJCeyrp7ODM5iCaQFrDy2X5ucO9B3HXSx0CLiCkJyDFQ9CEV
+X53WBeOqkrmOL3OR5486jk5nwlXAbnYtVb2EiIpymzmY8MW_I4CWCrM820SrJyWiAZq2ROF8h2b4R504oB3Ha9lFX8ECIMJO1B514sQAS117BNHy9eQQQSoQ
+aZ9EWpQmdAYmlUBjg_97iYhiVdiNdrFDOiyT0JkhzcZMnXntGX0-ewePTdTdL7f6v7Xn3c6pnqM8J9KAbNGmRP0XIHHrhf19AU4y22ac8YjAXSGOqGz2ZCVv
+hC6RpqpGMiK6QOX4pWsHDY2r0_0AjOdtjTaWHnpageZKpskt7E_jSoD-XRaHly8k8dxbOH_dEWfxg0yhlUoJ5WmxY0DQ8iWCRdwSyg_yAxpDcoFb5G
+}
+
+AzureEntityColoring(DefenderProgrammableBoard)
+!define DefenderProgrammableBoard(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DefenderProgrammableBoard, DefenderProgrammableBoard)
+!define DefenderProgrammableBoard(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DefenderProgrammableBoard, DefenderProgrammableBoard)
+!procedure DefenderProgrammableBoard($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DefenderProgrammableBoard, $stereo=DefenderProgrammableBoard, $tags, $link)
+ !endprocedure
+!procedure DefenderProgrammableBoard($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DefenderProgrammableBoard, $tags, $link, DefenderProgrammableBoard)
+!endprocedure

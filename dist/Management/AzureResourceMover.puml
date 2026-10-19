@@ -1,0 +1,16 @@
+sprite $AzureResourceMover [70x70/16z] {
+lT89Qi0m34JHH9Bjn0Ly_zDs3Vmk0qO8-W_m63bP-ypDLZ5xgXY7FRcTfI5KCzXJCwY4q54oA6DKdTDyexYLXj3-TwyuxAWvHmvnEn93Kg_iPldYjnAHThoD
+lqhIyHX3A3d6-v2AS3Q6LBIZ7sHe9MY7n4D8XNn_p5x1qSTibBqJ05eHZ3WceU088wNWy209HJF1aAI2unX91OTZAafZIU6YY9PHD6BnNayemdYKQ3shOA3W
+f1HtGtcSfC8G5EPePQ9W20L7AXC5GoYS9PMvn8CeXQ-kb2c628Mpj38mX28SgSoxQSFi7if1WVceQSJcL4nqhSpBJIkpXpnBAdCErufceYtDpAkxK2JJG50O
+54A1uQ2r90FKmr5Wn139q7trtbf4cp32K8eE1gF0W9GO7hN4iAFah7zZLWsX6a95X5uAYDfqNmM4AWY1L0Af159NLZ6GghBAxP4t
+}
+
+AzureEntityColoring(AzureResourceMover)
+!define AzureResourceMover(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureResourceMover, AzureResourceMover)
+!define AzureResourceMover(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureResourceMover, AzureResourceMover)
+!procedure AzureResourceMover($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureResourceMover, $stereo=AzureResourceMover, $tags, $link)
+ !endprocedure
+!procedure AzureResourceMover($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureResourceMover, $tags, $link, AzureResourceMover)
+!endprocedure

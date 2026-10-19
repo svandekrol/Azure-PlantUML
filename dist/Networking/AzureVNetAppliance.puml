@@ -1,0 +1,16 @@
+sprite $AzureVNetAppliance [70x70/16z] {
+xPW7RiCm34Mz9Nq3uFrlsoY4oWxM52XsvsKp7y_R6hX1T-HB-mQbfFydvOiah9APT5YyMqIVoGC0um94M22Mz1fIK1BN5bBvo7Bg5jBPT0i9beGrLiYKC9Qb
+IvDiYwqnCjvZn7pU-PBB3IZKUkwmtDznYMtX3zD2jBssq3EjRbfQZ5HQsR98_19SGiAFj4ZTQx7gG3lvyeYbp3D_JglVKkOfyRT3D6gQ55v9ccPp7IEM5Dud
+6NlLE2nLCaybJtDT4zQuBMLkbjszHVMplbZYiB26OOdpt5sQXdUAvtnX3IgPryHhGUwx0iw8gp7cpl3BBOcCBaLV6t18N6-d-zgZGz9w2zlNDXuS3cdjqqXF
+LRCCz89II8yiXVGEKqXFDNvT07ZtYmXSemd_-M9Rc04B0MVaa36U1oCp9sVSB4wyXN-TthcW9m
+}
+
+AzureEntityColoring(AzureVNetAppliance)
+!define AzureVNetAppliance(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureVNetAppliance, AzureVNetAppliance)
+!define AzureVNetAppliance(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureVNetAppliance, AzureVNetAppliance)
+!procedure AzureVNetAppliance($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureVNetAppliance, $stereo=AzureVNetAppliance, $tags, $link)
+ !endprocedure
+!procedure AzureVNetAppliance($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureVNetAppliance, $tags, $link, AzureVNetAppliance)
+!endprocedure

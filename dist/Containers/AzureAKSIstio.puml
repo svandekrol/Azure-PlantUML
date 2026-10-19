@@ -1,0 +1,17 @@
+sprite $AzureAKSIstio [70x70/16z] {
+pT9Pkfmm34JX5zh8bjsr_zs6QnI7-YvAgCod1tZwFRuuF6lRkGGHcGGH6Hs9QgA0aXX2jEptpCL-mxxO4IkHZ1WhaO3CI2clU1G5cM4f6qeWfQW89ZCHe9I9
+7Aa8C1NCja0UC1iXavd8oSo8ALXPXam6gzSdvWgQ9KYKCeKLIv2S2OGLOoIjhEAT5MCaPoXIE7otxPa2A0psCmCZa9ZzQoB2pBuI4K1NSYHNJ45onHGaLqn1
+SiKqX9LQgxB5-qrJQGr9ak8omXr8eiXJ-PyKLvHyAbrL6D6LBKKK1JTAdKf_edZKwioMOSsFUkyZUi94TI7c_In5SgO6ORNwQOG224opG48P4NuSAM7KveH8
+JAjdhJNQ4rK9e_bXa29jp9b_8DyI4OSVn8U1SKr37AkXC9ugt3FaZJlbWlL72F1P0H8cHm1I0acO705OkNWHLfuZm5K1ScQuvmYNCsDuC8Hep9YAImWpRs24
+ueG8J1GA8ph3IaEaCWaYCeHetIeTQdzaBj5RHrZHcJzuNo8LYRu
+}
+
+AzureEntityColoring(AzureAKSIstio)
+!define AzureAKSIstio(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureAKSIstio, AzureAKSIstio)
+!define AzureAKSIstio(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureAKSIstio, AzureAKSIstio)
+!procedure AzureAKSIstio($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureAKSIstio, $stereo=AzureAKSIstio, $tags, $link)
+ !endprocedure
+!procedure AzureAKSIstio($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureAKSIstio, $tags, $link, AzureAKSIstio)
+!endprocedure

@@ -1,0 +1,17 @@
+sprite $AzureMyCustomer [70x70/16z] {
+xTJNRkj038HXR1jID73u_czxJ1UepI9Q8Jt-T9qVrCIs_r0lUF3p1BFJ8Mmq7rUnvwCQcF59tY63dlEHzw_WPAHVCREp5So9kt_ErRSh5riOEsMksDhxLEnm
+HU89968Jhyn_kXEH7LOHOhWYunLxfyfWnkqTAdxu5ds72Zz6ur7rAnxfPtHjkAASEyrSdEj6meMSmjLU91oD06YYIxZYcMuZj5Jd3dAPCsQciBi9dKx3NKaf
+bThGQaufLTn48-HSQcibP-Npugcb9JpO7V9TuQ-5MKwpWdLcodTWws2ff5d39bFppSH6HY2lb85DHdAex6SJWRrInO9Oo45irecWhhTTPrfKR8b5mhpjMgoX
+rqZhLUY-3UIO4jkky0WQsVP6Rn-POfqAtRTYv_QHaNr5c9e2P2UEgRRLgI0YHOWuPbyHBlPjGaJYSAMbb8KQgKXEzHqgbMpRVINfGHPEHoe2wQ0L7NtKrynT
+J_2Ddr1vLVmT8a6d0QgJ_qWl_m4
+}
+
+AzureEntityColoring(AzureMyCustomer)
+!define AzureMyCustomer(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureMyCustomer, AzureMyCustomer)
+!define AzureMyCustomer(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureMyCustomer, AzureMyCustomer)
+!procedure AzureMyCustomer($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureMyCustomer, $stereo=AzureMyCustomer, $tags, $link)
+ !endprocedure
+!procedure AzureMyCustomer($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureMyCustomer, $tags, $link, AzureMyCustomer)
+!endprocedure

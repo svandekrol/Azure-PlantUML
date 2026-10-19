@@ -1,0 +1,16 @@
+sprite $AzureManagedServiceFabric [70x70/16z] {
+tTM5RWD138JXecSsDE__jjMgWOEn4ckl-4TGyfSSkVgMtdlZnBaHP9o9PJ-dnBh_fpHLGvXKBRPHi2vKpYWgrun25GCnpY2hO11vt081gRIuBP4tWnZdF02_
+ZZ11f3xJWpJ5tHACzqdvcIHnZhE9iFSwUaHJppgnA5KW5r8bmZ7oWUp8CgyepohrdKQdm2Zr9HYk8kAhAp0rASzFb1z_XsWBHHifgY7PG1MHxFeRLNIkl5Vz
+c_8pf_Z0Sub__pCyilevfkY-0gVu3vECpmyw05GF2RxQ8Q6aC554NwhuzL91bDyoFw0GPlLM5SGaYwZ7nbxZcqp-Fq6RfEMFgBeY-H_bI2yRGQw4AL7QaD8U
+KB1-BOVyzzDWqhbTExURVYFL5ErSFwEqJHHdU8P5n2kg7f1NH6BsacQCD9bE4O6pe5lxtMboQEhjbCH9Tddi_O7aZcnUyGuWrPNnFW
+}
+
+AzureEntityColoring(AzureManagedServiceFabric)
+!define AzureManagedServiceFabric(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureManagedServiceFabric, AzureManagedServiceFabric)
+!define AzureManagedServiceFabric(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureManagedServiceFabric, AzureManagedServiceFabric)
+!procedure AzureManagedServiceFabric($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureManagedServiceFabric, $stereo=AzureManagedServiceFabric, $tags, $link)
+ !endprocedure
+!procedure AzureManagedServiceFabric($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureManagedServiceFabric, $tags, $link, AzureManagedServiceFabric)
+!endprocedure

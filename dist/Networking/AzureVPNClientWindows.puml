@@ -1,0 +1,17 @@
+sprite $AzureVPNClientWindows [70x70/16z] {
+nTK7Rkj034NHSHVdyMVslzkVUgqGCaOaalYYk1yyDsaGKL-dKKazPYrhTAex__gZbjgGc5GtIFvQrI3_g2WmXRAljZ0bj4yv7M1KLawjmNXU0O5HGG61yOe2
+yjhnbL5U0O6HvnKGcA9YjzUkxRNBwvMbvnLQsclNyD6M5Vs8uZ-Xw4SK_mb5Fw7S_7cAsNTbuINIVcKvshQYOqyexRYfwDXI2epTRcRwH4ujgRJJwc0BCbTk
+zwvjnQoGkM9j7GnJT6unxL7QUJq59AiqOuhtGrLPc093A2zZpTZbtXb47fZBzPwOWaByrE8fgFCTqLHP-8B8aaf0O3OLYiehygcelNQ5GG5vh1X8KDnsA-H1
+eOoYkGBocF6VK9HKjXdVeOoPee82Gxv36JD5EOKYCbV6HfvLncOAY8vjdUrJHYTtc0GI63bC0Y6cm6GGOWfC0g65AJ09X9mfC1c4FgUGKWZvf45rvcLGtHcP
+4aZQ6VcAI4p1g3P1qem6rPr1nNOX_m4
+}
+
+AzureEntityColoring(AzureVPNClientWindows)
+!define AzureVPNClientWindows(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureVPNClientWindows, AzureVPNClientWindows)
+!define AzureVPNClientWindows(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureVPNClientWindows, AzureVPNClientWindows)
+!procedure AzureVPNClientWindows($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureVPNClientWindows, $stereo=AzureVPNClientWindows, $tags, $link)
+ !endprocedure
+!procedure AzureVPNClientWindows($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureVPNClientWindows, $tags, $link, AzureVPNClientWindows)
+!endprocedure

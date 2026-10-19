@@ -1,0 +1,18 @@
+sprite $AzureNetworkWatcher [70x70/16z] {
+xTU7kjiW30LWCmNkqFk_RH6AIm-VIGXqj-VkmHz9tlodvOHi49Xb8qlMd4k0lCjyQ_2YyraD3NFxN3BFWC6SIlXTveCYt2kSjByfvhCYiaONDoKbRMs2UI1S
+350c6KJQMWPE_ZIbP4dw6Yf9r7w-HZonUS3Gp3CzGf0rXVeq9RzGCWnIGYNS3VgKZ11G-5xHt-VdYh_-dMuKcbGo3vJ6j5TyhT1OULxCEQ7GbCAR2kujD4hR
+yPuhgMP74MDFyKJ1ruH8Yuh7X9Nf-hjCxtMeE6kE4kE0cLRKg8J6DWQKD5OKCGV4FLVoBUBGkCePd1b6fG00rVHAkseXqjh1t2ZZyoxsux0dsDqKaRmenH0M
+4rFIzO2yceedBrKuYKmc0D6GOKEnVY8oybbYZBJK8N010CLg5GMp5CdBjwP4vzisJ2ralFCRKOYYK3QIfN1eK54awuaLunwAfxByYF6mqikTaaTtGQqZGz5G
+iEHbA0xscBhuGav0K35E2WaKf0eRZnj5jmqYg3XBCWfBL05x8RADWYe30_SNvqpTpBu_aa9ThS8OKSK-Lf5OkEzEFGZWpXlxKdoUCl3qKak1gSmHs1CY4fwE
+LsOHGSO1OltRIevTESOl83dJTK6gyIk897d84Y89tmCvUP50f0Q49GJp7ycy4wXajnJU2rIof_1s0FcL-G8
+}
+
+AzureEntityColoring(AzureNetworkWatcher)
+!define AzureNetworkWatcher(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureNetworkWatcher, AzureNetworkWatcher)
+!define AzureNetworkWatcher(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureNetworkWatcher, AzureNetworkWatcher)
+!procedure AzureNetworkWatcher($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureNetworkWatcher, $stereo=AzureNetworkWatcher, $tags, $link)
+ !endprocedure
+!procedure AzureNetworkWatcher($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureNetworkWatcher, $tags, $link, AzureNetworkWatcher)
+!endprocedure

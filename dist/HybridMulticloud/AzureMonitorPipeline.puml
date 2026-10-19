@@ -1,0 +1,15 @@
+sprite $AzureMonitorPipeline [70x70/16z] {
+xSw5RiH048FXGc0sFidl_xI5ZGlXEJdb_eTP-3JyTVttNwzyGTc6iX7b6ifLb8ie4r4keZvJYUXtNv4nZZCDnGi0pn02mwXL12Q2zQv3YAtyKSI4FmkO0yWt
+XfFI2k-QfgdCL6cU6fr8rBJFCO9yhzJLHaevUh7L-UVU42rNfHp7Tep3f5CL0BxIVGS5xnHcb6vifcWP8AzIC8bQvMaAlucIOvXIXZBKrdyBWQZ7-rs5mru4
+KFhQND5gWY7I2hQLIqfHkwEWJohSKzZFPmT9JXMrepIpum0sbDg6mZuYoaI1c60cFBUnc0yRVJU6Pp0q4s8cn5VevoD-__tt2
+}
+
+AzureEntityColoring(AzureMonitorPipeline)
+!define AzureMonitorPipeline(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureMonitorPipeline, AzureMonitorPipeline)
+!define AzureMonitorPipeline(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureMonitorPipeline, AzureMonitorPipeline)
+!procedure AzureMonitorPipeline($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureMonitorPipeline, $stereo=AzureMonitorPipeline, $tags, $link)
+ !endprocedure
+!procedure AzureMonitorPipeline($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureMonitorPipeline, $tags, $link, AzureMonitorPipeline)
+!endprocedure

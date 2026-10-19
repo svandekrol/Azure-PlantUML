@@ -1,0 +1,15 @@
+sprite $AzureError [70x70/16z] {
+xT9LSWGn48FXe2I7-lwd3SSrhaLv5Dw_tpzZVKNi1OXvY5iA6BPpHQvdkBS8mfP0o8n23vbdc54IZCHZflP67LdjJ4Q6OIiokqeWKiAG3CHnD5i06HsjAg5q
+HwkBAKq9fYNwIGhRZ-eKcL20m8SXmFKA06mgD_PMjcocojyAi87KmuqHyPfkbhqePI0DxxMRHLKU8s3BPifaq1iGZn5w6X2BmQ81SHnXaJfYCXZgXkS8GwhU
+LgcsTWsCrKn0W654mPQ-IK5UwVqWXPLWwbShPI2EmWemhBb8ucE0cksAlLgLOTWz0G
+}
+
+AzureEntityColoring(AzureError)
+!define AzureError(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureError, AzureError)
+!define AzureError(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureError, AzureError)
+!procedure AzureError($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureError, $stereo=AzureError, $tags, $link)
+ !endprocedure
+!procedure AzureError($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureError, $tags, $link, AzureError)
+!endprocedure

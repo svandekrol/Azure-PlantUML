@@ -1,0 +1,19 @@
+sprite $MicrosoftDiscovery [70x70/16z] {
+rTU7RhOm34RXVm3lGOlxlzfEIwSH9le4MdLt4prnDXo_AG2U4gdOF-CfmdwVYKZ5RGH0vHPI0xkhtChaUAg8gDn1N2St4Sn4fee22OIGL_hJwsDS5XCwXBGn
+hy2bmVSNCDI3T07dLSoGOv2XAX08PmYQzFN1XZ8KYHbC9pCQAXoCH2QpgTQK760ULr65FP8QEsEoFbk5RxwCRUumo-L82lc8L70zkh5KXMZea3wLqcWKZKaw
+rTEcI-PXn3XtlbKQPBR_wCyIZHu9AWd3mZ58jcNj47RCnlR7l4JN__zb4Yz84XtpEfkb_5yACP5Ilh-gSHLLbKzc_KOqL1BE6n2YGh9yASkosHaL3wrs0vwL
+TTqgaOfgJUIIILG-6NRyg5eY3SDPMJV0IB1s-YsUp1Kg5rn_uyrdDYJhHA4G4XKlOQgpcIkawWqCfLGs2LEbWibZnSkAE-UiU2gCIe-OpAXuxlzK9XUyoQZe
+Prkk5TgrYeexFEkYqY3MfJmeH8Kacqg3MBUKe64oduwAqM-_VeEJbAD2shfKm_ExKUMYHSUdApaDIAwKXZUzGFK3-ixZPg0xQyO7Fln_hJ7BZmk5yNI5iM7S
+lL59cboQHy9AAfx1fi0vcnXmMc9xfsHSaW54kf5K2JGjGmmD5ORj6zeEN1dMchqjGOQWOHo_g5mw32tFZf8RhrdZ54oDlkt9ZVfwDlSHX-eXuXs7Y_HE44Fa
+YNCy2e9v_8fu1m
+}
+
+AzureEntityColoring(MicrosoftDiscovery)
+!define MicrosoftDiscovery(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, MicrosoftDiscovery, MicrosoftDiscovery)
+!define MicrosoftDiscovery(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, MicrosoftDiscovery, MicrosoftDiscovery)
+!procedure MicrosoftDiscovery($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=MicrosoftDiscovery, $stereo=MicrosoftDiscovery, $tags, $link)
+ !endprocedure
+!procedure MicrosoftDiscovery($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, MicrosoftDiscovery, $tags, $link, MicrosoftDiscovery)
+!endprocedure

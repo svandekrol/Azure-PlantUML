@@ -1,0 +1,17 @@
+sprite $AzureExtendedSecurityUpdates [70x70/16z] {
+xTI9ZgKW441HMGim6Vx_Qtijvo5N737BRDwNpjx7AZ3MKQMfpaNYFhGMBNzKj7KIKI29bfIQHvBiIihC3I88uvmJxI0SXn2F4uDmdE5X5nY3aZhQGCa9km1I
+YGh_dz6YacMw_8ShIIP_nyfqZ_BHeppAeyYhkuhqtL3ag0obf9ppu4yDbgHNygWMOL0c4UsY8lj2Y2DcXJ94be-idnmcGVdA131dYdJ5HRDHj0pbrqUxR9bu
+UPXj0hi4qM9mvdiQqIAKmr7yvwEboNqnVZmCHmdVZtOyv71PYNRHeZJvPYSmN6ZvcHKiTQWKAc9VJC2LSwLwh4JZej6xbJQZPzKfFy2qZ_NzC4xTHi5EKABT
+tP8N3uKCbUwY7PGHavgt7jlOxskBLDRovMo_JR7DGQhxdVF6H2Yrx4hjAyOFX4gT0cP_IT9cTszHFML4Ctpfjacm49dKB803rcyC531PDFzwi1PrIIfaKdSE
+reTD2aw039ZCuxJILmUj74QSAWR8E5oJVlC-adsndiITHBw_snXbYc54s0fc1k4uKmZ3HV5WBpkroc6-JiTbxdLkl0C
+}
+
+AzureEntityColoring(AzureExtendedSecurityUpdates)
+!define AzureExtendedSecurityUpdates(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureExtendedSecurityUpdates, AzureExtendedSecurityUpdates)
+!define AzureExtendedSecurityUpdates(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureExtendedSecurityUpdates, AzureExtendedSecurityUpdates)
+!procedure AzureExtendedSecurityUpdates($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureExtendedSecurityUpdates, $stereo=AzureExtendedSecurityUpdates, $tags, $link)
+ !endprocedure
+!procedure AzureExtendedSecurityUpdates($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureExtendedSecurityUpdates, $tags, $link, AzureExtendedSecurityUpdates)
+!endprocedure

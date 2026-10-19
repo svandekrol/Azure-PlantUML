@@ -1,0 +1,14 @@
+sprite $AzurePreviewFeature [70x70/16z] {
+xTL5ceL034NXjafnHzd_Qlkvnt3B6VFzG6cnOp40_59nMhg2LWg55IBI5I9LGLy5eaA6Ggg2VWg6K72lXuAdEYjuhPFoX_VQAv1p57eeS5gVSghfDowF5CDH
+-gqNNM4HyHMTQJYkw0ptKVY1z5UufyAVIgMgAfMggZIloZ6IgwTYDqbrOgbv5FOLds5TMLjPiOe-LkmUIAySPErAAgcaaaeggQJ2768E
+}
+
+AzureEntityColoring(AzurePreviewFeature)
+!define AzurePreviewFeature(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzurePreviewFeature, AzurePreviewFeature)
+!define AzurePreviewFeature(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzurePreviewFeature, AzurePreviewFeature)
+!procedure AzurePreviewFeature($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzurePreviewFeature, $stereo=AzurePreviewFeature, $tags, $link)
+ !endprocedure
+!procedure AzurePreviewFeature($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzurePreviewFeature, $tags, $link, AzurePreviewFeature)
+!endprocedure

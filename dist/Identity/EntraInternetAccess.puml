@@ -1,0 +1,19 @@
+sprite $EntraInternetAccess [70x70/16z] {
+tPU7ifmm34NJ94kwcl3_VvinHYncXJ7foTc2UENCjMpQag9gPe0ICPSYotUW1c_WIuEUYbJXBvXsHASTOjuXT60sZw86sJ-cHaTOdmUnKefGZtoz3z8Ie2LI
+hXQcdg9tacY5h4bujHGAfaQbhHV6H6iYRXRXDtGagK28MXIvjh2EUuAr2xK0XQMyMuhb4e5xI4gBCh2mv1PpE9g4QksyPn5EqEkc55gffTAUHPddnYI08oHb
+gtTBoP2BA4gDkeCg6LgA9gr5xMp3u30wP96vC1eBPM-BLCdOSkvC0Hm8IQcvoZ7Br91YwLTYQm40M97i9NPUA-ENv5X-Oie_bnRjBT-PHJfB_uTrpqH46sO6
+cHYI7MU8E5RnQuvC9onmkBqixZ7HByi5dGKExRDmhUOjaKMeMtJyF8l3SR3yqIoupMAFit2InRvlZihpBEQ07Inmb3IBwMbxlNOfoN85piSHKn3DveUMlhtc
+S9tBqjs40D6OxkHzQqdETHQWspC060ueK0oOjYo03ryp0zh3EFBjoO8j0z9hesq03XpxaYXIz3XDwyx5764PG8Wrazqpd2MwaOU91LnBJR80uGX6zrBR8H4M
+CxGNmd7f4RpIb5e9xnOqGZBIA7pNeDPdov9AD6rDkzzTYx2492mZJQHfzzw0OxFem16Mf3TGNYjh5aj6Cz946a3NhOOb97EMHGn7j5hooHbx51rc8PdLv9xL
+edP3_XnSyLsos2rBWZJHo3BM1Erch5bioZBcVxGi_vzbcPQCmGtB7DEICMF9F4F7Dm
+}
+
+AzureEntityColoring(EntraInternetAccess)
+!define EntraInternetAccess(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, EntraInternetAccess, EntraInternetAccess)
+!define EntraInternetAccess(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, EntraInternetAccess, EntraInternetAccess)
+!procedure EntraInternetAccess($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=EntraInternetAccess, $stereo=EntraInternetAccess, $tags, $link)
+ !endprocedure
+!procedure EntraInternetAccess($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, EntraInternetAccess, $tags, $link, EntraInternetAccess)
+!endprocedure

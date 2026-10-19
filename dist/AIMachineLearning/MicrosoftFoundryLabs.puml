@@ -1,0 +1,17 @@
+sprite $MicrosoftFoundryLabs [70x70/16z] {
+jTS7hg0m38JXxHlRYUR-fzqE3COEYQNzLMcVXjSV_dzZZFuxr1CzaBeZ8eCKitsY_QxV5QiOpHnY1QFfNuGKspQQ33TbNMbNlQeqIXsogWWZGiYEGaJmFYL5
+xmWfgkllqv6bEdD4fCcf01CcX-HgZi0qTuHJpDAZ5mNJHC-g2ezvtjhM46QYkpSG224YLGMCY4GALc946lCxoWrfpN_W1MiH4YW6hd7WRAeu96SOyOg0-jBU
+cHOfxhwQyhpjXMbhYiXCUPot49apmUbK4Kd718f7k9ZHG35m6ZC2Qlmx_INTeewHIB5We5D21zmOGahAg6U-EAKlANwEGyPm0-rtdl4G7egnefOhcauvnl2I
+dD48wNqSOmXvCgPNaVANaHS5IWN8NyO2fUSCOcK8Rih27-gC78owS-kCzOlfPQMJCW9bYJ4ZfguGmmgtWB22ez6vyQumWpCYQ6AAC0DI1ZTdD5MmeS2O0OgC
+NGnyJQrlEZt_Lq14rSnkFvwKEXqajNiIAORNtXKizS9WiQc2vIHLi5N2OBD8GI5IF59d2W0xZDIPcb7l9m
+}
+
+AzureEntityColoring(MicrosoftFoundryLabs)
+!define MicrosoftFoundryLabs(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, MicrosoftFoundryLabs, MicrosoftFoundryLabs)
+!define MicrosoftFoundryLabs(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, MicrosoftFoundryLabs, MicrosoftFoundryLabs)
+!procedure MicrosoftFoundryLabs($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=MicrosoftFoundryLabs, $stereo=MicrosoftFoundryLabs, $tags, $link)
+ !endprocedure
+!procedure MicrosoftFoundryLabs($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, MicrosoftFoundryLabs, $tags, $link, MicrosoftFoundryLabs)
+!endprocedure

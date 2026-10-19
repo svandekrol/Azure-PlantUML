@@ -1,0 +1,15 @@
+sprite $AzureFileshare [70x70/16z] {
+xT1NaiCW44LHMo93rTl_ReVWjdA0rcJT_eL3G7iY1rQ2-h7AhS1SWI1uSm4I0wv1_jPLFCxbSXj8h0AXQFjA1uhgUwcCU-TzjUASVhpgXDI6f5IDqZycFJkX
+j1rXUuepL3-jUs7fbJPBEufHMqtkrYddMXHYAELyawAwiI8gb6r6DYZRsKiKynELMz5bIkjANb3HXfAx5P7ZAOBYA88Y9rYkuaEiMh4GurpOLumsQyqKKnHJ
+rrnH8VW0hY8GIygjO8Rm5RGerbYBs0o1jMOono5N2ChPsa1n5FVJ5RWp-PWheRsG0lKJ6F0BtaWH0okP3IOZXlw68aRT_xBAWDKR-G
+}
+
+AzureEntityColoring(AzureFileshare)
+!define AzureFileshare(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureFileshare, AzureFileshare)
+!define AzureFileshare(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureFileshare, AzureFileshare)
+!procedure AzureFileshare($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureFileshare, $stereo=AzureFileshare, $tags, $link)
+ !endprocedure
+!procedure AzureFileshare($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureFileshare, $tags, $link, AzureFileshare)
+!endprocedure

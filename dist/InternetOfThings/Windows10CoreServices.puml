@@ -1,0 +1,18 @@
+sprite $Windows10CoreServices [70x70/16z] {
+lTU9RYmh38JXNh2Bh7x_jxrgJnmGjteO7w7yexsPJqNss1-4dnOWJ16HjEAC36KLLPN_bqM4bB-GBb5044qZqCmK04JXp3tYKGKlZq4aWv6v4_egl3I3MV8A
+WoKCfYbXc99dIfw1U8edOzx0iaVz6E0PmuceCKWnxB68QFFcIZKFlUXlngFxCHHHLG1gLwYgm6HChOXN65Ak1C1meZ4w8jUXAnWyBP72iyTpnoGQbSZy8bAw
+HFngtI6bIcc8TIlAMRf5rXW-fbBbsBRje4ebIcsPAu7i--vCA7Px9TJAbNFRIodxHXNqobkDc7Bwe9CfjLCgGKAvtk_MqHHsfRzGpdtRhxRzP0fUK_Ojslz5
+qIMAWIgmf294aOHIN56Yg2jlNE5ZYEB8xNSrKtpCUKHdJBbLHiZQHwPFC1vjIEkj_hpU7WfaGFI1_9u3K-mjOem0SIZIcU91fI4A6nNX2cFk4GHos8I1j8-9
+dw1JkDAODwWF8GSmKpp470L19bF8hS0UwrHftJx379bNPOMY2v2g2wPKMO2086b6vPdodHpY2EdzDrCHhM_lG_vXRQdHmZ0J3vKGP0bXp958bVz77GXdp9Dv
+DcaHObc3bqPuHUvJIvIVmJiM6D44MDf_
+}
+
+AzureEntityColoring(Windows10CoreServices)
+!define Windows10CoreServices(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, Windows10CoreServices, Windows10CoreServices)
+!define Windows10CoreServices(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, Windows10CoreServices, Windows10CoreServices)
+!procedure Windows10CoreServices($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=Windows10CoreServices, $stereo=Windows10CoreServices, $tags, $link)
+ !endprocedure
+!procedure Windows10CoreServices($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, Windows10CoreServices, $tags, $link, Windows10CoreServices)
+!endprocedure

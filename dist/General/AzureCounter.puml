@@ -1,0 +1,16 @@
+sprite $AzureCounter [70x70/16z] {
+xTU5aaCX30NG0472sl__xVPEU8FKO5suzITdyA4lIzdPoU_E3rFo1-HBbAsaBdBXc5udNGR5KH_1CTl5uJhV9_QA7PI8OqDGaa49lrJPYhcWyAB2adCAdUBI
+wTRaHyKPibSKBcFSLCM97WjLKOEkAIQZ92XELV0HCOEuAWpZgd8w8aHEVwY27zvQo8r2jnJSGKGe_w44BH4-NACODjSKgnRkJuUIj12iHIeASbL1wOqgKXHK
+9QufN9JGA5aLXrhEAtHTMQzHMg_HsBhfl7Kz1ioSOdJrrGul2bhQbWwVKqX7hLPC5Is4LcnMSSSCY7K6I9q1amgLGucgmbdZxRH2Nd1TjpAmm6KxhI36NbYb
+t5wz1sKh_EvTqFjtP3z_fxgLl_QFxsKjEpkl
+}
+
+AzureEntityColoring(AzureCounter)
+!define AzureCounter(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureCounter, AzureCounter)
+!define AzureCounter(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureCounter, AzureCounter)
+!procedure AzureCounter($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureCounter, $stereo=AzureCounter, $tags, $link)
+ !endprocedure
+!procedure AzureCounter($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureCounter, $tags, $link, AzureCounter)
+!endprocedure

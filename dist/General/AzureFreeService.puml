@@ -1,0 +1,16 @@
+sprite $AzureFreeService [70x70/16z] {
+xT87RWCX48LXmJJOjFlVDXxqZ3i98tVxTrcr_JIKdulspb2y1r7aF0hh6HHbrhZIOp1HHOMzFKRdPr4mrkFWxdhILGaetjQQr46HQKNNutHGT7OMhCP700TY
+HX4M5NV4BSTC1V89fHp6RAMOSikCHHkfAgpbi1EAEBEgEQhSLbHMJIbb_PgjbrKyNwdzNy4KekhFXfWfj0cbcF9-66HAoOcuHIGjfgop2d5EUsMMQINlEyGH
+9MUYxK4ug60S65453eonKez66H4HTwKURQoWCoY-8AAmqf64SU9Ayh2ia083YZiXnG4eYAOLJkTGQg5zXKkTKP3cROMire3IbzKNCrAMGMrPRJ7B82Y3DATC
+jg20WbWM55JG2ofZfcurGCRjtQrWPQVRAhRJCoYwKnWv1oDx1P4pC7oaSnXUp8Wxz4VdKG98W3bpxtu1
+}
+
+AzureEntityColoring(AzureFreeService)
+!define AzureFreeService(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureFreeService, AzureFreeService)
+!define AzureFreeService(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureFreeService, AzureFreeService)
+!procedure AzureFreeService($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureFreeService, $stereo=AzureFreeService, $tags, $link)
+ !endprocedure
+!procedure AzureFreeService($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureFreeService, $tags, $link, AzureFreeService)
+!endprocedure

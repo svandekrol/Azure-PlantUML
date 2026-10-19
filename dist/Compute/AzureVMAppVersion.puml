@@ -1,0 +1,17 @@
+sprite $AzureVMAppVersion [70x70/16z] {
+xTQ7hjuW38RXBopR74c-_xjjP8Li_a98Tz_izGZDG2-a-lSg_vN_YcmDA7cBEvMuDg1CM4kq91yKlcslS6bMxgihZlYKF50ylwHGAj604bp9lwA4HP7VHX7X
+KSKQLu3qYXBhYl3DOehi537b_bsHMRbjLkIWY2cLwaeGYQyeJ2Ks9JrIZZrI48xvHygrViNZ9cfJsXjNr1fHicfSCcbLydp8aXkEEMlSbrIptP-FxMcyf9Bd
+UfGKxr9JnX1Zj5r9jQAsAvhgjIlfKBWg_OZ7PJ1rvsjDqo70NvXgcv8E1M1wej0X1o3IlYObqBw403XgPIf3yHCv80qg21G1FwO4sEmHlOhIFdYZ4DkKN5BU
+5K7CJ83ZNGrAvbtEsy43gKNvkbK8PCS4-0R5aAlYtJQl_hwIhQk2j9n487nKyZdbKfWs3zCd9L-J9PwYbFO_RhqaD_5oJ60f4U3xb7BJUTgQK4pjKWYdOb4Q
+amzfU-E8DOvO-JRjRHGfZHgbYl4D
+}
+
+AzureEntityColoring(AzureVMAppVersion)
+!define AzureVMAppVersion(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureVMAppVersion, AzureVMAppVersion)
+!define AzureVMAppVersion(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureVMAppVersion, AzureVMAppVersion)
+!procedure AzureVMAppVersion($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureVMAppVersion, $stereo=AzureVMAppVersion, $tags, $link)
+ !endprocedure
+!procedure AzureVMAppVersion($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureVMAppVersion, $tags, $link, AzureVMAppVersion)
+!endprocedure

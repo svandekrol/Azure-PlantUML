@@ -1,0 +1,17 @@
+sprite $AzureOperatorNexus [70x70/16z] {
+xTG5TYin38NXF8yCUWNlVxUrhpnm9iOm_GMhuE-eaFXQjhScylZAHz7_91rcab6PpTodq46QmZobEOegpUR5b8z2PodwRCNrLbFSjPMFeW-I3ZEbsOHvIhCT
+KWWtLr6zYF9HK44n8mhIaq8wYagADodDhgPGhFkHa1MsTJ5r0tKmRGGC3ocQDD7-3TjmhTqYEb_S9kGCijive-XIiipo_19cjPcv0q5OPieeTg_eAojWsWg8
+ynLzhkAijNsChYYsKy43_4XnejXE1Oodh9AGaD4nK-NaSQOvP0bXPlnMo2Dy5wend2azuSbxELtrvyioBaIp0bB6SGN8SgJP509JLbO4wvacqrOSb7pNL7X8
+0VEVZuhtyPutDPHTkE7nVilu4nKSzLNgoieuHjQVhE0CqvVtBOJt2kx_tp8mXbP92lyc9W0mXXN_7ylW_88mZk2w3AW7oIkyClQqLN1t6Mspx2PGrcrEHA3C
+w_os57nZjZy
+}
+
+AzureEntityColoring(AzureOperatorNexus)
+!define AzureOperatorNexus(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureOperatorNexus, AzureOperatorNexus)
+!define AzureOperatorNexus(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureOperatorNexus, AzureOperatorNexus)
+!procedure AzureOperatorNexus($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureOperatorNexus, $stereo=AzureOperatorNexus, $tags, $link)
+ !endprocedure
+!procedure AzureOperatorNexus($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureOperatorNexus, $tags, $link, AzureOperatorNexus)
+!endprocedure
