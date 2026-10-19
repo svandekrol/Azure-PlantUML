@@ -9,7 +9,7 @@ public static class VSCodeSnippets
 
         var snippets = new Dictionary<string, Snippet>();
 
-        foreach (var filePath in Directory.GetFiles(distFolder, "*.puml", SearchOption.AllDirectories))
+        foreach (var filePath in Directory.GetFiles(distFolder, "*.puml", SearchOption.AllDirectories).OrderBy(p => p, StringComparer.Ordinal))
         {
             var entityName = Path.GetFileNameWithoutExtension(filePath);
             if (entityName == "all")

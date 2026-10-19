@@ -187,7 +187,7 @@ public class GeneratePlantuml : IHostedService
 
     void CombineMultipleFilesIntoSingleFile(string inputDirectoryPath, string inputFileNamePattern, string outputFilePath)
     {
-        string[] inputFilePaths = Directory.GetFiles(inputDirectoryPath, inputFileNamePattern, SearchOption.AllDirectories);
+        var inputFilePaths = Directory.GetFiles(inputDirectoryPath, inputFileNamePattern, SearchOption.AllDirectories).OrderBy(p => p, StringComparer.Ordinal);
         using (var outputStream = File.Create(outputFilePath))
         {
             foreach (var inputFilePath in inputFilePaths)
