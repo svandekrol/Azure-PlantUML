@@ -1,0 +1,15 @@
+sprite $AzureManagedPrometheus [70x70/16z] {
+xTWtOWKn40BGqb1n_zCwPtjOHfglwjDjUfkKLOU_edRuVz0oJ7B2Pm2976P15odWba69FQOu6QstGg6eyv7h6p9dp7cv0dFUEwDhXciAitBoTRYuaqSeH0ha
+5NqfC0N78UyAliwGHCUWBctwL7IbC58iurwNo1LpHDyKmtX5kHBL-k0R9fNLAamLc58nqAeQHKs5HvMxuXcCA3olS0lHDyOgriFdgJKIF9J2S8BX4OLBY0oJ
+8mlAWr6QcLUW2KPZYdRd2XfKjATeLD6EKkghhU888eqWmZhYcQ15W0pZ58z8w2g8IxP7KiOVRJlmXcTeTa-jLlWc_lQzyEaLfNPB-WG
+}
+
+AzureEntityColoring(AzureManagedPrometheus)
+!define AzureManagedPrometheus(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureManagedPrometheus, AzureManagedPrometheus)
+!define AzureManagedPrometheus(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureManagedPrometheus, AzureManagedPrometheus)
+!procedure AzureManagedPrometheus($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureManagedPrometheus, $stereo=AzureManagedPrometheus, $tags, $link)
+ !endprocedure
+!procedure AzureManagedPrometheus($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureManagedPrometheus, $tags, $link, AzureManagedPrometheus)
+!endprocedure

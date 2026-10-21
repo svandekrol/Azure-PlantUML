@@ -1,0 +1,15 @@
+sprite $AzureHCPCache [70x70/16z] {
+xT47Ki0m34HH4YkZ5KttlosJGaTOiPREJ-pfpyr_JgeAtHiL0Dq_tMSC6Qyxwo28OAmP0LcZ8502ajoCWS4010OSXS60eI0RWOWLd8k2G0Aal1a3Gy580LA3
+K2Y5v1chXJgonb5M1XQcYtHRT6CiRf5CjZ8n0acb50KqnRhA53UdbVdYdT9AAohsGvNBZf9x8-yedRYA4nJlAotigUB3RpGTojMcNDQKIz-wj3U-jB8YE_DM
+MSKVAYZYJ-8e7YZIvh3sMd5_fUJoLnMK864gBIwlj2bkBYh_YX2KJdzIyIn2OFoNTWS
+}
+
+AzureEntityColoring(AzureHCPCache)
+!define AzureHCPCache(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureHCPCache, AzureHCPCache)
+!define AzureHCPCache(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureHCPCache, AzureHCPCache)
+!procedure AzureHCPCache($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureHCPCache, $stereo=AzureHCPCache, $tags, $link)
+ !endprocedure
+!procedure AzureHCPCache($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureHCPCache, $tags, $link, AzureHCPCache)
+!endprocedure

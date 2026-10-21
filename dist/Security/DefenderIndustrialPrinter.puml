@@ -1,0 +1,14 @@
+sprite $DefenderIndustrialPrinter [70x70/16z] {
+xTD5ciD044FXhq5TCw6w_sd3OBQRWlhtUZlfrIQ9DdnPHGfGUPjAF28Y8k-2P8Cnxbqg0X-aWuW2Oia00Dujvu4mN75skP-fX9nAau-eG1hUglBN45NvQv1L
+0o8gpU5_rGehJL4Fa2Pji36qgMo55QDZJ0HRfA8j1m
+}
+
+AzureEntityColoring(DefenderIndustrialPrinter)
+!define DefenderIndustrialPrinter(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DefenderIndustrialPrinter, DefenderIndustrialPrinter)
+!define DefenderIndustrialPrinter(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DefenderIndustrialPrinter, DefenderIndustrialPrinter)
+!procedure DefenderIndustrialPrinter($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DefenderIndustrialPrinter, $stereo=DefenderIndustrialPrinter, $tags, $link)
+ !endprocedure
+!procedure DefenderIndustrialPrinter($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DefenderIndustrialPrinter, $tags, $link, DefenderIndustrialPrinter)
+!endprocedure

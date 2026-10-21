@@ -1,0 +1,18 @@
+sprite $MicrosoftFoundryIQ [70x70/16z] {
+jTRRRiCm38FXMujoglT_szKTwb4Xs2FsNpR9jqC5EVKl0SXRyxTZPenLS4yHOQu58S8O1ChWhCH3n34XFK0-OfJm3CuAdF8zasUcgZE2e58XGIgPgHBa0k14
+LAd2pAnIf2k1CtEZ6rDL3KcSb8WJKxV0J5LZBWjfpDslEYcMmILmZv3Er5Q8ePiHe0WXfkw1cIfcMeoiS2aAXacTYkWnWyRe1Q-4teojE8OGhw0fogH5-gsY
+52C9GUoTZpQQHRe2KOgGAOXH0BFfHQb7oiDJHn2lQ7Sa5NczlSUEltqXlRwQZnYnEewN5KMMCXPoRVwMjm0OHP3LkAO8Z68GECGhYaoBU4MHfKn1d6AGuwg4
+85Ono84nKX2h6EI865CGgnWarx_584PHv3Oi3i7BBtq6SOf5Xa6C8iYCM8mWglWMScCsKXyKgyKiv5Cbjd97p6AbF18ZNry53jcAFIiuHRhYVkdqIhG8KSOF
+SuW2EAPVz4ZWqSHcOpmIXGUAMpWu8myLj_mkJvMairOMiM5aG6Er5MQIfgWkO6JL430p6yEZ60L6cCc_7x4LOlhotKpTsqZijhAPP6IPmBwHcAf0PsPZ65aL
+04QAS6PcOpP2J769t0WnHsFiR761w9tFNa8y8uXvcQ3oCqOHBTvYIdBC4COYdddyZkGJPQGmWcYYZC0IEbF_qWy
+}
+
+AzureEntityColoring(MicrosoftFoundryIQ)
+!define MicrosoftFoundryIQ(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, MicrosoftFoundryIQ, MicrosoftFoundryIQ)
+!define MicrosoftFoundryIQ(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, MicrosoftFoundryIQ, MicrosoftFoundryIQ)
+!procedure MicrosoftFoundryIQ($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=MicrosoftFoundryIQ, $stereo=MicrosoftFoundryIQ, $tags, $link)
+ !endprocedure
+!procedure MicrosoftFoundryIQ($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, MicrosoftFoundryIQ, $tags, $link, MicrosoftFoundryIQ)
+!endprocedure

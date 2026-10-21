@@ -1,0 +1,16 @@
+sprite $DefenderIndustrialRobot [70x70/16z] {
+xTA7SeKW48NXTBRSST__RNCPEIDY0vRq_4wpVKgn7nLHk6UUc69EXb8Xvb2GWs4Qm0WFO4JOpqXKl8ma9NUQ5ObnoVGWmYN37OWmwleLrNt6p5ZkjI0b8sQu
+KOKi32z9XaijWdOHrMiaPnGCheb5H7MwH78bCPYJvPbB95TcncR5vYwKsuuI6UmXIvqgamepIwaOa3g5ASH8Len14QjGY09YMHHhKq8M5KWnejkXGY4_m1Y2
+UH4L0SaOJTKW2CZ2A6fGY6rTgu9Avb89DOn1E8nsUx6swA0lOUX7C6nDyI3ce56CEfnnZAGy38XOBoCAnS68hfMfYz52KUjWnAM0qKpfP7QLcpKdGnHrZEXV
+EIwSLusu7Qh9gI0dWZv18UHYkBg_fPXK1UJxzGu
+}
+
+AzureEntityColoring(DefenderIndustrialRobot)
+!define DefenderIndustrialRobot(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DefenderIndustrialRobot, DefenderIndustrialRobot)
+!define DefenderIndustrialRobot(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DefenderIndustrialRobot, DefenderIndustrialRobot)
+!procedure DefenderIndustrialRobot($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DefenderIndustrialRobot, $stereo=DefenderIndustrialRobot, $tags, $link)
+ !endprocedure
+!procedure DefenderIndustrialRobot($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DefenderIndustrialRobot, $tags, $link, DefenderIndustrialRobot)
+!endprocedure

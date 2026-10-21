@@ -1,0 +1,15 @@
+sprite $AzureTargetsManagement [70x70/16z] {
+xTT7SiGm34HH1-PDt_-s5YG7maIn2mNlp3zvs7fxWPJl01vN4aAL_8HG-HyhHpbAdGiGGQUQ-OsmKpTva3XZNj9yZEpbajRQWhVxrS1hNu4VSMLtLXq8E-KA
+463uYYhMwFNzQQDmH032SELzogyOI4fwmnMiIbBAokGvDPWDIIabJt5539zIUfE7LjAYo6QhI4f9QL6wj55ol_jHKbgLxbEIBkyKO5KCvjxQ2dxN5MCYK1E9
+A30HjuA7a40KmYo8H-43hdHw7c0OmeRwR80rnkZNOnXBEH6ZWpU-u_zpHY9_4cOR46Sw46VWYI0X1_1734Urb5gljtDFSfIZX9dq9mf87m
+}
+
+AzureEntityColoring(AzureTargetsManagement)
+!define AzureTargetsManagement(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureTargetsManagement, AzureTargetsManagement)
+!define AzureTargetsManagement(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureTargetsManagement, AzureTargetsManagement)
+!procedure AzureTargetsManagement($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureTargetsManagement, $stereo=AzureTargetsManagement, $tags, $link)
+ !endprocedure
+!procedure AzureTargetsManagement($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureTargetsManagement, $tags, $link, AzureTargetsManagement)
+!endprocedure

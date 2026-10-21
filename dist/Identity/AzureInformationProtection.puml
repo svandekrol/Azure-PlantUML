@@ -1,0 +1,17 @@
+sprite $AzureInformationProtection [70x70/16z] {
+xTFPkk8W44LXKzHubVT_soQs6_qCb92UXtMEi_xk2zopzDb-CNtlEnXN7DD15uTSPqo_1wDftmNHPUGwevzRLmRFBI79q_DAylpqKR7JA-toQOhXx_IDzjAU
+bxrpMc5hQQROXIdejr3GihB_CkM_yb_vhwY8Q4jEdLxkKSfbCPRpM5rccFKqfIObZOXUZPhqb7pExQWvd2WgAR9j6y7eAWPcC6T3G0OAubmX6BcYmYE5ZdX2
+wSyH9rJcbFCSyGY1mjCAvi2ewUEuy9AYyceqb5SKp87HX0L5jdh0kDx9ZLoXsps20MH9aUsHHhZ0wAPZfK0fVZp9GAufHAfggeoc55Epur8sd5AxvoRpIgkT
+KWa_a9giArOUKwBcNxDrHLzFBI2PLv0mYvdT6K2wg23tQDNxpkM20W1EkTNAckBl2DsEDigL70dP7gNAo404fSmgSSxngo3HASMZ5o4DayzAz6Ce5k4oKXn3
+1dcXew9nPAaIuvnBJV58kWg6P8vQFBEU4a1cmXpPt_DOpdRq1G
+}
+
+AzureEntityColoring(AzureInformationProtection)
+!define AzureInformationProtection(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureInformationProtection, AzureInformationProtection)
+!define AzureInformationProtection(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureInformationProtection, AzureInformationProtection)
+!procedure AzureInformationProtection($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureInformationProtection, $stereo=AzureInformationProtection, $tags, $link)
+ !endprocedure
+!procedure AzureInformationProtection($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureInformationProtection, $tags, $link, AzureInformationProtection)
+!endprocedure

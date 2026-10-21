@@ -1,0 +1,19 @@
+sprite $AzureConsumptionCommitment [70x70/16z] {
+pTNPUkCW38PXiGZfPnRV_ztEYBh5COY4plhrh4dUHu2NOngtjDOAG9MF_VYir8-Wl6zqfQUoPVHG7uA-07onxm7WLaufnfIvY5uSNWgr9qP4kfR46STNc2ED
+fVU9NcFaQeH07yNJmIiCNIf0fbv-oWXgY-aI0A5B0KyOZACqHUaXNJ9w8cMjh1cfbjOQrafdN8G392-L7EoVdj9y8KePPQ5a9DjYPnZf-nfHN2M1BmS-7oLH
+Asfqb618IsV35FkdKi-PvOEFrPgD4XTApnycm_v5EqeQ5R5_vHtbFErnGRIdb64OSsLJYNUbiNbJ8TmKCIMi5FUKNjkMC2ZkngXxpX7zMN6F9ufwKrlPlM9q
+K4BysNWEm_dPrm9Hl2buK_Am1_bKGDSKG2OAexAUHSTPHiNVNJrdIJGMbyeu3D2PzUvMciSYiDByfCljseta5NNAoEtQRIhJ9eFPFQsqm_GZSZR6P-AmBUe-
+wtn65hUqrLnQbVXOrzy1Vl7uKg4owRQaFaoS8DMI9mmkxyQ4V4E28Iw3noNXHCfq5AkjgV2DkGqZ_LsyK3YBnqYr38WqKSx4ufIADupMnKKJtZAb40NAwmsk
+YMwX_wSfsGXdbixa9mfJO15VqJUch1N9H44UqcF2Q5WgKY8bKVjxxxWpmpYHheegip0bjHpboAYd4sY8vL3LR9puIZzm2nof5rXhXIbIIb5TAdrL5bGAPoxI
+_jSKYxEZU4wlAprVyHrVmIZu3lHGPNeemJhyLF5E0Ofg_uDgUKXynG_JzXMcI_nPHUMI0l_BYgpokLdaiNQCcqeT-xm2cRIjoEzGiAUCBP0V
+}
+
+AzureEntityColoring(AzureConsumptionCommitment)
+!define AzureConsumptionCommitment(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureConsumptionCommitment, AzureConsumptionCommitment)
+!define AzureConsumptionCommitment(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureConsumptionCommitment, AzureConsumptionCommitment)
+!procedure AzureConsumptionCommitment($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureConsumptionCommitment, $stereo=AzureConsumptionCommitment, $tags, $link)
+ !endprocedure
+!procedure AzureConsumptionCommitment($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureConsumptionCommitment, $tags, $link, AzureConsumptionCommitment)
+!endprocedure

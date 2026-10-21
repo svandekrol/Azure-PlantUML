@@ -1,0 +1,17 @@
+sprite $AzureAppComplianceAutomation [70x70/16z] {
+xT67jkeW58HX2tlFa5No_azhOoHc0MdSVltEiUk_HXp_F5zVIFeBw2WvfAU3kjw6z4QaDoAz4UcDI6T4s5cH_H5tbFPMhWyex8puDLo3xQeGXV2o_Nm90hea
+p1K7WTcb5Pcn40olsmGaOSPiGuCUdin2vdW-c38R8WnLAnbAPWSgB20qE3yKaTOOSpou1w4KdSWAA0BnFANHORlYc5YzmkeKiRnaleQbvXHz19cVhb2OXNh5
+BHzAZZmgdW-SSx4MiI3-4Ja326_WNAqIte3hoLFaWWThLRXMERaYUoiMn5Fch0Y263TK24yX9t0vQGbLCGUtGlvLBwSB4q_bgbZ_ioVdWpE1FRNUNmTx0YUf
+6tU1QOt0ZbJi3JfluPu8hQ4nPemrRYqTbVKjR7uZPuIz8TARaJ3Mnz2ToaqJY5WtZigqk9R8iOh6h4LMC_RWAvNr3Dsn6b6cmpZfZKXtH8RUXiHXs9CQngPX
+apWeyTjyVTq1
+}
+
+AzureEntityColoring(AzureAppComplianceAutomation)
+!define AzureAppComplianceAutomation(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureAppComplianceAutomation, AzureAppComplianceAutomation)
+!define AzureAppComplianceAutomation(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureAppComplianceAutomation, AzureAppComplianceAutomation)
+!procedure AzureAppComplianceAutomation($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureAppComplianceAutomation, $stereo=AzureAppComplianceAutomation, $tags, $link)
+ !endprocedure
+!procedure AzureAppComplianceAutomation($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureAppComplianceAutomation, $tags, $link, AzureAppComplianceAutomation)
+!endprocedure

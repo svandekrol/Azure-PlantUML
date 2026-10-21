@@ -1,0 +1,16 @@
+sprite $AzureOracleDatabase [70x70/16z] {
+vTHNOaCX30NHz4ZypFvNcuAlkn4oIiyaxlPv3U2qXtqi9QFiF3xK624dVolEuwNkYeYgAgg8gAAXgeOg6gg8g3gYoeXAA5NcwJ5TfEIhAggaFAkZLsQMLMpJ
+GEdD57Et0uPTXug_1GI6TuPHEyNRIF7tIBHXndk2oZXyhj9B43q855ESPMgdF8HAF5xs2ltpezk2qfsJLfHpnfEA0rBKDGhAmslPvehrGYLxHB7IVf12LeaH
+k49XT4GDo2a0u_E26YkeoTabqNIywCGmA7-bLU9AV__OTNFA-mAmlYyeyryp6_tFxGiabH1fG5g10ID-hW0GdLtsdIliYwwH8kpwQyIkfnyxNYZl2y3wle3w
+cFFotnI-OMKWAgUGQAAWNW4
+}
+
+AzureEntityColoring(AzureOracleDatabase)
+!define AzureOracleDatabase(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureOracleDatabase, AzureOracleDatabase)
+!define AzureOracleDatabase(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureOracleDatabase, AzureOracleDatabase)
+!procedure AzureOracleDatabase($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureOracleDatabase, $stereo=AzureOracleDatabase, $tags, $link)
+ !endprocedure
+!procedure AzureOracleDatabase($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureOracleDatabase, $tags, $link, AzureOracleDatabase)
+!endprocedure

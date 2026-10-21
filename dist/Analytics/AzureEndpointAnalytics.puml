@@ -1,0 +1,16 @@
+sprite $AzureEndpointAnalytics [70x70/16z] {
+xSy7igim38NX8CarHVlVxRCOE32fndhztZ-XmpTozQPMVLqAQz6Xy6bj-ZHCzGObfx7oVwDyAz_AjvBjDwZOfrkVbRp_PTlG1-NT1prAxgzOcbAvLye1GtUL
+4GL6iDGQKCeY8B7lpyUKScTWe2DALOq1eMDAmI1tRSe8Wg0C8UY0aiBhe1mPHURVhjYdr1KHPa7Cl61GkaQXKuiMP6hd4nzNU2AcQMAnk9sqJOBLerIDmM8R
+WoOIYqpZVcLR4DiCK6HCOV8gbX0n4n5RotbugfJzhypRfZ3TnR9JyC7pe5XCF6U41ULJzuemsn58dtAxLmGAPkaS1WhpSWGoe8XN2QyKxMsdoBYYRnJLWM4G
+40-3zNWO80DAS28RqxRvO8aECCWWIttA6E9Na1_nA-YlK11lgJgLaEhbub4abVRzzLoYGxdfjUReNL7WbiHShvuLIIhdDiyvHt4erndmheXuJJqzGtu
+}
+
+AzureEntityColoring(AzureEndpointAnalytics)
+!define AzureEndpointAnalytics(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureEndpointAnalytics, AzureEndpointAnalytics)
+!define AzureEndpointAnalytics(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureEndpointAnalytics, AzureEndpointAnalytics)
+!procedure AzureEndpointAnalytics($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureEndpointAnalytics, $stereo=AzureEndpointAnalytics, $tags, $link)
+ !endprocedure
+!procedure AzureEndpointAnalytics($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureEndpointAnalytics, $tags, $link, AzureEndpointAnalytics)
+!endprocedure

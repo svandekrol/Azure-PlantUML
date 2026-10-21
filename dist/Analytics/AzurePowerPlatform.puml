@@ -1,0 +1,16 @@
+sprite $AzurePowerPlatform [70x70/16z] {
+rTG7RWD128LXcBv5UlU_ROBBf2pO9gJvEy3JFtXbF0DAMHH3peG7rELiVMzxhoVSavQxA_lU6BVrEMAjxAyM2gRifvcEMvgPCkqd9P8oPrQ2XSoKOqoDfCoL
+4KcPAviZnLWH15qp7cIiHAuoLq8fyxgE57kbXLD4WceeA_P8XwvwVg0zGyVryMz5Rkj7dDlwRcKh-2AgSsCpKuWrwRqy7rYXIgNMrbe_6K9ONv3rnLKPcIls
+YB1IkAWZLie23UNgMgdMKOohk58S3zhCb6U_IZmbVfNnVwxIeSgk1orGSOc-H_YkqX2_ob8HJLbwWo6LDhJ_eNfGOAAoxPkYmoETMmyO7bqMZYeyQD5nV4LI
+V4OuHPHmYY0bPZ0GYXcY0e6OSJ5J_35ZAX3kcEcGub26YAG8ZgU84auH74yH9PmYE9uYIZX5S9U9tZiZeemk2aAedp1YSZX5S0kd24g9yUnU
+}
+
+AzureEntityColoring(AzurePowerPlatform)
+!define AzurePowerPlatform(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzurePowerPlatform, AzurePowerPlatform)
+!define AzurePowerPlatform(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzurePowerPlatform, AzurePowerPlatform)
+!procedure AzurePowerPlatform($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzurePowerPlatform, $stereo=AzurePowerPlatform, $tags, $link)
+ !endprocedure
+!procedure AzurePowerPlatform($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzurePowerPlatform, $tags, $link, AzurePowerPlatform)
+!endprocedure

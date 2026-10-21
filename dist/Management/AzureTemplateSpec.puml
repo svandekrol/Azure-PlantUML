@@ -1,0 +1,15 @@
+sprite $AzureTemplateSpec [70x70/16z] {
+xTYr5KCn341H6KHLzfysp55Cd-7LFjVKwJ33-BkMHTocy3OKgkYlGbKjHi6O3RCAGa6OKo8K53igk-AD3EMtTyMXaNjN361KPLSWuayHAfHCxSgkOCaVOQdY
+sCYDf_2vCeMP-r5uQGe4_2b0hMBNhkoAd2Eu9_gJm3sISoLAK2DVgtXJsHMdHYwZyALt1KByAS2xmfSoYjcOYggMAQgw64MW8CafAfnDDALeLSCgeXM9fLGV
+PgaJWl6LzYdE33i1
+}
+
+AzureEntityColoring(AzureTemplateSpec)
+!define AzureTemplateSpec(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureTemplateSpec, AzureTemplateSpec)
+!define AzureTemplateSpec(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureTemplateSpec, AzureTemplateSpec)
+!procedure AzureTemplateSpec($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureTemplateSpec, $stereo=AzureTemplateSpec, $tags, $link)
+ !endprocedure
+!procedure AzureTemplateSpec($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureTemplateSpec, $tags, $link, AzureTemplateSpec)
+!endprocedure

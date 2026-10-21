@@ -1,0 +1,17 @@
+sprite $AzureInternetAnalyzerProfile [70x70/16z] {
+rT87qkOW281XG12tUl_RRaXCztU4xU_NIvwnrVyeNVjPu2ni_AoZ_S98dD6F2o5nHiS5a2Z3sYadIjd3T16myayg0fReDAC1PK0CPgG1mX8453qB89tYnhK0
+aYUL4K40G6_8XGXi6JE6oa215cglk_BXZM4lztxN2pA83eLBjoablHJDscFAA3bdT7x6_6RAC6m85Il36dgLt1IzJJ2_c39E2G7JOx7bgN1nr5MCSHYgZ5jP
+hP2I-L4-bK_JYWoKMfepUksFHTllfdoQJ_bI-TJoAeKlVVeDIlqtbBhr5vIqrb6gGo5OIwTIZ-OLX3Kwb7hfyrIVRifdgrxxxbUsR-gza58jBtDVbuQu8Rag
+mjLoIvcPOGjvgKRY9OGMDIQ241mbPaun1IxnqayWU9bJV3w2vvpOhIGR000A0x0icHAP3mb04a4IN6fpSiz7X41eSL9WJgdD9qaI5CCY-yIc42KRYV2YaVi8
+DuGj09DQdZar15eeSCkbmD7X-UR4JUc7FCNmH04bn0IGA5F_fNu
+}
+
+AzureEntityColoring(AzureInternetAnalyzerProfile)
+!define AzureInternetAnalyzerProfile(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureInternetAnalyzerProfile, AzureInternetAnalyzerProfile)
+!define AzureInternetAnalyzerProfile(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureInternetAnalyzerProfile, AzureInternetAnalyzerProfile)
+!procedure AzureInternetAnalyzerProfile($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureInternetAnalyzerProfile, $stereo=AzureInternetAnalyzerProfile, $tags, $link)
+ !endprocedure
+!procedure AzureInternetAnalyzerProfile($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureInternetAnalyzerProfile, $tags, $link, AzureInternetAnalyzerProfile)
+!endprocedure

@@ -1,0 +1,15 @@
+sprite $AzureDeploymentEnvironment [70x70/16z] {
+tSm5SiGm40NH9M71tF-qeN6ufT9Fp6qKFLkZzD4CnD-X1Ea8fXkSZ70omia8DuyY8vo0pAxeJ1v99ZY5q9MIMzt3i9ARtIwN08gC0ACZoEGi8yna0G66dHuo
+p9GECivq485X8rr_8imKHqg6wmq11dPE2fR2M_UBTmjUWLpfbIOb56XM9QiATqWb7acnCodcbLfhURdW-w7WkdzjgZRxK6epcrSnGM744nH6l7aKwojfmF1q
+nJ15OOEb4hmi2AShQia8XuWU8dg8w26YXuXU5z6P56TWqdyZH2yIeeU8NZnTOHR4PkaP
+}
+
+AzureEntityColoring(AzureDeploymentEnvironment)
+!define AzureDeploymentEnvironment(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDeploymentEnvironment, AzureDeploymentEnvironment)
+!define AzureDeploymentEnvironment(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDeploymentEnvironment, AzureDeploymentEnvironment)
+!procedure AzureDeploymentEnvironment($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDeploymentEnvironment, $stereo=AzureDeploymentEnvironment, $tags, $link)
+ !endprocedure
+!procedure AzureDeploymentEnvironment($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDeploymentEnvironment, $tags, $link, AzureDeploymentEnvironment)
+!endprocedure

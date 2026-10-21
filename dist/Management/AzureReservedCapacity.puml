@@ -1,0 +1,16 @@
+sprite $AzureReservedCapacity [70x70/16z] {
+fT87pWCX34HXDOnnslrF-zTqtWWnUUhPtGzivRAejv_YybdjsgS6EAvXZtLkKsVZ8fHh-CveJJUCYr26WHa6PY3KXc4uqJOBkeWH65PWME5A_ENq7gwHLG_5
+T7hLis8vKJKfqWdnyoXKcEa_mSzPHGexmJ_tAbBO2V7pg9NI8vuCu2EhMA7tWt_kLKAPYby3VwwIobmcAJbAAs0aCMImSaN0oU9OoQVOM2lv6WopLd9E6Lf9
+hZXMSWC11H1R6MDFEHnGKOmmfC8E8rfXXmsjCCE6LjXXH2liiA4LPjZG2ZjiQ8KTHhJ23XjQOGOChVGKZaHGOMQaCaZH3XkJScMKiq10eIrBuwgmarBHnjhH
+o6KkrLZAE02YhwE7uTYHmsW673261EHrU9XT1uTPDruTuoAm7Z0CHnlhphDoSUhNuAzgE70Hmm73O6ezp3S
+}
+
+AzureEntityColoring(AzureReservedCapacity)
+!define AzureReservedCapacity(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureReservedCapacity, AzureReservedCapacity)
+!define AzureReservedCapacity(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureReservedCapacity, AzureReservedCapacity)
+!procedure AzureReservedCapacity($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureReservedCapacity, $stereo=AzureReservedCapacity, $tags, $link)
+ !endprocedure
+!procedure AzureReservedCapacity($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureReservedCapacity, $tags, $link, AzureReservedCapacity)
+!endprocedure

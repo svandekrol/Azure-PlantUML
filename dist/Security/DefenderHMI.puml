@@ -1,0 +1,15 @@
+sprite $DefenderHMI [70x70/16z] {
+xPS7RiKW44GnVIU5-zysMXbfb4t5IthUxyLFm-0w_Xh_u08-1x4ElmOEZCIfmNUmu96bdxHtKHLQA35_UO5II7l1ygQcL6DHd5bekQTbGMCjs985_bxWp4AB
+lnSCRCc27Rs8Cmlnzu9jMVozuC_ryj-BhFVIyHHP1j-LVthDALU1YnnE2iZ08YbCRgvRAC5zAfYCHKkdf8GWnh9QIhzlh6RP4az9knTzIVQamTBdL3Pz9SUq
+82ZHdalL8qoI0D2y7K3H2amMagn59PCwnr_cKjtqGieRbggnvr9YveY8EScq8q99AeFaf38JnaPHi0H3HnYBQpiQbpGz7-78WicsAnk_PX2NX3WaNi_uS_pp
+}
+
+AzureEntityColoring(DefenderHMI)
+!define DefenderHMI(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DefenderHMI, DefenderHMI)
+!define DefenderHMI(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DefenderHMI, DefenderHMI)
+!procedure DefenderHMI($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DefenderHMI, $stereo=DefenderHMI, $tags, $link)
+ !endprocedure
+!procedure DefenderHMI($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DefenderHMI, $tags, $link, DefenderHMI)
+!endprocedure

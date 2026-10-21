@@ -1,0 +1,18 @@
+sprite $DefenderHistorian [70x70/16z] {
+xTPNWgCm48HXfQeE6xZ_QISuoMrv4M9Vvp_0fu1fixs4lRPfEDoSE2_XND4uNq3EDr5M6U8_ubqnd8z-L_my8zuLTprh1EKh9LQY-gMWNB9Z4aNDBmKbPAOY
+VCkH4e0T9P8-BIhhdLT-b1y5qBE405q1rTO9at5YKcoDO9oO7j_vMMOgV3CnNUBu4BraJw9zfof2FAVX6GLdPTm5PNraYltpzs8gcCLBSfbwKOdTBe1lngKm
+fACoxsgWjLfhmzLPLPGaMqcFIhj0Wp93a5FioJbyciS-Qhrp1NVcAD8t0lI3tPbZ258FgF5KEABe1ObAP8ue9FEeX4FD5ILBsb4oIRfDb7wUgCIh0NMobJmg
+8PBn7HqJ8asKHWfsHwQHTQOKqYLy9wcD1vefYNItSOZ8LzUnAMHw2UFkwFiZauCYxfPVByRtH-Rmd9j_9QFIC-6ej64hxfP2bVucKrNvZdo_5ntsif-ylHUs
+DKK79UNIWC3WW9BJq0l3cM9aIsFrcIb1cLvCP6g_5YwCbr1fkGyO71brQRT6yiYigtj89h4wTyT0jctE68cTyroG0um6Pa2mtLhuRuo1HDbwKwQEHc57Uh_s
+RfWeBmP8jXo4sAkoaV439bVmii5jBLv3UtnAiUKHcJEn6Wwp1W4aW1RFyWa
+}
+
+AzureEntityColoring(DefenderHistorian)
+!define DefenderHistorian(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DefenderHistorian, DefenderHistorian)
+!define DefenderHistorian(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DefenderHistorian, DefenderHistorian)
+!procedure DefenderHistorian($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DefenderHistorian, $stereo=DefenderHistorian, $tags, $link)
+ !endprocedure
+!procedure DefenderHistorian($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DefenderHistorian, $tags, $link, DefenderHistorian)
+!endprocedure

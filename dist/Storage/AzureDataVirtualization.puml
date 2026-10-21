@@ -1,0 +1,17 @@
+sprite $AzureDataVirtualization [70x70/16z] {
+jTTdqjmW48HX1w17Jdt_qtv1NJib665s5llL_wUKIAGgKDm8btQGRQT0xJ68RIDg0zbJzfdoJnIRn51LEqfhhNfPnGqftYjA6vLIyaeBIc0Ekxy2qZfaO8v9
+0U4ZASyn4qHC2SnJ27ZjMrJuDmL2E5JKGccrNk-4eQZmnnXgRIS328a59J2jVYWd8sIjgADJogd0nFJZqHKnKuVy9WMu6zH1cGOf0rEJ2Y75hanBAuGKCpeY
+XHc5aE9Cay9E-SvLKkmGqwGmSIi6YFbKZXEHmeHYW1XNsbc7h1HxA6oVojreAdMDk4AOJP25ObBeHQH-j42as3vYIwGk44KFjqXz5JciN1Mk55mGm14J8sM9
+s2roV33uP5O88t8oF1KpWnWXIoKYOY26AKJrltGhASKHJugOfH8GJqejQOLTKiGa50v9-MJWpHGrZkjAig2TDuEkYH9x3AMYAHnBPc8uKsl3sF9cXBZ2CY2H
+CJL355IIWID9nNA8bCZ07S0H1TZTPJSCF4ToPuzHWP2r4fc0f1MEzm9c5MLNX2gfJCUqEYOnrJwohtZ_KM6wRKJz61AIxkWLljh-dQZnFju1
+}
+
+AzureEntityColoring(AzureDataVirtualization)
+!define AzureDataVirtualization(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDataVirtualization, AzureDataVirtualization)
+!define AzureDataVirtualization(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDataVirtualization, AzureDataVirtualization)
+!procedure AzureDataVirtualization($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDataVirtualization, $stereo=AzureDataVirtualization, $tags, $link)
+ !endprocedure
+!procedure AzureDataVirtualization($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDataVirtualization, $tags, $link, AzureDataVirtualization)
+!endprocedure

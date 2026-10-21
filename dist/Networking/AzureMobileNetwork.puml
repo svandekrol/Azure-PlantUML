@@ -1,0 +1,18 @@
+sprite $AzureMobileNetwork [70x70/16z] {
+xTI7ZkCm38JX8OSZAVQLzt_RWy8KEqts6kNQxoQq3rfmevz_P__xttJle73lk94THhB3HZOVHhAl8ASQRWR0d6hRcIKX0-1E1kbz7HkPqyse3dXeMQ1iKwPB
+nG0gMoZrlfanqWmMUWgSTYW2GY-HR1FYi9U8Rvhsr5ghhHge5y5Eqv2fjIXwWAiNT0FC6UePJjD8gIKkdNSIZfwv8HSqj6cWbA8LObZ-g_1CjMcWLCNr8bm4
+Z5hbDlmr5TqAc1pWyun7IjKzGpZi_OoNlKK89a8tCoSljeqEYIWhnM2YuPQhoEmqEhEgbXaGEM8oc7FE6R_fDkDb3gw6B3gy3K_GgbKEm9uFWn5JjCv01TtD
+6OdODEXfAmemzsF8lmocQPe_NQyK8y38TUSWdUPfdZyyqrs9J0vAGMV46GgflGVokIc1RBbsPNKULPuLnn5buNb8GIehO-KIWLoe8sLLtQD4A1VGNgMMpD4p
+zOMNGkjflv8f5KTldvA90CZhNlOeFvF92300bDwN5GTO0FXN5MD4ZYVG7VfsfPyDBHMSYykiinrAxeQNGPzZDuqgEvHMo-Vg4Dd2r26Ip5WP8xcRuqeoRv-1
+SU_Kwlk6oBrItzMs6bbjh_lsRUvtlswl9Fxm_lU_Nm
+}
+
+AzureEntityColoring(AzureMobileNetwork)
+!define AzureMobileNetwork(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureMobileNetwork, AzureMobileNetwork)
+!define AzureMobileNetwork(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureMobileNetwork, AzureMobileNetwork)
+!procedure AzureMobileNetwork($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureMobileNetwork, $stereo=AzureMobileNetwork, $tags, $link)
+ !endprocedure
+!procedure AzureMobileNetwork($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureMobileNetwork, $tags, $link, AzureMobileNetwork)
+!endprocedure

@@ -1,0 +1,16 @@
+sprite $AzureAKSNetworkPolicy [70x70/16z] {
+vTG7RiCm34RX3iCKk_xxdxP3A04xVWa5ghilMo6-J4l_AJFx26IUiMWIYMQDg8nCEuQL2KaLntR1sbB-9fgTbW4ys8nA4KNPaFLy_5UbCOlKR7DgJUTRscvs
+2wj5rZIGjMYhM2nnt4zIL52eIMLvgpFxNxetRWJJ2oIKGOIOHUULDJ9Mzh6oRWDbGOMHgAQifrKKMmyLb3LNX0eWpEmLwpafjfeTBjeojp4PaK89iaI1M8cQ
+kpUVLRptHOfVLdHW6gKFLMXxCLCe2PFiKcDAiaiXuwU9bOWL9GendZ4cKfX1EfuOLXoNxwH1HQ1WYF2RuP9Tgi30BWNCQ7PGAenLcBlTJuQAl0_T-MLavu2Y
+k_VE8H4gnpbF459e4en88YORvkM8a3uVyHen2xxr290aTi2eC8ZK7LK2OzRHJ61K7VtRNW
+}
+
+AzureEntityColoring(AzureAKSNetworkPolicy)
+!define AzureAKSNetworkPolicy(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureAKSNetworkPolicy, AzureAKSNetworkPolicy)
+!define AzureAKSNetworkPolicy(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureAKSNetworkPolicy, AzureAKSNetworkPolicy)
+!procedure AzureAKSNetworkPolicy($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureAKSNetworkPolicy, $stereo=AzureAKSNetworkPolicy, $tags, $link)
+ !endprocedure
+!procedure AzureAKSNetworkPolicy($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureAKSNetworkPolicy, $tags, $link, AzureAKSNetworkPolicy)
+!endprocedure

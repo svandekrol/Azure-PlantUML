@@ -1,0 +1,17 @@
+sprite $AzureModularDataCenter [70x70/16z] {
+vTM9SguW3CNngq9Eq3l3-xzjCGJ6E4ZHxks_sw7Bh-stnbwCmReAVft2e_qi1TfXizb3YjSE6pjIzfX2Ng8BXJz92Nj5IRCgQLSbf7wOaXD5foYwlvCInfJ0
+ajbc3Ydz1fHrjB-eW2Ia6IZ7QRFky4NAEgoWzbo1wQ42MtYae1JVeAXGUg8eukvUH-lU2GaoZSAG-B13cW4IjvGttWEWY5MsiPUi49f8t4RJlwEZ12tDLUTg
+joXNXYhGqbnryexhLgKIRr0CyaOblb5Hv8sAGTofytDZiC-DRSNTpBSKTpiwAF5T5Pzpi-JCQV6vEQUd_GwzgK9McITfLcNAsPF-Yh1fI5bbwIZ-mnNA2kMA
+Gf9RF87SH98l9abLYKXTAs1ehokuKh11YvcvKWfpLfPzCshSKDQgP4QXthCs-ah4KDnJnfck8htvRnbq8XCE2lONetH2ZP4g2a5gASYLQrf_L8jlK12Y8W7I
+CmLCCVNFuwRYZEAdnJatJstbl_Qw8hrHeNoQcmfQrohB2qYo9-9yjYTkA7ot3rJYS-G5
+}
+
+AzureEntityColoring(AzureModularDataCenter)
+!define AzureModularDataCenter(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureModularDataCenter, AzureModularDataCenter)
+!define AzureModularDataCenter(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureModularDataCenter, AzureModularDataCenter)
+!procedure AzureModularDataCenter($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureModularDataCenter, $stereo=AzureModularDataCenter, $tags, $link)
+ !endprocedure
+!procedure AzureModularDataCenter($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureModularDataCenter, $tags, $link, AzureModularDataCenter)
+!endprocedure

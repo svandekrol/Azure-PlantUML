@@ -1,0 +1,16 @@
+sprite $AzureLabAccount [70x70/16z] {
+xSy7RiGm34HHoHoveV3-jqtSPWjXIZ3JitzxyOD6VtB3IJ651P1lLJIACCS8AVhBbN4OnlN6rqkAIVTUIkdsIaJ9QIz7bCH-iW8Wh60hfk0eeW3iWZ8I0Mj0
+h4A4R-f8VwzCupGzNbjdfgKkCPcML64KL92IxYgh0bW5BZAcXyO5OGl2wdjO7XLdDUnXEEyC6PwD32-BhELdHIyeC4VfuERkiOFAOrIyFQmJCgqAaYahl6fx
+oBYBAdliONo4YXY1J60FcTI6pEzDoUOp-jYy9CbXj17f7OICXt2Fo_Z8HCMjKm_HUMiQAatg8SsfGO8AOafncBZIteShec5bAQ085K504HG8H0GILTRm8Oh-
+84N-Yi8qK0nXH68H2JFwati3
+}
+
+AzureEntityColoring(AzureLabAccount)
+!define AzureLabAccount(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureLabAccount, AzureLabAccount)
+!define AzureLabAccount(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureLabAccount, AzureLabAccount)
+!procedure AzureLabAccount($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureLabAccount, $stereo=AzureLabAccount, $tags, $link)
+ !endprocedure
+!procedure AzureLabAccount($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureLabAccount, $tags, $link, AzureLabAccount)
+!endprocedure

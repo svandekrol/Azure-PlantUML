@@ -1,0 +1,14 @@
+sprite $AzureSecurity [70x70/16z] {
+xSot5G8m4C3GZWpQVrkUGqK-M-IJ-iz8sR8d42t3A0b8oJ1AXb6Q80BGCfY0b0Iaz4DAAgciudFMAjuFAQcaiZOG-3q50V6KTMmkjmw5enWCXhB2O41WG61u
+YOA2W8A0We22W8B0vceWC20mH1ECqbP0IcV8DBC6fXtcCf3Ik94T0G
+}
+
+AzureEntityColoring(AzureSecurity)
+!define AzureSecurity(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureSecurity, AzureSecurity)
+!define AzureSecurity(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureSecurity, AzureSecurity)
+!procedure AzureSecurity($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureSecurity, $stereo=AzureSecurity, $tags, $link)
+ !endprocedure
+!procedure AzureSecurity($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureSecurity, $tags, $link, AzureSecurity)
+!endprocedure

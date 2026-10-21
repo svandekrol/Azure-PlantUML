@@ -1,0 +1,16 @@
+sprite $AzureTroubleshoot [70x70/16z] {
+vT17UWGX34HXHnYf_NNT_xIEh4QyffpJOyqFag1_MsfM6vb8H83YEnb1ZEy48ZwJByWkcs4af7SmKH5cRl4duyXYu2S32Hrsh6HcPC9FxC_aADwZH8xAfOAm
+iisGSOkKJlF4T01GsdoSe3LOolw2RBnC0r51YjAAyHWXh3IrqWG9GGq311GC450m0p4PHdm6450m0t6O1U8nFPuLMIqOGUJqFc7q-dfDlvsv-HWcFeJ9FBsN
+oSVUoUmv0iP6tiza6epna_SpkLPEhqPI2yP3f7wghP2gQABqLo6fLpFR91cCXJ3Z8ypuYC7u23C-meo7-0mZFiF8d8cp8s8OqKsKa655Xqe20WueCX134I1h
+Hi1eqP4YG1QCpcE46TNk0657qm01Ht-u1m
+}
+
+AzureEntityColoring(AzureTroubleshoot)
+!define AzureTroubleshoot(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureTroubleshoot, AzureTroubleshoot)
+!define AzureTroubleshoot(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureTroubleshoot, AzureTroubleshoot)
+!procedure AzureTroubleshoot($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureTroubleshoot, $stereo=AzureTroubleshoot, $tags, $link)
+ !endprocedure
+!procedure AzureTroubleshoot($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureTroubleshoot, $tags, $link, AzureTroubleshoot)
+!endprocedure

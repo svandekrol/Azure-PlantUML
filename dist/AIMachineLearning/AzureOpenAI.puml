@@ -1,0 +1,16 @@
+sprite $AzureOpenAI [70x70/16z] {
+bTOtSiKm303HZgd1_K_hREzeyB64LwtcAJB4L-UpdLfLd1AVOHmrt04nmvs4YE4CY1lE2D9c5Eap81SZBihDc5z7h5apDsJ-5lEpWb5aKiI4IKg5OA3W22C6
+Id8CcGaHfOiCbEHKo4o5A7sagJY28emY0oKnJMHy5gh0T90OGvMCG8mPVvdYI0IDqLOoWb8mzQl5U309GIcGI8tNZ20HEP2iP0GYCQv4gsb87nemvGCrcDPh
+wJAkkECAI9y1UQcCczDJncWmAod5poyza5APDwQbZBZMKFhCDWN6eLqf4wNXYABCNEaB_LUvB6XJ68Y4e5IC8A8uCmt92b0VERxXm039oZ5bEj9LsiXPmhIH
+iuGH92baoZBaB650bY4eE4zbOGY2WeF227Rax9L3MLGWA5Ke1O8YJ1G62CfkApiZA5iKHr24QI4eks4OSW963KS-5Q0M0O82uuGZC1dQQe30I6A0YEC8nZi
+}
+
+AzureEntityColoring(AzureOpenAI)
+!define AzureOpenAI(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureOpenAI, AzureOpenAI)
+!define AzureOpenAI(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureOpenAI, AzureOpenAI)
+!procedure AzureOpenAI($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureOpenAI, $stereo=AzureOpenAI, $tags, $link)
+ !endprocedure
+!procedure AzureOpenAI($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureOpenAI, $tags, $link, AzureOpenAI)
+!endprocedure

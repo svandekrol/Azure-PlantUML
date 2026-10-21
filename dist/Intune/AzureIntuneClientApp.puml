@@ -1,0 +1,14 @@
+sprite $AzureIntuneClientApp [70x70/16z] {
+xT4b0WGn40LH5p9r_zkkMjKmpB_69UatH9YgDhCOh-wgr6rAbI9bmQgKbYhD5gqsspvA0uXssjdA_ThsHbprTQL8wKSf7VfInMd1wZvAFrwHmZQ5E_MnForb
+cAl3S5UxNHr_nGPZmUf-olY88eLj2higDlK3
+}
+
+AzureEntityColoring(AzureIntuneClientApp)
+!define AzureIntuneClientApp(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureIntuneClientApp, AzureIntuneClientApp)
+!define AzureIntuneClientApp(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureIntuneClientApp, AzureIntuneClientApp)
+!procedure AzureIntuneClientApp($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureIntuneClientApp, $stereo=AzureIntuneClientApp, $tags, $link)
+ !endprocedure
+!procedure AzureIntuneClientApp($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureIntuneClientApp, $tags, $link, AzureIntuneClientApp)
+!endprocedure

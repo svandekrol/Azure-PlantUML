@@ -1,0 +1,17 @@
+sprite $EntraVerifiedID [70x70/16z] {
+xPA7qgmW34Qlce2GpEJzt_Pkq3-J5RQ0EsNBiRV3bw1y74Hy7k4Ny-F7ZnGHGt8tLeHRXCnDA1oV9xW3SfDemrWKk0UnfnuuZLeiYW-JuGw1MuH6oMkuJNvi
+6Q6kQ9ZikpkEd-bn264Zdv54NDInG2GUm7ww-T-56G17qwoWJ1TB2PI7asnX9b2GMA6qLb1v80flqA6nYnPK2Ews9sGc4ja75JEGrLDAWfrCbj0HYKd08Knc
+iZ7doTxtSdzJ9GvH1-cIxTwosEb-tnDS4f_69gWcrm-ob_WqPOdGODKdb3rC10raQsxJ4lNPOQkYJ9Drc1BKO6QgbdqQ47OkF-dUGXVSaOWRYw179REUC7Kj
+qfIWvkZOYcMPm4dwismMROP92jH7iKogyHBiAqWjkyOaOrbCC-EeXT4qJe8q5WRdnKc4UWa1mt7hjqYe4E7p6X6XVgII50rtRLnPXdYH9GQtZ5kk-5d-MAzu
+hULdIGKxdh20dfor-DEFv3y
+}
+
+AzureEntityColoring(EntraVerifiedID)
+!define EntraVerifiedID(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, EntraVerifiedID, EntraVerifiedID)
+!define EntraVerifiedID(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, EntraVerifiedID, EntraVerifiedID)
+!procedure EntraVerifiedID($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=EntraVerifiedID, $stereo=EntraVerifiedID, $tags, $link)
+ !endprocedure
+!procedure EntraVerifiedID($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, EntraVerifiedID, $tags, $link, EntraVerifiedID)
+!endprocedure

@@ -1,0 +1,15 @@
+sprite $AzurePartnerNamespace [70x70/16z] {
+xTTbpiCm48JX3rgFGUhU_xHXXdNbKHHy__i99nkvNe0fGcBrMZ40dy7XUp9DrEekIMfN1LMaWhPT53_C9If-edGfYeBe-o9gVj94cQGfCeXJfenGIisyX52K
+hgsWwaKfw28KEoYYeCn55QSfQ8ifDacP8iuheMihnGqxaf9-ZQBAb74nvPkxJfOBlibnJsEDVFPwCpnATvNt_we12aD_xVNP8VWzfo2TsMSwr1LoQhRyrDor
+iKB-5zsZ9oC0VS7bWkK
+}
+
+AzureEntityColoring(AzurePartnerNamespace)
+!define AzurePartnerNamespace(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzurePartnerNamespace, AzurePartnerNamespace)
+!define AzurePartnerNamespace(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzurePartnerNamespace, AzurePartnerNamespace)
+!procedure AzurePartnerNamespace($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzurePartnerNamespace, $stereo=AzurePartnerNamespace, $tags, $link)
+ !endprocedure
+!procedure AzurePartnerNamespace($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzurePartnerNamespace, $tags, $link, AzurePartnerNamespace)
+!endprocedure

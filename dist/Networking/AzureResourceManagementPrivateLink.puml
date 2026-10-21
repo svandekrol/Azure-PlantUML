@@ -1,0 +1,16 @@
+sprite $AzureResourceManagementPrivateLink [70x70/16z] {
+xTRNSiKW38HXnyW8NUdzdpPbKtUMOHX8J_vRfE_qO-Ud56ZVs7RYJTz0sMVYN_d-dtGIii_aNXNbHl_Al_AlUFNg-mhw1EN7TPwvRw1j0vMRNEuutxJpH1QS
+Y213qb4j7cA3A-V1e-FxmAFq43WosqD2daZNiK03nCevhBWmYgID6VEQp2W2PU2OkrTPKIGDTOrI7GelAG855JKkHrNN53MaZhcpaXw845B4ATLPOQOn0eKP
+Dg0mqruvKiZ16w8A2bG5WKAEkOj236fNZXGW58rVBI8ycfcjAfXkuUcON5Kmu2zR2mhj4ZEbAABCjD9_-7c5juIPLtY7cNc54MOc5KRc6ETYWD31GAcfY394
+gYAZVIQL8KCcDJeI9NXoDb9gBlUg9DfWo5XsFF9pkWC
+}
+
+AzureEntityColoring(AzureResourceManagementPrivateLink)
+!define AzureResourceManagementPrivateLink(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureResourceManagementPrivateLink, AzureResourceManagementPrivateLink)
+!define AzureResourceManagementPrivateLink(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureResourceManagementPrivateLink, AzureResourceManagementPrivateLink)
+!procedure AzureResourceManagementPrivateLink($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureResourceManagementPrivateLink, $stereo=AzureResourceManagementPrivateLink, $tags, $link)
+ !endprocedure
+!procedure AzureResourceManagementPrivateLink($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureResourceManagementPrivateLink, $tags, $link, AzureResourceManagementPrivateLink)
+!endprocedure

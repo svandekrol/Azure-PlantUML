@@ -1,0 +1,15 @@
+sprite $AzureLogicAppsCustomConnector [70x70/16z] {
+xTOtaiD034JHZ70izlrFktvbmMcXv2NyCSXU30ph9ab2DRcU8e-ajA9fZw-qqeffSkfA5gefKMh9TpYlLbffHSzN5ZCtNN1U_jlPo6_d8OIHf0GPCv8r9SYG
+aRGHyitK5J-khdXMLV6yck9hLHHVpUGm_Jvx4x-5ns_7qtMVoFfN1la3ASeLSAQoAX64A8n1JG57k98pg2lW28mhe0Zqb1rodYFYzys1B8vyCzjmHWGfCZWp
+WXGOeFi4
+}
+
+AzureEntityColoring(AzureLogicAppsCustomConnector)
+!define AzureLogicAppsCustomConnector(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureLogicAppsCustomConnector, AzureLogicAppsCustomConnector)
+!define AzureLogicAppsCustomConnector(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureLogicAppsCustomConnector, AzureLogicAppsCustomConnector)
+!procedure AzureLogicAppsCustomConnector($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureLogicAppsCustomConnector, $stereo=AzureLogicAppsCustomConnector, $tags, $link)
+ !endprocedure
+!procedure AzureLogicAppsCustomConnector($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureLogicAppsCustomConnector, $tags, $link, AzureLogicAppsCustomConnector)
+!endprocedure

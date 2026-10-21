@@ -1,0 +1,16 @@
+sprite $DefenderPneumaticDevice [70x70/16z] {
+xT05hYD138HXSTfGvVkVzeKTw5cfFSxo-mN1-cHD_CzzTyYwHDOmMiuuRDOx99DzYAYPoY7RWQZpbezaYeg0906yEZL4IRfPd387YMGAY96mit23G4fPKTBZ
+d95nPVAQPMJSaLJ2I2ygJiH3oNUIp8eYf4rAEB6eZ4j6nAmOEIujAg1lA05gHI5jIt7w1vNHLF1G-hVKdwxxtkVYPsMEr5GM62LZpibHKGQtZW6zfXXf6wT8
+AciC29iGIsHH4UGrYVYeACbuEeuQyc2S9Dp3_6pG4YanGy7CvOv7bHdg00cON8KyPIdvOL6fXsHD8siYMTV86aP7oKrTaNFJegWy_qSUrPJddNoYYw9cAjMc
+8KZVfVZpq86waiC_BJq5qdLF8A7d-igVc0FU67xqkTYfAZ0D-qNeeoZrEjo7JCCzI67OxRiZ
+}
+
+AzureEntityColoring(DefenderPneumaticDevice)
+!define DefenderPneumaticDevice(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DefenderPneumaticDevice, DefenderPneumaticDevice)
+!define DefenderPneumaticDevice(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DefenderPneumaticDevice, DefenderPneumaticDevice)
+!procedure DefenderPneumaticDevice($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DefenderPneumaticDevice, $stereo=DefenderPneumaticDevice, $tags, $link)
+ !endprocedure
+!procedure DefenderPneumaticDevice($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DefenderPneumaticDevice, $tags, $link, DefenderPneumaticDevice)
+!endprocedure

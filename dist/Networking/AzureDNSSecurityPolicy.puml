@@ -1,0 +1,20 @@
+sprite $AzureDNSSecurityPolicy [70x70/16z] {
+pTVdkkCg38LXKTUIvqVk_sxF88mt6ZiaJaxxTY-yZo3zSMvpFJvfk-XJGvMagewVVzqsb4IhV-4ktKFKX345G833kM5G5Ne4wk6yYn1i4lM8qBR7xho5ADYN
+w9IHcsFMY0rYwwQ62QXZreWVPKBvafaGFygi0finQmIsdbuvM08qPe5iu6R_IA0j-Qaf9D0iSgrmd0a0-c1HMtOqY_reGymXu2D8tSDA0GtfoYaCPB4d6sKR
+2iWb0rCMetZ5PypgPEPJqJzFzSpmKh7Re254hHMqK2giMlkFkUmEdYeqHQnGIAAAT4OIoImjc49zea2xafIiIIBGbB0hO9LOYRAwbEmIqgwmLIGr9KeUIfBv
+P9uhswGmIaML7AHs1KamALZEmg4KoKqf4dQbYDJN2hq2YKr1bDmLP95O3aLlANOvcS8QHT8B1Lwfaan1bhWh9AAKMqgMqXK4AKCX9TuvNKZ0hbI98G6qGbWg
+6tHI4AGE1KbaA6K_6FAfifaISavHGkMX84W2GqZjznpAydOKeqX8nGP2AAQKaC6QWuH4xVrU0m3N1sDnX9-uDmmSrTEMpimrKZ7d55xUxUBu0GrvjF1dVfWB
+PVOyuRiOfYdm4L2yo9rC1pWte7SKHJT8wDK32LmrfmpNiQTcx8_jz46zagHLBfIj6rsPdIPu9KelEsKmNI7KHz0ffG6bpLETCXYCOLpsQpzAxLXsYcU8qoYc
+a209YaJtbUpAmH0y3TDfW2EHn5OqnJAbT_cakKz6lgqOiz56dn0Jtfp5-cME4hR6aF5wub3iKIMtWeICIV7Z64HOR4BhK9A4dwGunJld7fCYXo4dPGNz_bsT
+bDsHfMBDWkKKCUDIMGSSYlK_LGovmNolrAwKE8U1t1t6TrCnvdl4bE-HpgYg-u0fTndrsKF-jumXNp8qv3C64uBF46CuaCVdLMDiaAz2x_5bP-Cl
+}
+
+AzureEntityColoring(AzureDNSSecurityPolicy)
+!define AzureDNSSecurityPolicy(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDNSSecurityPolicy, AzureDNSSecurityPolicy)
+!define AzureDNSSecurityPolicy(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDNSSecurityPolicy, AzureDNSSecurityPolicy)
+!procedure AzureDNSSecurityPolicy($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDNSSecurityPolicy, $stereo=AzureDNSSecurityPolicy, $tags, $link)
+ !endprocedure
+!procedure AzureDNSSecurityPolicy($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDNSSecurityPolicy, $tags, $link, AzureDNSSecurityPolicy)
+!endprocedure

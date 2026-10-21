@@ -1,0 +1,17 @@
+sprite $AzureOperatorInsights [70x70/16z] {
+pTI7piCW30JW30g98-dU_sr_a2pz59rZf_kwY_qnEj1oYCW1BrBZZOkBE5No2aMkA1AOX5U9KCP6QknJynHUnSSbWaXacd2DVeFkTLCPa4FVr8GMmojK88oZ
+C8HFO2k48qnOmPaYldAGfMW21qFgY89VLF3ZE_8_QJx72xulh_tkllvt15QwYMQF_QPvnRBcRPUzf6M9_B_mrIvT-4GsCofGHKSGL71enLgxruhf8-0WzAz_
+NbigfeyQgjY3sgqQcOxcqD51qIS4uM5Anv4gc-aGMpbm4gRGBI6QrD8zJUXI_kCZN2bZOWhwvuNbL25auG5DDfHYnTjGRnOxhg8l2U8mjvRXPIhd8GXHy9oY
+RsH7oLH15tifQPvdzGaILTPfccu1HTyghbA8akxVmcKbjs08xxIL_5EAZTG3AzgPw_DiAheKoYorPzLElNz0IRKdnPHIBtXSKOJcebA-hE2AScltsf_rdY-5
+A_7_bu6bF4zVkxKBI2uWs5g-fw2FYU0Ayg22LoWW2cX2X6Ql0Kt0-0C
+}
+
+AzureEntityColoring(AzureOperatorInsights)
+!define AzureOperatorInsights(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureOperatorInsights, AzureOperatorInsights)
+!define AzureOperatorInsights(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureOperatorInsights, AzureOperatorInsights)
+!procedure AzureOperatorInsights($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureOperatorInsights, $stereo=AzureOperatorInsights, $tags, $link)
+ !endprocedure
+!procedure AzureOperatorInsights($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureOperatorInsights, $tags, $link, AzureOperatorInsights)
+!endprocedure

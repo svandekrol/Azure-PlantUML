@@ -1,0 +1,16 @@
+sprite $AzureBranch [70x70/16z] {
+fTK7agim60JXKc9-NbZT_xGR7EJKMsAiTZRmaQ7FqdTzDPrQHzOPZTQGqGgopkYf1MIH4UGZc8rmDiBP2ESZsd8wrNn6jrewL-GoGiLan8h7w8WY2z4s58VH
+KKK60igSaQDeWe1I1J7YAYB4KvY9KBo-XX8y_1d1Xb8YE41OETLkVmaOG4Z9OzgQDsPYhgIYgvAOYIFAM9ewrk-1YOaogYUddBu-Cp5NHhcKRmIOc2fS2MYY
+v5Uc-afLVKAombSYekNVaNvOYP2srZ8XlHzJHfMGxsmbundfAOISSfHM23bbAEu5XXL61hF3GqFPyT6VsnyAdQfFzwFziJvYfYOi076Pl07YCbc060mZ9iE8
+oJ1YCepO32C-amCGYq74PmZn6Us0s8oFZ0p4PxeR8du6OZ1_-dlzUQY_6o9-YFWXueU8to7a2m
+}
+
+AzureEntityColoring(AzureBranch)
+!define AzureBranch(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureBranch, AzureBranch)
+!define AzureBranch(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureBranch, AzureBranch)
+!procedure AzureBranch($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureBranch, $stereo=AzureBranch, $tags, $link)
+ !endprocedure
+!procedure AzureBranch($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureBranch, $tags, $link, AzureBranch)
+!endprocedure

@@ -1,0 +1,16 @@
+sprite $AzureProcessExplorer [70x70/16z] {
+xTO5SaKX38LX0Y6dtlsljWA3z6hkX3f_zTats9Fd8TtkDlFE41V5MQ8_eqo5XYZ20nGF350OOBiY0CYgUA0D9c2L72Z2tOJgO0YNb03q4m9Y-ZzUKmG8PK8v
+Al_7PRiA0v3oRovc6rw_ka2zlm12CLtaXAaLJaei4-BqMz9yIArGMue4-hQixDHA_n01fC7Yr4eUlW0e4wfoq2kIxixrDzLPYbChFj-ToeYw7QT39VILGx5O
+K2h_xIfO51U7DiLmUgKzK1RRugyftByAiFhLszE7-iq2MTy3k4p8f120O5PS1CYkU8YpAqx228Nc9m-x4coVTp-vsVD-zukU5Vq5PIht9kJxbVkDlaUvtybg
+bEn2oOYK58gTkJSevbu1
+}
+
+AzureEntityColoring(AzureProcessExplorer)
+!define AzureProcessExplorer(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureProcessExplorer, AzureProcessExplorer)
+!define AzureProcessExplorer(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureProcessExplorer, AzureProcessExplorer)
+!procedure AzureProcessExplorer($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureProcessExplorer, $stereo=AzureProcessExplorer, $tags, $link)
+ !endprocedure
+!procedure AzureProcessExplorer($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureProcessExplorer, $tags, $link, AzureProcessExplorer)
+!endprocedure

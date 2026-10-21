@@ -1,0 +1,15 @@
+sprite $AzureOnPremisesDataGateway [70x70/16z] {
+xT85ZaCn40JHmBHXQUv_smrpN1qKfIpyy6JATrHtFO5WY0rssBZVYLeVP-gmfo2rUmZbAPY5S8oyIs6cFK69qB9IxcT2iK_bBYLE4oXii1CkicJQrLnaMVKL
+1JBin2YrGMS8CEW8cEem4JmPTeHCPIOuiQBW6kGfbHXBcPSdADF9fBG-6jL25amVXiXiYH33oAOwKeI8muWGYn4W7YD0F6PqsIPdNLDItY6rlWmKd54VAobB
+0IIzkNprmSX5ifH1cSYmqfCPLd9J21L0S3QWv3AO3YfvaaGA6yjAAP9y9OSTlRxqnrSwaSAzN_aec_uU_F_-AG7Y1eWR86w0k07Y1eWR86w0-4o-fNy
+}
+
+AzureEntityColoring(AzureOnPremisesDataGateway)
+!define AzureOnPremisesDataGateway(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureOnPremisesDataGateway, AzureOnPremisesDataGateway)
+!define AzureOnPremisesDataGateway(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureOnPremisesDataGateway, AzureOnPremisesDataGateway)
+!procedure AzureOnPremisesDataGateway($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureOnPremisesDataGateway, $stereo=AzureOnPremisesDataGateway, $tags, $link)
+ !endprocedure
+!procedure AzureOnPremisesDataGateway($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureOnPremisesDataGateway, $tags, $link, AzureOnPremisesDataGateway)
+!endprocedure

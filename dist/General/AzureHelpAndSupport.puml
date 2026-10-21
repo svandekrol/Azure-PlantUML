@@ -1,0 +1,16 @@
+sprite $AzureHelpAndSupport [70x70/16z] {
+tTG7gYCn48HXbAerfBx_RTV21QXtfQ5ixOk_CDaVDNBmRLV8nVO6UyyuXEpQTZo4lOoiuPSG0PSHZFvsLCH75LF1qHIkY0L6czAmA6mL42oIcO2SCKxbdl6x
+YEoJb56xLLG6k6UwebImep7u38MFTAxuPoaDDndC96NvrYbDCS2U9oGhpDZFK2v14P5pvPpnwqpfrhjvK1IcZnEJ7eZrRIufx0Rfkc8RP4J4N6YBk3p50LH4
+eW6O684OjPIRTOQQ2aQk1fRJernRAsdKy4n5M4rp6M2YmLfGAY0xc2kpqZ2b8t5CGKX2s6eAKvNuI90L_DFgRfcE8A-cC5sfHBAiO1ML1f41R75ulx3LaVzi
+aKR5LkcAvQ50LMnJ7NThcsJ5njsUAoKbswOYrb8vKbZ6_r2Q7IfCPVgx_Jwb_ph5v-gXmauHTbtzqVNAQqR-
+}
+
+AzureEntityColoring(AzureHelpAndSupport)
+!define AzureHelpAndSupport(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureHelpAndSupport, AzureHelpAndSupport)
+!define AzureHelpAndSupport(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureHelpAndSupport, AzureHelpAndSupport)
+!procedure AzureHelpAndSupport($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureHelpAndSupport, $stereo=AzureHelpAndSupport, $tags, $link)
+ !endprocedure
+!procedure AzureHelpAndSupport($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureHelpAndSupport, $tags, $link, AzureHelpAndSupport)
+!endprocedure

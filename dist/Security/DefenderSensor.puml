@@ -1,0 +1,16 @@
+sprite $DefenderSensor [70x70/16z] {
+xTG7RiCm38LX3BVSrlrFszqd4802q-okl-wH7wIWP43FvK94xG9q4z1iGBS1pGH8er4PIEWW7al41OiErpKJq6r0glGxmj081JATJeGBjyKpawPuez9W0Tvj
+D0PI3m3NMYDYSel9pgvYnBeOgBAACP5uJAQLCS25Y2qDj6Qnfep5ReOyWCa2JFpjAqaaTciCkzis3d1iungs60WDkD-spI9lGs-ZEhv5AAsIAXgPyHn8YCG2
+LZmt70ycJITTOk-NHLd2BLsX0ftRl5vaNA4u32luUtBEvb5ZE5ESz2ckH89lCLkToRp8ZDbEy7HlF8uOjv-MTh3o998pbsMys1UlDwNAiyLYfSfYCJboklk0
+HSXBSy0U9MCfeBfAjZSRK5nbhTc0lTc0PWBsTYE7nWzokJm2
+}
+
+AzureEntityColoring(DefenderSensor)
+!define DefenderSensor(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DefenderSensor, DefenderSensor)
+!define DefenderSensor(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DefenderSensor, DefenderSensor)
+!procedure DefenderSensor($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DefenderSensor, $stereo=DefenderSensor, $tags, $link)
+ !endprocedure
+!procedure DefenderSensor($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DefenderSensor, $tags, $link, DefenderSensor)
+!endprocedure

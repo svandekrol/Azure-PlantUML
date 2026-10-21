@@ -1,0 +1,18 @@
+sprite $AzureWorkloadOrchestration [70x70/16z] {
+lTU7abiX34RXL0dTbF_zdpR5rbWonmoadYd9BfSFRSVwByKO4Q4_wiCODoM-_W7Y8vMuhjy3pBeIbsHc-gNiP_Ci-SvpuvOybMJith51vRekkHqxLiWyIwtv
+8UAIvbca6kS4-Q1xVHRTYotpiJsn_dxnVXBZAQfP-E374wIOZlHnN2mAwKKXOCHoolf0XFRCqum-jWudvpj7jfl6eHHIJ4ZCfYr0mBoSeJ4-Aw4DKrjnD5Ge
+wo-DFpEFjzoX0C6-p9hYL2epAaRIYragyuzlpTaLxyYOz_2h8fxWzyQZrIGrW0EaCZWzXzahWGyR2jTBAOO8bMcTIYoGqgc8IXI2LefUApfGU5bGKy9DPmfh
+IiHUqQ9IbapVFoBMJ6IBTVpDGUQbSDtTwzlIKxakpchUb02IMoNbVy7OFM_AytefeK4baSm331Ll2Yu6j_emLo5TkLuhrbA0sIX4N58XFpfHE8d0K8ck44b5
+XHJJ5NM5Y4jae4YZb3KY9TAOflJltLWWP3ubarjrAq4WUYgH6aOt9Ju80G5JoilTMqNpB6O-8MHKWTbUfhmGjaB8D8G1MLuPiOpMPrdTxL93nvTlxUF3NF5J
+WmYPym-7yVNJyOiNChOVn0w6DTkikpRPsZ6iRPWCGm0vSfZhEFype_fpWfAR_dtV0G
+}
+
+AzureEntityColoring(AzureWorkloadOrchestration)
+!define AzureWorkloadOrchestration(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureWorkloadOrchestration, AzureWorkloadOrchestration)
+!define AzureWorkloadOrchestration(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureWorkloadOrchestration, AzureWorkloadOrchestration)
+!procedure AzureWorkloadOrchestration($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureWorkloadOrchestration, $stereo=AzureWorkloadOrchestration, $tags, $link)
+ !endprocedure
+!procedure AzureWorkloadOrchestration($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureWorkloadOrchestration, $tags, $link, AzureWorkloadOrchestration)
+!endprocedure

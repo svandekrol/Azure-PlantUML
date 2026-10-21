@@ -1,0 +1,18 @@
+sprite $AzureArcKubernetes [70x70/16z] {
+xTPP6fim30JWBXX98pc-_sqRrs5Oyq5DztOU5VFZFPI3Y3zZjYwgmSsqN0dSFV8pOJMl8bv5g_5p9TU48ve2e1IVYjbUHJjJt3HCrSCc1fvDBLID2d2YG6IX
+e2aYVKhCVNcl_E_B_xu4jdktTEpTxJagqpboWCg5CnsPPxerVx1uxKoJYjZUBr4biFZ3mfT5wFfjNeimqzr5PcP7GyZpo341hGQhUQmRAXioxOw48IlN5xLK
+XOpDjHSEpyOY4oxYKELQrcGJpQewAoWUAkxhXWUABXGzK5okA7QYnAJeRzENdpyl_-SbWDZr9O2ruiMpu-sypCT3UPaXSgjE2XlcYCZ6ukO6u9dUt7jOr1px
+XWoVKlv2Fx2lUP3umSaHUVzT1pXxUlK_mEU1O_rTTm5fWYFx_hlEkRodYcdRQbHqG9XkT_Q9eh9HC62_xMqexpF8HKM6Puw9PyQzOiTAovwWShKlT4XqAtI6
+FeNvj4GwveKCaOw-C4JkA0mLjvLYcWxshgOJPNsEf3R7-YRKaSPxHn6lCorZAoKnVjSrTvjqM5G4s7ocievlNitwZIIHz3sGxy38rzmRr2XJqYs36RkSHACR
+IZIweJIkYRA1nfJIMHye4A6ojfvQo_HepSZdjmYP_fIMcmPpqs3k6injWRajCFhjmXS
+}
+
+AzureEntityColoring(AzureArcKubernetes)
+!define AzureArcKubernetes(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureArcKubernetes, AzureArcKubernetes)
+!define AzureArcKubernetes(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureArcKubernetes, AzureArcKubernetes)
+!procedure AzureArcKubernetes($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureArcKubernetes, $stereo=AzureArcKubernetes, $tags, $link)
+ !endprocedure
+!procedure AzureArcKubernetes($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureArcKubernetes, $tags, $link, AzureArcKubernetes)
+!endprocedure

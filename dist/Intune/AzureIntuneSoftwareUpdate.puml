@@ -1,0 +1,16 @@
+sprite $AzureIntuneSoftwareUpdate [70x70/16z] {
+xTC7UiCW341XWLOtzpzjss1z5cGYPu_NPYU_vK7PtgkF4nH0ZaYWHX-NYjCHyOULqp6THCaFghoKb_9ILipYcyzI__AYHrUEwAJAIq4yKa4MhGdZKWMDC8ZY
+YXkUO5X1tH855TQjSKWXRPA6f822BK80uBEXAtX0aLP1M9N41XjMI7jbYcoqGSL6uKHsM1XR1iSKcYO7WChDhu0dVKnXEwG0sEzNciGnHLGIJ8apUHvcI45L
+0Ikx8lDixuEACXh4pYI0559iqmH0_P7f53fmYanXQauIDOhrjY-VfJkssPMHx31qnvPXLKB0c8AR9xec-X5GUED4rqYhKWOLpPiNBsJHgfJ3jLjFt0nZBueL
+O7mTC6djFQQe95UyGSGPfUfm5776OaGKzIYiUEqenpDIh6CSAk6EsnllUCEA4Q_-
+}
+
+AzureEntityColoring(AzureIntuneSoftwareUpdate)
+!define AzureIntuneSoftwareUpdate(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureIntuneSoftwareUpdate, AzureIntuneSoftwareUpdate)
+!define AzureIntuneSoftwareUpdate(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureIntuneSoftwareUpdate, AzureIntuneSoftwareUpdate)
+!procedure AzureIntuneSoftwareUpdate($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureIntuneSoftwareUpdate, $stereo=AzureIntuneSoftwareUpdate, $tags, $link)
+ !endprocedure
+!procedure AzureIntuneSoftwareUpdate($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureIntuneSoftwareUpdate, $tags, $link, AzureIntuneSoftwareUpdate)
+!endprocedure

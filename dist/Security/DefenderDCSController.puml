@@ -1,0 +1,15 @@
+sprite $DefenderDCSController [70x70/16z] {
+xTHLOiD038JXmcgKFktzJniSCsjKpXyqVMRNtnIGWW0PYCw0gGXJ4QOYBFdeVh_oL9nXgC3OCMIas2766MooBG5bUbm22ZAKwN41OWfQXKXCmK31KQLIGQE0
+IDslFBunwR4ybNtv77Ay2OBA9EPxdxigmaI4kQWm0SbMmCm4n3s1yOTI0BkcA7nmQuhNUnPKFkPI5VOF5GppkJ1i1eaaAMQcA-Nz_RryfkBxkoj-w_iLAwNO
+I85BqNAzdd8wtaGvWk2QauahztEKhjIka39zdkplfjZzdwAS_FeI5PQhw4pzJJsx
+}
+
+AzureEntityColoring(DefenderDCSController)
+!define DefenderDCSController(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DefenderDCSController, DefenderDCSController)
+!define DefenderDCSController(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DefenderDCSController, DefenderDCSController)
+!procedure DefenderDCSController($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DefenderDCSController, $stereo=DefenderDCSController, $tags, $link)
+ !endprocedure
+!procedure DefenderDCSController($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DefenderDCSController, $tags, $link, DefenderDCSController)
+!endprocedure

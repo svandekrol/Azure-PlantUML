@@ -1,0 +1,18 @@
+sprite $DefenderRTU [70x70/16z] {
+xTZNhkKm28NXXHqCUDhxl-tuL9EDZ19FB__rrgS4hLE__DrXfyJOTgWqsQaHJGH5TfjF0uX8BVTZ4QPtXGQ2dLWQ_0iHljmFLGJ-MR2bbDz7oT_elmB2g8eK
+XBAlLAy01xUHZDgvmo7jCJu8JX5Tr1oYiOhNPr45M5Lu532PLu9eQ3oeKqG5DAhwa3jAqn3ZYrFezT50UeucmektdGhUbAAdolpOePgyRQPKSf-AJIHJZeaK
+ZU6ImXCXTRcJvKe-57-oNF6dIzOs0X85IDVca4IXAsiRWSfQALVN1bqhbQwkJTVAaQ_DdsojSBAsSBA5uj-Qqg4GwrAHYUH3eKCV5BDNnTIVpa9kADMUUrNC
+lE9FPo4tb69hnP_EGlvajbP0SsqMyYUpJ9bh2qOusKAPeLeidYnNG1QR9wDc5nJ0OdvjbYWfujTcbnHDXr8jKTArjVFQedAOaLVGqg5GU5MYaPh2AM0BAPAJ
+QHkPMPlFiXXASZBtkEyA2hVixuGcvsmaeyQOoWXqvpUoObOnel4PfzmBvDS8wvjAzqhVLle5vRzoV0V5kc0dxftU5PBUfTwFkrT0VJT_pqAsPLWjvpk1Ti9t
+-OV9tzrN
+}
+
+AzureEntityColoring(DefenderRTU)
+!define DefenderRTU(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DefenderRTU, DefenderRTU)
+!define DefenderRTU(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DefenderRTU, DefenderRTU)
+!procedure DefenderRTU($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DefenderRTU, $stereo=DefenderRTU, $tags, $link)
+ !endprocedure
+!procedure DefenderRTU($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DefenderRTU, $tags, $link, DefenderRTU)
+!endprocedure

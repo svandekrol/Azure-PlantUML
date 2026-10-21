@@ -1,0 +1,18 @@
+sprite $AzureServiceCatalogMAD [70x70/16z] {
+xT85OYCn341HiUGitV-sMurgDnmxPVZ5q3F--w3jbdisKfr5Z6awQQMS80ehIIgdYCDIcCe9qk2vIhYxwNnqGLbBNqInrrD-b1z5sPwjA24YsxCKOwpOxbS4
+HsJhIjyF9Qp4yl6gKclf3bj_lAO8Lbnp68zbGJ72aTP1zMXXBe8zSRSzLNnqIx5nn9pp6jjI-sAJ2c4vzUa-8oRTJavd5G0ozsvqPpFukjBsbOVO_LWnvbK5
+f9_Mk2XobyAFfrmRObDAUF_g2W5PkAjx6FDGwbsNb96K4gcnHyJsUOjIBBBRIbX-NgFcPA7CGn6FISKy58UY8KCH2_T9HK0yv5HH2rUsQILt9KwKD7X90THm
+sbCqmfXN5Q3S8NnKD7U3xr948pGLUJ1CbnLYCGy1jDYkMBZmWkAs9OI0uWX07WyfSrSqRYi6Uw7N7NRcheX7RrO1rlmLrfKqrXKG5T5maqqfOrq1f2sLL48P
+WQyhMxOlsDw_OYwGQQkkAIuYzFHPX8h36RQiJIX7Cn8rCr7hCaURLremd0czjNabqrD4MbjLckEXmT4cb5qxJZS7aGY0lBLrvRIFhBJNL7PjwIiLFbNMIWNR
+yvL4dg_Ghf3dAOKyKpb5ikSZsJEGZzP_
+}
+
+AzureEntityColoring(AzureServiceCatalogMAD)
+!define AzureServiceCatalogMAD(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureServiceCatalogMAD, AzureServiceCatalogMAD)
+!define AzureServiceCatalogMAD(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureServiceCatalogMAD, AzureServiceCatalogMAD)
+!procedure AzureServiceCatalogMAD($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureServiceCatalogMAD, $stereo=AzureServiceCatalogMAD, $tags, $link)
+ !endprocedure
+!procedure AzureServiceCatalogMAD($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureServiceCatalogMAD, $tags, $link, AzureServiceCatalogMAD)
+!endprocedure

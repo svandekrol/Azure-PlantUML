@@ -1,0 +1,18 @@
+sprite $AzureUpdateManagementCenter [70x70/16z] {
+rTQ7Rgj048LXoTxf6_7-Rtkz0zoHbnoCbFwZIlbqKboMytnh-KZ-lnzNtAiVLk9J57_gUvNfNiSAKkkfem8kO2IR3NG18NkJ0I-S8TU3oESp9apjteX50V9Q
+CRhTxdjDxA8o6wDY6XbGCCEtGhBsI002bVkjc4RCJCmqpOdb6DX2B4Gj8s8sF2MBuvWc5dqKngaGiHwcu37HvTOqUkNKABDf2bPYF9P65K8PNrFKeh_Roh1S
+KRWHKBgcmbOAGgYrfXt4gTGOeDX0y9X8XR4I_aXRXiTOAWeO3mztQLlKKJmK3j-F8cBDkUtXCPgAH-L5Z9nAWMCY5Okd4japuTTZIi7HhWXI-Af2RXAdYbvG
+603NbP5qND1LHH5XwfQAVMGBZJwiyAw8cWUEJnLB9HEBQltdhJJlws_lr_aznPUrKen6zWRoNIbagGhYh2E6LqLy8YP7Kz6JCGFP3QGuPu77C6kSAZM6Enp3
+5fE2nmXWkdaXM0dRc9YVJpSgg6JAQ_PaQAF-rkEo4YfRrZV2fJtIGg0I5RFyJqtetjOy85DA9RV6Gr1z48ysHLygyPIrwUlOY2nUC1vJUfyKqZW4frHAfPHn
+MQcKgRN6WjwJ08BxN0OZrvNbW606gSi88jby4Sz7I7QuDYCLGBAw19NhOUNZpFANbUfZI2bzEvQFrBUMy_u1
+}
+
+AzureEntityColoring(AzureUpdateManagementCenter)
+!define AzureUpdateManagementCenter(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureUpdateManagementCenter, AzureUpdateManagementCenter)
+!define AzureUpdateManagementCenter(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureUpdateManagementCenter, AzureUpdateManagementCenter)
+!procedure AzureUpdateManagementCenter($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureUpdateManagementCenter, $stereo=AzureUpdateManagementCenter, $tags, $link)
+ !endprocedure
+!procedure AzureUpdateManagementCenter($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureUpdateManagementCenter, $tags, $link, AzureUpdateManagementCenter)
+!endprocedure

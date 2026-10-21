@@ -1,0 +1,15 @@
+sprite $AzureVirtualVisitsBuilder [70x70/16z] {
+xTHbWiCW48RXnRw1_E7-fsqRDvprpbkDFV7ucZXkQAyVsHbMM675zRGfrDElL6mk2cQdhehw22J7AJ2X45HaI16r2YjqLfoTNX75fLv7PIwik4n_Kx4K3RfO
+WOvNhfXFKM2CDh5FZH9lVKHrApGsp949X77AfcYbxmhD3RasHGeXhmvLAs9CwcvbIeML_77PbElcuAAWHDcSFcLZgXN2t54H1bDTYjHeLR0PoY2YE1l8XPJD
+22YnhehSZ7P5Qg1JqKBXcgzKmgrF1fyBIMMiNocDG9WA_5AvagXSGGA1RuZZdW
+}
+
+AzureEntityColoring(AzureVirtualVisitsBuilder)
+!define AzureVirtualVisitsBuilder(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureVirtualVisitsBuilder, AzureVirtualVisitsBuilder)
+!define AzureVirtualVisitsBuilder(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureVirtualVisitsBuilder, AzureVirtualVisitsBuilder)
+!procedure AzureVirtualVisitsBuilder($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureVirtualVisitsBuilder, $stereo=AzureVirtualVisitsBuilder, $tags, $link)
+ !endprocedure
+!procedure AzureVirtualVisitsBuilder($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureVirtualVisitsBuilder, $tags, $link, AzureVirtualVisitsBuilder)
+!endprocedure

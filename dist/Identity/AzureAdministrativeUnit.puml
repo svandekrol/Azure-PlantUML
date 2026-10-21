@@ -1,0 +1,17 @@
+sprite $AzureAdministrativeUnit [70x70/16z] {
+xTY7hkGW38LXfTWEHXBl_xHJuKGB19Eoj_zRR_jaF7tqKGYQ2iN_ZI_Wl_zTyHhpfX9E1k9hTCs9TYf_2jEZSmgjoL5bfdywfZ1b7RdAKHc7lGbLsgqKSn0p
+Byzs78e9ltXDNenqRvVhBU-kKUIS8b5ntglgSINcmJGKifJtC7fg5WoZroXwH5aSb6AOZEXLoWNtAUASinIRMQ0u7vdsdSCM4Xc5ac_NO4JSEupoo5A220lB
+scCICDvK44SZ8gfW54em57eq9eTf9COm7eMsGg_6OPncckTn62QYrT4U1VTqyu3crsS4Px9Fn2a2Cd8ixHV7sb9uRKhAn2O30aWn334ghZFsTN_4WP0a1Zks
+49xZRgitXAHeSIZEUYkCwgk9nAOoORUDCxbCuJnQTzjOiAKmTjlOZArCsEsQfCreLU5As6rb6DUjZDXjEGmMOoepRIkBeHYvo2YGuYfdbz_J17H8SJ2EA9AK
+ul7eY5AxhnDXwVmJKA6mTDTGmXLAl_FtYgy_45-fBt0eyrsSqFDUq1TJxW
+}
+
+AzureEntityColoring(AzureAdministrativeUnit)
+!define AzureAdministrativeUnit(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureAdministrativeUnit, AzureAdministrativeUnit)
+!define AzureAdministrativeUnit(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureAdministrativeUnit, AzureAdministrativeUnit)
+!procedure AzureAdministrativeUnit($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureAdministrativeUnit, $stereo=AzureAdministrativeUnit, $tags, $link)
+ !endprocedure
+!procedure AzureAdministrativeUnit($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureAdministrativeUnit, $tags, $link, AzureAdministrativeUnit)
+!endprocedure

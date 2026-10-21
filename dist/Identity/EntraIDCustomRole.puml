@@ -1,0 +1,17 @@
+sprite $EntraIDCustomRole [70x70/16z] {
+rTQ73XiX48HX0JkpH8ttVrhNKSoT04EujDzLxTDUf_I3AhyUr0PaK1kEGsqvm3v3TDkSHDaIiZyCXsqW6yeEmp-Zy8yfk4JXFwJuz_uRHVrNIhbAsMVof9Ap
+v_wdJ9P7-ILAcMwCx3C_oWMCbQM05h9gF4ey4Z00YmQGGZ3FYYa4l9erb8LdCQOKt_-W9X4Lmo73WU6Z2GJfgA2gy9sD41Ng4ghuim6YOcSK7XeZshygDWo5
+7g8Q-vQjne-pQlzot4Zv39FuBI6jOb3W5CDc9YJosOZot5SenTuAq3NoID7-fHIWY-G-GjJx5g-QnbXXlM-XJeOQ84pQjrBKoP3YxBnUmvZ-uzC9aT8lXa3z
+HPsCIl515f8h7FCyhtX0Kp7GVLunRoXcXlD-yRagH4hj-6Ir8KNEkc8ALBwkc98YPr6nXY9dCfVHKkZJ3dSLrT-YKl9yZfRYffNJkWCgTws_bgAKex7kuADK
+ndAGubQsWa4RivNXPDm1
+}
+
+AzureEntityColoring(EntraIDCustomRole)
+!define EntraIDCustomRole(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, EntraIDCustomRole, EntraIDCustomRole)
+!define EntraIDCustomRole(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, EntraIDCustomRole, EntraIDCustomRole)
+!procedure EntraIDCustomRole($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=EntraIDCustomRole, $stereo=EntraIDCustomRole, $tags, $link)
+ !endprocedure
+!procedure EntraIDCustomRole($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, EntraIDCustomRole, $tags, $link, EntraIDCustomRole)
+!endprocedure

@@ -1,0 +1,16 @@
+sprite $AzureGlobeSuccess [70x70/16z] {
+rTT5OiD044HHAPa6hUR-jqsCPQgfDjj_9tfYwbzG77OFGI5thnhSyLNAuDML6DMWZ9WMunmAPqAdcILqBlSfCpMpY8t9B37O68RSpwHWh0a526VQF1MO73Dj
+-izYdLCb3oF8xDWOhd36vXLY9yTNAKaHlZ5044Ng2XWW7iUAbPJa20wCLf8WDIKE620dAULdyWF69Y1IMNBNxpGTC0HHsnBJAXU8KjB0310J2XYEw7C4Pela
+3GgOjaKIZBm3bdDcXKIkaWgOGyU0WAafXqp3cGB33mkKSyOJiKrHp0m4J4bPaYTtgCu0uOfcjA8PYTIPPOK8HJFwcomrK_aaQuhHY3us3GXJDDCrWYc4wJK4
+qy3062DaCXGG4kakPYZEupwUoNoNTIGSCKqmY8sMcQjwAOLKKyPzaFKRAX7ryDlvTYKUfyJToDrC2tIBuxIx4FHgnJZI-gVt1m
+}
+
+AzureEntityColoring(AzureGlobeSuccess)
+!define AzureGlobeSuccess(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureGlobeSuccess, AzureGlobeSuccess)
+!define AzureGlobeSuccess(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureGlobeSuccess, AzureGlobeSuccess)
+!procedure AzureGlobeSuccess($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureGlobeSuccess, $stereo=AzureGlobeSuccess, $tags, $link)
+ !endprocedure
+!procedure AzureGlobeSuccess($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureGlobeSuccess, $tags, $link, AzureGlobeSuccess)
+!endprocedure

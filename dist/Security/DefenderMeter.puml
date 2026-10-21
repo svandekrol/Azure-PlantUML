@@ -1,0 +1,17 @@
+sprite $DefenderMeter [70x70/16z] {
+xTA5hjmm58HXQGq7F5BU_ssxphWSXqxA_IykVPh0yYw7MjPAZaOaMk7XH2FoJ6gtqy-AutRECrDooOvcjshm_lcovh3NhGnUs1-ZfBoMRYkvgWEZPYebNLMA
+DdoVrmjA4X9DQoqLgAMA3LNJIMKOA5m5P3uDfcUKqWsl6T2X3Cw1LBrFh8UATgFm7uxFcNy0wMXtT5z93g2EV_dtKzceLW2UvWeH_Z-DvwUbkUA06S_3j0Au
+03vLjEz8ZHTpcYBtFJfH2W-6navv_JZojfAvasNTdUHJXJjPTdUR8mR8zEpQ-o-h_gxiABPpfUjhb7n_ZAIfmfXmpBnJ2iT4bJ4cgd1CLE6OUawf_MjJITux
+L2ZqDXNUC_L8gMnBOTuBAnmJLJWch71CLE6O55GuHW8ACtSpqt9ESTbERIIRjQ-LISq-rR3LASK_ApvJZYF0wgHhYlmLYZvoNcHZIeJH6ad2IvY81enu_vDd
+ldwx5Bqc5shewVEAw9fSQ7pYzsjv17b8MPv0Ud7Z0m
+}
+
+AzureEntityColoring(DefenderMeter)
+!define DefenderMeter(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DefenderMeter, DefenderMeter)
+!define DefenderMeter(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DefenderMeter, DefenderMeter)
+!procedure DefenderMeter($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DefenderMeter, $stereo=DefenderMeter, $tags, $link)
+ !endprocedure
+!procedure DefenderMeter($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DefenderMeter, $tags, $link, DefenderMeter)
+!endprocedure

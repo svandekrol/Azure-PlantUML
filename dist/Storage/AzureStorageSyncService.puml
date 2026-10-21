@@ -1,0 +1,17 @@
+sprite $AzureStorageSyncService [70x70/16z] {
+xSu7ifmm383Xh95HCOplVziiCAn5aJ4YFU-d5t-Z_3lx2fSU2Rg7X1_2yzo8ty5A7iJFu4KEnCdWTNIDq7NN2hM4VaNNWE0ZPXttrViL-Y3Vt0efnAref4cX
+2yIjQAJUAveCVLA8KQ0I6qX3jEa4eN1ReQBmkksPmCDO6kRFnDjjGLYrCg7hkkcE6Q9sQ7gtJobR1favlgyf0h1Iqfd21L6CKggpQ8QFJ55WqCQOu5pXp2TC
+c9Km1R44OQfHOUgASgXPOU9L0QGIWgNOzI4472MDAdGf2G4qarpA4058ASDzfUiwbeYZYgTtjnKWIIKXy2Z7B2Nz42N_0gM7HiLY4Du9mRvp94jD4MfG9C-C
+dBGeHqQEvJcn5SMO2cURmVwT71bZ58DX-KHL9PUgYb0i7H1TLH4qbRojfh0r2-TZbi9HPGnYG3Yr8FsPafkA_Ri5sPHlrKzfnAzenAzenAymFbLKVWMDVhbY
+E_cNzzLt
+}
+
+AzureEntityColoring(AzureStorageSyncService)
+!define AzureStorageSyncService(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureStorageSyncService, AzureStorageSyncService)
+!define AzureStorageSyncService(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureStorageSyncService, AzureStorageSyncService)
+!procedure AzureStorageSyncService($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureStorageSyncService, $stereo=AzureStorageSyncService, $tags, $link)
+ !endprocedure
+!procedure AzureStorageSyncService($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureStorageSyncService, $tags, $link, AzureStorageSyncService)
+!endprocedure

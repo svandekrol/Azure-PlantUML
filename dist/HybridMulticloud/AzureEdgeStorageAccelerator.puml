@@ -1,0 +1,16 @@
+sprite $AzureEdgeStorageAccelerator [70x70/16z] {
+rTK7hYin28LX5OCFlCB-TtiTZQph7CKEWrhogqtzKgOGXzeiohNdgWPNDRWYmXKHNh-Fx3VcaSJs959dwD0QSppmdfBxZFfZyrPfX9IKLbROI2ejWPGl8Gkb
+dqH6iSz18eK8TG-HDoKKINM-TfBky5NaHb53k9rYAlbifxXtIQRkUoNfgFbP6Q7h0UXu42TbpO3UTJJFdgVFseRnMyN7AIsbcCUZlTBUAuQOcLCHIGLjUQ61
+bIHZypXYI257fVkQqBXPVbGNsKqI6M4fsbC1ly8mHBCpcfNcRlFnKAT3iaN8JE4ULUOYElnHp6uh2bkkKSq9NukrAkAHBQtacKWgJk5PGKqn125PXPdBUVbc
+sDMTGrpzOGInIqJXd6741bGaDfcCU62yO5L6Y4rkSgNQyGgptu5dftyNigPhieJJDTeCM9AHljA6WKsDPsnIsVVbolShKLIugi6L3Qv6vBLO-m4
+}
+
+AzureEntityColoring(AzureEdgeStorageAccelerator)
+!define AzureEdgeStorageAccelerator(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureEdgeStorageAccelerator, AzureEdgeStorageAccelerator)
+!define AzureEdgeStorageAccelerator(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureEdgeStorageAccelerator, AzureEdgeStorageAccelerator)
+!procedure AzureEdgeStorageAccelerator($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureEdgeStorageAccelerator, $stereo=AzureEdgeStorageAccelerator, $tags, $link)
+ !endprocedure
+!procedure AzureEdgeStorageAccelerator($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureEdgeStorageAccelerator, $tags, $link, AzureEdgeStorageAccelerator)
+!endprocedure

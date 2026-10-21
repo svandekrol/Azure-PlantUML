@@ -1,0 +1,18 @@
+sprite $AzureSavingsPlan [70x70/16z] {
+fTQ7RYiX48LXfXrshoNn_czxXKlWR5W4pfzU_6a6rtBN-In_AlkTduxSjsUqygKjWsRXrepZ82O36mvowttviFHAr1nBJcuTbT1qIQo3bXH86YM-mv2XqZj1
+p4Intf3ZF9rG47Ed8FLPFQD4EJ4heoIljvd4MNxbzmZIJ65cOHHME6M64VUSHLBtzbRa-gQa408HK-6UYlpEEuOLeUQAe364w9OYOoLaJp5YU9zrHJ1GObin
+KcYKDOLFfYduGl5VYcqhF0neeIq5JQ65zXI_AFQLeXT5LXLkLJaUZyU_kP8_2kwHskHuLvHulCAVbBCIavrYINbyqhye_pwAZFCbvVWe9Z-LdsYMcepJDtAU
+zY6YLGgM5D7pXRoOId25RdKgjuvfFclsGPZX1uPPbSdU48eVB-SC96v2nyYya00G20o-qi5CStHfClIjhbJG5Ia9ARwsKW4bDCloCE0YF41zbBmyYakgwUOm
+h5XwDrIoBYqK5L3JfZ23vL7YoOsLZ2s5Autn1SNhHZvMJc9c2YJL31ozKhM9mamALfYPA7o34LQOyR72HNMS5MP2nmepWnilCzbdYZbgGuKPc52a956JThoa
+C9FXAgr2oZlZHnXcHb3XWwtfu8fcfuLmDmzSYW2NovZX2YZJ2qF0lUENgrclof9JChhu5iVxS22bmcXlGFzJeIP3CSkLhSO6ocQBoBvJlko6-0y
+}
+
+AzureEntityColoring(AzureSavingsPlan)
+!define AzureSavingsPlan(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureSavingsPlan, AzureSavingsPlan)
+!define AzureSavingsPlan(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureSavingsPlan, AzureSavingsPlan)
+!procedure AzureSavingsPlan($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureSavingsPlan, $stereo=AzureSavingsPlan, $tags, $link)
+ !endprocedure
+!procedure AzureSavingsPlan($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureSavingsPlan, $tags, $link, AzureSavingsPlan)
+!endprocedure

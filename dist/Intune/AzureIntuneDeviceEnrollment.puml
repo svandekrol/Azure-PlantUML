@@ -1,0 +1,16 @@
+sprite $AzureIntuneDeviceEnrollment [70x70/16z] {
+xTJNeeCW383Xc0czuVsVjdl4DcBaxF7dsiy5jB3_TczjNL4vfP-Wx6uAqrZYdwLCezL_vL-94-kLLD1SScv0cUoHuZaPLtnZ2c4OwHP5fuMk2awhar4IVQpo
+hzYNASnoYcbS8R5xocCAgSrI7b3ONjBDYbYGqZP5xHO3aFdoYhYB041IIZahyJU1l59c2jbxAD9LCAbOL-6Smdr5Sehq5SEKeYiAnOhD5JibTEsaJDTGBmf6
+Sr6g_yy2OUSxC8PTb5tHSvVxGToAudh3ixXUlmlI9TOjYk-aiFbeKMajh-2oubfHz5qKpYcjh-2dAgsdb4MbrhcYjdZkbhpIdC8Je4Fg1gMfnTLDIgiMrJfA
+EIlFHKYhjQg4QNrIOaVFZzYjnVd7Q2-A0712SKKA0z3R5G6GSSMNKFux
+}
+
+AzureEntityColoring(AzureIntuneDeviceEnrollment)
+!define AzureIntuneDeviceEnrollment(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureIntuneDeviceEnrollment, AzureIntuneDeviceEnrollment)
+!define AzureIntuneDeviceEnrollment(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureIntuneDeviceEnrollment, AzureIntuneDeviceEnrollment)
+!procedure AzureIntuneDeviceEnrollment($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureIntuneDeviceEnrollment, $stereo=AzureIntuneDeviceEnrollment, $tags, $link)
+ !endprocedure
+!procedure AzureIntuneDeviceEnrollment($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureIntuneDeviceEnrollment, $tags, $link, AzureIntuneDeviceEnrollment)
+!endprocedure

@@ -1,0 +1,16 @@
+sprite $MicrosoftDevBox [70x70/16z] {
+xTXLTkKm381XeIKDUV-xdORZNXMKKsx_2-7lMA_fQNAg5ygDwv3AJNL6qiehoJyrvC7AIDxBAAsAvBsC8bKYhqhalGYYBu9e6QapMgc0r1qjLr2AJDDoxHQv
+rATJh5YgMBaV9Uz54EibHQIzW8AWkTAVewpd6g1PIvN-j4Aud1HWK-1KYVkAZna1DfyYK5S4DhzNdqgK3350Ssy8d2hTXdo8DyG5o3rb-b8Rb1HP1fhIYKcK
+qKcGOw1qDVss1n1N8FUTaO92AERZG5F6o0N5LNS6mJP4LFqf9KuVLs6RznHeFMSiwiDTYH93BamMTp7eSiQ8rMCeLqQ69iOHV46G9AAgX3EYHmDQ4PIue8GJ
+sZwG8KTPMV881D_t2ygO0KLIKGcpgf9NKtxL-r7oUj8B87bnrA_dH--ks56_NZkwZiYBA7hkHH2LbtyVKoUkG_nGRw_GyvJ_
+}
+
+AzureEntityColoring(MicrosoftDevBox)
+!define MicrosoftDevBox(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, MicrosoftDevBox, MicrosoftDevBox)
+!define MicrosoftDevBox(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, MicrosoftDevBox, MicrosoftDevBox)
+!procedure MicrosoftDevBox($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=MicrosoftDevBox, $stereo=MicrosoftDevBox, $tags, $link)
+ !endprocedure
+!procedure MicrosoftDevBox($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, MicrosoftDevBox, $tags, $link, MicrosoftDevBox)
+!endprocedure

@@ -1,0 +1,16 @@
+sprite $AzureBareMetalInfrastructure [70x70/16z] {
+xPU7hiCW3039ii6EnF__xNkO8g9c2CVTxNLTroax8Uxm0ytSh88tO5a1W9LgAz0xvteG7wgsu6kbTuaXwIZQdPcMBl-r1XteA-0o845XUjQqu72zN7fKLFm5
+xEMVeaFMPgHYuBOLj4Smtc9YOge48r8XCnAnSwiA5_KmWQ-Afoeu9L0YLRMLAPCKicegn7Ah5IuQcDfkKibCcQHbMhYL68jTbajIBmhD4QeLWXGXKKmHKbS4
+2hHIPKNFxIktoCJNgSmtcvQPRp4nN90ZGzOWggtKpTvBH1GriyGtt1jhfMhGLfv_P93AlCnWLSMHOPPAWLQggzYtkXUgnA9dNoKI_ryEoRyzedda4nMyTeM8
+V8A8B8qbVAR1jC8m9SQACWEu1QtnkC7XaDhpcg2keA9oD4VhYj-i7C8RH3tsY62C_FW3
+}
+
+AzureEntityColoring(AzureBareMetalInfrastructure)
+!define AzureBareMetalInfrastructure(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureBareMetalInfrastructure, AzureBareMetalInfrastructure)
+!define AzureBareMetalInfrastructure(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureBareMetalInfrastructure, AzureBareMetalInfrastructure)
+!procedure AzureBareMetalInfrastructure($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureBareMetalInfrastructure, $stereo=AzureBareMetalInfrastructure, $tags, $link)
+ !endprocedure
+!procedure AzureBareMetalInfrastructure($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureBareMetalInfrastructure, $tags, $link, AzureBareMetalInfrastructure)
+!endprocedure

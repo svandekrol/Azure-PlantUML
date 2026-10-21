@@ -1,0 +1,17 @@
+sprite $AzureDiskPool [70x70/16z] {
+vTY5RiGm48HXGR9hE7Z_j-sc5nW7fgDpXFr5rIRwIXUmttStcFbRpCo6YmEHhaIdOy9ePm_sdMAv7GeCFz-iGubWqg6O4uGr6kijvuQv4uE6HaGC7Y2puxl3
+OnFvjHo28supea3U15D0sWPHSO94fYdCYCmKfKNCFIKtG3G5aLGVdshU47DH6IyKct9HcGtyZG0HbV4aG3J5ZI6g4Xb1T2KoZd05PnQHwuSens5AxodysHG5
+nod_2j7PHScL4kNqGSXbHPKo5n2zIKJNIjbw3nzal4nGX9k42Kg3UCwbrbAo0o8fY3pMyFeMbN79Socrrf8T457XrxUck554L2A6w8gRNI1CQPcv5fe9fY0p
+7oVHQrfboDK8JeqlKlBJKcRND4gpbjDUIBbC4GKTB2_1J55UvSy4fM2rriTKhHtAHCpLxvLmvZf-5kpVAZhp9ehCLAB8Z78rph6V0nLSJQZG-Mg2hsmG8okR
+MrPP7Ii-alvpO0VqAoJoFiNlsI7etwqORjyvwT_5QN-jZXsb_du
+}
+
+AzureEntityColoring(AzureDiskPool)
+!define AzureDiskPool(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDiskPool, AzureDiskPool)
+!define AzureDiskPool(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDiskPool, AzureDiskPool)
+!procedure AzureDiskPool($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDiskPool, $stereo=AzureDiskPool, $tags, $link)
+ !endprocedure
+!procedure AzureDiskPool($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDiskPool, $tags, $link, AzureDiskPool)
+!endprocedure

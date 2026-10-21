@@ -1,0 +1,15 @@
+sprite $AzureHostGroup [70x70/16z] {
+xTXbWi8m48RXbOnaXTp_j43TzPjwN-pVWxMDXDtbfmSWveetKNwMLbH5HEFRq2idjIZ2qsigF24YmXNt_VtjOWNvHlHMg4CPNwp8EqXXvno3IbgxeZRAXDv0
+_0efyQyBA_nME5QAVW05ERU5Y6HlrxpGxCUt5F-f4v3s92fC259yQ_tVQ4-ADr5-bbQqBM5cqNe76O-0aUJOur6gSAjoZqTygl4eKeum7ldMLDMlEXxTogrm
+bA166ehWZ1G17qKi635Hj9oPWZCsUoe1g0K1c72KNW
+}
+
+AzureEntityColoring(AzureHostGroup)
+!define AzureHostGroup(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureHostGroup, AzureHostGroup)
+!define AzureHostGroup(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureHostGroup, AzureHostGroup)
+!procedure AzureHostGroup($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureHostGroup, $stereo=AzureHostGroup, $tags, $link)
+ !endprocedure
+!procedure AzureHostGroup($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureHostGroup, $tags, $link, AzureHostGroup)
+!endprocedure

@@ -1,0 +1,15 @@
+sprite $AzureSearchGrid [70x70/16z] {
+xTK5RiOm38RXC0by_zjkhY9b_TmfTJDUtd7X2Um7-h5bZB98NeM8La5cAwEjR6KhFxQISpvz5IfuZ5S4nmeeegj3ujYgifMjv1HZ236c_5p9COnIVgPqm_lG
+Uw2ao88rHzQn4hLAEB9cv0UZKqnlC6cgL42yWNXLkPuYgX0gHkJPfjlrFH7nSOKoreDhYlTNDAOY9rDkARWhk3DvMU4b9ONYFrEn7pcNzNt9wqfGACouTxOb
+rFOceeRHT38-XDXKYhkUIfufqwTZuAde5CdmiQ9HA8b5MJwIcaQfjPodOpqYSwM-rjz8lBFMkd0KsqH1X8i18asrHn-2487n3C4sijH0rXLQRI2B3FsCNW
+}
+
+AzureEntityColoring(AzureSearchGrid)
+!define AzureSearchGrid(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureSearchGrid, AzureSearchGrid)
+!define AzureSearchGrid(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureSearchGrid, AzureSearchGrid)
+!procedure AzureSearchGrid($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureSearchGrid, $stereo=AzureSearchGrid, $tags, $link)
+ !endprocedure
+!procedure AzureSearchGrid($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureSearchGrid, $tags, $link, AzureSearchGrid)
+!endprocedure

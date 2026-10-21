@@ -1,0 +1,16 @@
+sprite $AzureAppSpace [70x70/16z] {
+xTS5KW0n38NXaKhQaTp_j4W5oTk-1DSVBzbliZZwfkhgNw6AF_i6fPgeCbuhX00952E2WV6rJmZcAsXScG45fn5tbT3YrL5Wx30kr-SUmdSjW10ZD2HrFAYJ
+ZAdZc8pCcp8kKfoh4KHC5IRbZ0WOZqKOG7o68d8Ene-Ai9nxkbwbbdnNEJAnLN8QCGOLk9yqoozHb2Z844LyHM2PzrKag22Zu08YPIhrgAn0eN55YKAORw_u
+gNw2qg9AinUryR3T5ddOSqiPhu-s-wpv8o7NPexNdAx6qLafQPIDeaOPMVUnd6PXfRrDmMLGGGGKSoRlegZtqONjNMRz1Z48LGIP5IAeu74CGIN8A2W7XZam
+wpBemAJ78AIxpX25SJwdRs4w324J7d6NVVjTzxRhT5Ulrd6XHNGyhmybiqvllVTs__3mIb-lpFV5_bdgD5LNyHqb2aGCgc2KG8M50bVY_Ijn9jq2
+}
+
+AzureEntityColoring(AzureAppSpace)
+!define AzureAppSpace(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureAppSpace, AzureAppSpace)
+!define AzureAppSpace(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureAppSpace, AzureAppSpace)
+!procedure AzureAppSpace($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureAppSpace, $stereo=AzureAppSpace, $tags, $link)
+ !endprocedure
+!procedure AzureAppSpace($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureAppSpace, $tags, $link, AzureAppSpace)
+!endprocedure

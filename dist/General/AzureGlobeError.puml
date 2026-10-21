@@ -1,0 +1,16 @@
+sprite $AzureGlobeError [70x70/16z] {
+rTQ7agim38NXGB1yqScWzt_RksdQejKP1sNRFvNs3TssFv2-RHy1FPT28Z9Wd17YoBbH8pQk0D3KsLoXp8PBckOAOU0L67slI3lNKoO_5LUW_mxNriW8OV0-
+ef2JGQAeHvYgmX6ihX2ce21La2cJnfwcsA2YYK9E1b-ipFXSQKzHZ2kUAwWeqqq1DFIeSiIv8UKqfDJF1NkLsPLmEkkZoW94nhvRELwK1bUmuml0AkTMUAdY
+WHGSr1N-Vud9FCtzWu9uGPnfXtCzdWw8adwDWM7JZ-nV5nGwgft8TqGLpYmNHGOGTatQvcaEY3gIA0eUFnLl5E6ARJN4Eu6qEK8LVbL64TzA7Hj4V5jgS2Hk
+3WH3F64xZEyZmdTglhbPY3Xy6sSyifhN92aOl2BYLGqEDTjH86hrbyn-XTAVf_GoKcQMxkro9As6UD-jj1nPxBVt7m
+}
+
+AzureEntityColoring(AzureGlobeError)
+!define AzureGlobeError(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureGlobeError, AzureGlobeError)
+!define AzureGlobeError(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureGlobeError, AzureGlobeError)
+!procedure AzureGlobeError($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureGlobeError, $stereo=AzureGlobeError, $tags, $link)
+ !endprocedure
+!procedure AzureGlobeError($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureGlobeError, $tags, $link, AzureGlobeError)
+!endprocedure

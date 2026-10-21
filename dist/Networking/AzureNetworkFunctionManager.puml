@@ -1,0 +1,17 @@
+sprite $AzureNetworkFunctionManager [70x70/16z] {
+pTS7KiKm30HG9LPSgFU_BIRZZxqpGjxarwNBuh6Xv_iXYNjkOTJe3P2QsoZnoKfy4INLe587nuqQADDcHmrKseXsXlralCuniFjN8O9F8B0NySt2CTCjXe4L
+TuTO81d_c6VuGnZ29eka7fpx2aum1ECW18DZnx3EfqWsCocZC0F5O_Wg6BUCKqKrEcN8Ab5auJupo7P0Vwk8ICev1OEn5QoHH6GBKhE4LMJb5RmMZAVW5UOn
+2o0wkoGRoHieVJvH2YegDUiMTI-LSe-hW96qNuVKB1imdABZTOJs1ZAsKiQqTonx6ZaSPqwvT1d8C9ux2YGk8hBj7tWtCXvpIgiJBbyZH7WbIizvPGKbd5EI
+OF8f9I-NdsdHJMHbkkYk8AFjKnpho_g4wJ_4TXcagcBDtw3AJ2bXLMli_9OgVh1AGMKOb3VkmQWoJjwOLCHMZZ7M7nA4lwWcM0ML5jzm_sdGk8U_bmG4Zdm6
+5qs4PRp5w33qOdoiacwYHCXPfT1TKZfxZutAVquzy9K4CHtY1jA-vyHZJ9pSooKl_7sKOnmBOP1nYTld1m
+}
+
+AzureEntityColoring(AzureNetworkFunctionManager)
+!define AzureNetworkFunctionManager(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureNetworkFunctionManager, AzureNetworkFunctionManager)
+!define AzureNetworkFunctionManager(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureNetworkFunctionManager, AzureNetworkFunctionManager)
+!procedure AzureNetworkFunctionManager($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureNetworkFunctionManager, $stereo=AzureNetworkFunctionManager, $tags, $link)
+ !endprocedure
+!procedure AzureNetworkFunctionManager($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureNetworkFunctionManager, $tags, $link, AzureNetworkFunctionManager)
+!endprocedure

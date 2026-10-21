@@ -1,0 +1,17 @@
+sprite $EntraIDLicense [70x70/16z] {
+xTI7akiW38NXCKW7k8ttVzkRoh76b0rX-_xRIxuHIkpSJ74lJmVR0cFEGRLvP9vHh63GRWgPPtI90YnWy2QAB54miTj91Tz4-L7osoXvjJBFX2NAaZjcUkEx
+Tmvs4-UtM_cHW52Bo0lL7bANgtiH19i0gFkTUwPiJaC9VXESkojG4KLJmRtjbFEYAkBFt-jjr-VKtT8wWvBVJ1vKn9Mane2fLQGWy6wN1nKYp1c5et0IJjD4
+8EP078K0TsCGsrvHCuh9SnWYrVqw7iWTeaAakbyf2euAsehTBugYHqMfe9BOtOuLr5Axs_69KCsRtGwtYth2tRQVQJd_igU01oBZ6wEq5LyEH4KjeZnGA-M1
+6cVo_L7uae5Hx3GQkWhtwt5W8Bmj4Ed4tP8v1zNxjtciU0VOGWoxuXaPAYe7vLUAnKY_VbCPPPLJASMOqkMxAGGXcNujKIPdYNKbFDQ7KcBQlSqhjgLANgFa
+-4nv2PEdujLyxHc5tBmI-UsyKhwNyiD_
+}
+
+AzureEntityColoring(EntraIDLicense)
+!define EntraIDLicense(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, EntraIDLicense, EntraIDLicense)
+!define EntraIDLicense(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, EntraIDLicense, EntraIDLicense)
+!procedure EntraIDLicense($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=EntraIDLicense, $stereo=EntraIDLicense, $tags, $link)
+ !endprocedure
+!procedure EntraIDLicense($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, EntraIDLicense, $tags, $link, EntraIDLicense)
+!endprocedure

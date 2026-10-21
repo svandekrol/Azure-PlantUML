@@ -1,0 +1,17 @@
+sprite $AzureMonitorForSAPSolutions [70x70/16z] {
+xT9fcjim281XWIH0tNp_spOOFCIHqwXF-3VvPb_o6cDjsgTF7BqfH1c6be1e6OQMW6Wf24i2iZYD92alt-Grib2I8Yc891ZQkuILO3nJM18K-VzI44b0h0n4
+or2qG1AO8M-MeXWpLX9c9kf4p2pZiIL4kBVxUa3BoXTHjI_epAmP5Oi7Q5ANTOLs0ievWsYi9LsDSX5K6sS5QRSmxaG_m-6WCMkJG5nQlyTRuEmQeqWOeHZa
+p3AYHYZUmT3hfmF-hxCI3B_QBCGebugj-5y7fiVJcHL3_1BqN15V2g4nhi0T0kYNs9MVFyRyHZPAPpOcPWa4qUw9nuzjstxC3Hi5-HRQ5j5F3WI2uCEeSi6m
+hPRuOB14O4U8k1t3_BnM-Z6AHb0UmywtEi8-PrTaPiQnbMkcsXzwHVIJ4CnqGy0U-HFdmQr0e_rthQBlrvIPeVs6AdlLaA5n4BvVC6LcUjCNjlCeCfpf5Gg6
+KaoPdVDQcYd3qdizd-6gIlImtDOjl9z5_6bFokI8BdUAXaPbojOxrIuLODqAlAEOWzU_VgfWUTxwBAskrqAPcEKCIM2sRzEdlm
+}
+
+AzureEntityColoring(AzureMonitorForSAPSolutions)
+!define AzureMonitorForSAPSolutions(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureMonitorForSAPSolutions, AzureMonitorForSAPSolutions)
+!define AzureMonitorForSAPSolutions(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureMonitorForSAPSolutions, AzureMonitorForSAPSolutions)
+!procedure AzureMonitorForSAPSolutions($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureMonitorForSAPSolutions, $stereo=AzureMonitorForSAPSolutions, $tags, $link)
+ !endprocedure
+!procedure AzureMonitorForSAPSolutions($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureMonitorForSAPSolutions, $tags, $link, AzureMonitorForSAPSolutions)
+!endprocedure

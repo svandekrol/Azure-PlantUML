@@ -1,0 +1,15 @@
+sprite $AzureContainerAppsEnvironment [70x70/16z] {
+xTW5ZiD038NXPTjlHlBzRxjgu9M6o_1N5RJ95qQ_itwabBlN_jyaCgImyoX2v9uKJxQhU66GCojlvQs8OLnHMLF0j5-H_GnppOgcCh0cHVCAwrPa4nKMcXGI
+L1YhAUkuHAZibrVCg1WvwrVMaSt8ZIkwgo2aFlrAeaifJDiL52usvrBi30geW0fw5GKM1QjYg2j_lXS0qqqRPIwd1D_fR8e8qmv5TXfMS4t5RgPm6pKgt4RD
+IdWhP6fAzAAooSpAYhEiGYgfH1frXHc046E8qpUGo2jfPwEiqIWeBAM464Vko7QL03tfxb1jeppfNVDRUIj_T_Q6mC-Z-8cAtrV_
+}
+
+AzureEntityColoring(AzureContainerAppsEnvironment)
+!define AzureContainerAppsEnvironment(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureContainerAppsEnvironment, AzureContainerAppsEnvironment)
+!define AzureContainerAppsEnvironment(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureContainerAppsEnvironment, AzureContainerAppsEnvironment)
+!procedure AzureContainerAppsEnvironment($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureContainerAppsEnvironment, $stereo=AzureContainerAppsEnvironment, $tags, $link)
+ !endprocedure
+!procedure AzureContainerAppsEnvironment($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureContainerAppsEnvironment, $tags, $link, AzureContainerAppsEnvironment)
+!endprocedure

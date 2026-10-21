@@ -1,0 +1,17 @@
+sprite $AzureComputerVision [70x70/16z] {
+pTXNSkGm38HXnKLYhUz_seaiAlI0W3Rwz_jN3KV92_GLjYIQVWV9ZyaXONzL-VgD_esYXt8A2jWrHTtoYccld28QbL0qKQXega3HP1q54U6Q0EChTY9erndo
+5JHynve221Zeu9Wc049Em42014m7aMVKYUMHptn4HEtHuTCaZP4KmbfQoiXeHs6gYPLzchW9fsWvPGnZmYbMYgxpyiDs38nnbMq93yycWwFQ65IEKxYKCWsl
+g6m9Z74EQbDiUBSKl2bIjYbIbRdi4Zp9FqZAewgi-EKc3fNsLLxUYXOuAQbOUMGlXfZjDvH79cfqlEcQqfg7OGI5EWepewBJo7ZHir3H0e4IRn5FqIiAUug4
+YZR5FSa8560On_XJM461aqWwdnNy4g7YtsI41xadrGmG9ZWe74CAI-0WI64CiUuC0UIWm1Yc5Wl-LMEOWcCg0m422epXI97WcK6OcDWtNX_oyH7nm50ODyH_
+cEBBI5FoQ-0SK81naP-PPs_shsb8vZsW-uoPU2U9dtTJxqUcDTaahWGWgBJqaC2JUwYWWuQlO14HAoZzpxVoVD_lVnxO7q6cI9d-raLt
+}
+
+AzureEntityColoring(AzureComputerVision)
+!define AzureComputerVision(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureComputerVision, AzureComputerVision)
+!define AzureComputerVision(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureComputerVision, AzureComputerVision)
+!procedure AzureComputerVision($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureComputerVision, $stereo=AzureComputerVision, $tags, $link)
+ !endprocedure
+!procedure AzureComputerVision($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureComputerVision, $tags, $link, AzureComputerVision)
+!endprocedure

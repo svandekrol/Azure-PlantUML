@@ -1,0 +1,16 @@
+sprite $AzureAIGateway [70x70/16z] {
+lTS7RWCn34JHT8eCODx_jEb5-eknToVbkw0_ZDpT_zB3MpyZfdnaoJIOYVnSaOIFH5l5PaUzzRCdfxuobyI2x7TYgQdKSUIXssAun6A8M0mHYo6Y6HCXOo9a
+J8ICWKX68oEwBIR6NCigfyWC8Beaen67qSY86AzbIkOo4X4NcOH2v2vc9U_0GD5BPaMlEOiCAESPXSnAllK8HYXuyZ4bKppX0W4-AOeHI0FPAZqh0aaWRvLW
+j990tjAAP397JeIO0WLCRghgdK_IVcNVgswBB4gcLZHJ6iac4_tL1adhJNrQaPD2e8X3LSdZp4g7PAfW24GmJ2EICH4o7a8cF8JFL9W86GyXCqo4Z8cGCH4o
+9aB6HCYO21aJ8UCXP8XKxyv1jDCcmdBDCv19_7o9WUZV_9_txPQ9_nzk1c7t3
+}
+
+AzureEntityColoring(AzureAIGateway)
+!define AzureAIGateway(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureAIGateway, AzureAIGateway)
+!define AzureAIGateway(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureAIGateway, AzureAIGateway)
+!procedure AzureAIGateway($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureAIGateway, $stereo=AzureAIGateway, $tags, $link)
+ !endprocedure
+!procedure AzureAIGateway($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureAIGateway, $tags, $link, AzureAIGateway)
+!endprocedure

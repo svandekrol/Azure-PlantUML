@@ -1,0 +1,17 @@
+sprite $EntraPrivilegedIdentityManagement [70x70/16z] {
+fTA7gWGn28LX856Z3kJzd_QMRMPcJX3PFzGj7sVAt2UNPZs1VKdK8Kcg6xYwWQiYTKOA5Oow8-Kgo1WPaoCwnb1Dc4mPptPC0ScO7CcP73bPARD3GjapAR8g
+EOEHkuAP50abPx0YgwBcVhWfLZBafVZnohRCI11v8S40HGP8rknOqd6lpuaGPfR7OHOXyeo1Yl0IjSu7Oh224MwjTpanG4aGQQrHfv4mETBeBrqLBoClXMp7
+v4WFfSJmMc-XN9wtrP1G630vGksi47Xj848HStz7xmGm28a22OK6O184AAGR9aSwBsNFcqxjb76i6PmICI55OifvZ3vEAE7S5JsklV-lhuJkdHNn6-9wQG25
+LyMEU_fk1WETbp8Ea7sG6MkutsFwLyGm0XHL0GnnPqM6gs951m57F36qps3m75A4cAxDKF3T4VVy0SzWq6MnEL0C8A54Zpqave_04A00nkmX0CKWWXKrZu01
+5CWeK5mH0XGq1mm1IZ3O0KC0aZ4n1210mGuQWfLfkZd_Zks-czUiN23VC3fHMaCS4EKvSryPmTKHNDt0rGrSoQX3irw1-0K
+}
+
+AzureEntityColoring(EntraPrivilegedIdentityManagement)
+!define EntraPrivilegedIdentityManagement(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, EntraPrivilegedIdentityManagement, EntraPrivilegedIdentityManagement)
+!define EntraPrivilegedIdentityManagement(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, EntraPrivilegedIdentityManagement, EntraPrivilegedIdentityManagement)
+!procedure EntraPrivilegedIdentityManagement($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=EntraPrivilegedIdentityManagement, $stereo=EntraPrivilegedIdentityManagement, $tags, $link)
+ !endprocedure
+!procedure EntraPrivilegedIdentityManagement($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, EntraPrivilegedIdentityManagement, $tags, $link, EntraPrivilegedIdentityManagement)
+!endprocedure

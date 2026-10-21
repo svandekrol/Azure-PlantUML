@@ -1,0 +1,19 @@
+sprite $AzureDNSMultistack [70x70/16z] {
+tTE7ZkCm30HGMOqpSyN__xUtfc586oZ7xMq0nFs1PAGzJWvJtaJ9hrMsbBOtKRoMhz1HthQVfdZsDs7sZqeBqr-jrFhmyrgbf5I_XE9CYJhI6HAm5yv5LoWF
+-XB9UIXhX303SFpoS09bQU0Gv370AB6tTUuYD4YcCuJaZiNAZ7WLteS7lExjOGPYE2kuGlYl7J-Bt4VcKgxUS8Uvquxv43H27eO1DugbXBL2-1U6MJ6NlJvE
+wIdPGj5L0-s0fepME8ASkLJ0n-_BGumZfm0arwMCpqOuvioHbhEj55B_3JapbZDMYfTmB7MloPh_ciIQiqd-GjoHlvawh6oGQkgIQXLJDUjJItCMYyMLuzSI
+LKkYAtsJnry85p-7eb9LMyskMEAqfqA5GsbPjJBrGr5DzNJu0gMf9ROg2INPIvHIl8gjkYBr52ZhwPehIELKcExCfTraKbggEZhoaVYtBL__KQ1Gvif3ikbK
+ZfxKKzhEyLgiG8Xs06AbZyrxe-4wCbHyCEizRUEuXufTdzFmEAEKM6dq5s5cKq-acM5C9LIwP3GuDiMyEfbYnGFHE0OpJmb6HmB58z6cUNh0cw64aRoQkHZ2
+VwYrmcKa6IJZD1N1D2EnGYy7D9q12ACZWR9mO0QIVbmPiUAEI3o4b6SFbRNZ2OX8yJ8Y8bPw1na87wGGu1iedlsZyZlErr1OYbwlM4hyAhNyajvWBcZjBJfg
+xMqw-lM1w-KV
+}
+
+AzureEntityColoring(AzureDNSMultistack)
+!define AzureDNSMultistack(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDNSMultistack, AzureDNSMultistack)
+!define AzureDNSMultistack(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDNSMultistack, AzureDNSMultistack)
+!procedure AzureDNSMultistack($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDNSMultistack, $stereo=AzureDNSMultistack, $tags, $link)
+ !endprocedure
+!procedure AzureDNSMultistack($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDNSMultistack, $tags, $link, AzureDNSMultistack)
+!endprocedure

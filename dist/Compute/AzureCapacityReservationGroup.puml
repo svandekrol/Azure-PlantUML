@@ -1,0 +1,16 @@
+sprite $AzureCapacityReservationGroup [70x70/16z] {
+fTE5ZWDH243Hs62r___QzQKht5Vek_7A2Ko6suFqU4jkUnrVxHhep8sdrxeU_xhk3PBDZLt7ZqK-6eIR6TmJXWWwVKJV0gO_Y7xK7qV0G4SAX0rsm024r-eQ
+VKV0Q3YII7u923DY4Qcy9Momen5t9Ry50no9-AFajzhgtV2e5HNHPc8Hf9XP3tapIB7FMWOgbZqmF1QAUuj9utIgbOPZTuEKXuvv6gWK32spKWg7bc7bFsDa
+i6BkF8u3yay1XunJW0AEWS5AnO11YhrLEF10-1fBfp1OSGE6be7tnMedQkC42ZZbCYTKm2a7GOKOC4W1frXcfO1J6Aoe0LCiqx_6Z0O11HmmG4bdungplMlC
+TgwH7LucbMHuBJ0IOKNX6abXvvy2Hi_f69aHGyQfG7WS6WG2XumPKnYE03emoD11Ovs30WW62XWj1unMrrJ068u3h-hGWK663XX3fh7CAm
+}
+
+AzureEntityColoring(AzureCapacityReservationGroup)
+!define AzureCapacityReservationGroup(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureCapacityReservationGroup, AzureCapacityReservationGroup)
+!define AzureCapacityReservationGroup(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureCapacityReservationGroup, AzureCapacityReservationGroup)
+!procedure AzureCapacityReservationGroup($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureCapacityReservationGroup, $stereo=AzureCapacityReservationGroup, $tags, $link)
+ !endprocedure
+!procedure AzureCapacityReservationGroup($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureCapacityReservationGroup, $tags, $link, AzureCapacityReservationGroup)
+!endprocedure

@@ -1,0 +1,15 @@
+sprite $AzureMarketplaceManagement [70x70/16z] {
+xTJdei8W38RXv4i0_SNzt-rfyDWzWrjVz-ZJ2VbnHIkxEb-BRLx3IcxctE_aOreadTF9nxJA_t5DxNihE12DJVR1Swe6owNMp1LApdTGj5wntbhvAUbWgXhi
+zSsLdw8yIOyhJ9FuUOg448YQ9o7OMvzY_o6o_vFO5p_bzSuq0o02qBxr7XVk7vUY_1I82968eBnrAkCy2lOgQGL9A3C3Spipy88I-qgSAENeSlCKhaVNiosj
+eaL1hS95OO_2jr76FLz1KxrYP_erbPyYV4bLnQz4GOcxv9Wo1Y-5v5BMqwOORw080D5Q1LQkLCgcv5e5G5uixbH4a7Usec24k4X1VjN-
+}
+
+AzureEntityColoring(AzureMarketplaceManagement)
+!define AzureMarketplaceManagement(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureMarketplaceManagement, AzureMarketplaceManagement)
+!define AzureMarketplaceManagement(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureMarketplaceManagement, AzureMarketplaceManagement)
+!procedure AzureMarketplaceManagement($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureMarketplaceManagement, $stereo=AzureMarketplaceManagement, $tags, $link)
+ !endprocedure
+!procedure AzureMarketplaceManagement($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureMarketplaceManagement, $tags, $link, AzureMarketplaceManagement)
+!endprocedure

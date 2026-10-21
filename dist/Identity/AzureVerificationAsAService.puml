@@ -1,0 +1,17 @@
+sprite $AzureVerificationAsAService [70x70/16z] {
+xTQ7jfim383XMDRiVF-tBUPIcKI8sdIt_3evEnyRBDDzFkXMRgMdxUSphZ0X4c-4FZUYw3A2i8OE32lgMvKAMrK65OsxZ1MMMSDH9SHr5rzLSA_WLQN-UAN-
+tYEYhq2BhYg2k-H8eHQUAyheiOQ4UcUA4cvHD9YUoXMXYclndcCA9Ge2mACiFG3SIH72eFYZM1vBPL60KiIBYjJrGOHLgIrAaLofMsrdeAwn8rcl2ksKKhV4
+ht08wXkJF4FGTcMBqbs1KZ0gLBrIggUjOwHG2xC74U3vLIKfqj9zzQ2tMzWuGQ8Y_Q_FgMc6H8KnIKmJn1Np-RRoA8S8sIx19DqKU6nCHw9YGeU9-Ruq9Y9a
+Wr5d79bNUCSuCgq8EUF8lAAqXGS8scZS6Nhji_Na9DyPBr64Jb8poP49nJX5nfMKWKd5qY-9zJXF_495n9NnzFWBQzC5uv8ILXxNbDZWlQl3Yj99jlREthsB
+oiJzqe3MTohUcVBk-vI-gvBdIAAyc-nMOhToAry
+}
+
+AzureEntityColoring(AzureVerificationAsAService)
+!define AzureVerificationAsAService(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureVerificationAsAService, AzureVerificationAsAService)
+!define AzureVerificationAsAService(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureVerificationAsAService, AzureVerificationAsAService)
+!procedure AzureVerificationAsAService($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureVerificationAsAService, $stereo=AzureVerificationAsAService, $tags, $link)
+ !endprocedure
+!procedure AzureVerificationAsAService($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureVerificationAsAService, $tags, $link, AzureVerificationAsAService)
+!endprocedure

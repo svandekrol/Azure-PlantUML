@@ -1,0 +1,16 @@
+sprite $MicrosoftFoundryProject [70x70/16z] {
+xTS5iXin44NHrwpm_dURADM6hjBO8odmwPe6f6Ec7o-_ZxuSjurakqgshMGJIaFDYxEgsDpDIUKJQl6bjF-uVBAdUTj3ijX6Kjb7B6QHUQNPMULp7EPsMcdc
+-uS8t--rAQOzsr8K6Tcw8W3rEhEi623U0oYNHhN72eClcWB7IdjoKomNo0awgzIRuWfo0IyeULDIuRwsfEIrf-84CRDf1R2ge2TpYeByfdI4VWMCbF2Z0q4k
+omfcqE_bhaGzTEKe1pmo1ULQRgqzK0GSDmMWYnqp2c3xYe5YeCISmj3OlYqE-4YnAKN1CL2S81CAmGPAl_JpYW5rDKlafCAGgX1wf14J2k1LuLoQKHHKrvSK
+Wkqh3enVWiVAu22GkWNmQCU7JsqKmSkwWDgZFesO0EvNdG5VKlWQ0ObCAarHacWhIWk_bSIyKdiJoeUI_zQs-l4A-kWd
+}
+
+AzureEntityColoring(MicrosoftFoundryProject)
+!define MicrosoftFoundryProject(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, MicrosoftFoundryProject, MicrosoftFoundryProject)
+!define MicrosoftFoundryProject(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, MicrosoftFoundryProject, MicrosoftFoundryProject)
+!procedure MicrosoftFoundryProject($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=MicrosoftFoundryProject, $stereo=MicrosoftFoundryProject, $tags, $link)
+ !endprocedure
+!procedure MicrosoftFoundryProject($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, MicrosoftFoundryProject, $tags, $link, MicrosoftFoundryProject)
+!endprocedure

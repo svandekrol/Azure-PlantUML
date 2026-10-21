@@ -1,0 +1,17 @@
+sprite $AzureEnclave [70x70/16z] {
+rTW5ZjvG34NXmXF5Jkx-Lrk--kCZFpKkzmY6lt4OL69hEGqQA3F4_MLbbVwYSiP2cdPbPWh8bCklBJHI8hybZ39WhdJI3m_p8gGVPi86b16JHXYz6N9yYqh6
+Tn0Ln66Kp9mZPFYRtCHwecYlj4ZFu9SRX4fyhYhU8-BHA77lnU3NMyGB4bAKv2NKbzfXW7ncq15nPyvccBWhDgvm_i8Cfj-E4drOfbOXed3-bCDK14hSojqm
+IIOkgKDyfWYH-LQs1tv5KgzzlYhhMq1SKU9-Ad3SZubGoNMBYXCLCqQYA9wc8ei85IDSfgei86PYen1nhIAk5JAQAAAYYUBrahbRBuqoNhiyayjjb4TRUhRN
+vNwlSr3002dA_cWycgCn7XoDARLdEhdDcU5AdgNE6nDiVvOY0sLongHYXX7f5Pw-ooZ-uk0eCR-g6S4eKCWeIWeWK32WTuKopd5uUY3zCDoF3ozAzq-tp2gA
+ey9HoAzROyG_Ma-KB0gAJAtI276PgwOPugWu6gc1GayNa25J1WcvEPDEcYZlYj8Xys72nao19nX3piNvtxvd-FllN_x-UwcF
+}
+
+AzureEntityColoring(AzureEnclave)
+!define AzureEnclave(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureEnclave, AzureEnclave)
+!define AzureEnclave(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureEnclave, AzureEnclave)
+!procedure AzureEnclave($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureEnclave, $stereo=AzureEnclave, $tags, $link)
+ !endprocedure
+!procedure AzureEnclave($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureEnclave, $tags, $link, AzureEnclave)
+!endprocedure

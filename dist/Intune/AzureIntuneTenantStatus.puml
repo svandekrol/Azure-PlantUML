@@ -1,0 +1,17 @@
+sprite $AzureIntuneTenantStatus [70x70/16z] {
+vTM7ZkGW381Xc-8IHyhxl-sjSqZ0N27MS7M_BLFvbPWfrp-1kXqDjwFXwliHLpP4N2ooer9fHuPeGuRsL7PawBDLwFqA4tEqqfTsJojCxMSKhonigTGjbMjZ
+PMrtPHs9PyH5A_BrPtO5IBUCn3DwRSYKAufONd0uyQ4K6L4EViVIhI9cufOeY9LSgE4otd92bwY9HQZWA5CWGmCSLUeY4ShO9He58bInApHPHxhKA_JYSMIS
+RtwZGjDiPyyZbAVPpXv7gCwpPJtCx61oTjhvmTOLIkDinHeb8ZsjMNzC5dIPdKSQPRLk5M52LzdPW6sqgh3FDx5J6nmsE5SHhZvRTeUDOXLEYCJE9YAXIccp
+VQcaz9sv2Fy8jTdAD983mBDAjxh-KiqyLz2l4K3owt1RLffUgP3zX221M8MY3bg5PVdJpWS1r1HGCIdYCSzbJSrbI52De5e519xtI1xm1GBfGBG4waULvYqg
+yi2XgWdO2kHxFO7E5Nca0lXozLqPtanNh28bPxat27HyvGOpRIr36YETX398lT8RqOmSuv6CD99fpXOPwIE7TJqITfuR8fvvk-7kXbrlEptoz_e2
+}
+
+AzureEntityColoring(AzureIntuneTenantStatus)
+!define AzureIntuneTenantStatus(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureIntuneTenantStatus, AzureIntuneTenantStatus)
+!define AzureIntuneTenantStatus(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureIntuneTenantStatus, AzureIntuneTenantStatus)
+!procedure AzureIntuneTenantStatus($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureIntuneTenantStatus, $stereo=AzureIntuneTenantStatus, $tags, $link)
+ !endprocedure
+!procedure AzureIntuneTenantStatus($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureIntuneTenantStatus, $tags, $link, AzureIntuneTenantStatus)
+!endprocedure

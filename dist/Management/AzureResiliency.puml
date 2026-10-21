@@ -1,0 +1,17 @@
+sprite $AzureResiliency [70x70/16z] {
+xTL7bkCm301H9oR0pxZ_QPtDgGKV986Jkslbf6yeqa9zrvg8j6caoQDvP9Af7OaxjLOOCQS0YJArq61RTgLq8mAr-WZ4Lgezusa9KD84G9IHG07bMsavPUcL
+uwbAZr_vIaqfbVxkU3WSVv3th-fw9VLtXtlzpUERjaBXRwdGznNENGOAld0K_cMcCXXoMU6lgJJkqBAISIgWyEGjAzn_AWMuf_30GC68RRN20q2bV-eeRAYq
+YD96IjwYv862K_Hp5VrRPb7H-LbKLIOL5NqepHp6kLxo2tabvYd-jQiTKKFE0sQWw2Dd5kUUnWEZ6vW5UKyf75xCOex2mq95tv_xoiBJM-ybxf9UR9IpakXh
+Wi9Xr8Ovgvg-Ulc-OZWiLRZ2wgS2nH1h_RWKwTNJgNRbyHMEYZCCKr763FcCQWGnzUUWuWN4wGp4OJIAa54D8Kp5Du1uBI1dMvV49s7E81VRqCGWJ5maFWwD
+k6FHBZ2cWZ7fs1Vi1W
+}
+
+AzureEntityColoring(AzureResiliency)
+!define AzureResiliency(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureResiliency, AzureResiliency)
+!define AzureResiliency(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureResiliency, AzureResiliency)
+!procedure AzureResiliency($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureResiliency, $stereo=AzureResiliency, $tags, $link)
+ !endprocedure
+!procedure AzureResiliency($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureResiliency, $tags, $link, AzureResiliency)
+!endprocedure

@@ -1,0 +1,16 @@
+sprite $AzureAttestation [70x70/16z] {
+rTE7plCW58DXLZX6Y_k_sd-Y4beJdVZRR_TwvAv-NHjrlRQa6skoWP7a3C9EuJOp3UB8GqPmEsqn-9mzrCu1jWd3uHeXN111y3TpXB-zCjjFuiWfnbGsc4-f
+COoohXnX5etaKMeubyGjAInLJGbhML9gM8kISeId9ALyaG9TUVjtXESjW5r_lD785gmAo1RBPsNprruL4CN2BEbAd4hnAg-7F9LA7YSAOuwfa4V95fhDZmKa
+fuA7ajz5AMzHuYsbWPV2w02lz7EgqZrA3gCgAAGVhjIohHA5CobSb0Z250kNcK-frqgboaXH-WSf_VxdqacuNMS924b4zan9cmfNE9F2fiGHpkITaZd2bHev
+4gj7wS97on8Gbe18Z7L71IOYQp3R4cRTcva926CCQ5XFjY1UfZNyEunBWlYO6GQYC0_ddu4-4kVC8Je36uZE60WYEDEG8uYKn_WD
+}
+
+AzureEntityColoring(AzureAttestation)
+!define AzureAttestation(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureAttestation, AzureAttestation)
+!define AzureAttestation(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureAttestation, AzureAttestation)
+!procedure AzureAttestation($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureAttestation, $stereo=AzureAttestation, $tags, $link)
+ !endprocedure
+!procedure AzureAttestation($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureAttestation, $tags, $link, AzureAttestation)
+!endprocedure

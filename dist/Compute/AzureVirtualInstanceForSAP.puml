@@ -1,0 +1,17 @@
+sprite $AzureVirtualInstanceForSAP [70x70/16z] {
+xSu7SkiW58LX4EqsJ_Q_syUHpSJ4wlZr_Eg5R-x7Ij-fceuSfb1iE8nYmocKyNwDygq8dqyN53gxoJjc4HjNW8mhQcjA2juvFoNYMfXgk8dJlKWTig8Kxrh4
+J0uLPfvSAtJ8eaAk-pkrEoYjgKEMbEXgCSMwY4JaCHYBG9bIzFDiWjJM5CNFGMgCNukxb-zA564mQG61Oaq9hls58WR0qPJxgzYGDIMvkP0P2cu99svAkwfj
+APWOpGFbUl7pkYG1TYd9rJAGBKK-cVXOds11QNaWsuf8nc94yqbulZmffBQhe38FD9yA5LnYKtnajICASbyBE8X8H6rNqUWBgsQtLDIQsRx2hi_ZU5RiY19x
+9AcGQFfKx932oJzMq5HZHRX5MUsOKkEICuakPSSKqwti7OeDA4UHso753YYtuQfo-p-KRmNCCBAfc3vbsyfwtFLnCUhw5vJIzNkLt3M0Z3FfIzT6UOkIqZWJ
+5xiY34bXfq6azRSfwBiV
+}
+
+AzureEntityColoring(AzureVirtualInstanceForSAP)
+!define AzureVirtualInstanceForSAP(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureVirtualInstanceForSAP, AzureVirtualInstanceForSAP)
+!define AzureVirtualInstanceForSAP(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureVirtualInstanceForSAP, AzureVirtualInstanceForSAP)
+!procedure AzureVirtualInstanceForSAP($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureVirtualInstanceForSAP, $stereo=AzureVirtualInstanceForSAP, $tags, $link)
+ !endprocedure
+!procedure AzureVirtualInstanceForSAP($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureVirtualInstanceForSAP, $tags, $link, AzureVirtualInstanceForSAP)
+!endprocedure

@@ -1,0 +1,17 @@
+sprite $AzureKey [70x70/16z] {
+rTS54gH0343HaIH8IUv_sXLIQUZUFmLX_O_R6rpyVqcwVe5nqn6gZd1bX2iZN1dXwiXzHULNC0BL6T6JYrmnpZiXz695msooeL0AneIPQWcPFp4bP2uo2itV
+6yV5ul5Rrn2RHoRURi-qeEoCwTQkgFM8mMMQ1yRY_G3ZeaV5g5GQOz7sD4E4bMH0iNC5cNoI5PHaCb3aJ4d6g6ICcvPEKVanlQ8S61FkYjAO2O1afcwwa9AC
+ofYgvaXvz559Pk8fejkJoQE9MxPGqPZVygqJPLwYe_AMoAOj_VxKFJ96ibrvFbwWP8oqcl9w1CEACT8AvV7ic414lGK8A3rZAbk-nqYll1kJZOenqXHWGF4Z
+iguhAipuiICI2Ynrn7ZVZXoTN4Y1GSKJ0GKOKD9PrZrGW04bWK5H0UQT2YEzaqTw8_EKguf78i18KH41fge8nGWhYJnV9OMdIPiVTQMAi595cBc0-6c8t3o7
+VNU8_194_XBY8-9t9meWnIJxrnI_6o1_JN5G_e--0W
+}
+
+AzureEntityColoring(AzureKey)
+!define AzureKey(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureKey, AzureKey)
+!define AzureKey(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureKey, AzureKey)
+!procedure AzureKey($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureKey, $stereo=AzureKey, $tags, $link)
+ !endprocedure
+!procedure AzureKey($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureKey, $tags, $link, AzureKey)
+!endprocedure

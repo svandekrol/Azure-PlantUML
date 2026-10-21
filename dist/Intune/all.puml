@@ -15,6 +15,23 @@ AzureEntityColoring(AzureIntune)
    AzureEntity($alias, $label, $color, $techn, $descr, AzureIntune, $tags, $link, AzureIntune)
 !endprocedure
 
+sprite $AzureIntuneAppProtection [70x70/16z] {
+xTTNWeGW383XIK8GCkt-jrqppGAi9hfz_vUfVFPs_T3-w_mLoBTH0fZ3M2Xmi4UxA66hygy0h5HIKo7k-Y9jKI2gCJWBIXzKaQ5GK_fnYyeDOQ9mUqC-HUSt
+8cXKN_-yGb54YIT37aK78ZpZdlGeEWvUqV9f9ZSK7XHqAi6aT2sbM28YbQcCs_E2EWwVyMs_W_e-ZlTvwOFQJXUVYEuxk4B1wc-HNWWVhCgmytRCWQDwyAvo
+7PIIUQQ8QruqZ2eCUxzdNZGCp45_Soj3oqhtlHJ98bO5IaNiIgPT5A6A4d558IN2Urc42cLTMIRHHBc8hpnHhau4nagpuwZJuxPWMBkAc1HjhYYoMKa3ubQq
+prLad5SvxgB81oZYKsGFHOekLYLBjMHHSZE3ad-4ajgAxOcPAqMhKkzxALTBBcLx_xq1
+}
+
+AzureEntityColoring(AzureIntuneAppProtection)
+!define AzureIntuneAppProtection(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureIntuneAppProtection, AzureIntuneAppProtection)
+!define AzureIntuneAppProtection(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureIntuneAppProtection, AzureIntuneAppProtection)
+!procedure AzureIntuneAppProtection($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureIntuneAppProtection, $stereo=AzureIntuneAppProtection, $tags, $link)
+ !endprocedure
+!procedure AzureIntuneAppProtection($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureIntuneAppProtection, $tags, $link, AzureIntuneAppProtection)
+!endprocedure
+
 sprite $AzureIntuneApple [70x70/16z] {
 xTC7RiGW441HqK7Dzpzj2a7otpO3GthoTsshFb6FcmexR9Nhx4ZkMHaGW7OCZcU1849c3YezmM06WuZi490HMSagOLUAMQ5XLcZiAsLNaP5Q9vKYL6SLaPXK
 f77CAaL7T4KaT4KTnwmY6hEAOh17YbGrAoJsbMfMY9WL6cQ5XbtHZJQhI4HhHL5qv3L18I4ZbGYxZ-JueE3l1QOYxvRonsaWjweSCFQKkgs0-NBbBfCMUoU5
@@ -32,6 +49,136 @@ AzureEntityColoring(AzureIntuneApple)
    AzureEntity($alias, $label, $color, $techn, $descr, AzureIntuneApple, $tags, $link, AzureIntuneApple)
 !endprocedure
 
+sprite $AzureIntuneClientApp [70x70/16z] {
+xT4b0WGn40LH5p9r_zkkMjKmpB_69UatH9YgDhCOh-wgr6rAbI9bmQgKbYhD5gqsspvA0uXssjdA_ThsHbprTQL8wKSf7VfInMd1wZvAFrwHmZQ5E_MnForb
+cAl3S5UxNHr_nGPZmUf-olY88eLj2higDlK3
+}
+
+AzureEntityColoring(AzureIntuneClientApp)
+!define AzureIntuneClientApp(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureIntuneClientApp, AzureIntuneClientApp)
+!define AzureIntuneClientApp(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureIntuneClientApp, AzureIntuneClientApp)
+!procedure AzureIntuneClientApp($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureIntuneClientApp, $stereo=AzureIntuneClientApp, $tags, $link)
+ !endprocedure
+!procedure AzureIntuneClientApp($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureIntuneClientApp, $tags, $link, AzureIntuneClientApp)
+!endprocedure
+
+sprite $AzureIntuneDevice [70x70/16z] {
+xT1L0W8W44LHQihS_shjbiPsxli_n3AQDXcjh21imnSeawCIV5zmUHUslOaggiG3obMfEBe8TdKebiwXsmKZoha-nRje7biKj8aEYhF5rIWLFLTHXHwYgA8A
+rokSKVWJ55KuhL2RukBRArAfk4HxPS9Ohg1KzZtASbchS4wfBA6e8cb5f5QHVrAuHH64Q2WDIhfU1Om9uqemnZ_aBj2XzFsBjWO
+}
+
+AzureEntityColoring(AzureIntuneDevice)
+!define AzureIntuneDevice(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureIntuneDevice, AzureIntuneDevice)
+!define AzureIntuneDevice(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureIntuneDevice, AzureIntuneDevice)
+!procedure AzureIntuneDevice($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureIntuneDevice, $stereo=AzureIntuneDevice, $tags, $link)
+ !endprocedure
+!procedure AzureIntuneDevice($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureIntuneDevice, $tags, $link, AzureIntuneDevice)
+!endprocedure
+
+sprite $AzureIntuneDeviceCompliance [70x70/16z] {
+xSy5SaKX44JHGRjJblslDjfnh9ZuvpuNJi7rRmkBVReoHt9KrQFKek1GF2lAuygIaiEukAIK9UKeHpdAKOx2gPB0cK9mgX2SpcMkWEHOuOB25QN-0UKeiR-b
+b399j7gh312e5IM6s3uILXWfxVwcShMd5CikHOXPyIX2_8eGdoB4fmZnAK9yYf0D9QVto8QIpM8RUL7kcYZ9n438ZlB2P25xYXWXcugO8AIdOAA84U9G48Nq
+5UP-W0f2sieuuhaenA6eTGN1BBqyRIh5pCAtAss6AQNgK5fDa5_MBG
+}
+
+AzureEntityColoring(AzureIntuneDeviceCompliance)
+!define AzureIntuneDeviceCompliance(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureIntuneDeviceCompliance, AzureIntuneDeviceCompliance)
+!define AzureIntuneDeviceCompliance(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureIntuneDeviceCompliance, AzureIntuneDeviceCompliance)
+!procedure AzureIntuneDeviceCompliance($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureIntuneDeviceCompliance, $stereo=AzureIntuneDeviceCompliance, $tags, $link)
+ !endprocedure
+!procedure AzureIntuneDeviceCompliance($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureIntuneDeviceCompliance, $tags, $link, AzureIntuneDeviceCompliance)
+!endprocedure
+
+sprite $AzureIntuneDeviceConfiguration [70x70/16z] {
+xT97ciCm28PXgy1FLhd_QQVAY2aoHFRK-CkJ9Q_Lhhyj13jSyP6QMxn7OMfXIjc_exeTXPIQjiiXXKBAgPpAgPpAgOYh58Yd2CHL1EAknLSW8ivQ0ef45Fv6
+1S_jLN2WSfbKYbM0EON0fJH45QDP9Oz-XASOjgjoxvGXaZ7ke_8qyFcVRr66bKEKp0uIKqf8kJXATH1LWZkgAHMUMujkY9UNwkrAgMmGPRI8OfUFjAp15b3G
+uqMhymfr9V-4aWczhb1KqOgEr1L9dz_HKwfih2StnH9XfM2jwA745OsXCGEJ2coR2iP8FKJ1kFUAr54KLJQJUGM0M4Ow5rVu-LtqrJJGpdPahD2JaaPxQrCT
+YIcQAfh3465EyLFaD_S8
+}
+
+AzureEntityColoring(AzureIntuneDeviceConfiguration)
+!define AzureIntuneDeviceConfiguration(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureIntuneDeviceConfiguration, AzureIntuneDeviceConfiguration)
+!define AzureIntuneDeviceConfiguration(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureIntuneDeviceConfiguration, AzureIntuneDeviceConfiguration)
+!procedure AzureIntuneDeviceConfiguration($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureIntuneDeviceConfiguration, $stereo=AzureIntuneDeviceConfiguration, $tags, $link)
+ !endprocedure
+!procedure AzureIntuneDeviceConfiguration($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureIntuneDeviceConfiguration, $tags, $link, AzureIntuneDeviceConfiguration)
+!endprocedure
+
+sprite $AzureIntuneDeviceEnrollment [70x70/16z] {
+xTJNeeCW383Xc0czuVsVjdl4DcBaxF7dsiy5jB3_TczjNL4vfP-Wx6uAqrZYdwLCezL_vL-94-kLLD1SScv0cUoHuZaPLtnZ2c4OwHP5fuMk2awhar4IVQpo
+hzYNASnoYcbS8R5xocCAgSrI7b3ONjBDYbYGqZP5xHO3aFdoYhYB041IIZahyJU1l59c2jbxAD9LCAbOL-6Smdr5Sehq5SEKeYiAnOhD5JibTEsaJDTGBmf6
+Sr6g_yy2OUSxC8PTb5tHSvVxGToAudh3ixXUlmlI9TOjYk-aiFbeKMajh-2oubfHz5qKpYcjh-2dAgsdb4MbrhcYjdZkbhpIdC8Je4Fg1gMfnTLDIgiMrJfA
+EIlFHKYhjQg4QNrIOaVFZzYjnVd7Q2-A0712SKKA0z3R5G6GSSMNKFux
+}
+
+AzureEntityColoring(AzureIntuneDeviceEnrollment)
+!define AzureIntuneDeviceEnrollment(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureIntuneDeviceEnrollment, AzureIntuneDeviceEnrollment)
+!define AzureIntuneDeviceEnrollment(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureIntuneDeviceEnrollment, AzureIntuneDeviceEnrollment)
+!procedure AzureIntuneDeviceEnrollment($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureIntuneDeviceEnrollment, $stereo=AzureIntuneDeviceEnrollment, $tags, $link)
+ !endprocedure
+!procedure AzureIntuneDeviceEnrollment($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureIntuneDeviceEnrollment, $tags, $link, AzureIntuneDeviceEnrollment)
+!endprocedure
+
+sprite $AzureIntuneEBook [70x70/16z] {
+xPG72iD030HFqhct__ysRBg8G6xf6hhBC9mNJrz3GCc44cwAy1dIE1QbaQk574i2jaR4Q_4jYMHh2rZSGYmAJc1f2nMQlA2b1OLb4QUbx41_bRJbcdEfUj0j
+jT2Z1K2ojGKnxVQMRkyMQo-qgiNVongBlF5SRAA592ludNl9cl_RI-mb_Y-nbzXBx8KtjP3Q2TYo5ublj6zBjQQbKHRGr0PLoR3agh5e-vl5GPAKNMzpjVWQ
+pbs_tL8rliItD6tdC7q1mG4
+}
+
+AzureEntityColoring(AzureIntuneEBook)
+!define AzureIntuneEBook(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureIntuneEBook, AzureIntuneEBook)
+!define AzureIntuneEBook(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureIntuneEBook, AzureIntuneEBook)
+!procedure AzureIntuneEBook($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureIntuneEBook, $stereo=AzureIntuneEBook, $tags, $link)
+ !endprocedure
+!procedure AzureIntuneEBook($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureIntuneEBook, $tags, $link, AzureIntuneEBook)
+!endprocedure
+
+sprite $AzureIntuneExchangeAccess [70x70/16z] {
+vTQ7YiCm54HHy3uzImbO__-tQw9biCXTiCUKBTUKrCEaf_-M7eVk4kg6qVPSPW1rLLNEHKI6d2lCSmnPtshiy0mQeZaCyIkY8Jn7CJ8zgLnjo4XfhTKA0aYr
+xQ6oNWwKTbrffvNCKZBlAHbVvGsbX2gM8aICfUZX536M4hhlW2ob79xL5EWeHMTS9VRWt6qbJoXrdOwCFPqRodmBLkQ6ebvAdVk7IfOIUqN5wsnUKdBvuDPw
+YBunww6oBEH4v3M5c30KEJ8iPMR2LyH4-8gSEATiUgcbA1bIz7RP-Xme4y8A_6TW9KQWF51fe8mXg3HGEYgXKEaTnxoErcg18KCPr-_7c4AAAcC8AKgl431I
+D8ILUGehkGIt4lBz62uhAC2SI8Yl297YCq8C1X1MW45awmQ3JuhF234OH7o64MOKryzb89I1K0P2dK1iflMhFT-HhHl1et42n0aCAq1if_-cFW4
+}
+
+AzureEntityColoring(AzureIntuneExchangeAccess)
+!define AzureIntuneExchangeAccess(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureIntuneExchangeAccess, AzureIntuneExchangeAccess)
+!define AzureIntuneExchangeAccess(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureIntuneExchangeAccess, AzureIntuneExchangeAccess)
+!procedure AzureIntuneExchangeAccess($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureIntuneExchangeAccess, $stereo=AzureIntuneExchangeAccess, $tags, $link)
+ !endprocedure
+!procedure AzureIntuneExchangeAccess($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureIntuneExchangeAccess, $tags, $link, AzureIntuneExchangeAccess)
+!endprocedure
+
+sprite $AzureIntuneForEducation [70x70/16z] {
+xTTNWeGW383XIK8GCkt-jrqppGAi9hfz_vUfVFPs_T3-w_mLoBTH0fZ3M2Xmi4UxA66hygy0h5HIKo7k-Y9jKI2gCJWBIXzKaQ5GK_fnYyeDOQ9mUqC-HUSt
+8cXKN_-yGb54YIT37aK78ZpZdlGeEWvUqV9f9ZSK7XHqAi6aT2sbM28YbQcCs_E2EWwVyMs_W_e-ZlTvwOFQJXUVYEuxk4B1wc-HNWWVhCgmytRCWQDwyAvo
+7PIIUQQ8QruqZ2eCUxzdNZGCp45_Soj3oqhtlHJ98bO5IaNiIgPT5A6A4d558IN2Urc42cLTMIRHHBc8hpnHhau4nagpuwZJuxPWMBkAc1HjhYYoMKa3ubQq
+prLad5SvxgB81oZYKsGFHOekLYLBjMHHSZE3ad-4ajgAxOcPAqMhKkzxALTBBcLx_xq1
+}
+
+AzureEntityColoring(AzureIntuneForEducation)
+!define AzureIntuneForEducation(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureIntuneForEducation, AzureIntuneForEducation)
+!define AzureIntuneForEducation(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureIntuneForEducation, AzureIntuneForEducation)
+!procedure AzureIntuneForEducation($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureIntuneForEducation, $stereo=AzureIntuneForEducation, $tags, $link)
+ !endprocedure
+!procedure AzureIntuneForEducation($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureIntuneForEducation, $tags, $link, AzureIntuneForEducation)
+!endprocedure
+
 sprite $AzureIntuneGoogle [70x70/16z] {
 xTDPJeP044NXT36-iV_TcavfuaMA_t1nrlCCNy_RcwRNRLxJFXlHJ6Dy2JZGoBYHgS6TALEZ2XcAS4S9HRYIlnDYxa6bDe029aAL4m8hDKAK2Im6AC1WIcrW
 1HX00OQjpBwYXg-emHMEB4kfSADNADm02a2WeeGYN3aXi5BF0oZ0m0epwli29i8KQgYY7Ij3LJiesl5aXdQfGecBoj6IbiLHffrXA9qHmrOcGJmb6NswmxMs
@@ -47,6 +194,76 @@ AzureEntityColoring(AzureIntuneGoogle)
  !endprocedure
 !procedure AzureIntuneGoogle($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
    AzureEntity($alias, $label, $color, $techn, $descr, AzureIntuneGoogle, $tags, $link, AzureIntuneGoogle)
+!endprocedure
+
+sprite $AzureIntuneMindaro [70x70/16z] {
+xTK7ZiCm34HH5LBqLjt_jhkqCn02KxI5zF9JqHv6gNKpPgwdnjg93Z4wTGWwqK1qWd7AdCHsfmv19neeZRwzTcMN4hEFo3ubHd8CsQt4r7541XHrp25ZYfOD
+Or1P7qjaM86p6ZAce0pZ14KZ62SfaUNUbRVoLco61n4K7AKEr5C-TlyLmJ6Kgf6sXS09AwK2qJQCvXmh10Cv1afme3IZjVstsex5C82qZ26semeC8yT0L16C
+laFS3qOYyXdsyuV0oUnN3WWNEvwPcCX3H1QbIA-Y2lv7pOf0aNwpekMUOIYCUyIgB95r64j9GPzpI9OIapcaATFSFvAaFSurHSkMqPI6Q98362Y8sc5CHM98
+4yeXYgd4H30CHP6y262AfQZ3HIob8IrInbGYoIMLZuyFPJvQ_8_euv021W4PLfIXXiZ7k38tWIb0HXKmHKS16LC-FWzDyzCFaayqgjYDdEWiIkaY4n7LwYiV
+LIDrx5WHpL4gedxrKB0K6CWnaALGFSv3q4gfwpm3GO5XvHWeG85Xv25eKKhrSWqu97MhjV47
+}
+
+AzureEntityColoring(AzureIntuneMindaro)
+!define AzureIntuneMindaro(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureIntuneMindaro, AzureIntuneMindaro)
+!define AzureIntuneMindaro(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureIntuneMindaro, AzureIntuneMindaro)
+!procedure AzureIntuneMindaro($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureIntuneMindaro, $stereo=AzureIntuneMindaro, $tags, $link)
+ !endprocedure
+!procedure AzureIntuneMindaro($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureIntuneMindaro, $tags, $link, AzureIntuneMindaro)
+!endprocedure
+
+sprite $AzureIntuneSecurityBaseline [70x70/16z] {
+xTG5TiGm30JGzmooo_U_RPqgYxFHA7AvdMN8D-lbUwUUPSQOTYecQ9GHO896nAbh2Y0-gMfCX5iMuMTEm1OYnrXAGGCHhd33hzW6Lv10H6ChrE1ABORXLsma
+heZ456wqrhZ24QvmmrQyXbyH0_4gDi4LZd253uOhpF0hrE2A7sbMzRO8lrATID-bDBbfT52i8RNDtFxje21oT-zFno6j_lsEt9qwSpBYIbsHiAAC4hDA5LXM
+VrxMW9BJZXoKeanOWJ755MKc5MJwekIoGy4PxdrHyjZRuzbSBW551gE6AZAsGXcMbJjGbeMgYfptfLjA0qNdHfNGl20JNACJ8o45cSY8aAdjDBl9lTB8I6Ib
+qT6-tAMeeipRlDGSdXTDqlmofKYULyfOWinE8r4Y-mMLKsMmqeW2voY-Hl_AjyWh
+}
+
+AzureEntityColoring(AzureIntuneSecurityBaseline)
+!define AzureIntuneSecurityBaseline(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureIntuneSecurityBaseline, AzureIntuneSecurityBaseline)
+!define AzureIntuneSecurityBaseline(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureIntuneSecurityBaseline, AzureIntuneSecurityBaseline)
+!procedure AzureIntuneSecurityBaseline($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureIntuneSecurityBaseline, $stereo=AzureIntuneSecurityBaseline, $tags, $link)
+ !endprocedure
+!procedure AzureIntuneSecurityBaseline($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureIntuneSecurityBaseline, $tags, $link, AzureIntuneSecurityBaseline)
+!endprocedure
+
+sprite $AzureIntuneSoftwareUpdate [70x70/16z] {
+xTC7UiCW341XWLOtzpzjss1z5cGYPu_NPYU_vK7PtgkF4nH0ZaYWHX-NYjCHyOULqp6THCaFghoKb_9ILipYcyzI__AYHrUEwAJAIq4yKa4MhGdZKWMDC8ZY
+YXkUO5X1tH855TQjSKWXRPA6f822BK80uBEXAtX0aLP1M9N41XjMI7jbYcoqGSL6uKHsM1XR1iSKcYO7WChDhu0dVKnXEwG0sEzNciGnHLGIJ8apUHvcI45L
+0Ikx8lDixuEACXh4pYI0559iqmH0_P7f53fmYanXQauIDOhrjY-VfJkssPMHx31qnvPXLKB0c8AR9xec-X5GUED4rqYhKWOLpPiNBsJHgfJ3jLjFt0nZBueL
+O7mTC6djFQQe95UyGSGPfUfm5776OaGKzIYiUEqenpDIh6CSAk6EsnllUCEA4Q_-
+}
+
+AzureEntityColoring(AzureIntuneSoftwareUpdate)
+!define AzureIntuneSoftwareUpdate(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureIntuneSoftwareUpdate, AzureIntuneSoftwareUpdate)
+!define AzureIntuneSoftwareUpdate(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureIntuneSoftwareUpdate, AzureIntuneSoftwareUpdate)
+!procedure AzureIntuneSoftwareUpdate($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureIntuneSoftwareUpdate, $stereo=AzureIntuneSoftwareUpdate, $tags, $link)
+ !endprocedure
+!procedure AzureIntuneSoftwareUpdate($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureIntuneSoftwareUpdate, $tags, $link, AzureIntuneSoftwareUpdate)
+!endprocedure
+
+sprite $AzureIntuneTenantStatus [70x70/16z] {
+vTM7ZkGW381Xc-8IHyhxl-sjSqZ0N27MS7M_BLFvbPWfrp-1kXqDjwFXwliHLpP4N2ooer9fHuPeGuRsL7PawBDLwFqA4tEqqfTsJojCxMSKhonigTGjbMjZ
+PMrtPHs9PyH5A_BrPtO5IBUCn3DwRSYKAufONd0uyQ4K6L4EViVIhI9cufOeY9LSgE4otd92bwY9HQZWA5CWGmCSLUeY4ShO9He58bInApHPHxhKA_JYSMIS
+RtwZGjDiPyyZbAVPpXv7gCwpPJtCx61oTjhvmTOLIkDinHeb8ZsjMNzC5dIPdKSQPRLk5M52LzdPW6sqgh3FDx5J6nmsE5SHhZvRTeUDOXLEYCJE9YAXIccp
+VQcaz9sv2Fy8jTdAD983mBDAjxh-KiqyLz2l4K3owt1RLffUgP3zX221M8MY3bg5PVdJpWS1r1HGCIdYCSzbJSrbI52De5e519xtI1xm1GBfGBG4waULvYqg
+yi2XgWdO2kHxFO7E5Nca0lXozLqPtanNh28bPxat27HyvGOpRIr36YETX398lT8RqOmSuv6CD99fpXOPwIE7TJqITfuR8fvvk-7kXbrlEptoz_e2
+}
+
+AzureEntityColoring(AzureIntuneTenantStatus)
+!define AzureIntuneTenantStatus(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureIntuneTenantStatus, AzureIntuneTenantStatus)
+!define AzureIntuneTenantStatus(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureIntuneTenantStatus, AzureIntuneTenantStatus)
+!procedure AzureIntuneTenantStatus($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureIntuneTenantStatus, $stereo=AzureIntuneTenantStatus, $tags, $link)
+ !endprocedure
+!procedure AzureIntuneTenantStatus($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureIntuneTenantStatus, $tags, $link, AzureIntuneTenantStatus)
 !endprocedure
 
 sprite $AzureIntuneWindows [70x70/16z] {

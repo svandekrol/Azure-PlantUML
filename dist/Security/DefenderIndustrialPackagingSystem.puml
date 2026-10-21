@@ -1,0 +1,16 @@
+sprite $DefenderIndustrialPackagingSystem [70x70/16z] {
+xPM7RiGm34ExH5dk-l-_BI8mn3ceSgkxVeV52_MourVXAx0AgFDQeORTLtoBvU4zphVS2p4jvrxTZx_JpVdRiR2nPrd1GmNKgIrdy0Sjqp8jSI9BiRJ4oKnB
+nRHCIp-7VsMPbhzFlvWFS2JNIWWb7w3f7y21fJdWJT41U7GI3eDNNKa2bc2CJYKtqghk5XWMFpSrConGunaTPa69kWDkGEgHSsQPR9bBfpDYspqaSe1ponWO
+imXjXBNUwMHNv9WHM7HdZtlFlgGnT4jBqyvpVBHWqzsrU6NnRRU-BZxiV92siHkR6-qQerINanTROrWjFjvgtKnaZpSpO_R0Q7bhWpV9ipkmEdYcM1BMfpKK
+kKjrjwz0qpCkAvzSMZb5Axjw6qMqnlyPXvInw7xGzuMQR_zaVjmQy0O
+}
+
+AzureEntityColoring(DefenderIndustrialPackagingSystem)
+!define DefenderIndustrialPackagingSystem(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DefenderIndustrialPackagingSystem, DefenderIndustrialPackagingSystem)
+!define DefenderIndustrialPackagingSystem(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DefenderIndustrialPackagingSystem, DefenderIndustrialPackagingSystem)
+!procedure DefenderIndustrialPackagingSystem($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DefenderIndustrialPackagingSystem, $stereo=DefenderIndustrialPackagingSystem, $tags, $link)
+ !endprocedure
+!procedure DefenderIndustrialPackagingSystem($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DefenderIndustrialPackagingSystem, $tags, $link, DefenderIndustrialPackagingSystem)
+!endprocedure

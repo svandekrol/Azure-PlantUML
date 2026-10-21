@@ -1,0 +1,15 @@
+sprite $DefenderWebGuidingSystem [70x70/16z] {
+xTG5SiD038NXWct1okFxtxRpDCqgi10Sr5z8bhvmZhUNPLcMPJPiVus8fiXkRs0ClMNBFO_vPMI-QuvudrFeFr_UxrVYd0zYEByhmL3DaSWC3CrovMA28-8I
+o4mfnAq4_w0mqyhTQ6E6qXAA2YCy8cmTACIXYAe4ecOQzmMjwxRGqjIg8d5Ea8zGLPPb-w6VWI9Spxc1LELH9SvTLw082miK_Y7XrW-KuiYruaDp1PsKPb0i
+pc56j0OabD-10aPhcD10GbbTuOvonHp8Ib4jXZ0Kn2pu6IfMLBKKExohRrCOelw0jN79eirZCV9KXRGRrewhSwrqMkpDiYpBiZy
+}
+
+AzureEntityColoring(DefenderWebGuidingSystem)
+!define DefenderWebGuidingSystem(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DefenderWebGuidingSystem, DefenderWebGuidingSystem)
+!define DefenderWebGuidingSystem(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DefenderWebGuidingSystem, DefenderWebGuidingSystem)
+!procedure DefenderWebGuidingSystem($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DefenderWebGuidingSystem, $stereo=DefenderWebGuidingSystem, $tags, $link)
+ !endprocedure
+!procedure DefenderWebGuidingSystem($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DefenderWebGuidingSystem, $tags, $link, DefenderWebGuidingSystem)
+!endprocedure

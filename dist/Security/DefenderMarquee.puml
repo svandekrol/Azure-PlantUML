@@ -1,0 +1,17 @@
+sprite $DefenderMarquee [70x70/16z] {
+xPO5ZcOn38FTb9E5-vzsAP6bFf1scFhD_5ovhjq7FqziDfkDtQ7Ns2NV7gHY-Z0HiuTOUQ2N1_1mB-yf5zkvlCP-QI91rakPMJYYt7cf04dJp3g6hWX8DcVA
+M799W3W9-AjI05sP4W084Q0jAa0r9mDgPe9qbmiWaG8mB0ZLJbV9Nx8I4cCZcE8JCfSEJ7DyrGhKc_qow5jYQGmtFdEc0VGRBus-4sJfA2CPNJKVEczoAVGT
+IoCfocDYh6WbugVj6buOAOk6_bCHNHaIiA81Z2MN0UA_Q9gwq454pSbzEHer0QHv_FrE92kdPYp_MNJaP8G1CPUrw7fLj41Yln0MRLT5zsXgKG5oU24QHTCB
+LQrU7uiJg252HaH8N9LhvR58UgpGYFkbbpZ2rsCHa4Mb0cFDXSSYS-bKPKMGwZJzImPgGA4u5gdIOYVpxGH8TnKY5inuIuQHhXuoaKYNSF1GOoxN318byVFS
+zo_x_kK18WzSqGDqVZwPpMRp6m
+}
+
+AzureEntityColoring(DefenderMarquee)
+!define DefenderMarquee(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DefenderMarquee, DefenderMarquee)
+!define DefenderMarquee(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DefenderMarquee, DefenderMarquee)
+!procedure DefenderMarquee($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DefenderMarquee, $stereo=DefenderMarquee, $tags, $link)
+ !endprocedure
+!procedure DefenderMarquee($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DefenderMarquee, $tags, $link, DefenderMarquee)
+!endprocedure

@@ -1,0 +1,15 @@
+sprite $AzureGenomicsAccount [70x70/16z] {
+pTW73eCm44HHLTPU9FR-fqrFXZg2CThm3_3ekCIbysUnaJtRhJX1R2_25SjImadbH2NQb6g7bPRR0cPG44Hk2XI1KP0WDvOeX8btrGX26K0W6CAPAYDWYga8
+c6eo0aStq8Gexir6zLSY0WECYBWZ6OaGcSM34HKO2qP0aAeKNqr7TAMwol2VzDyKt-m0KYwa69aW7M2wX6UKyzQ1qH0ev6pQVWr0ylvrOE3q1A5rXXp9ur5H
+40G3YCHKLn6qcDOr6-zQZK-TZBWw4nfczrHZbiz5O1O677K6Zy08298KVTK8XFtNynJIEKh9LVghxJDm9MyN9u0aTmS
+}
+
+AzureEntityColoring(AzureGenomicsAccount)
+!define AzureGenomicsAccount(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureGenomicsAccount, AzureGenomicsAccount)
+!define AzureGenomicsAccount(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureGenomicsAccount, AzureGenomicsAccount)
+!procedure AzureGenomicsAccount($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureGenomicsAccount, $stereo=AzureGenomicsAccount, $tags, $link)
+ !endprocedure
+!procedure AzureGenomicsAccount($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureGenomicsAccount, $tags, $link, AzureGenomicsAccount)
+!endprocedure

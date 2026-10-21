@@ -1,0 +1,18 @@
+sprite $AzurePlanetaryComputerPro [70x70/16z] {
+nTO7ajui48JXFzZCD0vz_zkwvDxGHJ4QDhyLFnQULPRujG5JlSc0c3SuKFCD31AFdIdnt8WnD9YPK2JPAU4v98PKTyg8eY66F52YRWGzb4eqqPgL4ds6x9Nj
+Yf81Zf5wM1TDZzp-0LSt2BbNw8oKOyGPFi_1LidCI4tWWZWRof1L-Gjnft0vOyoyGTAGN1HZc9dtY7xOfZZZiv6LOZzkb5GDedPAriXU8NUCpuqLQOid9U8H
+URb2twGK4l5onAvT8IzMoF2ahKoFZB55NFdMAcCuG-H6IKMM9teuew52OQEGz8NGC-05of0YngUvWiHhbJJbgbASYLQ1ALIkg5vPLbKA3vK8BTamXZHAn0t3
+SyMPjJnJuaP1vaiKCfpnPUSAIKQZf2ATKQPeM_1K8ZTnhuJl4GdlKE7wJOcrHAUGuPcoL2WKafck659j4Ua9aKA64bvMl6Ebi4WagA2sYECebHg18RQWG7Al
+G0fnfbJ8nP006gL1aFeWHp7DXe3wlmWHmrae7VBjKXH9h0nKYSofCKeHSstJN9KQSOLuTgPQDmKbSZ5KSms6UDmeawmOKtgaPgR6C1qfbDhnAeIEE5D3PAS0
+IVBthFl1IX43bNVRmoBRL6Fs3ij-66EAgeH-O_ZAZE5NzWS
+}
+
+AzureEntityColoring(AzurePlanetaryComputerPro)
+!define AzurePlanetaryComputerPro(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzurePlanetaryComputerPro, AzurePlanetaryComputerPro)
+!define AzurePlanetaryComputerPro(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzurePlanetaryComputerPro, AzurePlanetaryComputerPro)
+!procedure AzurePlanetaryComputerPro($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzurePlanetaryComputerPro, $stereo=AzurePlanetaryComputerPro, $tags, $link)
+ !endprocedure
+!procedure AzurePlanetaryComputerPro($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzurePlanetaryComputerPro, $tags, $link, AzurePlanetaryComputerPro)
+!endprocedure

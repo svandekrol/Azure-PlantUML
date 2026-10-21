@@ -1,0 +1,17 @@
+sprite $AzureServerlessSearch [70x70/16z] {
+pTC5hiCm383Xa26FVF_RlbdDAFPI6lGVGp-vbYh3lhJwLVLPjlLL-sHrrUq9XlOCH7i2eZq1qPw2rA-dAFK9YBO1OIBUgJ3cS2eck9FM8H33fSmBbTgLmsqH
+BUCJ5ea5467oS4wfFXAXXKa_qL0frOOXX8HmgUXd7YXSRHnr4t2JpWQrvI5iGptcBbINfwp2RlcobBjp8cujKs88kLDGn-Dh1h7f4OvI-BOvX1m5OgzmtQ2q
+MIp3Zz8ZXdjfZPKKGd9cGUuR8LpiAPtWoBQHeej9PfJCjZfGEFMR2QU8dGOA12t3fQWghrCmJ4N0jXCrUT00qL9MOXjYAzHVFWkHaaChPkmDRH72J91JoWM9
+fqZk8jR8kM5i23Y_YkIRHAPlRJU8aqY7QBmFaVOjzHbafD03fJIaF43A9KLQ8aQnYA_8THIZu7g4n3AWrmujKSXNMaXh4PSPAJwYRK6i8iyOHTiyYjorHf51
+Jq6qiG8sMHtOobEK3o7Y8Tix3YB7GUGuY1m7aUCWSXn4ZeF80Fa7
+}
+
+AzureEntityColoring(AzureServerlessSearch)
+!define AzureServerlessSearch(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureServerlessSearch, AzureServerlessSearch)
+!define AzureServerlessSearch(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureServerlessSearch, AzureServerlessSearch)
+!procedure AzureServerlessSearch($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureServerlessSearch, $stereo=AzureServerlessSearch, $tags, $link)
+ !endprocedure
+!procedure AzureServerlessSearch($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureServerlessSearch, $tags, $link, AzureServerlessSearch)
+!endprocedure

@@ -1,0 +1,16 @@
+sprite $AzureSearchGeneric [70x70/16z] {
+xTS7RaGn28JXvm9Ez_rFcuALJ2HhXqcl_m4-0LlV_5cDvxrDS43dhpBSqSBwr7CG6oGZ83O6ZevOgxKyL6i7f31O9W1KEnWPQMMhsYFZwLq3wGKTJvMgJOD1
+DY8gODB3LX1R1aP52EF9FfKPM8eZZI71q9ryAHI9scBoVGuQ6oOK0v8FmqSviZAbI4h7IWXA1yAg7WnRw13YIX6LpXKW-QlqTWNdtHK38fptOnL_7uKWybrq
+fTDPggWOVRzqKV6JIZ0lFEwR3jCJfKcAdrHSNwa1USDzFLMyY5VXFmAM8PN_h0rff-B9Jsme6PF-QnWvKnpxP8mLyXgJVQBpyxDGJhtxYaa86BUw3wBypRmu
+VsW4ipkbkOp4DCl17zvQMpFNaTM0ipKoX390d2DeZeVuKq2EpEa340WO0XADiNUk8-o9JqT8du_y8-S4qVi-o6I87aFqBXH4P-RRoX1zdFaDkWC
+}
+
+AzureEntityColoring(AzureSearchGeneric)
+!define AzureSearchGeneric(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureSearchGeneric, AzureSearchGeneric)
+!define AzureSearchGeneric(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureSearchGeneric, AzureSearchGeneric)
+!procedure AzureSearchGeneric($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureSearchGeneric, $stereo=AzureSearchGeneric, $tags, $link)
+ !endprocedure
+!procedure AzureSearchGeneric($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureSearchGeneric, $tags, $link, AzureSearchGeneric)
+!endprocedure

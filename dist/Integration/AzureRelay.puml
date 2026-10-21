@@ -1,0 +1,15 @@
+sprite $AzureRelay [70x70/16z] {
+xTS55i8m44LHPAJU_UyM8YSCKWaV9nTlaeVR-5H5LokaQbobKLHxh5IASZUcnc_B3rQ-Ny4U7i4xd10GCHvJsG4Lu-SguzrsGCLWuK08gAYAk8Qg0X67cTM1
+AkOCS5FCEIIIpWjUSO08a17cz8YQ337dll3bgY8Phs8viPj94g0YafLHOs9pHWIhL6PdDjljQog6sJwnUSfZAhKnjJahCxLvbIQQshpInEJMRFvNnT07cgyF
+XYV_iocLHb6DgzHUfVbghnc_G74
+}
+
+AzureEntityColoring(AzureRelay)
+!define AzureRelay(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureRelay, AzureRelay)
+!define AzureRelay(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureRelay, AzureRelay)
+!procedure AzureRelay($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureRelay, $stereo=AzureRelay, $tags, $link)
+ !endprocedure
+!procedure AzureRelay($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureRelay, $tags, $link, AzureRelay)
+!endprocedure

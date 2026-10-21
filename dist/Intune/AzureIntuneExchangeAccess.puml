@@ -1,0 +1,16 @@
+sprite $AzureIntuneExchangeAccess [70x70/16z] {
+vTQ7YiCm54HHy3uzImbO__-tQw9biCXTiCUKBTUKrCEaf_-M7eVk4kg6qVPSPW1rLLNEHKI6d2lCSmnPtshiy0mQeZaCyIkY8Jn7CJ8zgLnjo4XfhTKA0aYr
+xQ6oNWwKTbrffvNCKZBlAHbVvGsbX2gM8aICfUZX536M4hhlW2ob79xL5EWeHMTS9VRWt6qbJoXrdOwCFPqRodmBLkQ6ebvAdVk7IfOIUqN5wsnUKdBvuDPw
+YBunww6oBEH4v3M5c30KEJ8iPMR2LyH4-8gSEATiUgcbA1bIz7RP-Xme4y8A_6TW9KQWF51fe8mXg3HGEYgXKEaTnxoErcg18KCPr-_7c4AAAcC8AKgl431I
+D8ILUGehkGIt4lBz62uhAC2SI8Yl297YCq8C1X1MW45awmQ3JuhF234OH7o64MOKryzb89I1K0P2dK1iflMhFT-HhHl1et42n0aCAq1if_-cFW4
+}
+
+AzureEntityColoring(AzureIntuneExchangeAccess)
+!define AzureIntuneExchangeAccess(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureIntuneExchangeAccess, AzureIntuneExchangeAccess)
+!define AzureIntuneExchangeAccess(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureIntuneExchangeAccess, AzureIntuneExchangeAccess)
+!procedure AzureIntuneExchangeAccess($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureIntuneExchangeAccess, $stereo=AzureIntuneExchangeAccess, $tags, $link)
+ !endprocedure
+!procedure AzureIntuneExchangeAccess($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureIntuneExchangeAccess, $tags, $link, AzureIntuneExchangeAccess)
+!endprocedure

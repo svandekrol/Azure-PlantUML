@@ -1,0 +1,17 @@
+sprite $AzureArcDataServices [70x70/16z] {
+xTU7Zgim48NXotYQ3PBV_sslDplW3CMnXTec-LJJVfrqo1UcKtd0r3BQ082m0O21q5e8U290L-UVIpH2hvS4R0gMQKS0Nx0rGrF6nu3VGaJCKZ0JaTy2rnMj
+BownnXrbgY-lNbTcdXw0uZcbwHSlZKh9cC2oJmY5oSZShCmHfWeW12n207TrcbkLPIuImTG0L1f5Ouj97CuBWTDiMbkgf8m1DW5PrqB75YzjPcyPgAH6vOEs
+BD_NvRlb-tdvRlb-NjvxIq8yJI1YxDyIiJXfMCLhLef3OtIByP7nBSOrXhVu323UsM8PlBi5VGIrVukYon1MrB-5iEAS6PzmxnRtACbP29zGwjcI_6D-AemE
+frTRag2F_5GiKx6cwor92HsIHyKo3ekLdYifgj3ndbOf24yGYwXgZAegp8GhFwHMX0d74Kkj61fCa6ooPMmG3QwmYAluyqpFdv5wkMOSBkXXVMp1XHWViSmT
+UNMxOMutp9s6TwCmdCBSAGvE-0y
+}
+
+AzureEntityColoring(AzureArcDataServices)
+!define AzureArcDataServices(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureArcDataServices, AzureArcDataServices)
+!define AzureArcDataServices(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureArcDataServices, AzureArcDataServices)
+!procedure AzureArcDataServices($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureArcDataServices, $stereo=AzureArcDataServices, $tags, $link)
+ !endprocedure
+!procedure AzureArcDataServices($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureArcDataServices, $tags, $link, AzureArcDataServices)
+!endprocedure

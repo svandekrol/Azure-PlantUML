@@ -1,0 +1,16 @@
+sprite $AzureIdentitySecureScore [70x70/16z] {
+xTH7Si0W38NXXL5nckv_srWupUL5o92UVyz7cv5zuwPZT2o3O8L6AlqtwbUAvPdKKNYDOaLbRGQ4LoA5zIL125EaY9upd5BqRG8K3XH-Nq6_X7v8r7iuHs9b
+otGhsokb5Dig-NV15ugl55m8C842ZjAZY04cKi1HhYdgYG6cKT6QTIZWLRmhPq6Zhad1Hp79AmzexfOsPLwFWXHkKmGgjfcPKE4bX7XePgAfQm5J6XGn2nZ2
+2XyGx63boNYmXh1YSR72bWaf1eePW2GPW2GPW2IPu673Y4fnXPViSdKvYTUZLAPNcQQoG6umTIXUOQzNcNwlyg_mS-H9JMiYUMHDDyaGHJC8LkGRAPf1iA93
+5Fcqit2iw115lf6YWvJlt2C
+}
+
+AzureEntityColoring(AzureIdentitySecureScore)
+!define AzureIdentitySecureScore(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureIdentitySecureScore, AzureIdentitySecureScore)
+!define AzureIdentitySecureScore(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureIdentitySecureScore, AzureIdentitySecureScore)
+!procedure AzureIdentitySecureScore($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureIdentitySecureScore, $stereo=AzureIdentitySecureScore, $tags, $link)
+ !endprocedure
+!procedure AzureIdentitySecureScore($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureIdentitySecureScore, $tags, $link, AzureIdentitySecureScore)
+!endprocedure

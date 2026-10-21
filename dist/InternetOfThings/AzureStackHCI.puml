@@ -1,0 +1,16 @@
+sprite $AzureStackHCI [70x70/16z] {
+xTO7ijim38HXXmInW59u_zi632BJJ1M8bDS-rsc_gtRKV-KDScRaoLHaHokbL1cy8blApN2sKaS5JwFIBF9EPaMJKXK0agxGpQGhTLHaLeujNZbCfkAVA5lH
+rXgERCNDolkaxhAL9mT9JwyYMsZior_OEkqcMUbwVhv41Gz8B-DIIjNXR4oyjRk4WOceCOQk5qaZugyLc5RB5vKz4rvC62gdsc0ql9WUcHX03rJqC02uBc02
+ktju1NNLhhyP4T5PMNabHC3VLKIY2oh2-Kh_IIL817L5OXM4M4M8glF75gz0H9WM8g90_CqqUi21jqArjli1_9Y1cesLKWDoJTJqUCKp0cO6r2FnYX6T0X6X
+KP6p0jmxWQNp3o0wUCM80RmID2kJNePI2jqhlD3Boit8JogRPwgyE68L_N7b_UKAB5AF7rVwvfbgM_JtSN-wmcTbaqVEMYP2tUGgD283qVud8g8VFCrxyna
+}
+
+AzureEntityColoring(AzureStackHCI)
+!define AzureStackHCI(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureStackHCI, AzureStackHCI)
+!define AzureStackHCI(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureStackHCI, AzureStackHCI)
+!procedure AzureStackHCI($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureStackHCI, $stereo=AzureStackHCI, $tags, $link)
+ !endprocedure
+!procedure AzureStackHCI($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureStackHCI, $tags, $link, AzureStackHCI)
+!endprocedure

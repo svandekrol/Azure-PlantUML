@@ -1,0 +1,16 @@
+sprite $AzureComputeGallery [70x70/16z] {
+xTS5KWGn48NXwjSTnUv_MogJObDl3DA3mxzktuxBqs5rYPuwghrtK-ervLz9E-NMU9RJjetYAZ3YxQyg_qhst5Z9tdwYabJJLIKPH63Nb01PGl0hIUMM9f-I
+J2XB3YL0LY4SAhMNLqN8JeYPAvLQAxQls9m2DMmDcrK0LQ7KF4fpo70gOxHWTghGd2PbEB1RfyjBQUwBFvIMgjg8lhTHLcLWH4hXtgg8GFLLfRQE5H41e4TA
+NMf8wq2H5Z2S3KBjAj93JwULqWrIe3gl22azdLJ2lX9db9Pj50rbn0mjBrHMLcWkdovrNCHGD9NYKCRa6HF4fRHKX6QDJoa9cejJuJvLgU-ZUFi2vL_vLoW_
+SfsPEhU_E_hD7rUUBYlqzB1d
+}
+
+AzureEntityColoring(AzureComputeGallery)
+!define AzureComputeGallery(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureComputeGallery, AzureComputeGallery)
+!define AzureComputeGallery(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureComputeGallery, AzureComputeGallery)
+!procedure AzureComputeGallery($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureComputeGallery, $stereo=AzureComputeGallery, $tags, $link)
+ !endprocedure
+!procedure AzureComputeGallery($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureComputeGallery, $tags, $link, AzureComputeGallery)
+!endprocedure

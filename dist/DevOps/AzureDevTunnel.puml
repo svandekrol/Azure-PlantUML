@@ -1,0 +1,15 @@
+sprite $AzureDevTunnel [70x70/16z] {
+xSy5ZiCm54LH5yoMkl_L3gRqfY_97QPhMMWV_N_m3Ud06pU3X0yXFcRucE7Z26V6wXZ2cO4226O6xiEKyOeCGliGPRoobKejAPMwJd74Fapj7RIej5suQDTU
+fPGW5Qju98ONnNd6JQ8LgBHmiywK62I_aqTwC7MYPATaekoSiYFAnYaReWGRK9fN-hiexMSeNSwSqlNrKUdQh29XvL_vL_wLkbwfsUOLW0WZYY20CKfD2rMZ
+208OKG1oP4GH132Y4EJ8gD9QUxg2p3B7F-sejAcIGALD7HL14ADAYR0YYY204KKGm1mLGI1pL0I1p54H13979SKtb2Oalh4dPF_c348p2EqU
+}
+
+AzureEntityColoring(AzureDevTunnel)
+!define AzureDevTunnel(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDevTunnel, AzureDevTunnel)
+!define AzureDevTunnel(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDevTunnel, AzureDevTunnel)
+!procedure AzureDevTunnel($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDevTunnel, $stereo=AzureDevTunnel, $tags, $link)
+ !endprocedure
+!procedure AzureDevTunnel($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDevTunnel, $tags, $link, AzureDevTunnel)
+!endprocedure

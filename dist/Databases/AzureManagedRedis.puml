@@ -1,0 +1,18 @@
+sprite $AzureManagedRedis [70x70/16z] {
+rTC7TkGm281XkG62bFkVDfd1VhY8aM7x_hj9fduFMzBdlnuyyXulZt8AjChoBodmSuez32c8S9FEqni9jLl6wY0PnaT-di538KJpbSzmhW8PHFCKGxAChyWb
+ThjHf8bTAAkuI5uH5bU1d2BiAv1GVAOvuQH2Lv4Nok5yOq0H5bU1e59XcQTfNh2wYZBzAsASojvKlLdi5fEly5mkGQDelJM2qaQDOe16LsKkJaDMMShMg5y7
+_LCmgM3HW0UzbEs5-KQXYyAhiIApF7e-cbZw2fqLcPzVgOeCB8zMZcyKEYkC8gn88Lip465n5R9KiGmPsJPF5H6RnUeeXXoQxKp5bV6AJBpn2MKgQt2Of1PG
+HXf5QnIsIHPQ7u9U8uZch96d6F9SPoQYJUQCCcs2RZLPeq6lAgpOAQgpBZLM9j3fQaB13K61ScgHX0B5xkS9cIIZyBx7bWCoSaTnzikaY3sqJTSe9f6Zi24s
+pO1oABPtQP4z0Y0MoIb-AUKjf_ZdA804LlejFWlsbBUmWZtbJTw22lOK3_4LT9L7OKGLz9H4hZ8xJ0xHACcWgrJgXAzgSEeLG_AC8TcByf7SF072mmwFEukR
+L-Z_Ljp7flp3VGC
+}
+
+AzureEntityColoring(AzureManagedRedis)
+!define AzureManagedRedis(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureManagedRedis, AzureManagedRedis)
+!define AzureManagedRedis(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureManagedRedis, AzureManagedRedis)
+!procedure AzureManagedRedis($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureManagedRedis, $stereo=AzureManagedRedis, $tags, $link)
+ !endprocedure
+!procedure AzureManagedRedis($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureManagedRedis, $tags, $link, AzureManagedRedis)
+!endprocedure

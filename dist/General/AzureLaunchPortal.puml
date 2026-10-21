@@ -1,0 +1,15 @@
+sprite $AzureLaunchPortal [70x70/16z] {
+xT05ZWCn50HHqUHRsFS_xJBqGafn3qE93S-WVNRxMztgjJ5AVQMKAKDA8LFbgIydSaLEv8fg4aNJADgGCkll3XGXhWmO8B5IKoWrXL9JA9KhXEWVHV-5Y6HA
+ZaYWF8v8e3o2-5Gp9K8aL1Zn6YcCUFmlZ7YW009AZh3222kCi18Xh3322YEjDVKhvJL3I67aDVKhVWj0I77aC_KhduGXWI8dNeCTeBmIbZ95W7GeSYHLd56g
+EADKSKQfuevYnJkySYcNqiiCe7Iq7-LIDjep
+}
+
+AzureEntityColoring(AzureLaunchPortal)
+!define AzureLaunchPortal(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureLaunchPortal, AzureLaunchPortal)
+!define AzureLaunchPortal(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureLaunchPortal, AzureLaunchPortal)
+!procedure AzureLaunchPortal($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureLaunchPortal, $stereo=AzureLaunchPortal, $tags, $link)
+ !endprocedure
+!procedure AzureLaunchPortal($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureLaunchPortal, $tags, $link, AzureLaunchPortal)
+!endprocedure

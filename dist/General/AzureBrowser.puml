@@ -1,0 +1,14 @@
+sprite $AzureBrowser [70x70/16z] {
+xT454e0m34HHt67lVrl6SSdKs_q7U6qIY69iK4sFCcXJ1WtjbRuJrTygVPw9oljR9HEMWA9-8uNyLD0h1w1krFDTeKA52fKc7eKA5Ihjaq85hNBGfZJAY2p6
+LW
+}
+
+AzureEntityColoring(AzureBrowser)
+!define AzureBrowser(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureBrowser, AzureBrowser)
+!define AzureBrowser(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureBrowser, AzureBrowser)
+!procedure AzureBrowser($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureBrowser, $stereo=AzureBrowser, $tags, $link)
+ !endprocedure
+!procedure AzureBrowser($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureBrowser, $tags, $link, AzureBrowser)
+!endprocedure

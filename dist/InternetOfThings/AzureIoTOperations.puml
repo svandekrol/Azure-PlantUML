@@ -1,0 +1,19 @@
+sprite $AzureIoTOperations [70x70/16z] {
+jTI7UlCe44RXCn-8GTd2_Lzj2XgULMJZ8kt_fYVaU51hVypQjKl-NOUhWuIhZV1nhN5-d8_RHdMlxHlTkK6gTxand6e4mnPtJy3BZU0-PEJT0YSQmSo3u8r6
+zPr2yb3Wn04vLXnUZVZ1WfxEygnHai13GjBpIlM3BCb8KGJfRkVnPfAa950l4fNRpkFD_A3nmm1QYmopohr6YfVTtm3H-VNRGwGa0-NYESNQEv8wXcDb0QKU
+cZV6E0Pv-nT-LnQin76KP6rEIL2y0tvLRFmXOsgFGVPD-LrPo1wWFG4-_AuaYeS4hrViKF4Xdw_aDsQHiNYO7XT3UjJuXesrZywHfXrrHbzTx7Yz5BOnDRdj
+EbC0iCcrYnc0qgIZBZs_Zo1USjTnztt3MXTtww4IpwKOFIaqt-p2hrG2sXJVfB6PjognXSM7cEEzIgpSFuPRErTfNjt7HxjG-S_vIlk_A-kaqfvMzfbsfn8-
+NgwqMQMRLuObvzpQh18-dbLqzxUO6MqdCd4tyag5eUt4ay4aWESLm8eNtMGMpEkt1NYXKkeFFou6hztol0AftbqCkOPNAdM0oHyo72jfMh5PPRcjwEMArv3W
+_8vKr-qDf8SLYHnh2npwPUs4VamhIj9Ox2CoqAVvYQFDtGhgm9Qo29XVr97XjgBDVl7HxlT9tQw-R_pOD-Qq0KZ9jX5JHDv0L9RrMmKKZJT9oSZh6XafgPqX
+R0sPiv46QGqLsacGr-5AHPTc2R261EtoC0xjFC3NjIQWNS3GBed67_O5
+}
+
+AzureEntityColoring(AzureIoTOperations)
+!define AzureIoTOperations(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureIoTOperations, AzureIoTOperations)
+!define AzureIoTOperations(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureIoTOperations, AzureIoTOperations)
+!procedure AzureIoTOperations($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureIoTOperations, $stereo=AzureIoTOperations, $tags, $link)
+ !endprocedure
+!procedure AzureIoTOperations($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureIoTOperations, $tags, $link, AzureIoTOperations)
+!endprocedure

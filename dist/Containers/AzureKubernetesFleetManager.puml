@@ -1,0 +1,16 @@
+sprite $AzureKubernetesFleetManager [70x70/16z] {
+xPO7aeOm24QtfU0_8_U_xKfqIK7GMBQ_QSudF8aTrmaAg72l1GO17B80aTg9enOtuSdYQUkGvTyI19Ob2AwrG8DbWOPi6MfiIrDSMk9SDtVQArf2e0o-sF9l
+2GI5WJXe4HomH134Rel25rXKli1oS4KG9yWI2SiIoyh6KW7QbRRVBx71kkjYZVxUjPy0mQ_x7brYqQ-HPOaDDtoFoeiQDrUKRfw9F_ibyG4cmXcB3m4m4OFt
+1oqGSOB2988T5XxUBnPM91v9D5kMIk-bXOVFT-DZgE4xdPSPQWiDpyKZLS6mGjfHL6BrHrOTbrSYaNinp9QsIL6e5Qom9PBj7WuikiOzNWCxB7ULZFtZufuU
+x1y5yR4btjuFs3yCAlTprp1h3UkQ0vAr-805XH55IJjdqqYaJJU38n-mYijHnezuQMKSyuPiAMD4bb3ASUjWZiLEeiTwAldd7G
+}
+
+AzureEntityColoring(AzureKubernetesFleetManager)
+!define AzureKubernetesFleetManager(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureKubernetesFleetManager, AzureKubernetesFleetManager)
+!define AzureKubernetesFleetManager(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureKubernetesFleetManager, AzureKubernetesFleetManager)
+!procedure AzureKubernetesFleetManager($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureKubernetesFleetManager, $stereo=AzureKubernetesFleetManager, $tags, $link)
+ !endprocedure
+!procedure AzureKubernetesFleetManager($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureKubernetesFleetManager, $tags, $link, AzureKubernetesFleetManager)
+!endprocedure

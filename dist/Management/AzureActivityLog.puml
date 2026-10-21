@@ -1,0 +1,14 @@
+sprite $AzureActivityLog [70x70/16z] {
+xSo54GCn34HHCmRwh_PW82HfuWs3_g7fxJ-q3Ho0G4nV9eiVBpP6MULYaCAgKAGQABig16dMO16bbb9I72vOLYa9Aw8AtxyeEK6Nf41zWLA_IL4b6267ACv8
+vPE-Nr75IuX5b9o4ydMbOAd2fOegOApIFbzHfTPIWKTIi9wjg68VelX7ABOzG5cHknNN2O8hbKDmvOZSgUn9AD8O16VspsW6
+}
+
+AzureEntityColoring(AzureActivityLog)
+!define AzureActivityLog(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureActivityLog, AzureActivityLog)
+!define AzureActivityLog(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureActivityLog, AzureActivityLog)
+!procedure AzureActivityLog($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureActivityLog, $stereo=AzureActivityLog, $tags, $link)
+ !endprocedure
+!procedure AzureActivityLog($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureActivityLog, $tags, $link, AzureActivityLog)
+!endprocedure

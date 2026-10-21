@@ -1,0 +1,16 @@
+sprite $AzureCommunicationServices [70x70/16z] {
+xT47hkGm281X6R0XLl7zJvjYh2K9Mv1dNyytlUGNoEtzFHuypKNckCgSBrHvAiB2pC9JhrPvnPUjF1KcI42Y604mYoh7XnAhG3gWHbAdcPmwZbHAElsPKWSZ
+tv7sTwvYSb9zSanA3acXSCPH9vwj0CBLp4O0dgy8ZhbFLsRhGx0YxgIBdVI021UuLnQ9ta3bMibDimG9_efK3Pfu9ODQwixj58pOFWU6gsYbWE9UaSaAWf8U
+GRY9BeHMOTWXA8HuXN4eVHGdLYauKDszNC5ZfJnPoNWUHgOhRfZPZMoOPQx2Q7ZFy5H5q53rE-tZzTi_NWbDEJA49CKgCGKD7UqgfubQB78T9j-_RItOoNJ2
+TM3gcdSFjuuwbx68vnf_oh15F1Vn6ShCvJo9vnkQyIpYkOYAHwpIl4Z4MEJEDQPPuGCz7Xi
+}
+
+AzureEntityColoring(AzureCommunicationServices)
+!define AzureCommunicationServices(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureCommunicationServices, AzureCommunicationServices)
+!define AzureCommunicationServices(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureCommunicationServices, AzureCommunicationServices)
+!procedure AzureCommunicationServices($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureCommunicationServices, $stereo=AzureCommunicationServices, $tags, $link)
+ !endprocedure
+!procedure AzureCommunicationServices($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureCommunicationServices, $tags, $link, AzureCommunicationServices)
+!endprocedure

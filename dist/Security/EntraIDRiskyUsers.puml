@@ -1,0 +1,15 @@
+sprite $EntraIDRiskyUsers [70x70/16z] {
+xTCtOiGm34JH1lmgv_wtTUS42SPGSDvVRdZC-kdnqe2nxmJSPmwupomOO620WG4cHXIk-sebHXG-NOaHXQ-Uomyw8_qEHKupIXY8FPb34upiZ9auZ3Oh9-93
+-i_njgrVwEFRmOR2ZC868dBLzqixIjureALGdGy0BOKQ0Geb7pU-aYUphX1eAPnlBQP2jHw0dX8r0Yq5IpbeLhvj6v4qgU0h4kDAOWmaANZAqXfG94uL74LY
+MWc9n7X8RbBn4IMcfGIatNKLYQGanaL0a1XVuQ6qVgAVrHC
+}
+
+AzureEntityColoring(EntraIDRiskyUsers)
+!define EntraIDRiskyUsers(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, EntraIDRiskyUsers, EntraIDRiskyUsers)
+!define EntraIDRiskyUsers(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, EntraIDRiskyUsers, EntraIDRiskyUsers)
+!procedure EntraIDRiskyUsers($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=EntraIDRiskyUsers, $stereo=EntraIDRiskyUsers, $tags, $link)
+ !endprocedure
+!procedure EntraIDRiskyUsers($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, EntraIDRiskyUsers, $tags, $link, EntraIDRiskyUsers)
+!endprocedure

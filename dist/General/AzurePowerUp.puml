@@ -1,0 +1,17 @@
+sprite $AzurePowerUp [70x70/16z] {
+pTM7RkCm40JGAoms6l__Qw_n68pruar1owG9Yz7pAethAwP7gjwC54OXJIAYeo6ZSGMh9y7Xbd0mWEEUDDmFuYI6ZuZEeo6pH8G61in5qHaGdr2s4Or2gOtH
+UzrH4Pcjmw0q2luwRAOLoeydoZm83Bss6wr2QkPM_OpIICSYIe70L8g8JAs8r8nABn0OkejbH6HO1GMaO50wICKq7kWiutpCCSvqp97CY7RwxOAC_vd_hkU-
+lgokqaKEC-FQ-dqbyoEHF3VkSRs2YNgEHGnzllF_NdIyMsdpLIMcfM8_cJsibUoFH99PRodqLSRBzFOiz1-ppmiLbUoZpFSgsGS9l52YBxEdC1Mo--sAt5em
+zrA98zF_ddjy6DzobTE_86rT67D1rdXWsfxArCXPXlyrBPaQWSan30WAE8o8RLQ14Q6D8YDYEP2AcI258hET1GA38YDIAp8YjL8p8YhBT8_rLukjLDQFxRY8
+ByS3kOw82hl8j0dofY8pG51u93hRk1V8cyhS6NsHGj68mw5KP4HmG7ORucHNdq1xAAEnS4Jodho-oXq8TfvWu10VGKD80mU1O7ov_0O
+}
+
+AzureEntityColoring(AzurePowerUp)
+!define AzurePowerUp(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzurePowerUp, AzurePowerUp)
+!define AzurePowerUp(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzurePowerUp, AzurePowerUp)
+!procedure AzurePowerUp($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzurePowerUp, $stereo=AzurePowerUp, $tags, $link)
+ !endprocedure
+!procedure AzurePowerUp($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzurePowerUp, $tags, $link, AzurePowerUp)
+!endprocedure

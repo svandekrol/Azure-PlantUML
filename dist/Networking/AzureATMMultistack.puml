@@ -1,0 +1,18 @@
+sprite $AzureATMMultistack [70x70/16z] {
+rTK7ik8m381XkKeoE-FxttQ5Hs_MuWcCDzIVJf8lFUdhOegBqZtAkgDA00WFKUJzCzOeXl3bYbz_2DDVLLbtMCdv0Ke2o9-Yb1ZbRNTQVxiSHcujIvLAdYjL
+sbFgkMWAsJ2s6qYgSoMKQqnr5NGGQJ3OxmmbGV0oOUITsCb7C4Ae6ymr1AupF8S0z5iXHQI0Tp0L07yf965CHHaYAeccC1HvdnIAaLqbPg8Ib2aXaMNg1KEk
+aZ99kZGPG1JBuApKdD5JOgLpDS38AcFuh63Ev2cfqiGu2YxNY8aJ4ez7LOM9mxZhvF6_A6no51P51vKVXLctDKkY_9xCLnInIkLHsb4gN2g1jfV55k4Vamue
+c0QZmzk-elyfuoh5XbP1cYXbxb2ejOJj9m8fnAe_1uE9MjjN877Jyfa9kmg350IP6RXBmSX6WTGCampYAhNDZ2ZXWecfhHNBC6HEXidZwscbMAR8Inc3B1NB
+j9bHXFjIaT1dBBAkkSmjXDqy9kWsMIgM2JXT-04KsL46a-PoEzVt56vUVLVX9R9MD39Q_pybfsAkiUzK2EcuelLNzMVTPoWbrGSe4T93bgKyG3crqmEKaki3
+bFeGfRLsMD5EVTrV
+}
+
+AzureEntityColoring(AzureATMMultistack)
+!define AzureATMMultistack(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureATMMultistack, AzureATMMultistack)
+!define AzureATMMultistack(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureATMMultistack, AzureATMMultistack)
+!procedure AzureATMMultistack($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureATMMultistack, $stereo=AzureATMMultistack, $tags, $link)
+ !endprocedure
+!procedure AzureATMMultistack($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureATMMultistack, $tags, $link, AzureATMMultistack)
+!endprocedure

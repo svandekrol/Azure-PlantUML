@@ -1,0 +1,19 @@
+sprite $AzureDNSPrivateResolver [70x70/16z] {
+xPU9SlD028F_sy0w_xx_sxP6hePecCqvTzLx0n-2OYUPRzAt_a3leTmDYsif1ReNeQ0x8MIusPOoSoTdIIbd9sA3-DF1MJdXwIm8YrCEa9FIGtZEd0CKbE5W
+ywMN2a5qv3SgZUKZGcciP3pI3VqKJE2q3hU5e1jZLfN1cjdiCOGCGfX44Ol1CAaRYd4OOgLm9mfEKhGV9yHbAZnAolI88MROJtmjrpWBZ_hrPS_dF2O_phnV
+Lv0CCmFeo1ZwOPlx-VYs1J7NensUgQxNpaW3lAOE6mYjFH6IzLDOtauUPuXjDiPiAFa0bEQFylILpYpBfAAOQQn0zVTHsGDICwGWX9JHo16YPaZvdwSbn7gA
+YR7VbJ8PKOfIFJnAIxMXbdBvrDuscdiX53H4jq48CJolBLM8qwn4xnUeexYq96CfnYuBIdGKlwAC9GMwcw8TIPHGM4KeCbr_Wa9CkqV8UO2olqhPXRBko5UK
+Iws-flXgkdTIGhUkfQotRd_75O2hKIZDxZP1TzmPbfGwbYc3UUeknJicq6ru3uTvlNiFV_ZkpORuWewPIebFoT19P4FLZ3ohcMr5PkPaqufIogw5NsTNcZdB
+54h1OAPXyfJCpjm8Ij-45CglB6082nqlnnA8E6mNYlHaSyAoSv0wSe1AFwImfmaQDwRzFmSXe2Xc0jPl38U_7HLsGfI2NuALs_NtX8pk1MyLQjACh9m1CXMY
+c8cukeImWE-R2wJ7J8Ho3fnACcmefCVCWN1ZJsWa3mzmS3dMbEHW_p8DkmR6O7WB8IKn-SAN0X4CQ0a19a4WfG0Wuu5tsljGxK--NsV-JXjFK9uIAU_Hjpu
+}
+
+AzureEntityColoring(AzureDNSPrivateResolver)
+!define AzureDNSPrivateResolver(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDNSPrivateResolver, AzureDNSPrivateResolver)
+!define AzureDNSPrivateResolver(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDNSPrivateResolver, AzureDNSPrivateResolver)
+!procedure AzureDNSPrivateResolver($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDNSPrivateResolver, $stereo=AzureDNSPrivateResolver, $tags, $link)
+ !endprocedure
+!procedure AzureDNSPrivateResolver($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDNSPrivateResolver, $tags, $link, AzureDNSPrivateResolver)
+!endprocedure

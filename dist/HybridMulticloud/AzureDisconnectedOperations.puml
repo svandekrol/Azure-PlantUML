@@ -1,0 +1,16 @@
+sprite $AzureDisconnectedOperations [70x70/16z] {
+xT47JiKm48HXoILDPUz_MmoE9jOG3Ukbm_kZalh5nQX7gVKXIFe295r5aSG5a7INGAJ1P01Hzu1eGzwF8tZaHZ8kjsrR3MLywq10ND5Zny8I0GUZ2IDmKayY
+kKK8C_abWHWXWWaWo85aF5y_0Z4NSeVb0LaribpSwF2zDn0iCZaqMusS5t1eSv14S0M740WIWGA6aTs3CCFAva0GCRC86XaeRWIHubnOmNHh3a6lbVqkXM0m
+NIdMYY0O39ObWa39f2X4A-bI62b0f59Q6GeZpuyx8XGhFIY4b8w8W409850CIW3PHmKC8-kkOwLrx6V75D8d0-RO--56C9HHiQCtWK0P6OiYs73hJI5Gc05o
+xEA00GJCU54FdH5238awVfSNoMyKlXL5E3zIUkAPemz4r8e73I2rb6fdTLe0Ke54gwsVYZmG8oJO3VBe2G
+}
+
+AzureEntityColoring(AzureDisconnectedOperations)
+!define AzureDisconnectedOperations(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDisconnectedOperations, AzureDisconnectedOperations)
+!define AzureDisconnectedOperations(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDisconnectedOperations, AzureDisconnectedOperations)
+!procedure AzureDisconnectedOperations($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDisconnectedOperations, $stereo=AzureDisconnectedOperations, $tags, $link)
+ !endprocedure
+!procedure AzureDisconnectedOperations($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDisconnectedOperations, $tags, $link, AzureDisconnectedOperations)
+!endprocedure

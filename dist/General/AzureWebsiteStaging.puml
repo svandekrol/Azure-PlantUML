@@ -1,0 +1,14 @@
+sprite $AzureWebsiteStaging [70x70/16z] {
+xSpL0S805C107Afl_stvGOCsTRa1BhuvFWhdIFOWcv1CI2Oa4t89dLn2Of7DgPdb3suWTv0xA749kOHqGZOX9bA2nK8Y9LWaBDOjIUguDaazGrgIzfTbYI4j
+QVs4ZLyYzJ8iJZne8l5DW4r89cGFojH1j4Wi95AAHOgxj975Dp5jnx_9X8Qw-2RcP4Sa4v8BTRhuv0m
+}
+
+AzureEntityColoring(AzureWebsiteStaging)
+!define AzureWebsiteStaging(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureWebsiteStaging, AzureWebsiteStaging)
+!define AzureWebsiteStaging(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureWebsiteStaging, AzureWebsiteStaging)
+!procedure AzureWebsiteStaging($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureWebsiteStaging, $stereo=AzureWebsiteStaging, $tags, $link)
+ !endprocedure
+!procedure AzureWebsiteStaging($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureWebsiteStaging, $tags, $link, AzureWebsiteStaging)
+!endprocedure

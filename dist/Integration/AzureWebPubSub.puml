@@ -1,0 +1,18 @@
+sprite $AzureWebPubSub [70x70/16z] {
+xTW7ajim38LX06m0KdJ_syOL9kKdQIWxcPPl-vhpMxqjo-9xD5-exrc61gHo4HNinsm5Gv7vYd-_qh8miUJwGKM5dhYThLJgvNELGgDqfb9fBMzNRAEgzAvk
+L38J4HTGIQ32iA9CTsA-OeGqK36c9m6B5aYWaePP7YM2vEhsInXdUIHqYlc0wPJsDwObCK80ztnK647hAFDBzP4oKa75X9dlNydNCeY8WufNUL9VC-4t3LRS
+iYH9KXoeieQdvSgqgJcKPOL8O6LVMKU8PBxYBQTG4rr9L2PeILUbnGugKPcHdhjgPDedbSZmHvN8q8ULo1nNT21qCVnv9LKFPEdHrVZtbHmeg88oynMKcQzC
+PmfQkhqgZuhkGMkwrqI6YmZik88oyvKha9clAChCLnnbvYieCr-1cVaApinN8cEjDFDDbkXA55UkcP2sEetfeS3AcE7cY345nPKnixLCWcnKZ3hP0UefhYZr
+3Y-_AwvKS4KsQDGhk5B010-CUmrN6lVCtmaO41NqLk90vPVie0Ak3e4iJyctAfxaAJjaCKAtAnhlPBiNGhd2lJ7Ksw3cUym3g8116Au0_wholx9yex8iorm5
+HxxpTEiF
+}
+
+AzureEntityColoring(AzureWebPubSub)
+!define AzureWebPubSub(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureWebPubSub, AzureWebPubSub)
+!define AzureWebPubSub(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureWebPubSub, AzureWebPubSub)
+!procedure AzureWebPubSub($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureWebPubSub, $stereo=AzureWebPubSub, $tags, $link)
+ !endprocedure
+!procedure AzureWebPubSub($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureWebPubSub, $tags, $link, AzureWebPubSub)
+!endprocedure

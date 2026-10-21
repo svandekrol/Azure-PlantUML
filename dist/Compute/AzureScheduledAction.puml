@@ -1,0 +1,17 @@
+sprite $AzureScheduledAction [70x70/16z] {
+xTI7ZYCX3CPnKmpuutH-_xSzOALu8Z8NRxQNVtgPdpnLtx8wUgdHwkhbawnUhEZ3IhMsJmyfLUiBbRts8iK_3AnMJuBr4nLf9paKHn-i_2eT_lgPqdk7N-cV
+HkbtbHn72IEclU1KuahcExfH-tfAoIF6gCQz18Vomdtqg-WTfLxsKOjx6O0HvqgAimOWquqQhgv5XVa19TCoB377hR1sZAIaG1HYhW24cJU5BsS0xyWQH19P
+RAjrLD16SdbthCv99DEA6wr2FJBz_gwUaqYaf-hb7HlZKW04sfJ9CBDJqGv4sfHHHPkCH-aA5DgL6L2SYlu5med2QnY7CaUfTA84mA_aCuKQYajH1SAfmgZC
+x5A4h2YeP2M8Jy6LKW6a0-fN6baObQC2dz81kfG4G7XWZVIWH96Q0raPVYKQKkYgujn7NG6cLMWBEIOeJygzR2Ub3Kd0H3oA7RnnlwOtK_xyzs73pFPHYexM
+N-Vjx5Njqd1T4DGvYZFSPWJ2Kta94mGmnCkqGCVob0rnCoZcf5OXFChwR0R2ESN41QXSUARF3OSQhuhk-PtAAtrHRCZBbQWlBRk7yVSF
+}
+
+AzureEntityColoring(AzureScheduledAction)
+!define AzureScheduledAction(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureScheduledAction, AzureScheduledAction)
+!define AzureScheduledAction(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureScheduledAction, AzureScheduledAction)
+!procedure AzureScheduledAction($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureScheduledAction, $stereo=AzureScheduledAction, $tags, $link)
+ !endprocedure
+!procedure AzureScheduledAction($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureScheduledAction, $tags, $link, AzureScheduledAction)
+!endprocedure

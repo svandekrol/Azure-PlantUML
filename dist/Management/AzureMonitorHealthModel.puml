@@ -1,0 +1,18 @@
+sprite $AzureMonitorHealthModel [70x70/16z] {
+rPK7aeCm34Nb9fbfklzfjs311xmQUoVzROcKXESlgW9k20jhZ_n-qlxKHOIFIEzW8A9_mZqAk4c0bzRH-1_Bb0GQvzD-bpX0CjQ82_zAn6KW0ODFxsoHMtX7
+Yxo1HMOj7CiTB8c8RxSGKRhPKkW7ljMIVYtnLWkjCAGdWZPghNBvombrePLeFPDZwM2YiZU96jpQE6s9H65lo8Yr8Xc8deLjQJG84twhb0zubc1BOw10rEBb
+hG2m08GM31HarPGg23MoK2DZeDJCeGLBlQJNP38m4DkK0I475g6DiWzacP1nPC7UnCRvU9w4YmHqKIJQ8Cb6G1WUMsp9tBQ9-q084pi9k4JPpXaCX9I-1Hex
+B-oaYV6uON9sBU2u4Z01BhTZpWfW0Obs-7pQOFdaxLeGZzSkmc0WiEWl2oIWOAjb_R5qeNNugPeR2a2EAtank5ci1rfoQIW0omMxQdgBCQTfrt4l0JgXgNyF
+n41dD1a3kPQnfc8We0865YDHcRVuche0QBO7dWBFuvEhSOj5LMif1Gw7aKGrfgH3HX9DCnRrjtSiinfDFkfncmNSOF4rUhmlzRNFZPPUepgs-41oYqLngk3U
+vjS-oxvanlANHkV81ffpNNI2ieFcNET_MWeurMCOUFM7MGHuzRyibsR60kg6NyzhKAEn-Xi
+}
+
+AzureEntityColoring(AzureMonitorHealthModel)
+!define AzureMonitorHealthModel(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureMonitorHealthModel, AzureMonitorHealthModel)
+!define AzureMonitorHealthModel(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureMonitorHealthModel, AzureMonitorHealthModel)
+!procedure AzureMonitorHealthModel($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureMonitorHealthModel, $stereo=AzureMonitorHealthModel, $tags, $link)
+ !endprocedure
+!procedure AzureMonitorHealthModel($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureMonitorHealthModel, $tags, $link, AzureMonitorHealthModel)
+!endprocedure

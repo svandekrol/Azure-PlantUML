@@ -1,0 +1,17 @@
+sprite $AzureDocumentDB [70x70/16z] {
+xTO5SiGm38LXesZf_hTjN53jHXbRPVg7IlxwbdFxo6AAoIYk2sdIqeY-h7cWxdWnwh2veO8fJPoHc4CEnC7u46NYaL8MiyVujzXA6PaAY4J4Zn4H8jGHANj5
+kiSPaDYE49uVwzDUEIcJW8_3cfuII-cObAinXx2Mb3h4KhOWZULIAspLMd8QmzF9LjIPbfjngBIuvWa1SZhDb1RfBTZTGXAHqv8Y3tNFa0g8oD9QL9InSspn
+AlzR_hT0oIWQvWp-BHX325KqsBwDwDp2CUoL4Dct1TgPIg9nRIxujkJj22gXQuflIrDOXdZxKVPkKKLpAYTR-QejQJiYBueX9DUMTYBAM9EZQqlLHxMh_H0S
+Mw8-J_iujH-lA-slINPnqrrAI69iyIWdplfIx2hjeMRdOvJU_1Zf2Ktbt_Ow-ght5v8Xyh_NrQT_hEbpoFqP06_y312CUoNYspyR2_piQuR_BNv64Il75WDn
+CnrYjhn53RkrBRTfK-Isd4Dul-u
+}
+
+AzureEntityColoring(AzureDocumentDB)
+!define AzureDocumentDB(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDocumentDB, AzureDocumentDB)
+!define AzureDocumentDB(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDocumentDB, AzureDocumentDB)
+!procedure AzureDocumentDB($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDocumentDB, $stereo=AzureDocumentDB, $tags, $link)
+ !endprocedure
+!procedure AzureDocumentDB($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDocumentDB, $tags, $link, AzureDocumentDB)
+!endprocedure

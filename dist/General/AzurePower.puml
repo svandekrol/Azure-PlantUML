@@ -1,0 +1,14 @@
+sprite $AzurePower [70x70/16z] {
+tS-73OC034HH5Dj4_Uy_RNgdEoTX-0CytJ5P3CIIGg1e4EeWb4VQhVwX3j8g4EAIlqiYtYdSMPXtqo21GjamGXL4FyKUEMd5tgKHAu1G1-4NQGHJEhdvemLJ
+kdMK56Bp4BSv309b0fcf850ca4UJY49XQOq2mRefa0C2XRKG98XBblWduqOg_sv5X9qXo17IIP28-1yXRda8a6laSmL27GGbSaIWi1U4EWWIX2no1W
+}
+
+AzureEntityColoring(AzurePower)
+!define AzurePower(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzurePower, AzurePower)
+!define AzurePower(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzurePower, AzurePower)
+!procedure AzurePower($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzurePower, $stereo=AzurePower, $tags, $link)
+ !endprocedure
+!procedure AzurePower($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzurePower, $tags, $link, AzurePower)
+!endprocedure

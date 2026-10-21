@@ -1,0 +1,17 @@
+sprite $AzureServiceHealth [70x70/16z] {
+xP473gKm34HDGZpPclkVTfiPOTQAXMIrBUzN83pFa4Ms_4SL-lC3rKKyK0Egs2W0zI28z0cIEGuWlwuRntwTGYFGj8rVbbzF9A6yxl4MtR_Cihtk91alhXj8
+MKXHIaeMq5A3aY9_dmKl9Ur0tJ94UjtIHQHkaH_qgcN8JpIrJ1Zxtou_QU3nAK-EdnRY6JflnE0fo6-qZQMBu3PoyJJQ2mkddLxfmwYyiN2QB-J37FRVqOFb
+dZPS8HTck5XaHGsB7xvGRpp5L9d55rTNQEBAPxkC80cMGun-5shJRZ-ipncY1CqG0XQImKokQsuHWoE5-tKAqI095blSELFz5XijH352b66t31PwL4MG10j3
+yA6oq1tc35621bQScQ2-WcuURT2qwoxkxDNFXT74qiM1AnMPH4Lwa7YQ42vixfZqNHzo20476on4Kiiz-iEq5xrpVjYzLg1Tp0yNWzOTJF8WB3ABRYsBf9hJ
+2YMIDvgP5iBEWWzFUbPeEL8DH2IJlEnqI4yaRprpp4IIMt8eoJcB4b9qaAA551saA2552QbAI552YWvIbP2YXD1HX9Aov-Fw5_aE
+}
+
+AzureEntityColoring(AzureServiceHealth)
+!define AzureServiceHealth(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureServiceHealth, AzureServiceHealth)
+!define AzureServiceHealth(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureServiceHealth, AzureServiceHealth)
+!procedure AzureServiceHealth($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureServiceHealth, $stereo=AzureServiceHealth, $tags, $link)
+ !endprocedure
+!procedure AzureServiceHealth($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureServiceHealth, $tags, $link, AzureServiceHealth)
+!endprocedure

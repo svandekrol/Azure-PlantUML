@@ -1,0 +1,15 @@
+sprite $AzureBacklog [70x70/16z] {
+xTO5ZiD038LXmMXjRy7tFssvJrNO4CuV4kKJFurEtH4HfI1nXjwb89I2q2m8KIloDoJyM9m877xrPlWR49l2fOBu52uLnAQ8yElwVbdKeQXKKbGC2XWWQ31I
+PTJVFz98G681YJExtDrZToa3OUFkCX41GSRTfPzvO-HSp0hYLBY2E1MMo7ghL8liBihOtV_8H24D54CGa3Xpqd10CblSxXwx6vfCVLH6srrQ_-wY_DtLdDrL
+m-nUAuWpaNzSwk-Kixkog5Ep05bQHtS
+}
+
+AzureEntityColoring(AzureBacklog)
+!define AzureBacklog(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureBacklog, AzureBacklog)
+!define AzureBacklog(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureBacklog, AzureBacklog)
+!procedure AzureBacklog($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureBacklog, $stereo=AzureBacklog, $tags, $link)
+ !endprocedure
+!procedure AzureBacklog($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureBacklog, $tags, $link, AzureBacklog)
+!endprocedure

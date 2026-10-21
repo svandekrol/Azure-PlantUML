@@ -1,0 +1,14 @@
+sprite $AzureModule [70x70/16z] {
+xTH50eGm343HQfBn-zzsA0x1NV9POGzjVwr9EAlvI5o_8WhuSdmJn9jyEU2ALkLSG5IbS8whRD5zIdmpLIM-bQigeeXYL3bWi4Osj0nJEfAvhYk83pBb75Uy
+wyx71tLy8mfBhq98J0dRKeNY-fMeca9nEoaWYYWF2Y5qX_nQK55cTct5cT4XL-nu1LPNH7ccoZCqHNd6BQayuvmneY1N7ZIw1rDcrAM8yfk9j2Rz0G
+}
+
+AzureEntityColoring(AzureModule)
+!define AzureModule(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureModule, AzureModule)
+!define AzureModule(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureModule, AzureModule)
+!procedure AzureModule($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureModule, $stereo=AzureModule, $tags, $link)
+ !endprocedure
+!procedure AzureModule($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureModule, $tags, $link, AzureModule)
+!endprocedure

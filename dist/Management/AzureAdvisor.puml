@@ -1,0 +1,17 @@
+sprite $AzureAdvisor [70x70/16z] {
+xTC7Zjmm38NX58ka-1x0-vysrPsJrOZfoVveK-mFgZ7VQqrE5Gr9rOnS2ScLZDnIMTLSOIHrPf4VmSYmElBZ5QaWkHAIgn2v2f6h8BanKbTajXhIkuYeUtAc
+419c8BkScaG4N8EScr3CrBc7xh34396lWfkqHMpz8aSJ2dHP4t-io5ZfoocxAlAKeg0lbvpGnBniT11oLHe8rna597svrQzBen6n39VMxehc1Hwk2kMkD18w
+eqWdbXJoHIWeFgaOo9OKf1c5lXJuU5teUZHK7k_HhA8EegLbWUj56JBv1dJ2T5RnsvoKTCrA31Lwsupcl2lnh4Aimr7mKqZAa35tSn9m1qYukoLapAYq1gvX
+5P8oP5fhdKGta9wHvnXfdtAN9WPOGYxPjzAs9RfcUn5FCh8hkfMGiTEoeiaOGR8ZSb5YfdOgBUgVeMWPYH-lQ15f4RzLYPAIEoDHt-h7IinsKgACnBkiH26v
+Ar5gMP5LYM8N9SfjIYJap-iZ
+}
+
+AzureEntityColoring(AzureAdvisor)
+!define AzureAdvisor(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureAdvisor, AzureAdvisor)
+!define AzureAdvisor(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureAdvisor, AzureAdvisor)
+!procedure AzureAdvisor($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureAdvisor, $stereo=AzureAdvisor, $tags, $link)
+ !endprocedure
+!procedure AzureAdvisor($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureAdvisor, $tags, $link, AzureAdvisor)
+!endprocedure

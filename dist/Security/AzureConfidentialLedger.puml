@@ -1,0 +1,17 @@
+sprite $AzureConfidentialLedger [70x70/16z] {
+hCy54iDG24NH6lQex7-rTTguGEv8z9-1srpqx5QCwHrNZ1FzEgKHQfLUfXrNvuWII9LX6eqJI8KH7ZSKYnKPSmHOeGmxR5Yh27Dl6QnK-kC8a53Q3WDf9TPY
+Grw9SHJ8AcRX07a5ZaqKjxgYxgWh4afr5gahjea2Tzra5gihea152KPYenGIJfGrsax6Y02hAmu0PGMlxAzOXeapeSIhdF9oNZThb4UZTP73K123CRZCxVsF
+srKqe3-Mr_5ZcA_Myx55tlEjEjGNxsLqhA_gqsxcZi5IEqcxMK96pwFRosClKKwtQxpxjrvNbZitK1gvoG9Bwuixgw-DCzkpiFhYBkbhWCKgBQXf0ejLMjBN
+08jLMj1N_BcnqXOsWRwuGttf3lMrTu-k8ttvZlJbEwilxgo-kBFwuixgYpkhB-v8N_xkMdtLbRnZP_M5dTMNw1vf-aRiyNVFRE9kp64VghkCAIDdTBzklEy4
+kdS_XtrGzmS
+}
+
+AzureEntityColoring(AzureConfidentialLedger)
+!define AzureConfidentialLedger(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureConfidentialLedger, AzureConfidentialLedger)
+!define AzureConfidentialLedger(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureConfidentialLedger, AzureConfidentialLedger)
+!procedure AzureConfidentialLedger($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureConfidentialLedger, $stereo=AzureConfidentialLedger, $tags, $link)
+ !endprocedure
+!procedure AzureConfidentialLedger($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureConfidentialLedger, $tags, $link, AzureConfidentialLedger)
+!endprocedure

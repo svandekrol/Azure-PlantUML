@@ -1,0 +1,18 @@
+sprite $AzureComplianceCenter [70x70/16z] {
+xTQ7kjiW341XWz42NBt_szQ4v5gfXKVtEdTa_nyeo_g8RgVxw2lw3if_vR_2H3TEsL7uTex2tqFvbEyZUQVKhr1ArVVATr7grodlJB4AjB2Tm-H4GwKQ1KCh
+jhDnSefMgSTAQ6V3BQL-N-N-ZggZRDEbTexywVfARHM-qNTNwk-Xr1-l8ApXoNDqgcolkdbo2eUAF7ifwrbNcUJLJr1YGs9JahkZIueGhD43XBIF9UTSyfgh
+N2kRpydbAvMog08IiJ0HmWePygAIoqgmR372fYnrkQ9aJTtmdMMjN45Ozd5obJIlGJj7qOGAxEeCZiBXaNpngeiTyPchIa0W6KMTELSeaOoZP9HURCZSpi47
+CYl8KQ_552ElRUTw_b1e9ZCQexXbHNUiOPfIFujzCVL8AUejfSyDEdYkvCMTIXyRsycKBCEVucw87WXA3v_AkABa3EM197bJz9eoXzVPs92uhKprP3LLsSop
+CwaXOHiwwnbJqsk47m_5gKLYb3EcADjP1DucwoXwEXTwCi5CriwbTwPqfXV5XceQA2Wx9l1OKIdUUC7SVUgHywusvJ8QhsMCQuRhEFwM-lCzYmmtPA4twVr3
+Dqt1_UZreIrL41EnU5Cv3qZ6aQFSPYZfvSRVHmvoUpK4UYj07xbPsksA8Udz4h8rCEbNPe-bJ9y1
+}
+
+AzureEntityColoring(AzureComplianceCenter)
+!define AzureComplianceCenter(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureComplianceCenter, AzureComplianceCenter)
+!define AzureComplianceCenter(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureComplianceCenter, AzureComplianceCenter)
+!procedure AzureComplianceCenter($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureComplianceCenter, $stereo=AzureComplianceCenter, $tags, $link)
+ !endprocedure
+!procedure AzureComplianceCenter($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureComplianceCenter, $tags, $link, AzureComplianceCenter)
+!endprocedure

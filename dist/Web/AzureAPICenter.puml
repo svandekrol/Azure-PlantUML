@@ -1,0 +1,16 @@
+sprite $AzureAPICenter [70x70/16z] {
+xTE7KWCn38HXkhMXxFi_BKKpvxl1gp6owF1Ju_8brzXh7akrhRhYbH4McMtteFmhlI-vqfhXDs2yTrA-6-FAjLTJhdkh37brVUYAQzsygc2Kd7OZQnmpivP0
+96EUXcx29E89fKLfH3CjB42yX2AG_az1yN-pYkd3-3Z5mhwLeXdBAdlxa2MLp5rdYBuo2i8OCrnLs8GnPpWM6Du3H0zCXo7cCnAdG-12Vh3S4Hz98nutPnjP
+Ki3UYX8-D4a5mnuOSee11a1T-WpYoM5Btc-cntC8efavPUXPg4mE3CTcAsQ6LtuRZ_4IJbPCc3x-7ahC7FR6Z8_E5V6Ygc3nYAGPN-clLIYGv7dntdJd2ZB-
+r35p4lTB8ddlrXck9P0gm_NAnXC
+}
+
+AzureEntityColoring(AzureAPICenter)
+!define AzureAPICenter(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureAPICenter, AzureAPICenter)
+!define AzureAPICenter(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureAPICenter, AzureAPICenter)
+!procedure AzureAPICenter($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureAPICenter, $stereo=AzureAPICenter, $tags, $link)
+ !endprocedure
+!procedure AzureAPICenter($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureAPICenter, $tags, $link, AzureAPICenter)
+!endprocedure

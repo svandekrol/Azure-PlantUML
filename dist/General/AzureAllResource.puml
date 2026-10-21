@@ -1,0 +1,14 @@
+sprite $AzureAllResource [70x70/16z] {
+xT6r0GGn34JHJ12f_sgFMPfRvldE36_10MEQ0vF5B40wAhgKeXqKAbIeKDbJlEaf5IfKh8TYkN8MRFsdM4V53go0sPNLxTrvqnCgRZagLBoxueCKVofkQKJa
+kPkInal9MJbRxyMAW_q-YX9OYK5AxBCp
+}
+
+AzureEntityColoring(AzureAllResource)
+!define AzureAllResource(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureAllResource, AzureAllResource)
+!define AzureAllResource(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureAllResource, AzureAllResource)
+!procedure AzureAllResource($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureAllResource, $stereo=AzureAllResource, $tags, $link)
+ !endprocedure
+!procedure AzureAllResource($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureAllResource, $tags, $link, AzureAllResource)
+!endprocedure

@@ -1,0 +1,17 @@
+sprite $AzureLinux [70x70/16z] {
+fT87hkWW34HHJ8eBaRB_rVwAtgHH37S1HsF4sOnpvt1yRyv0KmYQDk3C8vAIvSOGI_-QKJJzv4TWe54atGBYKj8z81ub7GN5XpoKv9a2vBsbZQnyJGueKrFc
+5JqAYdlAl79yAScfo36sHUJnB51GM-5hDhpbkYQDAVAlQIKpCglaQkzYFGWOdL00IK4nZo9G76FaLIfiCPSY9IMvb5HGh0T19SKy2lEwBDlEzbAiLzbZG54A
+IXrPmpE-ATQXSFY8jCbKXg3rWbWBYQ7KaWpL5GhbejMOnXAqLXX1MwZ7PKMXX5PsgQGiJIMM55LHJ6cb1KR_Xf_IQAaf__Q4dhuL_OcxbDtGbnAx5FfILYW1
+UKy2iWVaFGaATIfKKoJqfb3S1w6jeiHkXPuAGmbXu2J_GMWhAkHGwAwOwo2aDmN8vbAsWa8kXMOEGlfz4FdQFhT4SdP1pBB3v4t_8Ld93hdRBafc5lBtG0o8
+f-syAHnffFEYy4fJnlaR
+}
+
+AzureEntityColoring(AzureLinux)
+!define AzureLinux(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureLinux, AzureLinux)
+!define AzureLinux(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureLinux, AzureLinux)
+!procedure AzureLinux($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureLinux, $stereo=AzureLinux, $tags, $link)
+ !endprocedure
+!procedure AzureLinux($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureLinux, $tags, $link, AzureLinux)
+!endprocedure

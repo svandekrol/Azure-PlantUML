@@ -1,0 +1,16 @@
+sprite $MicrosoftDefenderEASM [70x70/16z] {
+rTG7Zjqm40HHnMukakv_sWrAPS7qW7-uJdM01yRP_fSawYIe2w6SiPBs_3A2WMDrB0J7TZE1yMnNGaW4KcKeHDOWIG4ZW3WTrHM0E8dIYleLWUGLKPEYkyfA
+MXLfEbjSaLkLQRWoIAS2ugzQ5QDO8DBobJCAYCVXgzavHGzbIYdIFwEGXvSKhTFHE4oYUHYdpnGh99zf-B75Uo21Gf8VYaNDYhv3KKQ10UbMz1sAcfGIAsfI
+IgX8_Ofw58k5f1NRh4G-goeWA33YWfUpQPYNkzKFn20FvKQO338zaLyfbdvIh6hU4HHwNTcgYXiLxqYVOf_AiWLCh82KBQ_u3AJAn8gZfS24IeoWx8pDSwqZ
+AE6Upkg8GKA6o4yanRWDGN5-9J5ZAYXjJ1w1oICmNGYCkn2O6kADcfYoCvc5q5jniRC8VJ8bZy1yXW6IOCg5UClsLkwsda3wmlXF-W
+}
+
+AzureEntityColoring(MicrosoftDefenderEASM)
+!define MicrosoftDefenderEASM(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, MicrosoftDefenderEASM, MicrosoftDefenderEASM)
+!define MicrosoftDefenderEASM(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, MicrosoftDefenderEASM, MicrosoftDefenderEASM)
+!procedure MicrosoftDefenderEASM($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=MicrosoftDefenderEASM, $stereo=MicrosoftDefenderEASM, $tags, $link)
+ !endprocedure
+!procedure MicrosoftDefenderEASM($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, MicrosoftDefenderEASM, $tags, $link, MicrosoftDefenderEASM)
+!endprocedure

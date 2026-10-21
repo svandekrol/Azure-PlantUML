@@ -1,0 +1,17 @@
+sprite $AzureManagedGrafana [70x70/16z] {
+xTK5ckCm30LWiUGitV-ssxYH6_pY3DC_F6wUeFJls_ZXpvOPdzmF8VDdOm1yTep03Vep8OpasVDKBEPkAkgNcI0yq9X85ovcOb6l6MjsOP_7UaSYM46wmOkz
+CCoHj3bhF3qX1TLd18zYOlDJeA7LUQqWs-jYoo1nR2W0UlJWx2Hsw6xuOJFpccxcinfzpH2CD2E4yjwQJYrwO6qbEqD8QFTMfNyYQP4f_qaS7HH6zbWrgOTn
+Yp7klOzoXVvOa666QvnpX57hInS755rocr79_3BBPau9J78wMJq4k2jadQAhK-nzgCosAujUD0_Mok93e97w7mEQdKyfPVsnmj1WgGYaD59JoYc1nih80SWY
+DEwHDrpE6IIwTrhlUQmf3fMMSw44LIlg7ejviNHnpWKlA4oyzC5yoLpDcgFsSRX3YLKdB5gwAIHMyt2b7FAAW5rKBl7dX-GgrwGy9-Nq7XuElXn6gCO82Gzl
+FnmezKMx7fTyw-RXClDv1Qq33S_bGZPyOZ_-_Nk1Z6_Znty
+}
+
+AzureEntityColoring(AzureManagedGrafana)
+!define AzureManagedGrafana(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureManagedGrafana, AzureManagedGrafana)
+!define AzureManagedGrafana(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureManagedGrafana, AzureManagedGrafana)
+!procedure AzureManagedGrafana($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureManagedGrafana, $stereo=AzureManagedGrafana, $tags, $link)
+ !endprocedure
+!procedure AzureManagedGrafana($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureManagedGrafana, $tags, $link, AzureManagedGrafana)
+!endprocedure

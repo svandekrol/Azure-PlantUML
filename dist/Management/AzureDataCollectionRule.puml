@@ -1,0 +1,15 @@
+sprite $AzureDataCollectionRule [70x70/16z] {
+xTC3WiH054NH53ugtFzgnx4ARzot4PzuM2Iv3H1588Z0ZsLGoVoibUn0YlUK78kkexmmYlm2nJlddIzLghSSnQMNYYKYVrw2OghJ34RvcZCoaAjB_ZNi6u1N
+llwCh7dD5Ih6lr9lYZyjGR7cD7kYy9Znp6mTCryf_966rUT0kJgZMLarAsyvZkX2eN5VsShS_rK2Gf6mRk0vYKt3LbaKeliNoaCHHIXC2b588GhfXLBNTSIF
+wPLPpLigTLnC8pEsKeIZelVqH65AIY4AAKIXW52a1YXI0nIfvpAVtJMI_TH93L2a1YXI0nIfonMH6g2C_J_beGpF
+}
+
+AzureEntityColoring(AzureDataCollectionRule)
+!define AzureDataCollectionRule(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDataCollectionRule, AzureDataCollectionRule)
+!define AzureDataCollectionRule(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDataCollectionRule, AzureDataCollectionRule)
+!procedure AzureDataCollectionRule($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDataCollectionRule, $stereo=AzureDataCollectionRule, $tags, $link)
+ !endprocedure
+!procedure AzureDataCollectionRule($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDataCollectionRule, $tags, $link, AzureDataCollectionRule)
+!endprocedure

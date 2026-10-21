@@ -1,0 +1,16 @@
+sprite $AzureAKSAutomatic [70x70/16z] {
+xPI7RlGm38F_uKCi2ZYz_ziM1ZiSsYbykdJtmoQ4BunNaFe2I2GG2_6ubKqioKPp2wx9NuAGN1Sb8najI4Wg8z4ikAfOY7SMgXObqLcapxg5noPUI4aQEqlS
+ReaPgvPD94UQN1NYjraEcznlGSUTQ-lkgvOunid7MyoeoLeAryJCA6hPSxHeWJin8f6ABkNIA8tTOW1jtEs9raUYhZWPB31Jon3Pp19dME8CIyJdwL8kESlv
+UqJkiVIcj8LzH3GSr3expdl-5s5oQHXHBevZJG1uiaI3YKJAV9K1ssA70LRZa4w0OT8Cq0PeqSmJw5fJj8-iZD716zjcZDGniWWdNPIuXE4EYL8Ms7cMNykl
+fS4PCjw0-PJUUvTx1erqgWIPcCniZEe-0gVU1tvkoAmk2rvVe3NHTV8sQRGjMBYHM3mbS-3sQn5-BMzywX9lK-esMgpYV9kAoYSt-W4
+}
+
+AzureEntityColoring(AzureAKSAutomatic)
+!define AzureAKSAutomatic(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureAKSAutomatic, AzureAKSAutomatic)
+!define AzureAKSAutomatic(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureAKSAutomatic, AzureAKSAutomatic)
+!procedure AzureAKSAutomatic($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureAKSAutomatic, $stereo=AzureAKSAutomatic, $tags, $link)
+ !endprocedure
+!procedure AzureAKSAutomatic($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureAKSAutomatic, $tags, $link, AzureAKSAutomatic)
+!endprocedure

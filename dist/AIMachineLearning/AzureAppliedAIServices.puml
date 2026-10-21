@@ -1,0 +1,17 @@
+sprite $AzureAppliedAIServices [70x70/16z] {
+xTI7bkCW38NXOrsmFK1Mx_-s2pTD3iD4R9tsfvpAToHIzCs--ouT-cs4_IBoVfJqVfJqVfGVVqH9xqT9xqT9lw84KsnDAq1WLjcc5C0OieYCHc53mY82Y53P
+irV10G6m80HGMLFEBWIm2jeoIwXHUScrfuer60NXB1NPCfj2g0W7gWNkyoepC12CqW9k-x0dY1Z3AB6rvNif3vHcBFLX4Qki-T2hI202OE4vY92Z4bbwK7Al
+eCKZVAkMLDCgB_cn3Wa8roFsZN2qbz8x1cbnWhRLJLbgCaJ8v2F2mCkbTw44HFOyg1-5ft7x5VEQgMWUrYDKxcCrBoAekX2OH88fncPeTYXrz5iFYBBitwSl
+XWb41qPKYyoFGcFr8MCbrjIDz0h_Yrh6c5P4S65c4RslmNzMVjUqbIOGZRS4f6fjbk95h69duG_7YrY5IIkkjRsKaeiViKe4q90j5UP6BBEocy5fV0YPrRJd
+OlCXRDq8R7ion70Q7NKwdKevjKgN6w5pgKEAsx1EwN8Zx2cZljvaTA8HexDrZY6cAqnjtttt4m
+}
+
+AzureEntityColoring(AzureAppliedAIServices)
+!define AzureAppliedAIServices(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureAppliedAIServices, AzureAppliedAIServices)
+!define AzureAppliedAIServices(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureAppliedAIServices, AzureAppliedAIServices)
+!procedure AzureAppliedAIServices($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureAppliedAIServices, $stereo=AzureAppliedAIServices, $tags, $link)
+ !endprocedure
+!procedure AzureAppliedAIServices($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureAppliedAIServices, $tags, $link, AzureAppliedAIServices)
+!endprocedure

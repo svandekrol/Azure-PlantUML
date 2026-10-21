@@ -1,0 +1,15 @@
+sprite $AzureFTP [70x70/16z] {
+xP85ZiH030I7uV3_hpqOXLlRYiDKYm6Nt8w_Jyp3mziiAacUPyca5G6hM99Mez7fbIKg0V4CbYIn9BHK907BFEaZMtoSXQyiOHQL9SpZThqu-u_ht6yBNjAB
+KmKJ6hGgU4alHXNiKAibS_5LZKUje1Sx3EGXq0XBLUD886R16Wp4BQIc2gHnYiG2Gu0vGIyi4Cw9zy83WPPQS0WOY5kWXWNY5hui0ekdoy8jykr72myqr78B
+ttv7BV9buHQ-_HABuyl2BJW47eXRiAOAP4KMFGnaTT5wWOLm6ajSq5AvvB-rPIRVIsY-Jyp3moy
+}
+
+AzureEntityColoring(AzureFTP)
+!define AzureFTP(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureFTP, AzureFTP)
+!define AzureFTP(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureFTP, AzureFTP)
+!procedure AzureFTP($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureFTP, $stereo=AzureFTP, $tags, $link)
+ !endprocedure
+!procedure AzureFTP($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureFTP, $tags, $link, AzureFTP)
+!endprocedure

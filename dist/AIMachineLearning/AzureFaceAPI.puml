@@ -1,0 +1,15 @@
+sprite $AzureFaceAPI [70x70/16z] {
+xTW5JW0n54LH_FrYR_-xXVZu_P0QSiUY9pBMzc6NiGUEcVigIWx1cYe-J9k8P68liQABqeekIog27ZEAE5GUbOaKvRfMr5NHbQBEYiuL3LFWWQEyQpv53PL_
+9KAXY53gwdCctqnAgQBuroa1IBOgI02IhOuIlqqfFgXyEH_ranKtL3n2yLdzbVtG-HiGZRrp0YdkepYbk8xoN3wtv-ToU2rEAdw-gefYLfWfeEGOiyACMM76
+g31ZeyAEGLbrx3HPy-2g8FV3re8-
+}
+
+AzureEntityColoring(AzureFaceAPI)
+!define AzureFaceAPI(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureFaceAPI, AzureFaceAPI)
+!define AzureFaceAPI(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureFaceAPI, AzureFaceAPI)
+!procedure AzureFaceAPI($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureFaceAPI, $stereo=AzureFaceAPI, $tags, $link)
+ !endprocedure
+!procedure AzureFaceAPI($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureFaceAPI, $tags, $link, AzureFaceAPI)
+!endprocedure
