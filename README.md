@@ -305,7 +305,7 @@ All details can be found in the [Generating the Azure-PlantUML distro documentat
 If you have any ideas, just [open an issue](https://github.com/plantuml-stdlib/Azure-PlantUML/issues/new) and tell us what you think.
 
 If you'd like to contribute, please fork the repository and use a feature branch.  
-Pull requests are warmly welcome.
+Pull requests are warmly welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for how to add icons, naming rules, and how to regenerate the distro.
 
 ## License
 
