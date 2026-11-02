@@ -465,14 +465,10 @@ Categories:
     Target: AzureSql
   - Source: Azure SQL VM
     Target: AzureSqlVirtualMachine
-  - Source: Azure Cosmos DB
-    Target: AzureCosmosDb
   - Source: SQL Server
     Target: AzureSqlServer
   - Source: SQL Elastic Pools
     Target: AzureSqlElasticPool
-  - Source: SQL Data Warehouses
-    Target: AzureSqlDataWarehouse
   - Source: SQL Managed Instance
     Target: AzureSqlManagedInstance
   - Source: Managed Database
